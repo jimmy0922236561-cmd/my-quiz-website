@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的線上題庫測驗 - 分類版</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
+        .filter-section { text-align: center; margin-bottom: 25px; }
+        select { padding: 8px 15px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc; width: 60%; }
+        .quiz-card { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid #eee; }
+        .question { font-size: 18px; font-weight: bold; margin-bottom: 15px; }
+        .category-tag { display: inline-block; background: #e1f5fe; color: #0288d1; font-size: 12px; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; font-weight: bold; }
+        .option { margin: 10px 0; padding: 10px; background: #f8f9fa; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; display: flex; align-items: center; }
+        .option:hover { background: #e9ecef; }
+        .option input { margin-right: 10px; }
+        button { display: block; width: 100%; padding: 12px; background: #3498db; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #2980b9; }
+        .result { margin-top: 15px; padding: 15px; border-radius: 6px; display: none; font-weight: bold; }
+        .correct { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .wrong { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .explanation { font-weight: normal; font-size: 14px; margin-top: 5px; color: #555; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 醫學基礎單選題測驗</h1>
+    
+    <div class="filter-section">
+        <label for="category-select" style="font-weight: bold; margin-right: 10px;">選擇科目：</label>
+        <select id="category-select" onchange="loadQuestions()">
+            <option value="">全部科目</option>
+        </select>
+    </div>
+
+    <div id="quiz-container"></div>
+    <button onclick="submitAllAnswers()">送出答案並批改</button>
+</div>
+
+<script>
+    // 1. 自動載入所有的分類，並丟進下拉選單裡
+    async function loadCategories() {
+        try {
+            const response = await fetch('http://127.0.0.1:8000/api/categories');
+            const categories = await response.json();
+            const select = document.getElementById('category-select');
+            
+            categories.forEach(cat => {
+                if (cat) {
+                    select.innerHTML += `<option value="${cat}">${cat}</option>`;
+                }
+            });
+        } catch (error) {
+            console.error('無法載入分類：', error);
+        }
+    }
+
+    // 2. 根據選取的分類來載入題目
+    async function loadQuestions() {
+        try {
+            const selectedCategory = document.getElementById('category-select').value;
+            // 帶有篩選參數的網址
+            const response = await fetch(`http://127.0.0.1:8000/api/questions?category=${selectedCategory}`);
+            const questions = await response.json();
+            
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = ''; 
+
+            if (questions.length === 0) {
+                container.innerHTML = '<p style="text-align:center; color:#999;">這個科目目前沒有題目喔！</p>';
+                return;
+            }
+
+            questions.forEach((q, index) => {
+                container.innerHTML += `
+                    <div class="quiz-card" id="card-${q.id}">
+                        <span class="category-tag">${q.category}</span>
+                        <div class="question">Q${index + 1}. ${q.question}</div>
+                        <label class="option"><input type="radio" name="q-${q.id}" value="A"> A. ${q.option_a}</label>
+                        <label class="option"><input type="radio" name="q-${q.id}" value="B"> B. ${q.option_b}</label>
+                        <label class="option"><input type="radio" name="q-${q.id}" value="C"> C. ${q.option_c}</label>
+                        <label class="option"><input type="radio" name="q-${q.id}" value="D"> D. ${q.option_d}</label>
+                        <div class="result" id="result-${q.id}"></div>
+                    </div>
+                `;
+            });
+        } catch (error) {
+            alert('無法連線到後端伺服器！');
+        }
+    }
+
+    async function submitAllAnswers() {
+        const cards = document.querySelectorAll('.quiz-card');
+        if (cards.length === 0) return;
+        
+        for (let card of cards) {
+            const qId = card.id.split('-')[1];
+            const selectedOption = document.querySelector(`input[name="q-${qId}"]:checked`);
+            
+            if (!selectedOption) {
+                alert('還有題目沒寫完喔！');
+                return;
+            }
+
+            const userChoice = selectedOption.value;
+
+            const response = await fetch(`http://127.0.0.1:8000/api/submit?question_id=${qId}&user_choice=${userChoice}`, {
+                method: 'POST'
+            });
+            const result = await response.json();
+
+            const resultDiv = document.getElementById(`result-${qId}`);
+            resultDiv.style.display = 'block';
+            
+            if (result.is_correct) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = `🎉 答對了！<div class="explanation">解析：${result.explanation}</div>`;
+            } else {
+                resultDiv.className = 'result wrong';
+                resultDiv.innerHTML = `❌ 答錯了！正確答案是 ${result.correct_answer}<div class="explanation">解析：${result.explanation}</div>`;
+            }
+        }
+    }
+
+    // 初始化：先載入分類，再載入題目
+    async function init() {
+        await loadCategories();
+        await loadQuestions();
+    }
+    
+    init();
+</script>
+
+</body>
+</html>
