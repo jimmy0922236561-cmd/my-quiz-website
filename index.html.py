@@ -47,7 +47,7 @@
 
     async function loadCategories() {
         try {
-            const response = await fetch(`${BASE_URL}/categories`);
+            const response = await fetch(`${BASE_URL}/categories`, { mode: 'cors' });
             const categories = await response.json();
             const select = document.getElementById('category-select');
             categories.forEach(cat => {
