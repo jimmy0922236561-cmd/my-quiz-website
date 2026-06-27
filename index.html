@@ -41,13 +41,14 @@
 </div>
 
 <script>
-    // 1. 自動載入所有的分類，並丟進下拉選單裡
+    // 統一設定雲端網址，避免之後要改還要找很多地方
+    const BASE_URL = 'https://jimmyishandsomeboy.onrender.com/api';
+
     async function loadCategories() {
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/categories');
+            const response = await fetch(`${BASE_URL}/categories`);
             const categories = await response.json();
             const select = document.getElementById('category-select');
-            
             categories.forEach(cat => {
                 if (cat) {
                     select.innerHTML += `<option value="${cat}">${cat}</option>`;
@@ -58,12 +59,10 @@
         }
     }
 
-    // 2. 根據選取的分類來載入題目
     async function loadQuestions() {
         try {
             const selectedCategory = document.getElementById('category-select').value;
-            // 帶有篩選參數的網址
-            const response = await fetch(`http://127.0.0.1:8000/api/questions?category=${selectedCategory}`);
+            const response = await fetch(`${BASE_URL}/questions?category=${selectedCategory}`);
             const questions = await response.json();
             
             const container = document.getElementById('quiz-container');
@@ -88,7 +87,7 @@
                 `;
             });
         } catch (error) {
-            alert('無法連線到後端伺服器！');
+            alert('無法連線到後端伺服器！請稍等 Render 伺服器喚醒。');
         }
     }
 
@@ -99,15 +98,14 @@
         for (let card of cards) {
             const qId = card.id.split('-')[1];
             const selectedOption = document.querySelector(`input[name="q-${qId}"]:checked`);
-            
             if (!selectedOption) {
                 alert('還有題目沒寫完喔！');
                 return;
             }
 
             const userChoice = selectedOption.value;
-
-            const response = await fetch(`http://127.0.0.1:8000/api/submit?question_id=${qId}&user_choice=${userChoice}`, {
+            // 這裡改成使用 BASE_URL
+            const response = await fetch(`${BASE_URL}/submit?question_id=${qId}&user_choice=${userChoice}`, {
                 method: 'POST'
             });
             const result = await response.json();
@@ -125,7 +123,6 @@
         }
     }
 
-    // 初始化：先載入分類，再載入題目
     async function init() {
         await loadCategories();
         await loadQuestions();
