@@ -44,7 +44,7 @@ def home():
 
 # 升級：允許前端傳入 category 參數來篩選題目（例如：/api/questions?category=解剖學）
 @app.get("/api/questions")
-def get_all_questions(category: str = None):
+async def get_questions(year: str = None, category: str = None):
     db_questions = read_questions_from_csv()
     
     safe_questions = []
