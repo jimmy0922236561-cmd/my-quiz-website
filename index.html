@@ -18,7 +18,24 @@
     </style>
 </head>
 <body>
-
+<div class="card p-4 shadow-sm mb-4">
+    <div class="row">
+        <div class="col-md-6">
+            <label class="form-label fw-bold">選擇年份：</label>
+            <select id="year-select" class="form-select" onchange="loadQuestions()">
+                <option value="113">113年</option>
+                <option value="112">112年</option>
+                <option value="111">111年</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label fw-bold">選擇科目：</label>
+            <select id="category-select" class="form-select" onchange="loadQuestions()">
+                <option value="">全部科目</option>
+            </select>
+        </div>
+    </div>
+</div>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
