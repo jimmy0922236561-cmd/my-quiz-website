@@ -16,25 +16,31 @@ app.add_middleware(
 CSV_FILE_PATH = os.path.join(os.path.dirname(__file__), "questions.csv")
 
 def read_questions_from_csv():
-    questions_list = []
-    if not os.path.exists(CSV_FILE_PATH):
-        return questions_list
-
-    with open(CSV_FILE_PATH, mode="r", encoding="utf-8-sig") as file:
-        csv_reader = csv.DictReader(file)
-        for row in csv_reader:
-            questions_list.append({
-                "id": int(row["id"]),
+    # ... 前面的 os.path 或 open 程式碼保持原樣 ...
+    
+    # 找到你跑迴圈解析 row 的地方，加上防呆檢查：
+    for row in reader:
+        # 💡 核心防呆：如果 id 欄位是空的，或者整行都是空的，直接跳過不處理！
+        if not row.get("id") or row["id"].strip() == "":
+            continue
+            
+        try:
+            # 你原本的解析邏輯：
+            q_data = {
+                "id": int(row["id"].strip()),
                 "question": row["question"],
                 "option_a": row["option_a"],
                 "option_b": row["option_b"],
                 "option_c": row["option_c"],
                 "option_d": row["option_d"],
                 "correct_answer": row["correct_answer"].strip().upper(),
-                "explanation": row["explanation"],
-                "category": row.get("category", "未分類")  # 讀取分類欄位，若沒有則填未分類
-            })
-    return questions_list
+                "explanation": row.get("explanation", ""),
+                "category": row.get("category", "未分類")
+            }
+            # ... 你的 append 邏輯 ...
+        except Exception as e:
+            print(f"解析某一題時發生錯誤，跳過該題。錯誤訊息: {e}")
+            continue
 
 
 @app.get("/")
