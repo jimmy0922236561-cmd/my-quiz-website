@@ -16,31 +16,44 @@ app.add_middleware(
 CSV_FILE_PATH = os.path.join(os.path.dirname(__file__), "questions.csv")
 
 def read_questions_from_csv():
-    # ... 前面的 os.path 或 open 程式碼保持原樣 ...
+    import csv
+    import os
     
-    # 找到你跑迴圈解析 row 的地方，加上防呆檢查：
-    for row in reader:
-        # 💡 核心防呆：如果 id 欄位是空的，或者整行都是空的，直接跳過不處理！
-        if not row.get("id") or row["id"].strip() == "":
-            continue
-            
-        try:
-            # 你原本的解析邏輯：
-            q_data = {
-                "id": int(row["id"].strip()),
-                "question": row["question"],
-                "option_a": row["option_a"],
-                "option_b": row["option_b"],
-                "option_c": row["option_c"],
-                "option_d": row["option_d"],
-                "correct_answer": row["correct_answer"].strip().upper(),
-                "explanation": row.get("explanation", ""),
-                "category": row.get("category", "未分類")
-            }
-            # ... 你的 append 邏輯 ...
-        except Exception as e:
-            print(f"解析某一題時發生錯誤，跳過該題。錯誤訊息: {e}")
-            continue
+    questions_list = []
+    # 請確保 questions.csv 的路徑符合你專案的結構
+    csv_path = os.path.join(os.path.dirname(__file__), "questions.csv")
+    
+    if not os.path.exists(csv_path):
+        print(f"❌ 找不到題庫檔案：{csv_path}")
+        return questions_list
+
+    with open(csv_path, mode="r", encoding="utf-8-sig") as f:
+        # 💡 在這裡正式定義了 reader！
+        reader = csv.DictReader(f)
+        
+        for row in reader:
+            # 💡 核心防呆：如果那一行的 id 是空的，直接跳過，防止 int() 轉型崩潰
+            if not row.get("id") or row["id"].strip() == "":
+                continue
+                
+            try:
+                q_data = {
+                    "id": int(row["id"].strip()),
+                    "question": row.get("question", ""),
+                    "option_a": row.get("option_a", ""),
+                    "option_b": row.get("option_b", ""),
+                    "option_c": row.get("option_c", ""),
+                    "option_d": row.get("option_d", ""),
+                    "correct_answer": row.get("correct_answer", "").strip().upper(),
+                    "explanation": row.get("explanation", ""),
+                    "category": row.get("category", "未分類").strip()
+                }
+                questions_list.append(q_data)
+            except Exception as e:
+                print(f"⚠️ 解析第 {row.get('id')} 題時發生錯誤，跳過該題。錯誤原因: {e}")
+                continue
+                
+    return questions_list
 
 
 @app.get("/")
