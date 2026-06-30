@@ -132,7 +132,6 @@
 
             <div id="explanation-box" class="hidden" style="margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 1rem; line-height: 1.5;">
                 <strong id="result-status" style="font-size: 1.1rem;"></strong>
-                
                 <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
                     <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #444;">📝 詳解 / 我的筆記：</label>
                     <textarea id="explanation-input" rows="4" style="width: 100%; box-sizing: border-box; padding: 8px; border-radius: 6px; border: 1px solid #bbb; font-family: inherit;" placeholder="此題目目前尚無筆記或詳解，點此輸入你的心得口訣..."></textarea>
@@ -174,7 +173,6 @@
     // 💡 新增的詳解區塊節點
     const explanationBox = document.getElementById("explanation-box");
     const resultStatus = document.getElementById("result-status");
-    const explanationText = document.getElementById("explanation-text");
     const explanationInput = document.getElementById("explanation-input");
     const btnSaveExplanation = document.getElementById("btn-save-explanation");
     // 1. 大廳按鈕點擊事件監聽
@@ -240,7 +238,6 @@
         explanationBox.style.backgroundColor = "";
         explanationBox.style.border = "";
         resultStatus.innerText = "";
-        explanationText.innerText = "";
         explanationInput.value = "";
 
         // D. 更新題目與選項文字
