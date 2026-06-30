@@ -218,17 +218,76 @@
     }
 
     // 4. 下一題按鈕點擊邏輯
-    document.getElementById("btn-submit").addEventListener("click", () => {
+    // 💡 升級版狀態控制：用來記錄目前是在「看解析」還是「切換下一題」
+    let isShowingResult = false;
+
+    // 4. 下一題 / 送出答案 點擊邏輯
+    document.getElementById("btn-submit").addEventListener("click", async () => {
+        const btn = document.getElementById("btn-submit");
+
+        // 狀態 A：如果目前正在顯示答案與解析，再點擊一次就是「切換到下一題」
+        if (isShowingResult) {
+            currentIndex++;
+            isShowingResult = false;
+            btn.innerText = "下一頁 / 送出";
+            btn.style.backgroundColor = "#2b5876"; // 變回原本的藍色
+            renderQuestion();
+            return;
+        }
+
+        // 狀態 B：如果是在答題狀態，點擊後要「送出答案判定」
         const selected = document.querySelector('input[name="answer"]:checked');
         if (!selected) {
             alert("請選擇一個答案！");
             return;
         }
         
-        // 這裡你可以自行加入呼叫 POST /api/submit/${currentQuizName} 的即時對錯判定邏輯
-        // 目前先單純幫同學切換到下一題
-        currentIndex++;
-        renderQuestion();
+        const userChoice = selected.value;
+        const currentQuestionId = currentQuestions[currentIndex].id;
+
+        try {
+            // 🚀 正式呼叫你後端的比對 API
+            const response = await fetch(`${API_BASE_URL}/api/submit/${currentQuizName}?question_id=${currentQuestionId}&user_choice=${userChoice}`, {
+                method: 'POST'
+            });
+
+            if (!response.ok) throw new Error("判定答案失敗");
+            const result = await response.json();
+
+            // 🎨 即時把對錯反饋顯示在畫面上
+            const labels = document.querySelectorAll('.option-label');
+            labels.forEach(label => {
+                const radio = label.querySelector('input');
+                
+                // 標示出正確答案（綠色背景）
+                if (radio.value === result.correct_answer) {
+                    label.style.backgroundColor = "#d4edda";
+                    label.style.borderColor = "#c3e6cb";
+                }
+                // 如果同學選錯，把選錯的那格標示成紅色
+                if (radio.checked && !result.is_correct) {
+                    label.style.backgroundColor = "#f8d7da";
+                    label.style.borderColor = "#f5c6cb";
+                }
+            });
+
+            // 顯示詳解區塊（直接加在題目下方，或用彈窗、文字顯示）
+            const explanationText = result.explanation ? `\n\n💡 詳解：${result.explanation}` : "\n\n💡 本題無提供詳解。";
+            
+            if (result.is_correct) {
+                alert(`🎉 答對了！ ${explanationText}`);
+            } else {
+                alert(`❌ 答錯了！正確答案是 [${result.correct_answer}] ${explanationText}`);
+            }
+
+            // 轉換按鈕狀態，準備進入下一題
+            isShowingResult = true;
+            btn.innerText = "下一題 ➡️";
+            btn.style.backgroundColor = "#28a745"; // 按鈕變成綠色提示
+
+        } catch (error) {
+            alert("送出答案時發生錯誤: " + error.message);
+        }
     });
 
     // 5. 回到大廳
