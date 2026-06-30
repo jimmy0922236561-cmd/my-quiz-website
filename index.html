@@ -129,6 +129,11 @@
                 <label class="option-label"><input type="radio" name="answer" value="C"> <span id="opt-c">選項 C</span></label>
                 <label class="option-label"><input type="radio" name="answer" value="D"> <span id="opt-d">選項 D</span></label>
             </div>
+
+            <div id="explanation-box" class="hidden" style="margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 1rem; line-height: 1.5;">
+                <strong id="result-status" style="font-size: 1.1rem;"></strong>
+                <div id="explanation-text" style="margin-top: 8px; color: #555;"></div>
+            </div>
             
             <div style="text-align: right;">
                 <button id="btn-submit" style="background-color: #2b5876; color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 6px; cursor: pointer;">下一頁 / 送出</button>
@@ -145,6 +150,7 @@
     let currentQuizName = "";
     let currentQuestions = [];
     let currentIndex = 0;
+    let isShowingResult = false; // 記錄目前是在「看解析」還是「切換下一題」
 
     // 取得 DOM 節點
     const lobbyView = document.getElementById("lobby-view");
@@ -157,6 +163,11 @@
     const optB = document.getElementById("opt-b");
     const optC = document.getElementById("opt-c");
     const optD = document.getElementById("opt-d");
+    
+    // 💡 新增的詳解區塊節點
+    const explanationBox = document.getElementById("explanation-box");
+    const resultStatus = document.getElementById("result-status");
+    const explanationText = document.getElementById("explanation-text");
 
     // 1. 大廳按鈕點擊事件監聽
     document.querySelectorAll(".lobby-btn").forEach(button => {
@@ -167,20 +178,19 @@
         });
     });
 
-    // 2. 進入測驗模式，跟後端要特定 CSV 的題目
+    // 2. 進入測驗模式
     async function startQuiz(quizName, displayName) {
         try {
             quizTitle.innerText = displayName;
-            // 切換畫面：隱藏大廳，顯示寫題區
             lobbyView.classList.add("hidden");
             quizView.classList.remove("hidden");
 
-            // 精準呼叫你剛剛改好的動態後端 API！
             const response = await fetch(`${API_BASE_URL}/api/questions/${quizName}`);
             if (!response.ok) throw new Error("找不到考卷檔案");
             
             currentQuestions = await response.json();
             currentIndex = 0;
+            isShowingResult = false;
 
             if (currentQuestions.length === 0) {
                 qText.innerText = "這份考卷目前沒有任何題目喔！";
@@ -194,7 +204,7 @@
         }
     }
 
-    // 3. 渲染當前題目的函式
+    // 3. 渲染當前題目的函式（含紅綠燈、詳解欄位徹底重置 🚀）
     function renderQuestion() {
         if (currentIndex >= currentQuestions.length) {
             alert("恭喜你寫完全部題目了！");
@@ -204,10 +214,27 @@
 
         const q = currentQuestions[currentIndex];
         
-        // 重置所有單選按鈕
-        document.querySelectorAll('input[name="answer"]').forEach(el => el.checked = false);
+        // A. 重置所有單選按鈕狀態與點擊限制
+        document.querySelectorAll('input[name="answer"]').forEach(el => {
+            el.checked = false;
+            el.disabled = false; // 恢復可選
+        });
 
-        // 更新題目與選項文字
+        // B. 徹底清除上一題留下來的紅綠燈背景顏色 🛠️
+        document.querySelectorAll('.option-label').forEach(label => {
+            label.style.backgroundColor = "";
+            label.style.borderColor = "#e0e0e0";
+            label.style.pointerEvents = "auto"; // 恢復可點擊狀態
+        });
+
+        // C. 隱藏並清空詳解顯示區 🛠️
+        explanationBox.classList.add("hidden");
+        explanationBox.style.backgroundColor = "";
+        explanationBox.style.border = "";
+        resultStatus.innerText = "";
+        explanationText.innerText = "";
+
+        // D. 更新題目與選項文字
         qCategory.innerText = `科目分類：${q.category}`;
         qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
         qText.innerText = q.question;
@@ -216,10 +243,6 @@
         optC.innerText = q.option_c;
         optD.innerText = q.option_d;
     }
-
-    // 4. 下一題按鈕點擊邏輯
-    // 💡 升級版狀態控制：用來記錄目前是在「看解析」還是「切換下一題」
-    let isShowingResult = false;
 
     // 4. 下一題 / 送出答案 點擊邏輯
     document.getElementById("btn-submit").addEventListener("click", async () => {
@@ -230,12 +253,12 @@
             currentIndex++;
             isShowingResult = false;
             btn.innerText = "下一頁 / 送出";
-            btn.style.backgroundColor = "#2b5876"; // 變回原本的藍色
-            renderQuestion();
+            btn.style.backgroundColor = "#2b5876"; 
+            renderQuestion(); // 💡 觸發重置與新題渲染
             return;
         }
 
-        // 狀態 B：如果是在答題狀態，點擊後要「送出答案判定」
+        // 狀態 B：答題狀態下點擊「送出答案」
         const selected = document.querySelector('input[name="answer"]:checked');
         if (!selected) {
             alert("請選擇一個答案！");
@@ -246,7 +269,6 @@
         const currentQuestionId = currentQuestions[currentIndex].id;
 
         try {
-            // 🚀 正式呼叫你後端的比對 API
             const response = await fetch(`${API_BASE_URL}/api/submit/${currentQuizName}?question_id=${currentQuestionId}&user_choice=${userChoice}`, {
                 method: 'POST'
             });
@@ -254,36 +276,44 @@
             if (!response.ok) throw new Error("判定答案失敗");
             const result = await response.json();
 
-            // 🎨 即時把對錯反饋顯示在畫面上
+            // 🎨 紅綠燈反饋：高亮顯示正確答案與錯誤選項
             const labels = document.querySelectorAll('.option-label');
             labels.forEach(label => {
                 const radio = label.querySelector('input');
+                radio.disabled = true; // 送出後鎖定選項不給改
+                label.style.pointerEvents = "none"; // 鎖定點擊
                 
-                // 標示出正確答案（綠色背景）
                 if (radio.value === result.correct_answer) {
-                    label.style.backgroundColor = "#d4edda";
+                    label.style.backgroundColor = "#d4edda"; // 綠色
                     label.style.borderColor = "#c3e6cb";
                 }
-                // 如果同學選錯，把選錯的那格標示成紅色
                 if (radio.checked && !result.is_correct) {
-                    label.style.backgroundColor = "#f8d7da";
+                    label.style.backgroundColor = "#f8d7da"; // 紅色
                     label.style.borderColor = "#f5c6cb";
                 }
             });
 
-            // 顯示詳解區塊（直接加在題目下方，或用彈窗、文字顯示）
-            const explanationText = result.explanation ? `\n\n💡 詳解：${result.explanation}` : "\n\n💡 本題無提供詳解。";
-            
+            // 📺 不用彈窗！直接渲染下方詳解區塊
+            explanationBox.classList.remove("hidden");
             if (result.is_correct) {
-                alert(`🎉 答對了！ ${explanationText}`);
+                explanationBox.style.backgroundColor = "#e8f5e9";
+                explanationBox.style.borderLeft = "6px solid #2e7d32";
+                resultStatus.innerText = "🎉 答對了！";
+                resultStatus.style.color = "#2e7d32";
             } else {
-                alert(`❌ 答錯了！正確答案是 [${result.correct_answer}] ${explanationText}`);
+                explanationBox.style.backgroundColor = "#ffebee";
+                explanationBox.style.borderLeft = "6px solid #c62828";
+                resultStatus.innerText = `❌ 答錯了！正確答案是 [ ${result.correct_answer} ]`;
+                resultStatus.style.color = "#c62828";
             }
+            
+            // 填入詳解文字
+            explanationText.innerText = result.explanation ? `詳解：${result.explanation}` : "本題無提供詳解。";
 
             // 轉換按鈕狀態，準備進入下一題
             isShowingResult = true;
             btn.innerText = "下一題 ➡️";
-            btn.style.backgroundColor = "#28a745"; // 按鈕變成綠色提示
+            btn.style.backgroundColor = "#28a745"; 
 
         } catch (error) {
             alert("送出答案時發生錯誤: " + error.message);
