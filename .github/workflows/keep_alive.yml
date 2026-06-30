@@ -1,0 +1,16 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    # 這裡代表每 12 分鐘，GitHub 會自動幫你執行一次這個任務
+    - cron: '*/12 * * * *'
+  workflow_dispatch: # 這行可以讓你未來在 GitHub 網頁上手動點擊執行
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Server
+        run: |
+          # 這裡就是叫 GitHub 的電腦去連線你的後端網站網址
+          curl -s https://jimmyishandsomeboy.onrender.com/
