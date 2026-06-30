@@ -132,7 +132,14 @@
 
             <div id="explanation-box" class="hidden" style="margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 1rem; line-height: 1.5;">
                 <strong id="result-status" style="font-size: 1.1rem;"></strong>
-                <div id="explanation-text" style="margin-top: 8px; color: #555;"></div>
+                
+                <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #444;">📝 詳解 / 我的筆記：</label>
+                    <textarea id="explanation-input" rows="4" style="width: 100%; box-sizing: border-box; padding: 8px; border-radius: 6px; border: 1px solid #bbb; font-family: inherit;" placeholder="此題目目前尚無筆記或詳解，點此輸入你的心得口訣..."></textarea>
+                    <div style="text-align: right; margin-top: 5px;">
+                        <button id="btn-save-explanation" style="background-color: #4e4376; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">💾 儲存修改</button>
+                    </div>
+                </div>
             </div>
             
             <div style="text-align: right;">
@@ -168,7 +175,8 @@
     const explanationBox = document.getElementById("explanation-box");
     const resultStatus = document.getElementById("result-status");
     const explanationText = document.getElementById("explanation-text");
-
+    const explanationInput = document.getElementById("explanation-input");
+    const btnSaveExplanation = document.getElementById("btn-save-explanation");
     // 1. 大廳按鈕點擊事件監聽
     document.querySelectorAll(".lobby-btn").forEach(button => {
         button.addEventListener("click", function() {
@@ -233,6 +241,7 @@
         explanationBox.style.border = "";
         resultStatus.innerText = "";
         explanationText.innerText = "";
+        explanationInput.value = "";
 
         // D. 更新題目與選項文字
         qCategory.innerText = `科目分類：${q.category}`;
@@ -307,8 +316,27 @@
                 resultStatus.style.color = "#c62828";
             }
             
-            // 填入詳解文字
-            explanationText.innerText = result.explanation ? `詳解：${result.explanation}` : "本題無提供詳解。";
+            // 💡 直接把後端的 explanation 帶進輸入框，有舊內容就顯示，沒有就變空白讓使用者輸入
+            explanationInput.value = result.explanation || "";
+
+            // 💡 綁定點擊儲存按鈕事件
+            btnSaveExplanation.onclick = async () => {
+                const updatedText = explanationInput.value;
+                try {
+                    const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ question_id: currentQuestionId, explanation: updatedText })
+                    });
+                    if (saveResponse.ok) {
+                        alert("🎉 筆記與詳解已同步更新！");
+                    } else {
+                        alert("儲存失敗");
+                    }
+                } catch (err) {
+                    alert("網路連線錯誤: " + err.message);
+                }
+            };
 
             // 轉換按鈕狀態，準備進入下一題
             isShowingResult = true;

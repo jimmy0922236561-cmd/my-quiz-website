@@ -1,9 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import csv
 import os
 
-app = FastAPI(title="我的獨立考卷分類題庫網站 API")
+app = FastAPI(title="我的獨立考卷分類題庫網站 API (整合筆記與詳解)")
 
 app.add_middleware(
     CORSMiddleware,
@@ -13,30 +14,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 💡 核心修改：動態讀取指定檔名的 CSV（預設放在 quizzes 資料夾內）
+# 💡 定義前端傳過來的資料格式
+class ExplanationUpdate(BaseModel):
+    question_id: int
+    explanation: str
+
 def read_questions_from_specific_csv(quiz_name: str):
     questions_list = []
-    
-    # 動態拼接路徑：專案根目錄/quizzes/考卷名稱.csv
     csv_path = os.path.join(os.path.dirname(__file__), "quizzes", f"{quiz_name}.csv")
-    
-    # 為了兼容你原本可能還沒建資料夾、放在根目錄的狀況，做一個雙重保險檢查
     if not os.path.exists(csv_path):
-        # 備用路徑：嘗試直接在根目錄找 考卷名稱.csv
         csv_path = os.path.join(os.path.dirname(__file__), f"{quiz_name}.csv")
-        
     if not os.path.exists(csv_path):
-        print(f"❌ 找不到該份考卷的題庫檔案：{quiz_name}.csv")
-        return None  # 回傳 None 讓外部路由丟出 404 錯誤
+        return None
 
     with open(csv_path, mode="r", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
-        
         for row in reader:
-            # 防呆：如果那一行的 id 是空的，直接跳過，防止 int() 轉型崩潰
             if not row.get("id") or row["id"].strip() == "":
                 continue
-                
             try:
                 q_data = {
                     "id": int(row["id"].strip()),
@@ -51,32 +46,35 @@ def read_questions_from_specific_csv(quiz_name: str):
                 }
                 questions_list.append(q_data)
             except Exception as e:
-                print(f"⚠️ 解析第 {row.get('id')} 題時發生錯誤，已跳過。原因: {e}")
                 continue
-                
     return questions_list
 
+def write_questions_to_csv(quiz_name: str, questions_list: list):
+    csv_path = os.path.join(os.path.dirname(__file__), "quizzes", f"{quiz_name}.csv")
+    if not os.path.exists(csv_path):
+        csv_path = os.path.join(os.path.dirname(__file__), f"{quiz_name}.csv")
+        
+    fieldnames = ["id", "question", "option_a", "option_b", "option_c", "option_d", "correct_answer", "explanation", "category"]
+    with open(csv_path, mode="w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for q in questions_list:
+            writer.writerow(q)
 
 @app.get("/")
 def home():
-    return {"message": "分頁與獨立考卷題庫 API 伺服器正在運作中！"}
+    return {"message": "整合詳解筆記 API 伺服器運作中！"}
 
-
-# 🚀 1. 獲取特定考卷的題目（支援依科目分類篩選）
-# 範例網址：/api/questions/Block7_Mid?category=消化系統免疫學 林明宏
 @app.get("/api/questions/{quiz_name}")
 async def get_questions(quiz_name: str, category: str = None):
     db_questions = read_questions_from_specific_csv(quiz_name)
-    
     if db_questions is None:
-        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
+        raise HTTPException(status_code=404, detail="找不到考卷")
     
     safe_questions = []
     for q in db_questions:
-        # 如果有指定科目，且這題的科目不符合，就跳過
         if category and q["category"] != category:
             continue
-            
         safe_questions.append({
             "id": q["id"],
             "question": q["question"],
@@ -88,45 +86,52 @@ async def get_questions(quiz_name: str, category: str = None):
         })
     return safe_questions
 
-
-# 🚀 2. 獲取特定考卷裡「目前所有的科目分類清單」（讓網頁知道這份考卷有哪些按鈕可以按）
-# 範例網址：/api/categories/Block7_Mid
-@app.get("/api/categories/{quiz_name}")
-def get_categories(quiz_name: str):
-    db_questions = read_questions_from_specific_csv(quiz_name)
-    
-    if db_questions is None:
-        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
-        
-    categories = set([q["category"] for q in db_questions if q.get("category")])
-    return list(categories)
-
-
-# 🚀 3. 送出答案並判定（需要同時指定是哪份考卷以及哪一題）
-# 範例網址：/api/submit/Block7_Mid
 @app.post("/api/submit/{quiz_name}")
 def submit_answer(quiz_name: str, question_id: int, user_choice: str):
     db_questions = read_questions_from_specific_csv(quiz_name)
-    
     if db_questions is None:
-        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
-        
+        raise HTTPException(status_code=404, detail="找不到考卷")
     target_question = None
     for q in db_questions:
         if q["id"] == question_id:
             target_question = q
             break
-            
     if not target_question:
-        raise HTTPException(status_code=404, detail="在此考卷中找不到該題號之題目")
+        raise HTTPException(status_code=404, detail="找不到該題目")
         
-    is_correct = (user_choice.upper() == target_question["correct_answer"])
-    
     return {
         "quiz_name": quiz_name,
         "question_id": question_id,
         "your_answer": user_choice.upper(),
-        "is_correct": is_correct,
+        "is_correct": (user_choice.upper() == target_question["correct_answer"]),
         "correct_answer": target_question["correct_answer"],
-        "explanation": target_question["explanation"]
+        "explanation": target_question["explanation"] # 💡 前端直接拿去呈現在文字框裡
     }
+
+# 🚀 核心新增：直接更新並複寫某題 explanation 的 API
+@app.post("/api/explanation/{quiz_name}")
+def update_question_explanation(quiz_name: str, data: ExplanationUpdate):
+    db_questions = read_questions_from_specific_csv(quiz_name)
+    if db_questions is None:
+        raise HTTPException(status_code=404, detail="找不到考卷")
+        
+    found = False
+    for q in db_questions:
+        if q["id"] == data.question_id:
+            q["explanation"] = data.explanation # 💡 直接把新的內容覆蓋在 explanation 上
+            found = True
+            break
+            
+    if not found:
+        raise HTTPException(status_code=404, detail="找不到對應題目")
+        
+    write_questions_to_csv(quiz_name, db_questions)
+    return {"status": "success", "message": "筆記/詳解已更新並寫入 CSV！"}
+
+@app.get("/api/categories/{quiz_name}")
+def get_categories(quiz_name: str):
+    db_questions = read_questions_from_specific_csv(quiz_name)
+    if db_questions is None:
+        raise HTTPException(status_code=404, detail="找不到考卷")
+    categories = set([q["category"] for q in db_questions if q.get("category")])
+    return list(categories)
