@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import csv
 import os
 
-app = FastAPI(title="我的分類題庫網站 API")
+app = FastAPI(title="我的獨立考卷分類題庫網站 API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -13,26 +13,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-CSV_FILE_PATH = os.path.join(os.path.dirname(__file__), "questions.csv")
-
-def read_questions_from_csv():
-    import csv
-    import os
-    
+# 💡 核心修改：動態讀取指定檔名的 CSV（預設放在 quizzes 資料夾內）
+def read_questions_from_specific_csv(quiz_name: str):
     questions_list = []
-    # 請確保 questions.csv 的路徑符合你專案的結構
-    csv_path = os.path.join(os.path.dirname(__file__), "questions.csv")
     
+    # 動態拼接路徑：專案根目錄/quizzes/考卷名稱.csv
+    csv_path = os.path.join(os.path.dirname(__file__), "quizzes", f"{quiz_name}.csv")
+    
+    # 為了兼容你原本可能還沒建資料夾、放在根目錄的狀況，做一個雙重保險檢查
     if not os.path.exists(csv_path):
-        print(f"❌ 找不到題庫檔案：{csv_path}")
-        return questions_list
+        # 備用路徑：嘗試直接在根目錄找 考卷名稱.csv
+        csv_path = os.path.join(os.path.dirname(__file__), f"{quiz_name}.csv")
+        
+    if not os.path.exists(csv_path):
+        print(f"❌ 找不到該份考卷的題庫檔案：{quiz_name}.csv")
+        return None  # 回傳 None 讓外部路由丟出 404 錯誤
 
     with open(csv_path, mode="r", encoding="utf-8-sig") as f:
-        # 💡 在這裡正式定義了 reader！
         reader = csv.DictReader(f)
         
         for row in reader:
-            # 💡 核心防呆：如果那一行的 id 是空的，直接跳過，防止 int() 轉型崩潰
+            # 防呆：如果那一行的 id 是空的，直接跳過，防止 int() 轉型崩潰
             if not row.get("id") or row["id"].strip() == "":
                 continue
                 
@@ -50,7 +51,7 @@ def read_questions_from_csv():
                 }
                 questions_list.append(q_data)
             except Exception as e:
-                print(f"⚠️ 解析第 {row.get('id')} 題時發生錯誤，跳過該題。錯誤原因: {e}")
+                print(f"⚠️ 解析第 {row.get('id')} 題時發生錯誤，已跳過。原因: {e}")
                 continue
                 
     return questions_list
@@ -58,17 +59,21 @@ def read_questions_from_csv():
 
 @app.get("/")
 def home():
-    return {"message": "分類題庫 API 伺服器正在運作中！"}
+    return {"message": "分頁與獨立考卷題庫 API 伺服器正在運作中！"}
 
 
-# 升級：允許前端傳入 category 參數來篩選題目（例如：/api/questions?category=解剖學）
-@app.get("/api/questions")
-async def get_questions(year: str = None, category: str = None):
-    db_questions = read_questions_from_csv()
+# 🚀 1. 獲取特定考卷的題目（支援依科目分類篩選）
+# 範例網址：/api/questions/Block7_Mid?category=消化系統免疫學 林明宏
+@app.get("/api/questions/{quiz_name}")
+async def get_questions(quiz_name: str, category: str = None):
+    db_questions = read_questions_from_specific_csv(quiz_name)
+    
+    if db_questions is None:
+        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
     
     safe_questions = []
     for q in db_questions:
-        # 如果有指定分類，且這題的分類跟指定的不一樣，就跳過它
+        # 如果有指定科目，且這題的科目不符合，就跳過
         if category and q["category"] != category:
             continue
             
@@ -84,17 +89,28 @@ async def get_questions(year: str = None, category: str = None):
     return safe_questions
 
 
-# 獲取目前所有的分類清單（讓網頁知道有哪些科目可以選）
-@app.get("/api/categories")
-def get_categories():
-    db_questions = read_questions_from_csv()
-    categories = set([q["category"] for q in db_questions]) # 取得所有不重複的分類
+# 🚀 2. 獲取特定考卷裡「目前所有的科目分類清單」（讓網頁知道這份考卷有哪些按鈕可以按）
+# 範例網址：/api/categories/Block7_Mid
+@app.get("/api/categories/{quiz_name}")
+def get_categories(quiz_name: str):
+    db_questions = read_questions_from_specific_csv(quiz_name)
+    
+    if db_questions is None:
+        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
+        
+    categories = set([q["category"] for q in db_questions if q.get("category")])
     return list(categories)
 
 
-@app.post("/api/submit")
-def submit_answer(question_id: int, user_choice: str):
-    db_questions = read_questions_from_csv()
+# 🚀 3. 送出答案並判定（需要同時指定是哪份考卷以及哪一題）
+# 範例網址：/api/submit/Block7_Mid
+@app.post("/api/submit/{quiz_name}")
+def submit_answer(quiz_name: str, question_id: int, user_choice: str):
+    db_questions = read_questions_from_specific_csv(quiz_name)
+    
+    if db_questions is None:
+        raise HTTPException(status_code=404, detail=f"找不到名為 '{quiz_name}' 的考卷檔案")
+        
     target_question = None
     for q in db_questions:
         if q["id"] == question_id:
@@ -102,11 +118,12 @@ def submit_answer(question_id: int, user_choice: str):
             break
             
     if not target_question:
-        raise HTTPException(status_code=404, detail="找不到該題目")
+        raise HTTPException(status_code=404, detail="在此考卷中找不到該題號之題目")
         
     is_correct = (user_choice.upper() == target_question["correct_answer"])
     
     return {
+        "quiz_name": quiz_name,
         "question_id": question_id,
         "your_answer": user_choice.upper(),
         "is_correct": is_correct,
