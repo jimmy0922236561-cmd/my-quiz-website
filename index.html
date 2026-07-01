@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>醫學系 Block 分類題庫系統</title>
+    <title>醫學系 Block 考古刷題神器</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
     <style>
         :root {
             --primary-color: #2b5876;
@@ -230,7 +233,6 @@
     const optD = document.getElementById("opt-d");
     const explanationBox = document.getElementById("explanation-box");
     const resultStatus = document.getElementById("result-status");
-    const explanationInput = document.getElementById("explanation-input");
     const btnSaveExplanation = document.getElementById("btn-save-explanation");
 
     // =======================================================================
@@ -377,7 +379,7 @@
         explanationBox.style.backgroundColor = "";
         explanationBox.style.border = "";
         resultStatus.innerText = "";
-        explanationInput.value = ""; 
+        quill.root.innerHTML = q.explanation || ""; 
 
         qCategory.innerText = `科目分類：${q.category}`;
         qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
@@ -450,7 +452,7 @@
             explanationInput.value = result.explanation || "";
 
             btnSaveExplanation.onclick = async () => {
-                const updatedText = explanationInput.value;
+                const updatedText = quill.root.innerHTML;
                 try {
                     const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
                         method: 'POST',
@@ -493,6 +495,21 @@
 
     document.getElementById("btn-back").addEventListener("click", goBackToCategory); // 寫題時按返回，退回科目選擇
     document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby); // 科目選擇按返回，退回大廳
+    // =======================================================================
+    // 💡 方案一第三步：初始化 Quill 編輯器
+    // =======================================================================
+    const quill = new Quill('#editor-container', {
+        modules: {
+            toolbar: [
+                [{ 'size': ['small', false, 'large', 'huge'] }], // 字體大小
+                ['bold', 'italic', 'underline'],                 // 粗體、斜體、下底線
+                [{ 'color': [] }, { 'background': [] }],          // 字體顏色與螢光筆畫重點
+                ['clean']                                        // 清除格式
+            ]
+        },
+        placeholder: '此題目目前尚無詳解，可以直接在這裡打字、畫黃色螢光筆重點...',
+        theme: 'snow'
+    });
 </script>
 
 </body>
