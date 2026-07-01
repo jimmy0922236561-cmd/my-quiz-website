@@ -219,7 +219,7 @@
             currentBlockName = this.getAttribute("data-block");
             
             // 展開年份選擇區並更新提示文字
-            selectedBlockHint.innerText = `🎯 已選擇：${this.innerText.strip()}`;
+            selectedBlockHint.innerText = `🎯 已選擇：${this.innerText.trim()}`;
             yearSelectionZone.classList.remove("hidden");
         });
     });
