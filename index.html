@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>醫學系 Block 分類題庫系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
     <style>
         :root {
             --primary-color: #2b5876;
@@ -184,9 +186,11 @@
             <div id="explanation-box" class="hidden" style="margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 1rem; line-height: 1.5;">
                 <strong id="result-status" style="font-size: 1.1rem;"></strong>
                 <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #444;">📝 詳解 / 我的筆記：</label>
-                    <textarea id="explanation-input" rows="4" style="width: 100%; box-sizing: border-box; padding: 8px; border-radius: 6px; border: 1px solid #bbb; font-family: inherit;" placeholder="此題目目前尚無筆記或詳解，點此輸入你的心得口訣..."></textarea>
-                    <div style="text-align: right; margin-top: 5px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #444;">📝 詳解 / 我的筆記 (支援 Word 塗色與螢光筆功能)：</label>
+                    
+                    <div id="editor-container" style="height: 150px; background: #fff; border: 1px solid #bbb; border-radius: 4px;"></div>
+                    
+                    <div style="text-align: right; margin-top: 10px;">
                         <button id="btn-save-explanation" style="background-color: #4e4376; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">💾 儲存修改</button>
                     </div>
                 </div>
@@ -210,7 +214,23 @@
     let currentQuestions = [];
     let currentIndex = 0;
     let isShowingResult = false;
-
+    let quill; // 💡 先在這裡宣告變數名稱，讓全網頁的 function 都認得它
+    window.onload = function() {
+        
+        // 💡 在這裡正式初始化 Quill（這時候 HTML 的 #editor-container 絕對已經存在了，不會報錯！）
+        quill = new Quill('#editor-container', {
+            modules: {
+                toolbar: [
+                    [{ 'size': ['small', false, 'large', 'huge'] }], 
+                    ['bold', 'italic', 'underline'],                 
+                    [{ 'color': [] }, { 'background': [] }],          
+                    ['clean']                                        
+                ]
+            },
+            placeholder: '此題目目前尚無詳解，可以直接在這裡打字、畫黃色螢光筆重點...',
+            theme: 'snow'
+        });
+    };
     // 取得 DOM 節點
     const lobbyView = document.getElementById("lobby-view");
     const yearSelectionZone = document.getElementById("year-selection-zone"); // 💡 新增
@@ -230,7 +250,6 @@
     const optD = document.getElementById("opt-d");
     const explanationBox = document.getElementById("explanation-box");
     const resultStatus = document.getElementById("result-status");
-    const explanationInput = document.getElementById("explanation-input");
     const btnSaveExplanation = document.getElementById("btn-save-explanation");
 
     // =======================================================================
@@ -377,7 +396,10 @@
         explanationBox.style.backgroundColor = "";
         explanationBox.style.border = "";
         resultStatus.innerText = "";
-        explanationInput.value = ""; 
+        if (quill) {
+        quill.root.innerHTML = q.explanation || "";
+    }
+} 
 
         qCategory.innerText = `科目分類：${q.category}`;
         qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
@@ -450,7 +472,7 @@
             explanationInput.value = result.explanation || "";
 
             btnSaveExplanation.onclick = async () => {
-                const updatedText = explanationInput.value;
+                const updatedText = quill.root.innerHTML;
                 try {
                     const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
                         method: 'POST',
