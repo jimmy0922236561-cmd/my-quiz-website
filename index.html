@@ -205,7 +205,21 @@
 <script>
     // 💡 你的超帥後端網址
     const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com"; 
-
+    // =======================================================================
+    // 💡 方案一第三步：初始化 Quill 編輯器
+    // =======================================================================
+    const quill = new Quill('#editor-container', {
+        modules: {
+            toolbar: [
+                [{ 'size': ['small', false, 'large', 'huge'] }], // 字體大小
+                ['bold', 'italic', 'underline'],                 // 粗體、斜體、下底線
+                [{ 'color': [] }, { 'background': [] }],          // 字體顏色與螢光筆畫重點
+                ['clean']                                        // 清除格式
+            ]
+        },
+        placeholder: '此題目目前尚無詳解，可以直接在這裡打字、畫黃色螢光筆重點...',
+        theme: 'snow'
+    });
     // 全域變數狀態儲存
     let currentBlockName = "";          // 💡 新增：儲存目前選了哪個 Block (如 Block7)
     let currentQuizName = "";           // 儲存組裝後的完整考卷檔名 (如 Block7_113_Final)
@@ -495,21 +509,7 @@
 
     document.getElementById("btn-back").addEventListener("click", goBackToCategory); // 寫題時按返回，退回科目選擇
     document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby); // 科目選擇按返回，退回大廳
-    // =======================================================================
-    // 💡 方案一第三步：初始化 Quill 編輯器
-    // =======================================================================
-    const quill = new Quill('#editor-container', {
-        modules: {
-            toolbar: [
-                [{ 'size': ['small', false, 'large', 'huge'] }], // 字體大小
-                ['bold', 'italic', 'underline'],                 // 粗體、斜體、下底線
-                [{ 'color': [] }, { 'background': [] }],          // 字體顏色與螢光筆畫重點
-                ['clean']                                        // 清除格式
-            ]
-        },
-        placeholder: '此題目目前尚無詳解，可以直接在這裡打字、畫黃色螢光筆重點...',
-        theme: 'snow'
-    });
+    
 </script>
 
 </body>
