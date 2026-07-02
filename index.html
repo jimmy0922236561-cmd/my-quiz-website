@@ -239,313 +239,311 @@
 
 <script>
     // 💡 你的超帥後端網址
-    const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com"; 
+const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com"; 
 
-    // 全域變數狀態儲存
-    let currentBlockName = "";          // 💡 新增：儲存目前選了哪個 Block (如 Block7)
-    let currentQuizName = "";           // 儲存組裝後的完整考卷檔名 (如 Block7_113_Final)
-    let currentSelectedCategory = null; // 記錄當前選了哪個科目
-    let currentQuestions = [];
-    let currentIndex = 0;
-    let isShowingResult = false;
+// 全域變數狀態儲存
+let currentBlockName = "";          
+let currentQuizName = "";           
+let currentSelectedCategory = null; 
+let currentQuestions = [];
+let currentIndex = 0;
+let isShowingResult = false;
 
-    // 取得 DOM 節點
-    const lobbyView = document.getElementById("lobby-view");
-    const yearSelectionZone = document.getElementById("year-selection-zone"); // 💡 新增
-    const selectedBlockHint = document.getElementById("selected-block-hint");   // 💡 新增
-    const categoryView = document.getElementById("category-view"); 
-    const categoryList = document.getElementById("category-list"); 
-    const categoryQuizTitle = document.getElementById("category-quiz-title"); 
-    
-    const quizView = document.getElementById("quiz-view");
-    const quizTitle = document.getElementById("quiz-title");
-    const qCategory = document.getElementById("q-category");
-    const qProgress = document.getElementById("q-progress");
-    const qText = document.getElementById("q-text");
-    const optA = document.getElementById("opt-a");
-    const optB = document.getElementById("opt-b");
-    const optC = document.getElementById("opt-c");
-    const optD = document.getElementById("opt-d");
-    const explanationBox = document.getElementById("explanation-box");
-    const resultStatus = document.getElementById("result-status");
-    const explanationInput = document.getElementById("explanation-input");
-    const btnSaveExplanation = document.getElementById("btn-save-explanation");
+// 取得 DOM 節點
+const lobbyView = document.getElementById("lobby-view");
+const yearSelectionZone = document.getElementById("year-selection-zone"); 
+const selectedBlockHint = document.getElementById("selected-block-hint");   
+const categoryView = document.getElementById("category-view"); 
+const categoryList = document.getElementById("category-list"); 
+const categoryQuizTitle = document.getElementById("category-quiz-title"); 
 
-    // =======================================================================
-    // 💡 1. 第一層控制：點擊 Block 大按鈕 (調整監聽目標為 .block-select-btn)
-    // =======================================================================
-    document.querySelectorAll(".block-select-btn").forEach(button => {
-        button.addEventListener("click", function() {
-            // 切換按鈕透明度外觀效果
-            document.querySelectorAll(".block-select-btn").forEach(b => b.style.opacity = "0.6");
-            this.style.opacity = "1";
+const quizView = document.getElementById("quiz-view");
+const quizTitle = document.getElementById("quiz-title");
+const qCategory = document.getElementById("q-category");
+const qProgress = document.getElementById("q-progress");
+const qText = document.getElementById("q-text");
+const optA = document.getElementById("opt-a");
+const optB = document.getElementById("opt-b");
+const optC = document.getElementById("opt-c");
+const optD = document.getElementById("opt-d");
+const explanationBox = document.getElementById("explanation-box");
+const resultStatus = document.getElementById("result-status");
+const btnSaveExplanation = document.getElementById("btn-save-explanation");
 
-            // 紀錄目前選擇的 Block 名字（例如 "Block7"）
-            currentBlockName = this.getAttribute("data-block");
-            
-            // 展開年份選擇區並更新提示文字
-            selectedBlockHint.innerText = `🎯 已選擇：${this.innerText.trim()}`;
-            yearSelectionZone.classList.remove("hidden");
-        });
+// =======================================================================
+// 💡 1. 第一層控制：點擊 Block 大按鈕
+// =======================================================================
+document.querySelectorAll(".block-select-btn").forEach(button => {
+    button.addEventListener("click", function() {
+        document.querySelectorAll(".block-select-btn").forEach(b => b.style.opacity = "0.6");
+        this.style.opacity = "1";
+        currentBlockName = this.getAttribute("data-block");
+        selectedBlockHint.innerText = `🎯 已選擇：${this.innerText.trim()}`;
+        yearSelectionZone.classList.remove("hidden");
     });
+});
 
-    // =======================================================================
-    // 💡 2. 第二層控制：點擊具體年份按鈕 (拼裝完整考卷名稱)
-    // =======================================================================
-    document.querySelectorAll(".year-btn").forEach(button => {
-        button.addEventListener("click", function() {
-            const selectedYear = this.getAttribute("data-year"); // 例如 "113_Final"
-            const yearDisplayName = this.innerText; // 例如 "113年 期末考"
-
-            // 🚀 核心大合體：拼裝出對應後端 CSV 的完整檔名！
-            currentQuizName = `${currentBlockName}_${selectedYear}`; // 拼出來變成 "Block7_113_Final"
-            const fullDisplayName = `${currentBlockName} ${yearDisplayName}`; // 畫面顯示用的漂亮抬頭
-            
-            // 呼叫科目分類中繼站
-            openCategorySelection(currentQuizName, fullDisplayName);
-        });
+// =======================================================================
+// 💡 2. 第二層控制：點擊具體年份按鈕
+// =======================================================================
+document.querySelectorAll(".year-btn").forEach(button => {
+    button.addEventListener("click", function() {
+        const selectedYear = this.getAttribute("data-year"); 
+        const yearDisplayName = this.innerText; 
+        currentQuizName = `${currentBlockName}_${selectedYear}`; 
+        const fullDisplayName = `${currentBlockName} ${yearDisplayName}`; 
+        openCategorySelection(currentQuizName, fullDisplayName);
     });
+});
 
-    // 🚀 2. 新增：向後端抓取該考卷有哪些科目分類，並做成按鈕
-    async function openCategorySelection(quizName, displayName) {
-        try {
-            categoryQuizTitle.innerText = displayName;
-            categoryList.innerHTML = "<p style='text-align:center;'>正在載入科目分類...</p>";
-            
-            // 切換畫面
-            lobbyView.classList.add("hidden");
-            categoryView.classList.remove("hidden");
-            quizView.classList.add("hidden");
-
-            // 呼叫你原本就寫好的 /api/categories/{quiz_name} API！
-            const response = await fetch(`${API_BASE_URL}/api/categories/${quizName}`);
-            if (!response.ok) throw new Error("無法取得科目分類");
-            const categories = await response.json();
-
-            // 清空並重新渲染按鈕
-            categoryList.innerHTML = "";
-
-            // 貼心功能：加上一個「全部科目混刷」的超級按鈕
-            const allBtn = document.createElement("button");
-            allBtn.innerText = "📚 全科目隨機混刷";
-            allBtn.className = "lobby-btn"; // 沿用大廳按鈕漂亮的漸層樣式
-            allBtn.style.padding = "15px";
-            allBtn.onclick = () => startQuiz(quizName, displayName, null);
-            categoryList.appendChild(allBtn);
-
-            // 動態生成每個老師/科目的個別按鈕
-            categories.forEach(cat => {
-                if(!cat) return;
-                const btn = document.createElement("button");
-                btn.innerText = `📖 ${cat}`;
-                btn.style.cssText = "background-color: #ffffff; color: #2b5876; border: 2px solid #2b5876; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left; transition: all 0.2s;";
-                
-                // 滑鼠懸停效果
-                btn.onmouseenter = () => { btn.style.backgroundColor = "#f0f4f8"; };
-                btn.onmouseleave = () => { btn.style.backgroundColor = "#ffffff"; };
-                
-                // 點擊後正式進入該科目的測驗
-                btn.onclick = () => startQuiz(quizName, `${displayName} - ${cat}`, cat);
-                categoryList.appendChild(btn);
-            });
-
-        } catch (error) {
-            alert("讀取分類失敗: " + error.message);
-            goBackToLobby();
-        }
-    }
-
-    // 3. 正式進入測驗模式（支援傳入 category 參數）
-    async function startQuiz(quizName, displayName, category) {
-        try {
-            quizTitle.innerText = displayName;
-            currentSelectedCategory = category; // 紀錄當前選擇的科目
-
-            categoryView.classList.add("hidden");
-            quizView.classList.remove("hidden");
-
-            // 💡 如果有選特定科目，網址後面就會自動帶上 ?category=xxxx
-            let url = `${API_BASE_URL}/api/questions/${quizName}`;
-            if (category) {
-                url += `?category=${encodeURIComponent(category)}`;
-            }
-
-            const response = await fetch(url);
-            if (!response.ok) throw new Error("找不到考卷檔案");
-            
-            currentQuestions = await response.json();
-            currentIndex = 0;
-            isShowingResult = false;
-
-            if (currentQuestions.length === 0) {
-                qText.innerText = "這個科目目前沒有任何題目喔！";
-                return;
-            }
-
-            renderQuestion();
-        } catch (error) {
-            alert("讀取題庫失敗: " + error.message);
-            // 失敗的話退回科目選擇區
-            quizView.classList.add("hidden");
-            categoryView.classList.remove("hidden");
-        }
-    }
-
-    // 4. 渲染當前題目的函式 (維持原樣)
-    function renderQuestion() {
-        const expBox = document.getElementById("explanation-box");
-        if (expBox) {
-        expBox.removeAttribute("open");
-        }
-        if (currentIndex >= currentQuestions.length) {
-            const expBox = document.getElementById("explanation-box");
-            alert("恭喜你寫完全部題目了！");
-            // 寫完該科目後，退回該考卷的科目選擇區
-            quizView.classList.add("hidden");
-            categoryView.classList.remove("hidden");
-            return;
-        }
-
-        const q = currentQuestions[currentIndex];
-        document.querySelectorAll('input[name="answer"]').forEach(el => {
-            el.checked = false;
-            el.disabled = false;
-        });
-        document.querySelectorAll('.option-label').forEach(label => {
-            label.style.backgroundColor = "";
-            label.style.borderColor = "#e0e0e0";
-            label.style.pointerEvents = "auto";
-        });
-        explanationBox.classList.add("hidden");
-        explanationBox.style.backgroundColor = "";
-        explanationBox.style.border = "";
-        resultStatus.innerText = "";
-        explanationInput.value = ""; 
-
-        qCategory.innerText = `科目分類：${q.category}`;
-        qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
-        qText.innerText = q.question;
-        optA.innerText = q.option_a;
-        optB.innerText = q.option_b;
-        optC.innerText = q.option_c;
-        optD.innerText = q.option_d;
-    }
-
-    // 5. 下一題 / 送出答案 點擊邏輯 (維持原樣)
-    document.getElementById("btn-submit").addEventListener("click", async () => {
-        const btn = document.getElementById("btn-submit");
-
-        if (isShowingResult) {
-            currentIndex++;
-            isShowingResult = false;
-            btn.innerText = "下一頁 / 送出";
-            btn.style.backgroundColor = "#2b5876"; 
-            renderQuestion();
-            return;
-        }
-
-        const selected = document.querySelector('input[name="answer"]:checked');
-        if (!selected) {
-            alert("請選擇一個答案！");
-            return;
-        }
+// 向後端抓取該考卷有哪些科目分類
+async function openCategorySelection(quizName, displayName) {
+    try {
+        categoryQuizTitle.innerText = displayName;
+        categoryList.innerHTML = "<p style='text-align:center;'>正在載入科目分類...</p>";
         
-        const userChoice = selected.value;
-        const currentQuestionId = currentQuestions[currentIndex].id;
-
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/submit/${currentQuizName}?question_id=${currentQuestionId}&user_choice=${userChoice}`, {
-                method: 'POST'
-            });
-
-            if (!response.ok) throw new Error("判定答案失敗");
-            const result = await response.json();
-
-            const labels = document.querySelectorAll('.option-label');
-            labels.forEach(label => {
-                const radio = label.querySelector('input');
-                radio.disabled = true;
-                label.style.pointerEvents = "none";
-                
-                if (radio.value === result.correct_answer) {
-                    label.style.backgroundColor = "#d4edda";
-                    label.style.borderColor = "#c3e6cb";
-                }
-                if (radio.checked && !result.is_correct) {
-                    label.style.backgroundColor = "#f8d7da";
-                    label.style.borderColor = "#f5c6cb";
-                }
-            });
-
-            explanationBox.classList.remove("hidden");
-            if (result.is_correct) {
-                explanationBox.style.backgroundColor = "#e8f5e9";
-                explanationBox.style.borderLeft = "6px solid #2e7d32";
-                resultStatus.innerText = "🎉 答對了！";
-                resultStatus.style.color = "#2e7d32";
-            } else {
-                explanationBox.style.backgroundColor = "#ffebee";
-                explanationBox.style.borderLeft = "6px solid #c62828";
-                resultStatus.innerText = `❌ 答錯了！正確答案是 [ ${result.correct_answer} ]`;
-                resultStatus.style.color = "#c62828";
-            }
-            
-            explanationInput.value = result.explanation || "";
-            const aiZone = document.getElementById("ai-explanation-zone");
-            const aiText = document.getElementById("ai-explanation-text");
-            if (aiZone && aiText) {
-                if (q.ai_explanation && q.ai_explanation.trim() !== "") {
-                    aiText.innerText = q.ai_explanation; 
-                    aiZone.style.display = "block"; // 有 AI 詳解就讓綠色看板亮起來
-                 } else {
-                     aiZone.style.display = "none";  // 沒資料就優雅隱藏，不留死白
-        }
-    }
-
-            btnSaveExplanation.onclick = async () => {
-                const updatedText = explanationInput.value;
-                try {
-                    const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ question_id: currentQuestionId, explanation: updatedText })
-                    });
-                    if (saveResponse.ok) {
-                        alert("🎉 筆記與詳解已同步更新！");
-                    } else {
-                        alert("儲存失敗");
-                    }
-                } catch (err) {
-                    alert("網路連線錯誤: " + err.message);
-                }
-            };
-
-            isShowingResult = true;
-            btn.innerText = "下一題 ➡️";
-            btn.style.backgroundColor = "#28a745";
-
-        } catch (error) {
-            alert("送出答案時發生錯誤: " + error.message);
-        }
-    });
-
-    // 6. 返回功能導航控制
-    function goBackToLobby() {
-        quizView.classList.add("hidden");
-        categoryView.classList.add("hidden");
-        lobbyView.classList.remove("hidden");
-        currentQuestions = [];
-    }
-    
-    function goBackToCategory() {
-        quizView.classList.add("hidden");
         lobbyView.classList.add("hidden");
         categoryView.classList.remove("hidden");
-        currentQuestions = [];
+        quizView.classList.add("hidden");
+
+        const response = await fetch(`${API_BASE_URL}/api/categories/${quizName}`);
+        if (!response.ok) throw new Error("無法取得科目分類");
+        const categories = await response.json();
+
+        categoryList.innerHTML = "";
+
+        // 全科目隨機混刷按鈕
+        const allBtn = document.createElement("button");
+        allBtn.innerText = "📚 全科目隨機混刷";
+        allBtn.className = "lobby-btn"; 
+        allBtn.style.padding = "15px";
+        allBtn.onclick = () => startQuiz(quizName, displayName, null);
+        categoryList.appendChild(allBtn);
+
+        // 個別科目按鈕
+        categories.forEach(cat => {
+            if(!cat) return;
+            const btn = document.createElement("button");
+            btn.innerText = `📖 ${cat}`;
+            btn.style.cssText = "background-color: #ffffff; color: #2b5876; border: 2px solid #2b5876; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left; transition: all 0.2s;";
+            
+            btn.onmouseenter = () => { btn.style.backgroundColor = "#f0f4f8"; };
+            btn.onmouseleave = () => { btn.style.backgroundColor = "#ffffff"; };
+            btn.onclick = () => startQuiz(quizName, `${displayName} - ${cat}`, cat);
+            categoryList.appendChild(btn);
+        });
+
+    } catch (error) {
+        alert("讀取分類失敗: " + error.message);
+        goBackToLobby();
+    }
+}
+
+// 正式進入測驗模式
+async function startQuiz(quizName, displayName, category) {
+    try {
+        quizTitle.innerText = displayName;
+        currentSelectedCategory = category; 
+
+        categoryView.classList.add("hidden");
+        quizView.classList.remove("hidden");
+
+        let url = `${API_BASE_URL}/api/questions/${quizName}`;
+        if (category) {
+            url += `?category=${encodeURIComponent(category)}`;
+        }
+
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("找不到考卷檔案");
+        
+        currentQuestions = await response.json();
+        currentIndex = 0;
+        isShowingResult = false;
+
+        if (currentQuestions.length === 0) {
+            qText.innerText = "這個科目目前沒有任何題目喔！";
+            return;
+        }
+
+        renderQuestion();
+    } catch (error) {
+        alert("讀取題庫失敗: " + error.message);
+        quizView.classList.add("hidden");
+        categoryView.classList.remove("hidden");
+    }
+}
+
+// 4. 渲染當前題目的函式（全面加上安全防禦）
+function renderQuestion() {
+    // 💡 安全防禦 1：切換新題目時，自動將收折蓋子闔上
+    const expBox = document.getElementById("explanation-box");
+    if (expBox) {
+        expBox.removeAttribute("open");
     }
 
-    document.getElementById("btn-back").addEventListener("click", goBackToCategory); // 寫題時按返回，退回科目選擇
-    document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby); // 科目選擇按返回，退回大廳
+    // 💡 安全防禦 2：檢查是否超越最後一題
+    if (currentIndex >= currentQuestions.length) {
+        alert("恭喜你寫完全部題目了！");
+        quizView.classList.add("hidden");
+        categoryView.classList.remove("hidden");
+        return;
+    }
+
+    const q = currentQuestions[currentIndex];
+    if (!q) return;
+
+    // 清除單選鈕狀態
+    document.querySelectorAll('input[name="answer"]').forEach(el => {
+        el.checked = false;
+        el.disabled = false;
+    });
+    document.querySelectorAll('.option-label').forEach(label => {
+        label.style.backgroundColor = "";
+        label.style.borderColor = "#e0e0e0";
+        label.style.pointerEvents = "auto";
+    });
+
+    // 初始化詳解顯示元件
+    if (explanationBox) explanationBox.classList.add("hidden");
+    if (resultStatus) resultStatus.innerText = "";
+    
+    // 💡 安全防禦 3：加上保護，找不到一律跳過，絕對不崩潰
+    const explanationInput = document.getElementById("explanation-input");
+    if (explanationInput) {
+        explanationInput.value = ""; 
+    }
+
+    // 塞入題目資訊
+    qCategory.innerText = `科目分類：${q.category}`;
+    qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
+    qText.innerText = q.question;
+    optA.innerText = q.option_a;
+    optB.innerText = q.option_b;
+    optC.innerText = q.option_c;
+    optD.innerText = q.option_d;
+}
+
+// 5. 下一題 / 送出答案 點擊邏輯
+document.getElementById("btn-submit").addEventListener("click", async () => {
+    const btn = document.getElementById("btn-submit");
+
+    if (isShowingResult) {
+        currentIndex++;
+        isShowingResult = false;
+        btn.innerText = "下一頁 / 送出";
+        btn.style.backgroundColor = "#2b5876"; 
+        renderQuestion();
+        return;
+    }
+
+    const selected = document.querySelector('input[name="answer"]:checked');
+    if (!selected) {
+        alert("請選擇一個答案！");
+        return;
+    }
+    
+    const userChoice = selected.value;
+    const q = currentQuestions[currentIndex]; // 💡 補坑：宣告當前題目變數
+    const currentQuestionId = q.id;
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/submit/${currentQuizName}?question_id=${currentQuestionId}&user_choice=${userChoice}`, {
+            method: 'POST'
+        });
+
+        if (!response.ok) throw new Error("判定答案失敗");
+        const result = await response.json();
+
+        const labels = document.querySelectorAll('.option-label');
+        labels.forEach(label => {
+            const radio = label.querySelector('input');
+            radio.disabled = true;
+            label.style.pointerEvents = "none";
+            
+            if (radio.value === result.correct_answer) {
+                label.style.backgroundColor = "#d4edda";
+                label.style.borderColor = "#c3e6cb";
+            }
+            if (radio.checked && !result.is_correct) {
+                label.style.backgroundColor = "#f8d7da";
+                label.style.borderColor = "#f5c6cb";
+            }
+        });
+
+        if (explanationBox) explanationBox.classList.remove("hidden");
+        
+        if (result.is_correct) {
+            resultStatus.innerText = "🎉 答對了！";
+            resultStatus.style.color = "#2e7d32";
+        } else {
+            resultStatus.innerText = `❌ 答錯了！正確答案是 [ ${result.correct_answer} ]`;
+            resultStatus.style.color = "#c62828";
+        }
+        
+        // 💡 安全防禦 4：寫入班級手動心得筆記
+        const explanationInput = document.getElementById("explanation-input");
+        if (explanationInput) {
+            explanationInput.value = result.explanation || "";
+        }
+
+        // 💡 倒資料：填入昨天寫好的 AI 自動詳解資訊
+        const aiZone = document.getElementById("ai-explanation-zone");
+        const aiText = document.getElementById("ai-explanation-text");
+        if (aiZone && aiText) {
+            if (q.ai_explanation && q.ai_explanation.trim() !== "") {
+                aiText.innerText = q.ai_explanation; 
+                aiZone.style.display = "block"; 
+             } else {
+                aiZone.style.display = "none";  
+            }
+        }
+
+        btnSaveExplanation.onclick = async () => {
+            const explanationInputReal = document.getElementById("explanation-input");
+            if (!explanationInputReal) return;
+            const updatedText = explanationInputReal.value;
+            try {
+                const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question_id: currentQuestionId, explanation: updatedText })
+                });
+                if (saveResponse.ok) {
+                    alert("🎉 筆記與詳解已同步更新！");
+                } else {
+                    alert("儲存失敗");
+                }
+            } catch (err) {
+                alert("網路連線錯誤: " + err.message);
+            }
+        };
+
+        isShowingResult = true;
+        btn.innerText = "下一題 ➡️";
+        btn.style.backgroundColor = "#28a745";
+
+    } catch (error) {
+        alert("送出答案時發生錯誤: " + error.message);
+    }
+});
+
+// 6. 返回功能導航控制
+function goBackToLobby() {
+    quizView.classList.add("hidden");
+    categoryView.classList.add("hidden");
+    lobbyView.classList.remove("hidden");
+    currentQuestions = [];
+}
+
+function goBackToCategory() {
+    quizView.classList.add("hidden");
+    lobbyView.classList.add("hidden");
+    categoryView.classList.remove("hidden");
+    currentQuestions = [];
+}
+
+document.getElementById("btn-back").addEventListener("click", goBackToCategory); 
+document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
 </script>
 
 </body>
