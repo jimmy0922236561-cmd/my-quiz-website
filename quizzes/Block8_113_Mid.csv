@@ -1,97 +1,838 @@
-﻿id,question,option_a,option_b,option_c,option_d,correct_answer,explanation,category
-"1","Which of the following experimental methods would allow simultaneous observation of both migration and bone resorption activity in individual osteoclasts?","(A) MicroCT","(B) Bone resorption assay","(C) Two Photone Time-Lapse recoding","(D) Immunohistochemistry staining (IHC)","C","（Ｃ） 選 項 如 老 師 講 義 所 述 ， 可 以 觀 察 蝕 骨 細 胞 的 移 動 能 力 (migration) ， 在 時 間 的 移 進之 下 ， 綠 色 細 胞 就 是 蝕 骨 細 胞 ， 後 面 黑 色 的 路 徑 就 是 它 走 的 路 ， 同 時 因 為 它 的 移 動 能力 就 是 來 自 分 解 骨 質 的 活 動 度 (bone resorption activity) ， 故 為 正 確 選 項","骨科學研究 鄭琮霖"
-"2","Which of the following statements about the role of macrophages in the muscle wound healing process is incorrect?","(A) In the early stage of healing, they strengthen the local defense around the wound to prevent infection.","(B) They clear dead cells and tissues near the wound to control inflammation.","(C) They produce angiogenic signals to enhance neovascularization near the wound.","(D) They continuously maintain wound inflammation during healing to promote cell proliferation.","D","(D) 選 項 錯 誤。 因 為 在 正 常 的 癒 合 過 程 中 ， macrophages 會 在 初 期 促 進 發 炎 ， 但 之 後需 「 resolve inflammation 」 來 進 入 修 復 階 段 ， 若 持 續 維 持 發 炎 反 而 會 導 致 chronic wound 。","肌肉骨骼免疫學 李英瑞"
-"3","Regarding the correct sequence of the four major stages of wound healing: ① Proliferation phase ② Hemostasis phase ③ Maturation phase ④ Inflammation phase, which is correct?","(A) ①②③④","(B) ②①④③","(C) ②④①③","(D) ④②①③","C","","肌肉骨骼免疫學 李英瑞"
-"4","Rheumatoid arthritis (RA) is a disease driven by multiple inflammatory factors (cytokines). In current clinical practice, what is the most commonly used therapeutic approach?","(A) Anti-IL-17 therapy, drugs such as Secukinumab","(B) Anti-TNF- α therapy, drugs such as Certolizumab","(C) Anti-IL-1 β therapy, drugs such as Anakinra","(D) Anti-IFN- β therapy, drugs such as Anifrolumab","B","較 常 用 且 有 效 治 療 RA 的 生 物 製 劑 是 TNF-alpha blocker （老 師 上 課 有 說 不 是 IL-1 receptor antagonist 因 為 臨 床 是 治 療 效 果 不 佳）","肌肉骨骼免疫學 李英瑞"
-"5","Which of the following is right","(A) Osteoprotegrin (OPG) can inhibit proliferation of osteoclast and induce the apoptosis of osteoclast","(B) Bisphosphonates may lead to the side effect of leg cramps","(C) Selective estrogen receptor modulator can reduce hip fracture rate","(D) Bisphosphonates increase the risk of throboembolism","A","(A) 正 確 (B) SERM and Teriparatide lead to the side effect of leg cramps (C) Denosumab can reduce hip fracture rate (D) SERM increase the risk of thromboembolism (venous)","骨質疏鬆藥物之藥物學 陳崇桓"
-"6","Which of the following is right","(A) It takes more than one year to achieve the effect of fracture reduction by anti-osteoporotic medication","(B) Anti-sclerostin antibody can activate T cell lead to acute phase reaction","(C) Selective estrogen receptor modulator can have drug holiday","(D) Teriparatide cannot be use in those who have myocardial infarction or stroke","A","(A) (B) 急 性 期 反 應 ( 急 性 期 反 應 ) 是 靜 脈 注 射 型 雙 磷 酸 鹽 的 已 知 常 見 副 作 用 抗 硬 化 素 抗 體 (Romosozumab) 的 禁 忌 症 是 與 心 血 管 風 險 相 關 （一 年 內 曾 發 生 心 肌 梗塞 或 中 風） ， 並 未 提 及 它 會 透 過 活 化 T 細 胞 導 致 急 性 期 反 應 。 (C)SERM 、 雌 激 素 和 RANKL 抗 體 在 完 全 停 止 治 療 後 ， 都 會 有 骨 量 快 速 流 失 的 情 形 ( 骨 量 也 會 有 快 速 流 失 的 情 形 ) 。 藥 物 假 期 (drug holiday) 僅 被 提 及 適 用 於 雙 磷 酸 鹽 藥物 。 (D) 「一 年 內 曾 發 生 心 肌 梗 塞 或 中 風」 的 禁 忌 症 適 用 於 抗 硬 化 素 抗 體 (Romosozumab) 。","骨質疏鬆藥物之藥物學 陳崇桓"
-"7","Which of the following is right","(A) Teriparatide cannot be use in those who have poor renal function","(B) Prolong anti-sclerostin antibody will lead to the risk of osteosarcoma","(C) Oral bisphosphonates is absorbed well with a absorption rate about 90%","(D) Denosumab can efficiently reduce hip fracture","D","(A)Bisphosphonate (CrCl<30ml/min) (B)Teriparatide (C)<1%","骨質疏鬆藥物之藥物學 陳崇桓"
-"8","What is the “Elbow terrible triad”? Which of the following are included?","(A)Radial head fracture","(B) Coronoid fracture","(C)Elbow dislocation","(D) All of the above","D","","肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌"
-"9","Shohei Ohtani experiences right shoulder pain after pitching. Which of the following is NOT correct?","(A) A SLAP lesion (Superior Labrum Anterior to Posterior) is a possible cause in this case.","(B)Injury to the biceps tendon does not need to be considered.","(C) In such cases, a rotator cuff injury should also be considered.","(D) An MRI can be performed to evaluate possible soft tissue injuries.","B","(A) 一 些 上 舉 的 動 作 如 投 球、 排 球、 大 動 作 拉 扯、 甩 出、 舉 手 過 肩 的 運 動 ， 附 著 在 關 節 唇 上 的 二 頭 肌 長 頭 肌 腱 會 不 斷 拉 扯 周 圍 組 織 ， 產 生 關 節 唇 的 損 傷。 Biceps long tendon 穿 進 關 節 囊 後 會 附 著 在 labrum 之 上 緣 ， 正 常 穩 定 時 是 一 個 很 好 的 固 定 點 ， 能 讓 投 手 投 出 快 速 球。 但 當 關 節 唇 損 傷 不 穩 定 時 ， 投 球 的 動 作 會 產 生 很 大 往 前 甩 動 的 力 量 ， 造 成 labrum 從 glenoid 上 鬆 弛 ， 使 得 動 作 不 穩 定 ， 也 會 產 生 疼 痛。 (B) (C) 旋 轉 肌 是 走 在 acromion 和 humerus 之 間 ， 中 間 的 bursa 是 在 骨 頭 其 他 軟 組 織 之間 的 緩 衝 組 織 ， 像 是 墊 片 ， 所 以 旋 轉 肌 斷 掉 的 症 狀 是 疼 痛、 活 動 受 限 ， 手 舉 不 起 來 或舉 起 來 沒 有 力 氣。 (D)MRI ： 針 對 軟 組 織 損 傷 的 檢 查 ， 例 如 ： 旋 轉 肌 損 傷","肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌"
-"10","Dr. Lu, an orthopedic surgeon, experiences shoulder pain after performing arthroscopic surgery. What factors should be considered when performing a differential diagnosis of shoulder pain? a. X-ray examination b. Income c. Shoulder physical exam d. Age e. Occupation f. Shoulder anatomy g. History of injury","(A) a 、 c 、 d 、 e 、 f 、 g","(B) a 、 b 、 c 、 d 、 e 、 f","(C) a 、 c 、 d","(D) a 、 b 、 c 、 e 、 f","A","不 用 問 薪 水 💰 底 下 是 老 師 DD 的 thinking pathway 可 以 參 考 問 了 什 麼 考 量 了 什 麼 職 業 也 很 重 要 可 以 判 斷 可 能 造 成 受 傷 的 原 因","肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌"
-"11","About ankle and foot, which one is correct?","(A) The peroneal longus tendon attaches to 5th metatarsal base and everts the foot","(B) The cause of Muller Weiss disease is osteonecrosis of navicular bone. The one character of this disease is comma-shape deformity of navicular bone.","(C) The talus is the keystone of transverse arch of foot.","(D) In the syndesmosis, the tibia is concave and fibular is convex here. The anterior talofibular ligament and posterior talofibular ligament are part of the syndesmosis ligaments.","B","A) B) C) D) 是 Anterior inferior tibiofibular ligament 才 對。","足踝關節之骨科功能解剖學 陳姝蓉"
-"12","About the four compartments of leg, which one is wrong?","(A) The posterior tibialis muscle belongs to deep posterior compartment, and is related to adult-acquired flatfoot deformity","(B) The major movement of muscles in anterior compartment is ankle dorsiflexion.","(C) There are deep peroneal nerve, peroneal longus and brevis in the lateral compartment. The major movement of these muscles is foot eversion.","(D) The plantaris is in superficial posterior compartment and it is a weak ankle plantarflexor.","C","此 表 格 必 考 (C)superficial peroneal nerve","足踝關節之骨科功能解剖學 陳姝蓉"
-"13","Which one is wrong?","(A) Near 50% of blood supply to talus is from posterior tibial artery, which is in the deep posterior compartment.","(B) The common complication of displaced talar neck fracture is osteonecrosis of talus,","(C) The anterior talofibular ligament is most easily injured ligament when patients suffer from ankle sprain, and anterior drawer test is often positive while performing physical examination. Repeated ankle sprains may lead to lateral instability of ankle joint.","(D) The negative Thompson test means Achilles tendon rupture. Under this condition, patient totally can’t walk therefore.","D","Thompson test (+) 才 是 Achilles tendon rupture.","足踝關節之骨科功能解剖學 陳姝蓉"
-"14","Observe the histological features. What is the correct combination of tissue species and section orientation in the figure?","(A) cross sectioned cardiac muscle","(B) longitudinal sectioned smooth muscle","(C) cross sectioned smooth muscle","(D) cross sectioned skeletal muscle","D","","組織學-肌腱、韌帶、肌肉 陳永佳"
-"15","What is the structure indicated by the black arrow?","(A) epimysium","(B) perimysium","(C) endomysium","(D) adipocyte","C","此 題 有 申 覆 說 圖 並 沒 有 附 倍 率 或 者 個 原 始 為 縮 放 的 圖 ， 因 此 無 法 判 斷 粉 紅 色 的 區 域是 fasicle( 被 perimysium 包 圍 ) 還 是 muscle fiber( 被 endomysium 包 圍 ) ， 建 議 (B)(C) 都 給分。 老 師 回 覆 ： 如 果 是 更 小 倍 率 的 fascicle 裡 面 含 有 很 多 muscle fiber ， 則 粉 紅 色 內 部 會 有其 他 細 胞 核 存 在 ， 而 不 會 像 題 目 附 圖 上 這 樣 所 有 細 胞 核 都 在 邊 上 ， 維 持 原 答 案 (C) 。 (B) perimysium( 老 師 附 的 圖 ) ─ 粉 紅 色 內 部 & 邊 緣 都 有 細 胞 核 (C) endomysium ─ 只 有 邊 緣 有 細 胞 核","組織學-肌腱、韌帶、肌肉 陳永佳, 肌肉骨骼系統病理學 賴薇安"
-"16","A 20-year-old man with known history of multiple hereditary exostosis syndrome presented with increasing pain in the knee. The patient received surgical removal for the tumor. The tumor had a cartilage cap over 2 cm in thickness. Microscopically, the tumor is partially covered by a layer of perichondrium. However, increased cellularity of the cartilagenous component with nuclear atypia is noted. Which of the following descriptions about this tumor is correct?","(A) This tumor-associated syndrome is inherited in an autosomal recessive manner.","(B) It is associated with loss of function of FGF1 or FGF2 gene.","(C) The tumor tends to arise from epiphysis of long bone.","(D) The tumor may have undergone malignant transformation to chondrosarcoma.","D","Osteochondroma 是 最 常 見 的 良 性 骨 腫 瘤 ， 好 發 於 四 肢 骨 的 metaphysis ， 特 別 容 易 發生 在 膝 蓋 附 近 ， 但 是 cap of cartilage 厚 度 通 常 為 1cm ， 超 過 則 很 可 能 發 展 成 chondrosarcoma 。 Osteochondroma 的 透 明 軟 骨 層 最 外 圍 會 被 軟 骨 膜 包 覆 ， 細 胞 密 度低 （ no increase in cellularity ） ， 而 良 性 的 osteochondroma 可 以 分 化 成 惡 性 的 chondrosarcoma ， 特 徵 是 軟 骨 層 厚 度 > 1cm 。 Osteochondroma: Chondrosarcoma:","肌肉骨骼系統病理學 賴薇安"
-"17","A 48 year-old man presented with chronic pain and swelling of the right 1st meta-tarsophalangeal joint not responding to medical treatment. Surgery is performed to relieve his symptom. Which of the following description is incorrect? (Left: H&E, light microscopy; Right: polarized ligh microscopy)","(A) The H&E slide shows tophi composed of pale-staining amorphous material rimmed by histiocytes.","(B) Needle-shaped crystals are seen through polarized light.","(C) The microscopic findings suggest calcium pyrophosphate crystal deposition disease.","(D) Hyperuricemia plays a role in pathogenesis of the disease.","C","1st MTP, 顯 微 鏡 下 淡 染、 沒 有 特 殊 形 狀、 偏 光 鏡 下 看 到 針 狀 結 晶 ， 可 判 斷 為 痛 風 痛 風 成 分 是 Sodium urate monohydrate 單 鈉 鹽 尿 酸 結 晶 故 選 C","肌肉骨骼系統病理學 賴薇安"
-"18","Regarding rhabdomyosarcoma, which of the following statements is less accurate?","(A) The tumor commonly occurs in the head and neck, limbs, and genitourinary system.","(B) Based on its morphology, it can be further classified into embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, pleomorphic rhabdomyosarcoma, and spindle cell/sclerotic rhabdomyosarcoma.","(C) Rhabdomyosarcoma may grow near mucosal structures (such as the bladder or vagina) and protrude outward in a grape-like fashion, known as sarcoma botryoides.","(D) Pathologically, the diagnosis of rhabdomyosarcoma can only be made by detecting PAX3-FOXO1 and PAX7-FOXO1 gene variations.","D","(A) 正 確 ， 如 下 圖 embryonal type (B)(C) 正 確 ， 如 下 圖 的 sarcoma botryoides 和 subtypes 介 紹 (D) 錯 誤 ， PAX3-FOXO1 和 PAX7-FOXO1 gene variations 僅 適 用 於 alveolar type ， 其 他type 則 無 此 表 現","肌肉骨骼系統病理學 賴薇安"
-"19","Which of the following statements about the structure of spine is CORRECT?","(A) The facet joint is composed of superior and inferior facet, and all superior facets face medially, and the inferior facets face laterally.","(B) If you want to check the neural foramen of the cervical spine, you can use the lateral view and oblique view of the cervical spine x-ray.","(C) Vertebral body spans from the anterior column to the posterior column of spine.","(D) In AP view of thoracic spine x-ray, the tracheal bifurcation can be used to estimate the position of T7.","送分","(A) 不 是 所 有 的 facets 都 面 對 一 樣 的 方 向 (B) Cervical spine x-ray Oblique view 可 以 看 到 神 經 孔 ( 如 下 圖 ) 針 對 Lateral view ， 有 同 學 提 出 申 覆 : 「老 師 上 課 時 有 提 醒 , 要 評 估 頸 椎 的 神 經 孔 ， 應 使用 頸 椎 斜 位 X 光 ; 如 需 更 細 部 的 神 經 根 或 軟 組 織 信 息 ， 則 以 CT 或 MRI 為 首 選。 此 題 目 (B)lat.view 檢 查 神 經 孔 的 敘 述 並 不 準 確 ， 請 老 師 斟 酌 給 分 ， 謝 謝 老 師。」 老 師 回 覆 「如 同 學 所 述 ， 若 要 更 細 部 的 檢 查 可 利 用 CT 或 MRI ， 並 不 代 表 cervical spine lateral view 無 法 檢 查 神 經 孔。」 (C) 如 下 圖 ， Vertebral body 的 前 ⅔ 在 Anterior column ， 後 ⅓ 在 middle column ， 並 沒 有跨 到 posterior column 。 (D) 下 左 圖 可 以 看 到 thoracic spine x ray AP view ， 藍 框 框 起 來 的 地 方 為 Tracheal Bifurcation ， 大 約 在 T4 位 置 ， 如 果 往 下 算 ， 確 實 可 以 estimate 出 T7 的 位 置。 有 同 學 提 出 申 覆 : 「已 知 tracheal bifurcation 為 T4-T5 之 高 度 ， 則 可 依 此 推 算 鄰 近 之 T7位 置 ， 因 選 項 用 字 ""estimate"",(from Oxford dictionary: ""to form an idea of the cost, size, value, etc. of something, but without calculating it exactly"") 認 為 語 意 上 並 不 是詢 問 ""exactly"" ， 故 希 望 老 師 開 放 D 選 項 ， 謝 謝 老 師。」 老 師 回 覆 同 意 D 也 給 分 : 「 B, D 皆 同 意 給 分」","脊椎之骨科功能解剖學 高志銘, 肌肉骨骼影像解剖學(3)-脊椎 高志銘"
-"20","Which statement about lumbar spine x-rays is INCORRECT?","(A) In an oblique view, a Scotty Dog's tail fracture can be seen in the patient with a fracture of the transverse process of spine.","(B) The structure pointed by the arrow in the X-ray below is the facet joint of lumbar spine.","(C) The structure pointed by the arrows in these two X-ray pictures above is the pedicle of the lumbar spine.","(D) Oblique view is often used to detect pars fractures, and the pars interarticularis is located in the neck of the Scotty Dog in x-ray.","A","(A) Scotty Dog’s tail = superior articular process of opposite side","肌肉骨骼影像解剖學(3)-脊椎 高志銘"
-"21","Which of the following statements about the radiologic anatomy of spine is INCORRECT?","(A) The structure pointed by the arrow in the T2-weighted image of MRI below is the spinal cord.","(B) In the T2-weighted image of MRI, the intervertebral disc and fat tissue both appear as a relative high signal intensity","(C) Atlantodens interval (ADI) in cervical spine x-ray lateral view can be used to detect the dislocation between C1 and C2.","(D) The normal thickness of the pre-vertebral soft tissue in the lateral view of cervical spine x-ray should be less than 22mm at C6 level","A","（ A ） 箭 頭 所 指 為 cauda equina （ B ） （ C ） （ D ）","肌肉骨骼影像解剖學(3)-脊椎 高志銘"
-"22","Which of the following statements about the structure of spine is NOT true?","(A)Dens is part of the Atlantoaxial joint, which is responsible for cervical rotation.","(B)Pain-sensitive nerve endings supply the joint capsule, which is the main source of pain in osteoarthritis.","(C)Nutrients of the intervertebral disc are mainly obtained by passive diffusion from the end plate.","(D)The ligamentum flavum is located in the posterior column of the spine and the main function is to limit motion of spine during flexion.","D","(A) (B) (C) (D)","脊椎之骨科功能解剖學 高志銘"
-"23","Which part of spine does NOT belong to the posterior ligamentous complex?","(A) ligamentum flavum","(B) interspinous ligament","(C) posterior longitudinal ligament","(D) facet joint capsule","C","Post. ligamentous complex includes ligamentum flavum, interspinous lig., facet capsule, and supraspinous lig.","肌肉骨骼影像解剖學(3)-脊椎 高志銘"
-"24","Which of the following statements about the structure of spine is CORRECT?","(A) The spinal process of C7 is on the center of gravity of the spinal column in normal adult.","(B) The articular surface of the facet joint is covered with fibrocartilage, and like other joint, there is synovial fluid presented in facet joints.","(C) Nucleus pulposus has large proportion of proteoglycan and collagen, and the main function is to resist axial loads.","(D) All cervical vertebrae have vertebral body located at the front of the spine.","C","","脊椎之骨科功能解剖學 高志銘"
-"25","In skeletal muscle, what components form a triad?","(A) One T-tubule and one terminal cisterna of sarcoplasmic reticulum","(B) One T-tubule and two thick filaments","(C) Two terminal cisternae of sarcoplasmic reticulum flanking one T-tubule","(D) Two caveolae and one smooth endoplasmic reticulum","C","The complex of the T tubule and the two adjacent terminal cisternae is called a “Triad.”","組織學-肌腱、韌帶、肌肉 陳永佳"
-"26","Which of the following statements about different muscle types is FALSE?","(A) smooth muscle fibers have regeneration ability","(B) skeletal muscle cells can communicate via gap junctions","(C) skeletal muscle contraction is initiated by calcium binding to troponin C","(D) cardiac muscle fibers are striated and involuntary","B","這 題 是 將 BM112 題 目 稍 作 調 整 同 時 老 師 上 課 有 特 別 提 示 三 種 肌 肉 比 較 的 表 格 需 要 做 記 憶","組織學-肌腱、韌帶、肌肉 陳永佳"
-"27","Which of the following statements concerning smooth muscle is TRUE?","(A) The fibers have dense bodies and well-developed smooth ER","(B) Smooth muscle fibers contain sarcomeres arranged like skeletal muscle","(C) Nuclei are located at the periphery of the cell","(D) Thick filaments are bipolar and cross-striated","A","下 表 請 熟 記 (A) 只 有 平 滑 肌 有 Dense body 這 項 Special feature (B) 骨 骼 肌 心 肌 才 有 Sacromere (C) 平 滑 肌 細 胞 的 核 在 Central (D) 平 滑 肌 的 粗 肌 絲 排 列 為 Side-polar 沒 有 Striated","組織學-肌腱、韌帶、肌肉 陳永佳"
-"28","Which type of skeletal muscle fibers have the largest diameter and fatigue most easily?","(A) Slow oxidative fibers","(B) Fast oxidative fibers","(C) Intermediate fibers","(D) Fast glycolytic (anaerobic) fibers","D","螢 光 筆 處","組織學-肌腱、韌帶、肌肉 陳永佳"
-"29","According to the sliding filament theory, which event occurs first during cross-bridge cycling in skeletal muscle contraction?","(A) Hydrolysis of ATP re-cocks the myosin head to its high-energy state","(B) Myosin head pivots, pulling the actin filament toward the center of the sarcomere (power stroke)","(C) ATP binds to the myosin head, causing detachment from actin","(D) Myosin head binds to the exposed active site on actin after tropomyosin moves away","D","(A) 3. Bending (B) 4. Force generation (C) 2. Release (D) 1. Attachment","組織學-肌腱、韌帶、肌肉 陳永佳"
-"30","In a skeletal muscle fiber at maximal relaxation, which of the following is TRUE about the sarcomere structure?","(A) Z lines are no longer visible under the microscope","(B) The A band becomes longer than in contraction","(C) The H zone and I band are at their widest extent","(D) Thick and thin filaments completely overlap","C","(A) Z line 不 論 收 縮、 放 鬆 皆 可 見 (B) A band 不 論 收 縮、 放 鬆 皆 等 長 (C) 正 確 (D) 放 鬆 時 並 不 重 疊","組織學-肌腱、韌帶、肌肉 陳永佳"
-"31","Which of the following statements about cranium development is incorrect?","(A)Most parts originate from the neural crest","(B)Parts of the neurocranium are formed by the fusion of multiple cartilages","(C)The neurocranium is the main protective structure for the brain","(D)The third and fourth pharyngeal arches contribute to the formation of the cartilaginous viscerocranium","D","(A) 正 確。 軟 骨 條 的 胚 層 來 源 notochord 為 界 ， notochord 以 上 ( 頭 ) 由 neural crest 發 育 ，以 下 來 自 paraxial mesoderm 。 (B) 是 ， 以 蝶 骨 為 例 ： hypophyseal cartilage 形 成 body ， optic capsule 則 形 成 wings (C)neurocranium 保 護 腦 ， viscerocranium 形 成 臉、 鼻 腔、 口 腔 (D)cartilaginous viscerocranium 主 要 發 育 自 第 一、 二 對 咽 弓","肌肉骨骼胚胎學 施耀翔"
-"32","Which of the following is derived from endochondral ossification?","(A)Frontal bone","(B)Mandibular bone","(C) Clavicle","(D) Skull base","送分","如 圖 所 示 ， 經 由 軟 骨 內 骨 化 發 育 而 來 的 有 顱 底、 脊 椎、 骨 盆 及 長 骨 ， 但 鎖 骨 也 有 部 分（兩 端） 是 經 由 軟 骨 內 骨 化 而 來 ， 故 經 申 覆 後 也 為 正 確 答 案。 申 覆 ： 如 同 學 所 言 , 在 胚 胎 發 育 的 講 義 內 第 14 頁 的 確 提 到 鎖 骨 屬 於 軟 骨 內 骨 化 , 但 同 時 也 有 下 列 這 句 話 : Initially intramembranous ossification, then forms cartilages at both ends 意 思 是 說 鎖 骨 是 膜 內 骨 化 先 開 始 , 爾 後 才 有 兩 端 的 軟 骨 內 骨 化 進 行。 所 以 在 同 份 講 義 的 12 頁 開 始 就 有 將 其 定 義 為 膜 內 骨 化 , 因 為 其 初 級 骨 化 中 心 是 膜 內 骨 化。 但 由 於 英 文 題 幹 命 名 不 精 確 , derived from 詞 的 確 不 具 有 時 間 性 , 因 此 答 案 CD 都 給 分。 但 注 意 的 是 第 三 位 同 學 的 申 覆 內 容 有 誤 : ""Clavicle 發 育 時 開 始 先 進 行 膜 內 骨 化 , 之 後 在 兩 端 形 成 軟 骨 內 骨 化。 因 此 本 題 要 選 出 哪 個 構 造 是 源 自 於 軟 骨 內 骨 化 , 答 案 應 該 選 (C)Clavicle"" 如 同 學 所 言 , 鎖 骨 既 有 膜 內 骨 化 , 次 級 骨 化 中 心 又 是 軟 骨 內 骨 化。 因 此 如 果 要 選 純 然 的 軟 骨 內 骨 化 , 則 應 該 是 選 擇 答 案 (D)Skull base ( 顱 底 ) 較 無 爭 議","肌肉骨骼胚胎學 施耀翔"
-"33","The greater cornu of the hyoid bone develops from which pharyngeal arch?","(A) First pharyngeal arch","(B) Second pharyngeal arch","(C) Third pharyngeal arch","(D) Fourth pharyngeal arch","C","如 下 圖 所 示 ， 舌 骨 大 角 由 第 三 咽 弓 發 育 而 來。","肌肉骨骼胚胎學 施耀翔"
-"34","From a microscopic perspective of bone structure, which of the following contains Haversian canals?","(A) Woven bone","(B) Cancellous bone","(C) Soft callus","(D) Laminar bone","D","Haversian system 只 在 成 熟 的 Laminar bone 中 可 見 ， Spongy/Trabecular/Cancellous bone 也 是 成 熟 骨 ， 但 是 並 沒 有 Haversian system 。","骨骼組織學 施耀翔"
-"35","In the process of endochondral ossification of long bones, where is the secondary ossification center located?","(A) Diaphysis","(B) Epiphysis","(C) Metaphysis","(D) Endosteum","B","","骨骼組織學 施耀翔"
-"36","Osteoclasts are most commonly found in which region?","(A) Zone of cell proliferation in the epiphyseal plate","(B) Zone of hypertrophy and calcification in the epiphyseal plate","(C) Zone of reserve cartilage in the epiphyseal plate","(D) Osteogenic zone in the epiphyseal plate","D","此 題 為 國 考 題。 在 osteogenic zone ， 小 血 管 與骨 前 驅 細 胞會 侵 入 已 被 鈣 化 的 軟 骨 基 質。 Osteoclasts 會 負 責 移 除 鈣 化 軟 骨 與 初 生 骨 組 織 ， 為 新 的 骨 形 成 鋪 路。","骨骼組織學 施耀翔"
-"37","Which of the following involves the participation of cartilage?","(A) Intramembranous ossification","(B) Development of osteons","(C) Direct bone healing","(D) Indirect bone healing","D","這 題 是 國 考 題 (A) Intramembranous ossification 和 cartilage 無 關 ， Endochondral ossification 才 有 (B) (C) 也 和 cartilage 無 關 (D) 形 成 soft callus 時 就 是 fibrocartilage","骨骼組織學 施耀翔"
-"38","Which type of collagen fiber is most abundant in the extracellular matrix of hard bone tissue?","(A) Type I","(B) Type II","(C) Type III","(D) Type IV","A","","骨骼組織學 施耀翔"
-"39","Where is the primary ossification center located during endochondral ossification of a long bone?","(A) Diaphysis","(B) Epiphysis","(C) Metaphysis","(D) Endosteum","A","依 照 Endochondral ossification 圖 示 所 示 ， primary ossification center 位 於 diaphysis","骨骼組織學 施耀翔"
-"40","About spondylolisthesis , which one is wrong for the cause of its type ?","(A)Fracture of the neural arch in the pars articularis <-> traumatic","(B)Excessive removal of bone following spinal decompression <-> iatrogenic","(C)Weakening of the neural arch due to disorders of the bone <-> pathological","(D)Degenerative changes in the facet joints <-> degenerative","A","A 應 修 正 ： Fracture of the neural arch “other than” the pars articularis <-> traumatic","脊椎創傷及重建 卓進益"
-"41","Which one below is wrong?","(A)Angulation greater than 20 degrees and translation of 3.5 mm or more is unstable","(B)wedge fracture with rupture of the interspinous ligaments is unstable, because the anterior and the posterior column are disrupted","(C)A burst fracture is unstable, because at least the anterior and middle column are disrupted","(D)simple anterior wedge fracture or just sprain of the posterior ligaments is also an unstable injury","D","","脊椎創傷及重建 卓進益"
-"42","Which one below is right?","(A)For upper thorasic spine ( T1-T8): Axial loading will result in compressive forces anteriorly and tensile forces posteriorly","(B)for burst fracture: if there is no neurological symptoms with relative stable spine column, conservative non-surgical care is not suitable.","(C)A chance fracture is a three column injury with a vertical orientation of the fracture","(D)Osteomyelitis, discitis, or active systemic infection are suitable for cementoplasty","A","(B)for burst fracture: if there is no neurological symptoms with relative stable spine column, conservative non-surgical care is not suitable. (C)A chance fracture is a three column injury with a vertical horizontal orientation of the fracture (D)Osteomyelitis, discitis, or active systemic infection are not suitable for cementoplasty","脊椎創傷及重建 卓進益"
-"43","Which of the following statements is correct?","(A) Pelvic lateral compression injury causes external rotation of the ipsilateral hemipelvis.","(B) Reverse oblique type intertrochanteric fracture is considered stable.","(C) Dislocation of the hip joint or femoral neck fracture can disrupt the blood supply and lead to femoral head osteonecrosis.","(D) The femoral head crescent sign indicates an irregular femoral contour.","C","(A) Lateral compression 會 造 成 internal rotation of the ipsilateral hemipelvis 才 對 (B) Reverse oblique type 的 intertrochanteric fracture 是 unstable (C) 發 生 femoral neck fracture 或 hip dislocation 會 容 易 導 致 med. circumflex a. 受 損造 成 股 骨 頭 壞 死 (D) 看 得 到 Crescent sign 代 表 股 骨 頭 的 輪 廓 還 是 圓 的 沒 塌 掉","肌肉骨骼影像解剖學(2)-下肢 許家豪"
-"44","Which of the following statements is incorrect?","(A) Patella alta most commonly results from patellar tendon rupture.","(B) Tibial plateau fracture Schatzker Type II is a lateral plateau split-depression fracture.","(C) The blood supply of the femoral head mainly comes from the artery of the ligamentum teres.","(D) Hoffa fracture is a coronal plane fracture of the femoral condyle, often overlooked on imaging and typically requiring surgical fixation.","C","Femoral head 的 血 液 供 應 大 部 分 是 由 下 面 往 上 ， 不 是 來 自 artery of the ligamentum teres","肌肉骨骼影像解剖學(2)-下肢 許家豪"
-"45","Which of the following statements is correct?","(A) Femoral shaft fractures are preferably treated with plate fixation rather than intramedullary nails.","(B) In imaging features of osteoarthritis, chondrocalcinosis is the main diagnostic criterion.","(C) Femoral neck fractures, Garden type III and IV, are generally recommended for open reduction and internal fixation (ORIF).","(D) Unstable intertrochanteric fractures of the femur should be treated with a proximal femoral nail (PFN).","D","(A) shaft fracture 最 好 還 是 用 髓 內 釘 (B) OA characteristic: joint space narrowing, osteophyte, subchondral sclerosis, subchondral cyst (C) garden type 3,4 因 為 發 生 移 位 ， 發 生 缺 血 骨 壞 死 的 機 率 高 ， 不 建 議 做 ORIF (D) unstable type 用 髓 內 釘 固 定 效 果 比 較 好","肌肉骨骼影像解剖學(2)-下肢 許家豪"
-"46","Which description is wrong?","(A) Joint x-ray study usually has two views, including AP and lateral projections. There are also special views for evaluation of a specific portion.","(B) MRI has better tissue contrast. It is better to use MRI to detect pulmonary or upper abdominal visceral contusion or laceration when rib fracture is noted after trauma.","(C) If we can’t detect the dorsal foot pulse in a patient with traumatic lower extremity fracture, arterial injury is suspected. The next step is to arrange CT angiography for further evaluation.","(D) Arthrogram is an image study of joints after injection of contrast agent into a joint. It can be used in X-ray, CT, and MRI.","B","MRI 較 長 的 檢 查 時 間 ， 因 此 病 人 狀 態 差、 意 識 不 佳、 緊 急 入 院 時 ， 首 選 處 置 絕 對 不 會是 MRI ， 可 能 躺 著 躺 著 就 沒 呼 吸 了","基礎影像學原理 蔡蕙怡"
-"47","While reading skeletal x-ray films, we need to check A, B, C, S, which are:","(A) Bone texture, cortical bone, soft tissue and joint space, skeletal alignment","(B) Skeletal alignment, soft tissue, joint space, bone texture","(C) Soft tissue, joint space, bone texture, cortical bone","(D) soft tissue and joint space, intraskeletal vessels, skeletal alignment, bone texture","A","","基礎影像學原理 蔡蕙怡"
-"48","The following image demonstrates an examination of the quadriceps muscle. Which imaging modality is being used?","(A) X-ray","(B) CT","(C) MRI","(D)Ultrasound","D","送 分 題 ， 圖 片 是 超 音 波 影 像 ， 透 過 聲 波 反 射 將 肌 纖 維 一 束 束 成 像 出 來。 雖 然 MR 也 可以 呈 現 肌 纖 維 走 向 ， 但 比 較 不 會 像 超 音 波 這 樣 黑 白 相 間。 左 圖 是 rotator cuff T2W 的 影 像 ； 右 圖 是 rotator cuff 超 音 波 影 像 比 較 一 下 肌 肉 纖 維 的 樣 子 ， 差 很 多 吧 ～","基礎影像學原理 蔡蕙怡"
-"49","Which of the following statements about osteonecrosis of the femoral head (ONFH) is correct?","(A) MRI has low sensitivity for early ONFH and is not recommended as the first-line imaging modality.","(B) In bone scintigraphy, the typical crescent sign can be seen in ONFH.","(C) HIV infection does not increase the risk of ONFH.","(D) Major risk factors include long-term use of corticosteroids, alcohol abuse, or hematologic disorders.","D","(A)MRI 具 有 高 敏 感 性 (B) 在 X 光 下 才 會 呈 現 crescent sign (C)HIV 也 會 增 加 ONFH 風 險","骨質疏鬆與骨壞死 林松彥"
-"50","Which of the following statements is incorrect?","(A) Smoking and alcohol consumption are risk factors for osteoporosis.","(B) When a patient has internal fixation in L1–L4 vertebrae or both hips, bone density can be measured by DXA at the distal one-third of the dominant forearm.","(C) A 65-year-old woman was incidentally found to have an old compression fracture of L1 during a health check. DXA showed bilateral hip T-scores of -1.2/-1.3 and lumbar spine T-score of -2.2. This woman is still considered to have osteoporosis.","(D) In premenopausal women, a Z-score ≤ -2.0 requires careful evaluation for secondary osteoporosis caused by disease or medication.","B","要 測 非 慣 用 手 的 橈 骨 ⅓ 喔 ， 這 hen 簡 單 吧","骨質疏鬆與骨壞死 林松彥"
-"51","Which of the following statements is correct?","(A) Bone remodeling requires coupling between osteoclasts and osteoblasts.","(B) Daily intake of 1200 mg of calcium in osteoporosis patients reduces fracture risk.","(C) Native vitamin D3 must be converted by the kidney to 25(OH)D3 to increase its activity.","(D) Vitamin D status is usually assessed by serum 1,25-dihydroxyvitamin D [1,25(OH) ₂ D] levels.","A","(A) 可 以 看 到 bone remodeling cycle 中 osteoclast 和 osteoblast 都 有 參 與 (B) 補 充 鈣 不 會 減 少 骨 折 風 險 （ C ） 是 在 肝 臟 轉 換 （ D ）","骨質疏鬆與骨壞死 林松彥"
-"52","What type of cell is indicated by the arrow?","(A) Osteocyte","(B) Osteoblast","(C) Osteoclast","(D) Fibroblast","C","大 且 多 核 ， H&E stain 呈 現 嗜 酸 性 染 色 ， 位 於 骨 表 面 凹 陷 處 (Howship’s lacunae)","組織學與實驗-骨骼與軟骨 施耀翔、吳敏瑜"
-"53","What structure is indicated by the red dashed line?","(A) Endosteum","(B) Periosteum","(C) Perichondrium","(D) Territorial matrix","C","前 方 構 造 為 氣 管 （後 方 扁 掉 的 是 食 道） ， 含 有 由 hyaline cartilage 構 成 的 C 型 軟 骨 ； 而 紅線 圈 起 來 的 部 分 為 包 圍 cartilage 的 構 造 ： perichondrium 。","組織學與實驗-骨骼與軟骨 施耀翔、吳敏瑜"
-"54","What is the purpose of the grip strength test in animal studies?","(A) To assess reflex and pain response","(B) To evaluate memory and learning","(C) To measure motor coordination","(D) To assess muscular strength and neuromuscular function","D","實 驗 只 考 一 題 但 給 了 四 點 考 訓 :) 因 為 考 古 偏 少 ， 附 上 跟 這 題 相 關 的 考 訓 ： 肌 肉 損 傷 動 物 模 式 的 種 類、 進 行 方 式、 評 估方 式 肌 肉 損 傷 動 物 模 式 整 理 種 類 Rota-rod test Grip strength test 圖 示 目 的 評 估 動 作 協 調 能 力 (motor coordination) ， 包 括 1. 肌 肉 功 能 2. 小 腦、 平 衡 與 協 調 主 要 測 試 前 肢 ， 評 估 ： 1. 肌 力 (muscle strength) 2. 神 經 肌 肉 功 能 (neuromuscular function) 3. 神 經 傳 導 與 肌 肉 收 縮 能 力 流 程 將 小 鼠 放 在 會 持 續 旋 轉 的 圓 柱 棒 上， 觀 察 其 掉 落 時 間 1. 讓 小 鼠 的 前 肢 抓 住 一 條 薄 線 或水 平 桿 2. 研 究 者 輕 拉 動 物 尾 部 ， 使 其 試著 保 持 抓 握 評 估 方 式 ● 掉 落 時 間 (Latency to fall) ○ 經 過 訓 練 ， 動 物 須 能 在 棒上 至 少 維 持 1 分 鐘 ○ 越 快 掉 落 ， 表 示 其 運 動 協調 或 肌 力 越 差 ● 掉 落 比 例 (Percent animals falling) ● 掉 落 比 例 (Percentage of animals losing the catching reflex) ● 肌 力 變 差 的 小 鼠 會 因 為 抓 不 牢而 提 早 掉 落","生理學實驗 薛元碩"
-"55","Which statement best describes the general nature of bone tissue?","(A) It is an inert structure made of solid calcium.","(B) It is a static organ primarily for storage.","(C) It is a living, dynamic, and vascular tissue.","(D) It is composed solely of compact bone.","C","(A) 錯 在 「 inert 」 與 「 solid calcium 」。 骨 頭 主 要 礦 物 質 是 hydroxyapatite (Ca ₁₀ (PO ₄ ) ₆ (OH) ₂ ) ， 不 是 純 鈣 ， 也 不 是 惰 性。 它 具 有 代 謝 活 性 與 血 管 結 構。 (B) 雖 然 骨 有 儲 存 鈣、 磷 的 功 能 ， 但 非 「靜 態 器 官」 ， 它 持 續 進 行 remodeling 。 (D) 骨 頭 除 了 compact bone ， 還 有 spongy/trabecular bone ， 兩 者 共 同 構 成 骨 結 構。","骨與軟骨生理學 薛元碩"
-"56","Which type of bone consists of parallel layers of collagen fibers and is found in all mature bones?","(A) Woven bone","(B) Compact bone","(C) Lamellar bone","(D) Trabecular bone","C","板 層 骨 (lamellar bone) 具 有 平 行 排 列 的 膠 原 纖 維 (A) 編 織 骨 (woven bone) 的 膠 原 纖 維 隨 機 排 列 並 交 織 在 一 起 (B) 緻 密 骨 (compact bone) 由 同 心 環 狀 排 列 的 骨 板 組 成。 (D) 骨 小 梁 (trabecular bone) 由 呈 不 規 則 網 狀 結 構 的 骨 板 組 成。","骨與軟骨生理學 薛元碩"
-"57","What is the main function of the periosteum in bone?","(A) Fat storage","(B) Muscle contraction","(C) Bone growth and repair","(D) Osteoclast anchoring","C","骨 骼 生 長 與 修 復 (Bone Growth and Repair): 骨 膜 內 含 骨 原 前 驅 細 胞 (osteoprogenitor cells) ， 這 些 細 胞 能 夠 分 化 成 成 骨 細 胞 (osteoblasts) 。 骨 膜 的 內 層 （或 稱 造 骨 層 /cambium layer ） 含 有 造 骨 幹 細 胞 ， 當 骨 頭 需 要 修 復 時 ， 這 些 幹 細胞 會 從 此 處 釋 放 出 來","骨與軟骨生理學 薛元碩"
-"58","Which of the following best describes the initial step in intramembranous ossification?","(A) Formation of cartilage model by chondroblasts","(B) Transformation of osteocytes into osteoblasts","(C) Clustering of mesenchymal cells and differentiation into osteoblasts","(D) Vascular invasion of hyaline cartilage","C","","骨與軟骨生理學 薛元碩"
-"59","What is the correct sequence of events in the primary center of endochondral ossification?","(A) Periosteal bud invades → cartilage model forms → ossification center develops","(B) Chondrocytes proliferate → hypertrophy → calcification → vascular invasion","(C) Bone collar forms → mesenchyme condenses → chondrocyte hypertrophy → ossification","(D) Osteoclast activity begins → epiphyseal plate forms → cartilage calcifies","B","(A) Cartilage model forms → periosteal bud invades → ossification center develops (B) 正 確 (C) Mesenchyme condenses → chondrocyte hypertrophy → bone collar forms → ossification (D) Cartilage calcifies → osteoclast activity begins → epiphyseal plate forms","骨與軟骨生理學 薛元碩"
-"60","What is the correct order of the ARF cycle in bone remodeling?","(A) Activation → Formation → Resorption","(B) Resorption → Reversal → Activation → Formation","(C) Activation → Resorption → Reversal → Formation","(D) Formation → Activation → Resorption → Reversal","C","","生理學實驗 薛元碩"
-"61","Which vitamin deficiency leads to decreased collagen synthesis in bone?","(A) Vitamin D","(B) Vitamin A","(C) Vitamin C","(D) Vitamin B12","C","Vitamin C 能 催 化 Collagen 合 成 ， 入 學 有 考 過 ~","生理學實驗 薛元碩"
-"62","Which type of cartilage is found in the external ear and epiglottis?","(A) Hyaline cartilage","(B) Fibrocartilage","(C) Elastic cartilage","(D) Articular cartilage","C","外 耳 和 會 厭 軟 骨 源 自 於 『 elastic cartilage 』","骨與軟骨生理學 薛元碩"
-"63","Which of the following correctly matches the cartilage type with its main structural feature?","(A) Hyaline cartilage – abundant elastic fibers","(B) Elastic cartilage – type I collagen dominance","(C) Fibrocartilage – absence of perichondrium","(D) Articular cartilage – highly vascularized tissue","C","","骨與軟骨生理學 薛元碩"
-"64","Which statement(s) is/are False ？","(A) Ceramics is a brittle material.","(B) Tendon is a ductile material","(C) Brittle material undergoes more plastic deformation before failure.","(D) Stainless steel is a brittle material.","送分","(A) Ceramics is a brittle material.→ 陶 瓷 杯 摔 到 地 板 會 碎 即 為 brittle material 的 表 現 (B) Tendon is a ductile material →tendon 可 以 拉 伸 ， 具 有 延 展 性 (ductility) (C) Brittle material undergoes more plastic deformation before failure.→brittle material 在 超 過 彈 性 變 形 的 極 限 (elastic limit) 後 ， 在 經 過 ” 一 小 段 ” plastic deformation就 會 rupture ； 反 之 ， ductile material 在 超 過 彈 性 變 形 的 極 限 (elastic limit) 後 ， 會 進 入 一段 不 短 的 塑 性 變 形 (plastic deformation) 才 會 rupture 。 (D) Stainless steel is a brittle material.→ 不 鏽 鋼 杯 摔 到 地 板 只 會 凹 進 去 ， 不 會 碎 掉 ，所 以 不 為 brittle material ， 而 是 ductile material 。","運動創傷及運動醫學 周伯禧"
-"65","Which of the following(s) may not be helpful in diagnosing Superior Labrum Anterior to Posterior Lesion (SLAP) ？","(A) MR-Arthrography.","(B) Valgus Stress Test","(C) O’Brien’s Test","(D) Compression Rotation Test.","B","","運動創傷及運動醫學 周伯禧"
-"66","Motion analysis can be clinically applied in which of the followings?","(A) Analysis of shoulder joint loading for tennis serve","(B) Analysis of elbow joint loading during fall on the outstretched hand.","(C) Gait Analysis in patients with osteoarthritis of the knee joint.","(D) All of the above.","D","(A) 手 舉 過 肩 的 運 動 ， 如 網 球、 棒 球、 排 球、 羽 球 都 有 可 能 出 現 RCT 的 運 動 傷 害 （旋 轉肌 部 分 損 傷 甚 至 完 全 斷 裂） (B) 很 多 的 骨 科 創 傷 來 自 跌 倒、 車 禍 等 原 因。 跌 倒 時 用 手 撐 地 上 (outstretched hand) 是上 肢 創 傷 （ eg. 手 腕、 肩 膀、 手 肘） 的 重 要 因 素 (C) 正 確","運動創傷及運動醫學 周伯禧"
-"67","The highest shoulder joint loading can occur on which of the time interval during pitching motion?","(A) Winding phase","(B) Late cocking & early acceleration phase","(C) Deceleration phase","(D) Follow through phase","B","經 典 考 古 題","運動創傷及運動醫學 周伯禧"
-"68","Which of the following statement(s) about ACL (Anterior Cruciate Ligament) injuries is/are false ？","(A) ACL injuries are frequently related to sports injuries","(B) ACL tear with associated injuries is an indication for surgical treatment","(C) Compression Rotation Test can detect ACL injuries","(D)MRI is useful in diagnosing ACL injuries","C","compression rotation test 是 測 SLAP 肩 關 節 唇 傷 害","運動創傷及運動醫學 周伯禧"
-"69","Valgus Extension Overload is probably the most common cause of elbow injury in baseball pitchers. It is not associated with :","(A) lateral collateral ligament instability","(B) osteochondral injuries of the radio-capitellar joint","(C) ulnar nerve neuropathy","(D) posterior elbow impingement.","A","(A) 投 球 的 stress 主 要 在 medial side ， 非 lateral side","運動創傷及運動醫學 周伯禧"
-"70","Which bone cannot be seen in X-ray Hand lateral view?","(A) Cuboid","(B) Lunate","(C) Capitate","(D) Trapezium","A","送 分 題 ， 8 塊 腕 骨 沒 有 一 塊 叫 Cuboid 看 一 下 真 正 的 lateral view 可 以 看 到 什 麼 吧！ 1. Capitate 2. Trapezium 3. Pisiform 4. Scaphoid 5. Lunate","足踝關節之骨科功能解剖學 陳姝蓉, 肌肉骨骼影像解剖學(1)-上肢 林育全"
-"71","According to YCL method (CNRMT) interpreting a skeletal radiograph, which of the following belongs to Morphology (M)?","(A) A calcified lesion over greater tubercle in X-ray Shoulder AP view","(B) Dislocated radius and ulna in X-ray Elbow lateral view","(C) An over-bowing radius in X-ray Forearm AP view","(D) Additional middle phalanx and distal phalanx in X-ray Hand AP view","C","(A) 鈣 化 為 Texture (B)Dislocated 屬 於 Relation (C)over-bowing 屬 於 Morphology (D)Additional middle phalanx and distal phalanx 屬 於 Number","肌肉骨骼影像解剖學(1)-上肢 林育全"
-"72","According to YCL method (CNRMT) interpreting a skeletal radiograph, which of the following does not belong to Texture (T)?","(A) A fracture line over greater tubercle in X-ray Shoulder AP view","(B) A whiter lunate (increased density) in X-ray Wrist AP view","(C) An osteolytic lesion over metaphysis of radius in X-ray Forearm AP view","(D) A metal implant over distal radius in X-ray Wrist lateral view","D","金 屬 植 入 物 屬 於 Category","肌肉骨骼影像解剖學(1)-上肢 林育全"
-"73","Which of the following statements is incorrect?","(A)Vitamin D deficiency in adults may cause weakness, pain, or even no symptoms at all.","(B) Bone lesions caused by vitamin D deficiency in adults are called rickets.","(C)Parathyroid adenoma or parathyroid hyperplasia can both lead to elevated parathyroid hormone levels in the body, which in turn affect bone structure.","(D)Chronic renal failure can also affect bone metabolism.","B","","肌肉骨骼病理學(1) 陳建亨"
-"74","Regarding osteogenesis imperfecta, which of the following descriptions is incorrect?","(A)Patients are unable to produce normal type I collagen.","(B)It is associated with mutations in the COL1A1 gene on 17q21.3–q22 and the COL1A2 gene on 7q21.3–q22.","(C)It is an autosomal dominant disorder that can be classified into four types.","(D)Due to the lack of normal type I collagen, patients’ irises may develop Lisch nodules.","D","(D) Lisch nodules 最 常 見 於 Neurofibromatosis type 1(NF1)","肌肉骨骼病理學(1) 陳建亨"
-"75","Regarding osteonecrosis (or avascular necrosis), which of the following descriptions is incorrect?","(A)It is mostly caused by infection.","(B) It is associated with trauma, chronic alcohol abuse, or steroid use.","(C)In patients with long-term alcohol abuse, osteonecrosis often occurs in the femoral head.","(D)When it occurs, the medullary bone is often affected first, while the overlying cortical bone and cartilage cap remain unaffected for the time being, mainly due to differences in blood supply.","A","(A) 主 要 是 由 非 感 染 原 因 所 造 成。","肌肉骨骼病理學(1) 陳建亨"
-"76","Which of the following descriptions about achondroplasia is incorrect?","(A)It involves chromosome 4 and is inherited in an autosomal dominant pattern.","(B) Patients usually have shortened limbs, but normal spinal length.","(C)During bone development, patients lack normal membranous ossification.","(D)It is associated with an activating mutation of FGFR3.","C","● 遺 傳 模 式 ： 體 染 色 體 顯 性 遺 傳 ， 第 4 對 染 樂 體 突 變 (4p16.3) ● 病 理 機 轉 ： FGFR3 基 因 發 生 活 化 突 變 (activation mutation) ，過 度 抑 制 軟 骨 內 骨化 (C) ○ 活 化 突 變 ： 讓 原 本 的 蛋 白 質 變 得 「過 度 活 躍」 的 突 變 ○ FGFR3 主 要 功 能 是 「適 度 的」 抑 制 軟 骨 細 胞 增 殖 與 骨 骼 生 長 速 度 ， 活 化 突變 會 使 得 FGFR3 過 度 活 化 ， 造 成 骨 骼 無 法 正 常 伸 長 ○ 主 要 影 響 長 骨 骨 化 的 過 程 ， 膜 內 骨 化不受 影 響 (C) ● 臨 床 表 現 ○ 骨 骼 ： 四 肢 短 小 ， 軀 幹 正 常 ○ 生 育 能 力、 致 力、 壽 命 皆 正 常","肌肉骨骼病理學(1) 陳建亨"
-"77","Regarding osteomyelitis, which of the following descriptions is incorrect?","(A)Caused by bacterial infection through direct exposure or hematogenous spread.","(B) In children, it often occurs near the knee joint, while in adults it is more common in the foot.","(C)In 5–10-year-old children, osteomyelitis near the metaphysis of long bones is most commonly caused by Escherichia coli.","(D)Osteomyelitis of the maxillary bone and mandible is mostly associated with poor oral hygiene and dental caries.","C","(C) 選 項 錯 在 病 原 菌 的 歸 屬 ： ● 小 兒 （ 5–10 歲） 骨 髓 炎 最 常 見 的 病 原 菌 為 金 黃 色 葡 萄 球 菌 (Staphylococcus aureus) 。 ● Escherichia coli 通 常 見 於 泌 尿 道 感 染 或 免 疫 功 能 低 下 者 的 繼 發 性 感 染 ， 並 非常 見 於 小 兒 長 骨 骨 髓 炎。","肌肉骨骼病理學(1) 陳建亨"
-"78","Regarding osteoporosis, which of the following descriptions is incorrect?","(A)In humans, bone mass usually peaks around 25–35 years of age.","(B) Patients’ trabeculae become smaller and thinner, failing to provide adequate structural support.","(C)Steroid therapy can slow down the rate of bone loss.","(D)Lack of exercise, alcohol abuse, and vitamin D deficiency are possible causes.","C","(A) (B) (C) + (D)","肌肉骨骼病理學(1) 陳建亨"
-"79","Regarding soft tissue tumors, which of the following descriptions is incorrect?","(A)When filling out a pathology submission form, in addition to correctly recording the anatomical location of the lesion, it is also best to describe the depth of the lesion at that site.","(B) Most tumors are benign; malignant tumors are mostly sporadic, with only a few related to genetics.","(C)Environmental risk factors include radiation, burns, and toxins.","(D)Most malignant sarcomas have a simple karyotype with euploid chromosomes; these tumors often occur in young patients, and the tumor cells appear relatively uniform (monomorphic).","D","大 多 數 （ 80% 至 85% ） 的 惡 性 肉 瘤 屬 於 複 雜 核 型 （ Complex karyotype ） ， 這 些 腫 瘤 通 常 是非 整 倍 體 （ Aneuploid ） 或 多 倍 體 （ Polyploid ） ， 好 發 於 成 人 ， 且 腫 瘤 細 胞 形 態 多 樣 （Pleomorphic ）","肌肉骨骼病理學(2) 陳建亨"
-"80","The following tissues are generally classified as soft tissue, but which one is not included?","(A)Adipose tissue.","(B) Muscular tissue.","(C)Vascular tissue.","(D)Mucosal epithelium.","D","","肌肉骨骼病理學(2) 陳建亨"
-"81","Which of the following descriptions is incorrect?","(A) Lipomas usually have a capsule at the margin, clearly demarcated from surrounding tissues. Morphologically, they can be classified into conventional, fibrolipoma, angiolipoma, spindle cell lipoma, etc.","(B) Liposarcomas commonly occur in the limbs or retroperitoneum, in locations closer to the skin and more superficial, making them easier to excise.","(C) Liposarcomas can be further classified into atypical lipomatous tumor/well-differentiated liposarcoma, myxoid liposarcoma, and pleomorphic liposarcoma.","(D) Pleomorphic liposarcomas are usually more aggressive and prone to distant metastasis.","B","(B) 錯 誤。 脂 肪 肉 瘤 (Liposarcoma) 常 見 於 四 肢 近 端 或 腹 膜 後 (retroperitoneum) ， 且位 於 深 部 (deep part) ， 並 非 靠 近 皮 膚 或 表 淺 部 位。 (C)(D)","肌肉骨骼病理學(2) 陳建亨"
-"82","Which of the following descriptions is incorrect?","(A) A motor unit consists of a motor neuron and the muscle bundles it innervates.","(B ) Type I muscle fibers perform aerobic exercise, allowing for prolonged contraction; they contain less intracellular fat and more glycogen. Type II muscle fibers perform anaerobic exercise, generating greater contraction force but with lower mitochondrial density. These two muscle types can convert into each other depending on reinnervation by different neurons.","(C) The connective tissue surrounding a single skeletal muscle fiber is called the endomysium.","(D) If the motor neuron in a motor unit is impaired, causing pathology in its innervated muscle group, it is called neuropathic myopathy. The muscle shows features such as grouped atrophy and fiber type grouping.","B","Type I muscle fibers perform aerobic exercise, allowing for prolonged contraction; they contain less intracellular fat and more glycogen. 這 句 描 述 中 ， 前 半 段 正 確 ， 但 是 type I muscle fibers is higher in its lipid content and lower in its glycogen content. Type II muscle fibers perform anaerobic exercise, generating greater contraction force but with lower mitochondrial density. 這 句 描 述 是 正 確 的。 These two muscle types can convert into each other depending on reinnervation by different neurons. 老 師 在 上 課 時 也 有 口 述 ： 「通 常 一 條 神 經 支 配 同 一 種 肌 肉 ， 但 type I 和 type II 在 特 定 情 況 下 可 互 換 ， 稍 後 會 提 到 (fiber type grouping) 」 因 此 這 句 是 正確的。","肌肉骨骼病理學(2) 陳建亨"
-"83","Which of the following descriptions is incorrect?","(A) Total muscle mass and maximal muscle strength peak in youth and gradually decline with age.","(B) If this decline occurs too rapidly, resulting in muscle mass and maximal strength falling below a certain standard, it is currently called sarcopenia.","(C) Sarcopenia mainly affects daily activities and does not increase the risk of cardiopulmonary diseases; besides aging, it can also be caused by neurological disorders, lack of physical training, and obesity.","(D) Using muscle strength as an indicator, men with a dominant-hand grip strength below 27 kg should be concerned about sarcopenia.","C","(A) 正 確。 根 據 講 義 第 94 圖 表 ， 肌 力 在 「年 輕 時」 達 到 最 大 化 ， 在 「中 年 時」 維 持 ， 並 在「老 年 時」 最 小 化 流 失 （即 逐 漸 下 降）。 (B) 正 確。 講 義 第 94 、 95 頁 將 肌 少 症 定 義 為 與 老 化 相 關 的 肌 肉 流 失 。 圖 表 也 顯 示 當 肌力 下 降 到 「低 體 能 表 現」 或 「臨 界 失 能」 的 標 準 時 ， 即 需 「預 防 和 延 後 肌 少 症 發 生」。 該 敘述 符 合 肌 少 症 的 臨 床 概 念。 (C) 錯 誤。 肌 少 症 （ Sarcopenia ） 的 影 響 包 括 ： 跌 倒、 骨 折、 身 體 失 能、 死 亡 率 ， 以 及 心 臟疾 病 (Cardiac dz) 、 呼 吸 系 統 疾 病 (respiratory dz) 和 認 知 障 礙 。 因 此 ， 肌 少 症 是 會增 加 心 肺 疾 病 風 險 的。 (D) 正 確。 在 「肌 肉 力 量 切 點」 中 ， 男 性 慣 用 手 握 力 的 切 點 為 < 27 kg 。","肌肉骨骼病理學(2) 陳建亨"
-"84","Which of the following statements is the most appropriate?","(A) Synovial sarcoma commonly shows t(X;18)(p11;q11), resulting in SS18-SSX1, SS18-SSX2, or SS18- SSX4 gene fusions.","(B) Ewing sarcoma commonly shows t(11;22)(q24;q12) or t(21;22)(q22;q12), resulting in EWS-FLI1 or EWS-ERG gene fusions.","(C) Alveolar rhabdomyosarcoma can show t(2;13)(q35;q14) or t(1;13)(p36;q14), resulting in PAX3- FOXO1 or PAX7-FOXO1 gene fusions.","(D) All of the above descriptions are correct.","D","本 題 Ａ Ｂ Ｃ 三 個 選 項 皆 正 確 ， 就 請 記 起 來 來 源 各 自 在 老 師 的 講 義 裡 （Ａ） 選 項 在 老 師 講 義 第 67 頁 ， 如 下 方 ： （ B ） 選 項 在 老 師 講 義 第 11 頁 表 格 第 一 行 ， 如 下 方 ： （Ｃ） 選 項 在 老 師 講 義 第 51 頁 ， 如 下 方 ：","肌肉骨骼病理學(2) 陳建亨"
-"85","Which artery is the major blood supply to the hip joint?","(A) Superior gluteal artery","(B) Medial and lateral circumflex femoral arteries","(C) Obturator artery","(D) Femoral profunda artery","B","根 據 老 師 的 slide ， major blood supply to the hip joint 就 是 Medial and lateral circumflex femoral arteries 喔！ 記 憶 題 ， 常 考 ， 背 起 來 吧！","髖及膝關節功能解剖學 李忠祐"
-"86","Which movement combination of the hip reproduces pain in piriformis syndrome during examination?","(A) Flexion, abduction, external rotation","(B) Flexion, adduction, internal rotation","(C) Extension, abduction, external rotation","(D) Extension, adduction, internal rotation","B","","髖及膝關節功能解剖學 李忠祐"
-"87","In the knee’s screw-home mechanism (open chain), during the last 20° of extension, the tibia:","(A) Internally rotates, tightening cruciate ligaments","(B) Externally rotates, tightening cruciate ligaments","(C) Internally rotates, loosening cruciate ligaments","(D) Externally rotates, loosening cruciate ligaments","B","screw home mechanism 在 knee extension 最 後 的 20 度 會 向 外 旋 轉 至 鎖 定 ， 同 時 使ACL/PCL 繃 緊 ， 使 tibia 穩 定。","髖及膝關節功能解剖學 李忠祐"
-"88","Which molecule is most directly associated with angiogenesis during fracture healing?","(A) TNF α","(B) IL-6","(C) VEGF","(D) BMP-2","C","老 師 上 課 特 別 強 調","骨折的生物力學及癒合 劉文智"
-"89","Which of the following best characterizes secondary bone healing?","(A) Requires absolute stability and osteonal remodeling","(B) Occurs only in cortical bone","(C) Involves both intramembranous and endochondral ossification","(D) Leads to the direct formation of new osteons","C","(A) 需 要 絕 對 穩 定 性 和 骨 單 位 重 塑 (osteonal remodeling) ： 這 描 述 的 是 一 期 骨 癒 合 (Primary Healing) 。 繼 發 性 骨 癒 合 要 求 相 對 穩 定 性 (Relative stability) 。 (B) 只 發 生 在 皮 質 骨 (cortical bone) ： 繼 發 性 骨 癒 合 是 一 種 通 用 的 癒 合 機 制 ， 在 相 對 穩定 的 情 況 下 發 生。 海 綿 骨 (Cancellous bone) 的 癒 合 在 發 炎 期 後 主 要 由 膜 內 骨 化 主 導， 且 不 形 成 明 顯 的 外 部 骨 痂 ， 但 繼 發 性 癒 合 並 非 只 發 生 在 皮 質 骨 中。 (C) 涉 及 膜 內 骨 化 (intramembranous) 和 軟 骨 內 骨 化 (endochondral) 兩 種 過 程 繼 發 性 骨 癒 合 ， 也 被 稱 為 間 接 骨 癒 合 （透 過 骨 痂 形 成） ， 其 特 點 是 膜 內 骨 化 和 軟 骨 內 骨化 共 同 作 用 。 (D) 導 致 新 骨 單 位 (osteons) 的 直 接 形 成 ： 骨 單 位 重 塑 (Osteonal remodeling) 是 一 期骨 癒 合 的 核 心 過 程 。 繼 發 性 骨 癒 合 的 初 期 是 透 過 軟 骨 痂 和 硬 骨 痂 的 形 成 ， 最 終 的 重塑 階 段 才 涉 及 骨 單 位 的 重 組 ， 但 不 是 其 直 接 或 核 心 的 形 成 機 制。","骨折的生物力學及癒合 劉文智"
-"90","Which of the following statements about fracture biomechanics is TRUE?","(A) Increased implant-bone contact improves bone perfusion","(B) Relative stability allows micromotion at the fracture site","(C) Reaming for intramedullary nails increases endosteal blood flow","(D) Absolute stability encourages callus formation","B","(A) larger implant-bone contact: reducing bone perfusion (C)reaming for intramedullary nails (IM nails): reduces endosteal blood flow (D)callus formation : relative stability 說 明 : 在 骨 折 癒 合 的 生 物 力 學 中 有 Primary/ Secondary healing, 其 中 Secondary Healing 講 義 中 提 到 ● Indirect healing by callus formation ○ Relative stability ○ Both intramembranous and endochondral bone formation","骨折的生物力學及癒合 劉文智"
-"91","Which of the following statements about the sagittal band is correct?","(A) It extends the middle phalanx during metacarpophalangeal joint (MCPJ) extension.","(B) It attaches to the dorsal hood and stabilizes the lateral band.","(C) It assists in proximal phalanx extension and stabilizes the extensor tendon at the MCPJ.","(D) It allows distal interphalangeal joint extension when MCPJ is hyperextended.","C","Sagittal bands: ● attaches to the volar plate ● extend the P1 ● the extrinsic extensors can’t extend the P2 while MCPJ is hyperextended Also: ● Central slip extends the middle phalanx ● Triangular & Transverse reticular ligament stabilize the lateral band ● Terminal tendon allows DIP extension","手部、腕部骨骼功能解剖學 劉文智"
-"92","Which of the following is a secondary stabilizer of the distal radioulnar joint (DRUJ)?","(A) Extensor carpi ulnaris tendon sheath","(B) Dordsal radiocarpal ligament","(C) Deep dorsal radioulnar ligament","(D) Extensor retinaculum","A","以 下 為 secondary stabilizer of the distal radioulnar joint (DRUJ) ： ECU (extensor carpi ulnaris) tendon sheath 6th dorsal compartment (ECU) sub-sheath Deep head of pronator quadratus(PQ) Interosseous lig. Of the forearm(central band) Ulnotriquetral lig. Ulnolunate lig.","手部、腕部骨骼功能解剖學 劉文智"
-"93","Which nerve innervates the abductor pollicis muscle?","(A) Radial nerve","(B) Median nerve","(C) Ulnar nerve","(D) Anterior interosseous nerve","送分","abductor pollicis brevis(APB) 由 median n. 支 配 abductor pollicis longus(APL) 則 由 radial n. 支 配","手部、腕部骨骼功能解剖學 劉文智"
-"94","Drugs that act on the central nervous system to induce skeletal muscle relaxation include the following drugs, except which one?","(A) Central alpha-2 agonists","(B) Depolarizing muscle relaxants","(C) Tricyclic antidepressants","(D) Antihistamines","B","","肌肉鬆弛劑之藥理學 程廣義"
-"95","botox ( clostridium botulinum) acting which of the following to induce muscle relaxation?","(A) Gamma-aminobutyric acid (GABA) type B receptors","(B) snare protein","(C) Muscarinic receptors","(D) Ligand-gated sodium channels","B","","肌肉鬆弛劑之藥理學 程廣義"
-"96","Characteristics of muscle pain, relative to cutaneous pain, include all of the following except:","(A) Poorly localized","(B) Burning and cutting","(C) Easily pain referral","(D) Difficult to tolerate","B","由 表 格 可 以 看 出 cutaneous pain 才 是 burning and cutting","肌肉鬆弛劑之藥理學 程廣義"
+﻿id,question,option_a,option_b,option_c,option_d,correct_answer,explanation,category,ai_explanation
+1,Which of the following experimental methods would allow simultaneous observation of both migration and bone resorption activity in individual osteoclasts?,(A) MicroCT,(B) Bone resorption assay,(C) Two Photone Time-Lapse recoding,(D) Immunohistochemistry staining (IHC),C,（Ｃ） 選 項 如 老 師 講 義 所 述 ， 可 以 觀 察 蝕 骨 細 胞 的 移 動 能 力 (migration) ， 在 時 間 的 移 進之 下 ， 綠 色 細 胞 就 是 蝕 骨 細 胞 ， 後 面 黑 色 的 路 徑 就 是 它 走 的 路 ， 同 時 因 為 它 的 移 動 能力 就 是 來 自 分 解 骨 質 的 活 動 度 (bone resorption activity) ， 故 為 正 確 選 項,骨科學研究 鄭琮霖,"📖 chatGPT 學長背景知識  
+在研究骨骼生物學中，了解『破骨細胞』的『遷移』與『骨吸收』活動對於骨骼健康至關重要。選擇合適的實驗方法能夠提供關鍵的生物學資訊。
+
+在這道題目中，選項中提到的各種技術各有其特點。『MicroCT』主要用於三維影像重建，雖然能夠觀察骨結構，但無法同時追蹤細胞活動。『骨吸收測定』專注於評估骨質流失，無法提供細胞遷移的動態資訊。『免疫組織化學染色』則是用於檢測特定蛋白質的表達，雖然能夠標記破骨細胞，但不具備時間動態觀察的能力。
+
+相對而言，『雙光子時間延遲錄影』技術能夠在活體中實時觀察細胞的動態行為，並且能夠同時記錄『破骨細胞』的『遷移』及『骨吸收』活動。因此，正確答案為 (C) 『雙光子時間延遲錄影』，因為它提供了最全面的觀察方式，能夠同時捕捉這兩種關鍵的生物學過程。"
+2,Which of the following statements about the role of macrophages in the muscle wound healing process is incorrect?,"(A) In the early stage of healing, they strengthen the local defense around the wound to prevent infection.",(B) They clear dead cells and tissues near the wound to control inflammation.,(C) They produce angiogenic signals to enhance neovascularization near the wound.,(D) They continuously maintain wound inflammation during healing to promote cell proliferation.,D,(D) 選 項 錯 誤。 因 為 在 正 常 的 癒 合 過 程 中 ， macrophages 會 在 初 期 促 進 發 炎 ， 但 之 後需 「 resolve inflammation 」 來 進 入 修 復 階 段 ， 若 持 續 維 持 發 炎 反 而 會 導 致 chronic wound 。,肌肉骨骼免疫學 李英瑞,"📖 chatGPT 學長背景知識  
+在肌肉傷口癒合過程中，巨噬細胞扮演著多重角色，包括防禦、清除壞死組織及促進血管生成等。理解這些功能有助於辨識選項的正確性。
+
+核心觀念：  
+- 巨噬細胞在傷口癒合的『早期階段』增強局部防禦，防止『感染』。  
+- 它們能『清除』壞死細胞和組織，控制『炎症』反應。  
+- 巨噬細胞釋放『血管生成』信號，促進傷口附近的『新血管形成』。  
+- 然而，持續的『炎症』對癒合過程並不利，過度的炎症會延遲癒合，並可能導致『纖維化』。
+
+綜合以上觀點，選項(D)提到巨噬細胞在癒合過程中持續維持傷口炎症以促進細胞增殖，這是不正確的。雖然初期的炎症對於清除感染和促進癒合是必要的，但長期的炎症會對癒合造成負面影響。因此，正確答案為(D)。"
+3,"Regarding the correct sequence of the four major stages of wound healing: ① Proliferation phase ② Hemostasis phase ③ Maturation phase ④ Inflammation phase, which is correct?",(A) ①②③④,(B) ②①④③,(C) ②④①③,(D) ④②①③,C,,肌肉骨骼免疫學 李英瑞,"📖 chatGPT 學長背景知識
+
+傷口癒合是一個複雜的生物過程，通常分為四個主要階段：『止血』階段、『炎症』階段、『增生』階段和『成熟』階段。正確的癒合順序為：
+
+1. **止血階段**：當傷口發生時，血管收縮以減少出血，並且血小板聚集形成血塊，這是癒合的第一步。
+2. **炎症階段**：隨後，免疫細胞如白血球進入受傷區域，清除細菌和壞死組織，這一過程通常伴隨紅腫熱痛的症狀。
+3. **增生階段**：在炎症減退後，成纖維細胞和內皮細胞開始增生，形成新的血管和結締組織，促進傷口的修復。
+4. **成熟階段**：最後，傷口的結締組織經過重塑，強度逐漸增加，這一階段可能持續數月甚至數年。
+
+根據上述順序，正確的選項為 (C) ②④①③，因為它正確反映了傷口癒合的生理過程。"
+4,"Rheumatoid arthritis (RA) is a disease driven by multiple inflammatory factors (cytokines). In current clinical practice, what is the most commonly used therapeutic approach?","(A) Anti-IL-17 therapy, drugs such as Secukinumab","(B) Anti-TNF- α therapy, drugs such as Certolizumab","(C) Anti-IL-1 β therapy, drugs such as Anakinra","(D) Anti-IFN- β therapy, drugs such as Anifrolumab",B,較 常 用 且 有 效 治 療 RA 的 生 物 製 劑 是 TNF-alpha blocker （老 師 上 課 有 說 不 是 IL-1 receptor antagonist 因 為 臨 床 是 治 療 效 果 不 佳）,肌肉骨骼免疫學 李英瑞,"📖 chatGPT 學長背景知識  
+類風濕性關節炎（Rheumatoid Arthritis, RA）是一種以『慢性炎症』為特徵的自身免疫疾病，主要影響關節並可能導致關節損傷和功能障礙。治療RA的主要目標是減少炎症、緩解症狀並防止關節損傷。
+
+目前臨床上最常用的治療方法是『抗腫瘤壞死因子-α（Anti-TNF-α）』療法。這類藥物如『Certolizumab』能有效抑制炎症反應，改善病人生活品質。雖然其他選項如『抗IL-17』、『抗IL-1β』和『抗IFN-β』療法在某些情況下也有應用，但它們並不是RA的第一線治療。
+
+總結來說，對於類風濕性關節炎的治療，『抗TNF-α』療法因其良好的療效和安全性，成為目前最常用的臨床治療選擇。"
+5,Which of the following is right,(A) Osteoprotegrin (OPG) can inhibit proliferation of osteoclast and induce the apoptosis of osteoclast,(B) Bisphosphonates may lead to the side effect of leg cramps,(C) Selective estrogen receptor modulator can reduce hip fracture rate,(D) Bisphosphonates increase the risk of throboembolism,A,(A) 正 確 (B) SERM and Teriparatide lead to the side effect of leg cramps (C) Denosumab can reduce hip fracture rate (D) SERM increase the risk of thromboembolism (venous),骨質疏鬆藥物之藥物學 陳崇桓,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要分析四個選項的正確性，並了解其在骨質代謝及相關治療中的意義。
+
+- 『骨保護素』（Osteoprotegerin, OPG）是一種重要的細胞因子，能夠抑制『破骨細胞』（osteoclast）的增殖並促進其『凋亡』（apoptosis），因此選項(A)是正確的。
+- 『雙磷酸鹽』（Bisphosphonates）是一類用於治療骨質疏鬆的藥物，確實可能導致『腿部痙攣』（leg cramps）等副作用，因此選項(B)也是正確的。
+- 『選擇性雌激素受體調節劑』（Selective Estrogen Receptor Modulators, SERMs）能夠有效降低『髖部骨折』（hip fracture）的發生率，這使得選項(C)正確。
+- 然而，關於選項(D)，目前的研究並未顯示雙磷酸鹽會顯著增加『血栓栓塞』（thromboembolism）的風險，因此這一選項是錯誤的。
+
+綜合以上分析，選項(A)、(B)和(C)均為正確，而(D)則不正確。這題考察了對骨質代謝及其治療藥物的理解，特別是在骨質疏鬆症的管理中。"
+6,Which of the following is right,(A) It takes more than one year to achieve the effect of fracture reduction by anti-osteoporotic medication,(B) Anti-sclerostin antibody can activate T cell lead to acute phase reaction,(C) Selective estrogen receptor modulator can have drug holiday,(D) Teriparatide cannot be use in those who have myocardial infarction or stroke,A,(A) (B) 急 性 期 反 應 ( 急 性 期 反 應 ) 是 靜 脈 注 射 型 雙 磷 酸 鹽 的 已 知 常 見 副 作 用 抗 硬 化 素 抗 體 (Romosozumab) 的 禁 忌 症 是 與 心 血 管 風 險 相 關 （一 年 內 曾 發 生 心 肌 梗塞 或 中 風） ， 並 未 提 及 它 會 透 過 活 化 T 細 胞 導 致 急 性 期 反 應 。 (C)SERM 、 雌 激 素 和 RANKL 抗 體 在 完 全 停 止 治 療 後 ， 都 會 有 骨 量 快 速 流 失 的 情 形 ( 骨 量 也 會 有 快 速 流 失 的 情 形 ) 。 藥 物 假 期 (drug holiday) 僅 被 提 及 適 用 於 雙 磷 酸 鹽 藥物 。 (D) 「一 年 內 曾 發 生 心 肌 梗 塞 或 中 風」 的 禁 忌 症 適 用 於 抗 硬 化 素 抗 體 (Romosozumab) 。,骨質疏鬆藥物之藥物學 陳崇桓,"📖 chatGPT 學長背景知識  
+本題涉及骨質疏鬆症的治療藥物及其作用機制，特別是抗骨質疏鬆藥物的使用與效果。
+
+1. 骨質疏鬆藥物的效果通常需要『長期』使用，尤其是『抗骨質疏鬆藥物』，其療效可能在『一年以上』才會顯現。
+2. 『抗-sclerostin抗體』的作用主要是促進骨形成，並不直接引發『T細胞活化』或『急性期反應』。
+3. 『選擇性雌激素受體調節劑（SERM）』的使用可以考慮『藥物假期』，但需依據患者的具體情況而定。
+4. 『Teriparatide』是一種重組人類甲狀旁腺素，對於有『心肌梗塞』或『中風』病史的患者使用需謹慎，因為可能增加心血管事件的風險。
+
+綜合來看，選項(A)提到的抗骨質疏鬆藥物效果需超過一年是正確的，而其他選項則存在誤解或不當使用的風險。因此，正確答案為(A)。"
+7,Which of the following is right,(A) Teriparatide cannot be use in those who have poor renal function,(B) Prolong anti-sclerostin antibody will lead to the risk of osteosarcoma,(C) Oral bisphosphonates is absorbed well with a absorption rate about 90%,(D) Denosumab can efficiently reduce hip fracture,D,(A)Bisphosphonate (CrCl<30ml/min) (B)Teriparatide (C)<1%,骨質疏鬆藥物之藥物學 陳崇桓,"📖 chatGPT 學長背景知識  
+在骨質疏鬆症的治療中，選擇合適的藥物至關重要，以下是各選項的分析：
+
+- **Teriparatide**：這是一種重組人類甲狀旁腺素，主要用於治療嚴重骨質疏鬆症。對於『腎功能不全』的患者，使用時需謹慎，因為可能會增加高鈣血症的風險，因此選項(A)是正確的。
+  
+- **抗sclerostin抗體**：這類藥物可促進骨形成，但長期使用可能與『骨肉瘤』的風險增加有關，因此選項(B)也有其根據。
+
+- **口服雙磷酸鹽**：其吸收率約為『10%』，而非90%。這意味著選項(C)是錯誤的。
+
+- **Denosumab**：這是一種針對RANKL的單克隆抗體，已被證實能有效降低『髖部骨折』的風險，因此選項(D)是正確的。
+
+綜合來看，正確的選項為(A)和(D)，而(B)和(C)則存在誤解或錯誤。選擇適當的治療方案需考慮患者的具體情況及藥物的潛在風險。"
+8,What is the “Elbow terrible triad”? Which of the following are included?,(A)Radial head fracture,(B) Coronoid fracture,(C)Elbow dislocation,(D) All of the above,D,,肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌,"📖 chatGPT 學長背景知識
+
+『肘部可怕三聯症』(Elbow terrible triad) 是一種常見的肘部外傷，通常由於高能量的外力造成，特別是在運動或跌倒時。這一三聯症包括以下三種損傷：
+
+1. 『橈骨頭骨折』(Radial head fracture)
+2. 『冠狀突骨折』(Coronoid fracture)
+3. 『肘部脫位』(Elbow dislocation)
+
+這三種損傷的組合使得肘部的穩定性大幅下降，並且治療上相對複雜。肘部脫位通常是最先發生的事件，隨後可能伴隨橈骨頭和冠狀突的骨折。這種情況需要及時的醫療介入，以防止長期的功能障礙和關節僵硬。
+
+在臨床上，對於肘部可怕三聯症的診斷通常依賴於影像學檢查，如X光或CT掃描，以確定骨折的類型和程度。治療方法可能包括保守治療或手術，具體取決於損傷的嚴重程度和患者的功能需求。
+
+因此，正確答案為(D) All of the above，因為所有選項均包含在『肘部可怕三聯症』的定義中。"
+9,Shohei Ohtani experiences right shoulder pain after pitching. Which of the following is NOT correct?,(A) A SLAP lesion (Superior Labrum Anterior to Posterior) is a possible cause in this case.,(B)Injury to the biceps tendon does not need to be considered.,"(C) In such cases, a rotator cuff injury should also be considered.",(D) An MRI can be performed to evaluate possible soft tissue injuries.,B,(A) 一 些 上 舉 的 動 作 如 投 球、 排 球、 大 動 作 拉 扯、 甩 出、 舉 手 過 肩 的 運 動 ， 附 著 在 關 節 唇 上 的 二 頭 肌 長 頭 肌 腱 會 不 斷 拉 扯 周 圍 組 織 ， 產 生 關 節 唇 的 損 傷。 Biceps long tendon 穿 進 關 節 囊 後 會 附 著 在 labrum 之 上 緣 ， 正 常 穩 定 時 是 一 個 很 好 的 固 定 點 ， 能 讓 投 手 投 出 快 速 球。 但 當 關 節 唇 損 傷 不 穩 定 時 ， 投 球 的 動 作 會 產 生 很 大 往 前 甩 動 的 力 量 ， 造 成 labrum 從 glenoid 上 鬆 弛 ， 使 得 動 作 不 穩 定 ， 也 會 產 生 疼 痛。 (B) (C) 旋 轉 肌 是 走 在 acromion 和 humerus 之 間 ， 中 間 的 bursa 是 在 骨 頭 其 他 軟 組 織 之間 的 緩 衝 組 織 ， 像 是 墊 片 ， 所 以 旋 轉 肌 斷 掉 的 症 狀 是 疼 痛、 活 動 受 限 ， 手 舉 不 起 來 或舉 起 來 沒 有 力 氣。 (D)MRI ： 針 對 軟 組 織 損 傷 的 檢 查 ， 例 如 ： 旋 轉 肌 損 傷,肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌,"📖 chatGPT 學長背景知識
+
+在運動醫學中，肩部疼痛常見於投手，尤其是右肩疼痛的情況。此類疼痛可能源於多種結構損傷，包括『肩盂唇』損傷、『肱二頭肌』腱損傷及『旋轉袖』損傷等。對於此題，選項的正確性分析如下：
+
+(A) SLAP損傷是投手常見的肩部損傷，因其涉及肩盂唇的撕裂，故此選項正確。  
+(B) 肱二頭肌腱的損傷在肩部疼痛中常被忽視，但實際上其損傷可能會影響肩部功能，因此此選項不正確。  
+(C) 旋轉袖損傷是投手肩部疼痛的另一常見原因，必須考慮。  
+(D) 磁共振成像（MRI）是評估軟組織損傷的有效工具，故此選項正確。
+
+綜合以上分析，選項(B)是錯誤的，因為肱二頭肌腱的損傷在此情況下必須被考慮。肩部疼痛的診斷需要全面評估多種可能的損傷，以制定適當的治療計劃。"
+10,"Dr. Lu, an orthopedic surgeon, experiences shoulder pain after performing arthroscopic surgery. What factors should be considered when performing a differential diagnosis of shoulder pain? a. X-ray examination b. Income c. Shoulder physical exam d. Age e. Occupation f. Shoulder anatomy g. History of injury",(A) a 、 c 、 d 、 e 、 f 、 g,(B) a 、 b 、 c 、 d 、 e 、 f,(C) a 、 c 、 d,(D) a 、 b 、 c 、 e 、 f,A,不 用 問 薪 水 💰 底 下 是 老 師 DD 的 thinking pathway 可 以 參 考 問 了 什 麼 考 量 了 什 麼 職 業 也 很 重 要 可 以 判 斷 可 能 造 成 受 傷 的 原 因,肩肘關節之骨科功能解剖學/骨科鑑別診斷 盧政昌,"📖 chatGPT 學長背景知識
+
+在進行肩部疼痛的鑑別診斷時，應考慮多個因素，以確保準確診斷及適當治療。以下是關鍵考量要素：
+
+- 『X-ray檢查』：可用於排除骨折、關節病變等結構性問題。
+- 『肩部物理檢查』：透過臨床檢查可評估肩部的活動範圍、肌肉力量及疼痛反應。
+- 『年齡』：不同年齡層的患者可能面臨不同的肩部疾病風險，例如老年人常見的退化性關節病。
+- 『職業』：某些職業如外科醫生、運動員等，因重複性動作或高負荷，肩部受傷風險較高。
+- 『肩部解剖』：了解肩部的解剖結構有助於識別可能的病變部位。
+- 『受傷歷史』：既往的肩部受傷或手術史可能影響當前的疼痛表現。
+
+綜合以上因素，選項(A)包含了所有重要的考量要素，故為最佳答案。選擇正確的診斷方法能夠有效指導後續的治療計劃。"
+11,"About ankle and foot, which one is correct?",(A) The peroneal longus tendon attaches to 5th metatarsal base and everts the foot,(B) The cause of Muller Weiss disease is osteonecrosis of navicular bone. The one character of this disease is comma-shape deformity of navicular bone.,(C) The talus is the keystone of transverse arch of foot.,"(D) In the syndesmosis, the tibia is concave and fibular is convex here. The anterior talofibular ligament and posterior talofibular ligament are part of the syndesmosis ligaments.",B,A) B) C) D) 是 Anterior inferior tibiofibular ligament 才 對。,足踝關節之骨科功能解剖學 陳姝蓉,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要分析與踝關節及足部相關的正確陳述。首先，選項(A)中提到的『腓骨長肌腱』正確地附著於『第五跖骨基部』並負責『外翻』足部，但其實腓骨長肌腱主要附著於第一跖骨基部。選項(B)提到的『穆勒-韋斯病』確實是由『舟骨的骨壞死』引起，且其特徵為『彎曲形狀的舟骨變形』，這是正確的。選項(C)中，『距骨』被認為是足部『橫弓』的關鍵，這一點不夠準確，因為橫弓的主要支撐來自於其他結構。選項(D)提到的『聯合韌帶』中，脛骨的形狀應為『凸形』而腓骨為『凹形』，而前後距腓韌帶確實是聯合韌帶的一部分。
+
+綜合來看，選項(B)是正確的，因為它準確描述了穆勒-韋斯病的病因及其特徵。其他選項或多或少存在不準確之處，需謹慎辨識。"
+12,"About the four compartments of leg, which one is wrong?","(A) The posterior tibialis muscle belongs to deep posterior compartment, and is related to adult-acquired flatfoot deformity",(B) The major movement of muscles in anterior compartment is ankle dorsiflexion.,"(C) There are deep peroneal nerve, peroneal longus and brevis in the lateral compartment. The major movement of these muscles is foot eversion.",(D) The plantaris is in superficial posterior compartment and it is a weak ankle plantarflexor.,C,此 表 格 必 考 (C)superficial peroneal nerve,足踝關節之骨科功能解剖學 陳姝蓉,"📖 chatGPT 學長背景知識
+
+下肢的肌肉可分為四個主要的區域：前側、外側、深後側和淺後側。每個區域的肌肉功能及其相關神經支配各有不同。
+
+- 前側區域的主要肌肉負責『踝關節背屈』，如脛前肌。
+- 外側區域的肌肉（如腓骨長肌和腓骨短肌）主要負責『足部外翻』，並由『深腓神經』支配。
+- 深後側區域的肌肉，包括『後脛肌』，與『成人獲得性扁平足變形』有關，主要功能是『足部內翻』和『踝關節屈曲』。
+- 淺後側區域的肌肉如『植物神經』，雖然是『弱的踝關節屈曲肌』，但其主要功能仍在於輔助屈曲。
+
+在此題中，選項 (C) 提到的『深腓神經、腓骨長肌和腓骨短肌』的組合是正確的，但其描述的功能『足部外翻』是正確的，因此不符合題目要求的錯誤選項。選項 (D) 的描述也是正確的，因為植物神經確實位於淺後側區域，並且是弱的踝關節屈曲肌。因此，正確的錯誤選項應該是其他選項中未提及的部分。"
+13,Which one is wrong?,"(A) Near 50% of blood supply to talus is from posterior tibial artery, which is in the deep posterior compartment.","(B) The common complication of displaced talar neck fracture is osteonecrosis of talus,","(C) The anterior talofibular ligament is most easily injured ligament when patients suffer from ankle sprain, and anterior drawer test is often positive while performing physical examination. Repeated ankle sprains may lead to lateral instability of ankle joint.","(D) The negative Thompson test means Achilles tendon rupture. Under this condition, patient totally can’t walk therefore.",D,Thompson test (+) 才 是 Achilles tendon rupture.,足踝關節之骨科功能解剖學 陳姝蓉,"📖 chatGPT 學長背景知識  
+在這道考古題中，我們需要辨識哪一個選項的敘述是錯誤的。以下是各選項的核心觀念：
+
+- (A) 『距離』50% 的『血供』來自『後脛動脈』，這是正確的，因為後脛動脈確實供應了踝關節及距骨的部分血液。
+- (B) 『脫位的距骨頸骨折』常見的併發症是『距骨壞死』，這是正確的，因為距骨的血供有限，易受損。
+- (C) 『前距腓韌帶』是最容易受傷的韌帶，尤其在『踝關節扭傷』時，且『前抽屜測試』通常會呈現陽性，這也是正確的，因為反覆的扭傷可導致『側向不穩定』。
+- (D) 『負的湯普森測試』表示『跟腱斷裂』，但患者並不一定完全無法行走，這是錯誤的。患者可能仍能以其他方式行走，雖然會有困難。
+
+綜合以上分析，選項 (D) 的敘述是錯誤的，因為負的湯普森測試並不意味著患者完全無法行走。"
+14,Observe the histological features. What is the correct combination of tissue species and section orientation in the figure?,(A) cross sectioned cardiac muscle,(B) longitudinal sectioned smooth muscle,(C) cross sectioned smooth muscle,(D) cross sectioned skeletal muscle,D,,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+在組織學中，肌肉組織的切片方向對於識別其類型至關重要。肌肉組織主要分為三種類型：心肌、平滑肌和骨骼肌。每種肌肉在顯微鏡下的特徵和切片方向有所不同。
+
+- 『心肌』：通常呈現交錯的纖維，具有明顯的橫紋，且細胞間有間隙，這些特徵在『橫切面』中不易辨識。
+- 『平滑肌』：細胞呈長梭形，無橫紋，『縱切面』可見細胞長度，『橫切面』則顯示圓形或橢圓形的細胞。
+- 『骨骼肌』：具有明顯的橫紋，『橫切面』中可見多核細胞，『縱切面』則可見長纖維。
+
+根據題目所述，若切片為『橫切面』，則心肌和骨骼肌的特徵會有所不同，而平滑肌在『橫切面』中則顯示為圓形。若為『縱切面』，平滑肌的長梭形特徵會更明顯。因此，正確的組合取決於切片的方向與所觀察的肌肉類型。根據這些特徵，可以推斷出正確的選項。"
+15,What is the structure indicated by the black arrow?,(A) epimysium,(B) perimysium,(C) endomysium,(D) adipocyte,C,此 題 有 申 覆 說 圖 並 沒 有 附 倍 率 或 者 個 原 始 為 縮 放 的 圖 ， 因 此 無 法 判 斷 粉 紅 色 的 區 域是 fasicle( 被 perimysium 包 圍 ) 還 是 muscle fiber( 被 endomysium 包 圍 ) ， 建 議 (B)(C) 都 給分。 老 師 回 覆 ： 如 果 是 更 小 倍 率 的 fascicle 裡 面 含 有 很 多 muscle fiber ， 則 粉 紅 色 內 部 會 有其 他 細 胞 核 存 在 ， 而 不 會 像 題 目 附 圖 上 這 樣 所 有 細 胞 核 都 在 邊 上 ， 維 持 原 答 案 (C) 。 (B) perimysium( 老 師 附 的 圖 ) ─ 粉 紅 色 內 部 & 邊 緣 都 有 細 胞 核 (C) endomysium ─ 只 有 邊 緣 有 細 胞 核,"組織學-肌腱、韌帶、肌肉 陳永佳, 肌肉骨骼系統病理學 賴薇安","📖 chatGPT 學長背景知識
+
+在肌肉組織中，結締組織的結構對於肌肉的功能和支撐至關重要。肌肉的結構可分為三個主要層次：『表面筋膜』(epimysium)、『周筋膜』(perimysium) 和『內筋膜』(endomysium)。
+
+- 『表面筋膜』(epimysium)：包圍整個肌肉，提供保護並與周圍組織連結。
+- 『周筋膜』(perimysium)：包圍肌肉纖維束，含有血管和神經，支持肌肉的功能。
+- 『內筋膜』(endomysium)：包圍單個肌肉纖維，提供營養和支持。
+
+此外，『脂肪細胞』(adipocyte) 是一種儲存脂肪的細胞，與肌肉結構無直接關聯。
+
+根據題目中所指的黑箭頭，若其指向的是肌肉組織的結締結構，則可能是上述三種筋膜中的一種。若箭頭指向的是一個細胞結構，則可能是脂肪細胞。正確答案取決於箭頭所指的具體結構。
+
+在考試中，理解這些結構的功能和位置是關鍵，能幫助我們正確識別和選擇答案。"
+16,"A 20-year-old man with known history of multiple hereditary exostosis syndrome presented with increasing pain in the knee. The patient received surgical removal for the tumor. The tumor had a cartilage cap over 2 cm in thickness. Microscopically, the tumor is partially covered by a layer of perichondrium. However, increased cellularity of the cartilagenous component with nuclear atypia is noted. Which of the following descriptions about this tumor is correct?",(A) This tumor-associated syndrome is inherited in an autosomal recessive manner.,(B) It is associated with loss of function of FGF1 or FGF2 gene.,(C) The tumor tends to arise from epiphysis of long bone.,(D) The tumor may have undergone malignant transformation to chondrosarcoma.,D,Osteochondroma 是 最 常 見 的 良 性 骨 腫 瘤 ， 好 發 於 四 肢 骨 的 metaphysis ， 特 別 容 易 發生 在 膝 蓋 附 近 ， 但 是 cap of cartilage 厚 度 通 常 為 1cm ， 超 過 則 很 可 能 發 展 成 chondrosarcoma 。 Osteochondroma 的 透 明 軟 骨 層 最 外 圍 會 被 軟 骨 膜 包 覆 ， 細 胞 密 度低 （ no increase in cellularity ） ， 而 良 性 的 osteochondroma 可 以 分 化 成 惡 性 的 chondrosarcoma ， 特 徵 是 軟 骨 層 厚 度 > 1cm 。 Osteochondroma: Chondrosarcoma:,肌肉骨骼系統病理學 賴薇安,"📖 chatGPT 學長背景知識  
+- 本題涉及『多發性遺傳性外生瘤綜合症』，這是一種常染色體顯性遺傳疾病，主要特徵為骨骼上出現多個良性骨腫瘤。  
+- 腫瘤的組織學特徵包括『軟骨帽』的存在，且當其厚度超過2公分時，需警惕惡性變化的可能性。  
+- 本病例中提到的『細胞增生』及『核異型性』提示腫瘤可能已經發生『惡性轉化』，特別是轉變為『軟骨肉瘤』。  
+- 此外，腫瘤通常起源於長骨的『骨端』，而非骨幹，這是其診斷的一個重要依據。  
+- 關於基因，FGF1和FGF2的功能喪失與此病無直接關聯，因為主要涉及的是『EXT1』或『EXT2』基因的突變。  
+
+綜合以上信息，正確的選項是(D)，因為腫瘤的特徵顯示出惡性轉化的風險，特別是在存在細胞異型性和細胞增生的情況下。"
+17,"A 48 year-old man presented with chronic pain and swelling of the right 1st meta-tarsophalangeal joint not responding to medical treatment. Surgery is performed to relieve his symptom. Which of the following description is incorrect? (Left: H&E, light microscopy; Right: polarized ligh microscopy)",(A) The H&E slide shows tophi composed of pale-staining amorphous material rimmed by histiocytes.,(B) Needle-shaped crystals are seen through polarized light.,(C) The microscopic findings suggest calcium pyrophosphate crystal deposition disease.,(D) Hyperuricemia plays a role in pathogenesis of the disease.,C,"1st MTP, 顯 微 鏡 下 淡 染、 沒 有 特 殊 形 狀、 偏 光 鏡 下 看 到 針 狀 結 晶 ， 可 判 斷 為 痛 風 痛 風 成 分 是 Sodium urate monohydrate 單 鈉 鹽 尿 酸 結 晶 故 選 C",肌肉骨骼系統病理學 賴薇安,"📖 chatGPT 學長背景知識
+
+本題涉及的病理學特徵與關節疾病的鑑別診斷，特別是痛風與鈣化性關節病。患者的症狀與右側第一跖趾關節的慢性疼痛及腫脹相符，這通常與『痛風』有關，因為痛風是由『尿酸』結晶沉積引起的。
+
+選項分析：
+- (A) 正確，H&E染色下的『tophi』通常呈現淡染色的無定形物質，周圍有『組織巨噬細胞』包圍。
+- (B) 正確，透過偏光顯微鏡可見『針狀結晶』，這是痛風的特徵。
+- (C) 錯誤，顯微鏡下的發現若顯示『鈣焦磷酸鹽結晶沉積病』，則不符合痛風的診斷。
+- (D) 正確，『高尿酸血症』確實在痛風的病理生理中扮演重要角色。
+
+因此，選項(C)是錯誤的，因為該病理特徵與痛風無關，而是與鈣焦磷酸鹽結晶沉積病相關。這道題目強調了在臨床診斷中正確識別病理特徵的重要性。"
+18,"Regarding rhabdomyosarcoma, which of the following statements is less accurate?","(A) The tumor commonly occurs in the head and neck, limbs, and genitourinary system.","(B) Based on its morphology, it can be further classified into embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, pleomorphic rhabdomyosarcoma, and spindle cell/sclerotic rhabdomyosarcoma.","(C) Rhabdomyosarcoma may grow near mucosal structures (such as the bladder or vagina) and protrude outward in a grape-like fashion, known as sarcoma botryoides.","(D) Pathologically, the diagnosis of rhabdomyosarcoma can only be made by detecting PAX3-FOXO1 and PAX7-FOXO1 gene variations.",D,(A) 正 確 ， 如 下 圖 embryonal type (B)(C) 正 確 ， 如 下 圖 的 sarcoma botryoides 和 subtypes 介 紹 (D) 錯 誤 ， PAX3-FOXO1 和 PAX7-FOXO1 gene variations 僅 適 用 於 alveolar type ， 其 他type 則 無 此 表 現,肌肉骨骼系統病理學 賴薇安,"📖 chatGPT 學長背景知識  
+『橫紋肌肉瘤』(rhabdomyosarcoma) 是一種常見的兒童惡性腫瘤，源自未成熟的橫紋肌肉細胞。其特徵包括以下幾點：
+
+- 常見部位：『頭頸部』、四肢及『生殖泌尿系統』。
+- 分類：根據形態學可分為『胚胎型』(embryonal)、『肺泡型』(alveolar)、『多形型』(pleomorphic)及『紡錘細胞/硬化型』(spindle cell/sclerotic)。
+- 特殊表現：在接近『黏膜結構』(如膀胱或陰道)時，可能以『葡萄狀』(sarcoma botryoides)的形式向外生長。
+
+在選項中，選擇(D)為較不準確的說法。雖然『PAX3-FOXO1』和『PAX7-FOXO1』基因變異在某些亞型中具有診斷意義，但並非所有橫紋肌肉瘤的診斷都依賴於這些基因變異，其他病理特徵及免疫組織化學染色也對診斷至關重要。因此，選項(D)的說法過於絕對，並不符合實際情況。"
+19,Which of the following statements about the structure of spine is CORRECT?,"(A) The facet joint is composed of superior and inferior facet, and all superior facets face medially, and the inferior facets face laterally.","(B) If you want to check the neural foramen of the cervical spine, you can use the lateral view and oblique view of the cervical spine x-ray.",(C) Vertebral body spans from the anterior column to the posterior column of spine.,"(D) In AP view of thoracic spine x-ray, the tracheal bifurcation can be used to estimate the position of T7.",送分,"(A) 不 是 所 有 的 facets 都 面 對 一 樣 的 方 向 (B) Cervical spine x-ray Oblique view 可 以 看 到 神 經 孔 ( 如 下 圖 ) 針 對 Lateral view ， 有 同 學 提 出 申 覆 : 「老 師 上 課 時 有 提 醒 , 要 評 估 頸 椎 的 神 經 孔 ， 應 使用 頸 椎 斜 位 X 光 ; 如 需 更 細 部 的 神 經 根 或 軟 組 織 信 息 ， 則 以 CT 或 MRI 為 首 選。 此 題 目 (B)lat.view 檢 查 神 經 孔 的 敘 述 並 不 準 確 ， 請 老 師 斟 酌 給 分 ， 謝 謝 老 師。」 老 師 回 覆 「如 同 學 所 述 ， 若 要 更 細 部 的 檢 查 可 利 用 CT 或 MRI ， 並 不 代 表 cervical spine lateral view 無 法 檢 查 神 經 孔。」 (C) 如 下 圖 ， Vertebral body 的 前 ⅔ 在 Anterior column ， 後 ⅓ 在 middle column ， 並 沒 有跨 到 posterior column 。 (D) 下 左 圖 可 以 看 到 thoracic spine x ray AP view ， 藍 框 框 起 來 的 地 方 為 Tracheal Bifurcation ， 大 約 在 T4 位 置 ， 如 果 往 下 算 ， 確 實 可 以 estimate 出 T7 的 位 置。 有 同 學 提 出 申 覆 : 「已 知 tracheal bifurcation 為 T4-T5 之 高 度 ， 則 可 依 此 推 算 鄰 近 之 T7位 置 ， 因 選 項 用 字 ""estimate"",(from Oxford dictionary: ""to form an idea of the cost, size, value, etc. of something, but without calculating it exactly"") 認 為 語 意 上 並 不 是詢 問 ""exactly"" ， 故 希 望 老 師 開 放 D 選 項 ， 謝 謝 老 師。」 老 師 回 覆 同 意 D 也 給 分 : 「 B, D 皆 同 意 給 分」","脊椎之骨科功能解剖學 高志銘, 肌肉骨骼影像解剖學(3)-脊椎 高志銘","📖 chatGPT 學長背景知識
+
+在脊椎的結構中，了解各個部分的功能與相對位置至關重要。以下是對題目中選項的綜合性解析：
+
+- 『關節面』：脊椎的『關節面』確實由『上關節面』和『下關節面』組成，但並非所有的上關節面都面向內側，這取決於脊椎的部位。
+- 『神經孔』：檢查『頸椎』的『神經孔』時，使用『側面』和『斜面』X光是正確的，因為這樣可以更清楚地顯示神經孔的形狀和大小。
+- 『椎體』：椎體的結構確實延伸至脊椎的『前柱』，但不包括『後柱』，因為後柱主要由椎弓組成。
+- 『胸椎』X光的『前後視圖』中，『氣管分叉』可用來估算『T7』的位置，這是因為氣管分叉通常位於T5至T7之間。
+
+綜合以上分析，選項B和D的描述是正確的，而A和C則存在誤導性。了解這些結構及其影響對於臨床診斷和治療至關重要。"
+20,Which statement about lumbar spine x-rays is INCORRECT?,"(A) In an oblique view, a Scotty Dog's tail fracture can be seen in the patient with a fracture of the transverse process of spine.",(B) The structure pointed by the arrow in the X-ray below is the facet joint of lumbar spine.,(C) The structure pointed by the arrows in these two X-ray pictures above is the pedicle of the lumbar spine.,"(D) Oblique view is often used to detect pars fractures, and the pars interarticularis is located in the neck of the Scotty Dog in x-ray.",A,(A) Scotty Dog’s tail = superior articular process of opposite side,肌肉骨骼影像解剖學(3)-脊椎 高志銘,"📖 chatGPT 學長背景知識  
+在評估腰椎X光片時，了解各種解剖結構及其影像學特徵至關重要。以下是對題目中各選項的綜合解析：
+
+- 腰椎的『斜位』X光片常用於檢查『椎弓根』及『關節突』的病變，特別是『pars interarticularis』的骨折，這在影像上可視為『斯科提狗』的頸部。
+- 斜位影像能夠清晰顯示『椎間關節』，並且有助於識別『橫突骨折』，但『斯科提狗的尾巴骨折』並不常見於橫突骨折的情境中。
+- 『椎弓根』是腰椎的重要結構，通常在X光片中以箭頭指示，並且是評估腰椎穩定性的重要指標。
+
+綜合以上觀點，選項(A)的描述不正確，因為『斯科提狗的尾巴骨折』並不與『橫突骨折』直接相關，這使得該選項成為錯誤陳述。其他選項均正確地描述了腰椎X光片的解剖學特徵及其臨床意義。"
+21,Which of the following statements about the radiologic anatomy of spine is INCORRECT?,(A) The structure pointed by the arrow in the T2-weighted image of MRI below is the spinal cord.,"(B) In the T2-weighted image of MRI, the intervertebral disc and fat tissue both appear as a relative high signal intensity",(C) Atlantodens interval (ADI) in cervical spine x-ray lateral view can be used to detect the dislocation between C1 and C2.,(D) The normal thickness of the pre-vertebral soft tissue in the lateral view of cervical spine x-ray should be less than 22mm at C6 level,A,（ A ） 箭 頭 所 指 為 cauda equina （ B ） （ C ） （ D ）,肌肉骨骼影像解剖學(3)-脊椎 高志銘,"📖 chatGPT 學長背景知識
+
+在解讀脊椎的放射解剖學時，了解MRI和X光影像的特徵至關重要。以下是各選項的核心觀念：
+
+- **T2加權影像**：在此影像中，『脊髓』呈現為高信號強度，而『椎間盤』和『脂肪組織』也會顯示相對較高的信號強度。
+- **Atlantodens間隔（ADI）**：此間隔在頸椎X光側面影像中可用於評估『C1』和『C2』之間的『脫位』情況。
+- **前椎軟組織厚度**：正常情況下，頸椎X光側面影像中『C6』水平的前椎軟組織厚度應小於『22mm』。
+
+綜合以上觀點，選項(A)的描述是正確的，因為在T2加權影像中，箭頭所指的結構確實是脊髓。選項(B)也正確，因為椎間盤和脂肪組織在T2影像中都呈現高信號強度。選項(C)的描述正確，ADI確實用於檢測C1和C2的脫位。而選項(D)的描述則不正確，因為正常的前椎軟組織厚度在C6水平應小於『22mm』，但具體數值可能因個體差異而有所不同。因此，正確答案為(D)。"
+22,Which of the following statements about the structure of spine is NOT true?,"(A)Dens is part of the Atlantoaxial joint, which is responsible for cervical rotation.","(B)Pain-sensitive nerve endings supply the joint capsule, which is the main source of pain in osteoarthritis.",(C)Nutrients of the intervertebral disc are mainly obtained by passive diffusion from the end plate.,(D)The ligamentum flavum is located in the posterior column of the spine and the main function is to limit motion of spine during flexion.,D,(A) (B) (C) (D),脊椎之骨科功能解剖學 高志銘,"📖 chatGPT 學長背景知識
+
+在脊椎結構中，各種組織和關節的功能至關重要。以下是對題目中選項的綜合性解析：
+
+- 『Dens』是第二頸椎（軸椎）的一部分，確實參與『寰軸關節』的運動，主要負責『頸部旋轉』。
+- 關於『關節囊』的痛覺神經末梢，確實是『骨關節炎』疼痛的主要來源，因為它們對於關節的損傷和發炎反應敏感。
+- 『椎間盤』的營養主要依賴『被動擴散』，通過『終板』從相鄰椎體獲取，這是因為椎間盤內部缺乏血管供應。
+- 『黃韌帶』位於脊柱的『後柱』，其主要功能是限制脊柱在『屈曲』時的過度運動，這有助於維持脊柱的穩定性。
+
+綜合以上分析，選項(D)的描述是正確的，因此本題的正確答案是選項(D)並不是不正確的陳述。"
+23,Which part of spine does NOT belong to the posterior ligamentous complex?,(A) ligamentum flavum,(B) interspinous ligament,(C) posterior longitudinal ligament,(D) facet joint capsule,C,"Post. ligamentous complex includes ligamentum flavum, interspinous lig., facet capsule, and supraspinous lig.",肌肉骨骼影像解剖學(3)-脊椎 高志銘,"📖 chatGPT 學長背景知識
+
+在脊椎的解剖學中，『後方韌帶複合體』(posterior ligamentous complex, PLC) 是由多個韌帶組成，主要功能是提供脊椎的穩定性和支持。PLC 包括以下幾個主要組成部分：
+
+- 『韌帶黃』(ligamentum flavum)：位於椎板之間，具有彈性，幫助維持脊椎的穩定性。
+- 『棘間韌帶』(interspinous ligament)：連接相鄰的棘突，限制過度的脊椎屈曲。
+- 『後縱韌帶』(posterior longitudinal ligament)：沿著脊椎後方延伸，防止椎間盤突出向後壓迫脊髓。
+
+然而，『關節囊』(facet joint capsule) 並不屬於後方韌帶複合體。關節囊是包圍脊椎小關節的結構，主要功能是保護關節並提供穩定性，但它不被視為後方韌帶複合體的一部分。因此，正確答案是 (D) facet joint capsule。理解這些結構的功能及其相互關係對於臨床診斷和治療脊椎相關疾病至關重要。"
+24,Which of the following statements about the structure of spine is CORRECT?,(A) The spinal process of C7 is on the center of gravity of the spinal column in normal adult.,"(B) The articular surface of the facet joint is covered with fibrocartilage, and like other joint, there is synovial fluid presented in facet joints.","(C) Nucleus pulposus has large proportion of proteoglycan and collagen, and the main function is to resist axial loads.",(D) All cervical vertebrae have vertebral body located at the front of the spine.,C,,脊椎之骨科功能解剖學 高志銘,"📖 chatGPT 學長背景知識
+
+脊椎的結構對於人體的穩定性和運動功能至關重要。以下是對題目中選項的綜合性詳解：
+
+- 脊椎的『重心』並不在C7的棘突上，而是位於整個脊柱的中心，這使得選項(A)不正確。
+- 颈椎的『關節面』通常由『透明軟骨』覆蓋，而非纖維軟骨，且關節腔內確實存在『滑液』，這使得選項(B)部分正確，但因為關節面覆蓋的軟骨種類不正確而不完全成立。
+- 『髓核』的主要成分是『蛋白聚糖』和『膠原蛋白』，其功能是抵抗『軸向負荷』，這使得選項(C)正確。
+- 所有『頸椎』的『椎體』確實位於脊柱的前方，但這並不適用於所有脊椎，特別是胸椎和腰椎，因此選項(D)不完全正確。
+
+綜合來看，選項(C)是唯一正確的陳述，因為它準確描述了髓核的結構與功能。"
+25,"In skeletal muscle, what components form a triad?",(A) One T-tubule and one terminal cisterna of sarcoplasmic reticulum,(B) One T-tubule and two thick filaments,(C) Two terminal cisternae of sarcoplasmic reticulum flanking one T-tubule,(D) Two caveolae and one smooth endoplasmic reticulum,C,The complex of the T tubule and the two adjacent terminal cisternae is called a “Triad.”,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+在骨骼肌中，『三合體』是肌肉收縮過程中重要的結構，主要由『T管』和『肌漿網』的『終端囊泡』組成。這些結構的排列對於肌肉的電信號傳遞及鈣離子釋放至關重要。
+
+核心觀念：
+- 『T管』：橫向延伸的管道，能夠將動作電位迅速傳遞至肌肉纖維內部。
+- 『終端囊泡』：肌漿網的擴張部分，儲存鈣離子，並在肌肉收縮時釋放鈣離子。
+- 『三合體』的結構：一個『T管』與兩個『終端囊泡』相對應，形成一個完整的結構單位。
+
+在選項中，正確的描述應該是包含一個『T管』和兩個『終端囊泡』，這樣的配置能夠有效地促進鈣離子的釋放，進而引發肌肉收縮。因此，正確答案為選項 (C)，即『兩個終端囊泡的肌漿網夾在一個T管旁邊』。這一結構的存在使得肌肉能夠快速響應神經信號，實現有效的收縮功能。"
+26,Which of the following statements about different muscle types is FALSE?,(A) smooth muscle fibers have regeneration ability,(B) skeletal muscle cells can communicate via gap junctions,(C) skeletal muscle contraction is initiated by calcium binding to troponin C,(D) cardiac muscle fibers are striated and involuntary,B,這 題 是 將 BM112 題 目 稍 作 調 整 同 時 老 師 上 課 有 特 別 提 示 三 種 肌 肉 比 較 的 表 格 需 要 做 記 憶,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+在肌肉生理學中，主要有三種肌肉類型：『平滑肌』、『骨骼肌』和『心肌』。每種肌肉的結構和功能各異，且具有不同的特性。
+
+- 『平滑肌』纖維具有再生能力，這使其在受損後能夠修復。
+- 『骨骼肌』細胞通常不具再生能力，但可以透過『衛星細胞』進行有限的修復。骨骼肌細胞之間的『間隙連接』並不普遍，這使得選項 (B) 的說法為假。
+- 『心肌』纖維是橫紋肌，且屬於『不隨意肌』，其收縮是由鈣離子與『肌鈣蛋白 C』結合所啟動，這支持選項 (C) 的正確性。
+- 此外，心肌的結構特徵包括『橫紋』，並且其收縮過程是自動的，這與骨骼肌的自願性收縮形成對比。
+
+綜合以上分析，選項 (B) 是錯誤的，因為骨骼肌細胞之間的溝通主要依賴於神經支配，而非間隙連接。"
+27,Which of the following statements concerning smooth muscle is TRUE?,(A) The fibers have dense bodies and well-developed smooth ER,(B) Smooth muscle fibers contain sarcomeres arranged like skeletal muscle,(C) Nuclei are located at the periphery of the cell,(D) Thick filaments are bipolar and cross-striated,A,下 表 請 熟 記 (A) 只 有 平 滑 肌 有 Dense body 這 項 Special feature (B) 骨 骼 肌 心 肌 才 有 Sacromere (C) 平 滑 肌 細 胞 的 核 在 Central (D) 平 滑 肌 的 粗 肌 絲 排 列 為 Side-polar 沒 有 Striated,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+平滑肌是人體中一種重要的非隨意肌，主要負責內臟器官的運動。以下是有關平滑肌的核心觀念：
+
+- 平滑肌纖維內含有『密集體』，這是平滑肌特有的結構，並不具備『明顯的橫紋』或『肌小節』，與骨骼肌的結構有顯著差異。
+- 平滑肌的『核』通常位於細胞的中央，而非周邊，這是其與骨骼肌的另一個主要區別。
+- 平滑肌的『厚絲』是『雙極性』的，但並不呈現橫紋結構，這使得平滑肌在收縮時的運動方式與骨骼肌不同。
+
+綜合以上觀點，正確的選項應該是關於平滑肌的結構特徵及其功能的描述。選項中提到的『密集體』和『平滑內質網』的發展程度是平滑肌的特徵，而『核的位置』和『厚絲的結構』則與骨骼肌有明顯的區別。因此，正確答案應該是與平滑肌的獨特結構相符的選項。"
+28,Which type of skeletal muscle fibers have the largest diameter and fatigue most easily?,(A) Slow oxidative fibers,(B) Fast oxidative fibers,(C) Intermediate fibers,(D) Fast glycolytic (anaerobic) fibers,D,螢 光 筆 處,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+在骨骼肌纖維中，根據其代謝特性和收縮速度，可以分為三種類型：慢氧化纖維、快氧化纖維和快糖解纖維。這些纖維類型在直徑、耐疲勞性和能量來源上有所不同。
+
+- 『直徑』：快糖解纖維（Fast glycolytic fibers）擁有最大的直徑，這使它們能夠產生強大的力量。
+- 『疲勞性』：快糖解纖維因主要依賴無氧代謝，能量來源迅速但持續時間短，因此『最容易疲勞』。
+- 『能量來源』：慢氧化纖維（Slow oxidative fibers）主要依賴有氧代謝，耐疲勞性強，適合持久運動；快氧化纖維（Fast oxidative fibers）則介於兩者之間，兼具力量與耐力。
+
+綜合以上特點，選項中最符合「擁有最大直徑且最容易疲勞」的纖維類型為快糖解纖維（Fast glycolytic fibers），因此正確答案為(D)。"
+29,"According to the sliding filament theory, which event occurs first during cross-bridge cycling in skeletal muscle contraction?",(A) Hydrolysis of ATP re-cocks the myosin head to its high-energy state,"(B) Myosin head pivots, pulling the actin filament toward the center of the sarcomere (power stroke)","(C) ATP binds to the myosin head, causing detachment from actin",(D) Myosin head binds to the exposed active site on actin after tropomyosin moves away,D,(A) 3. Bending (B) 4. Force generation (C) 2. Release (D) 1. Attachment,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識
+
+在骨骼肌收縮的『滑動絲理論』中，肌肉纖維的收縮是透過『肌動蛋白』和『肌球蛋白』之間的交互作用來實現的。這一過程稱為『交叉橋循環』，涉及多個步驟，並且需要『ATP』的參與。
+
+在交叉橋循環中，首先發生的事件是『ATP』與肌球蛋白頭部結合，這導致肌球蛋白與肌動蛋白的分離。當『ATP』結合到肌球蛋白頭部時，會引起肌球蛋白的構象變化，使其從『肌動蛋白』上脫離，這是收縮過程的起始步驟。隨後，『ATP』會被水解，釋放的能量使肌球蛋白頭部重新回到高能狀態，準備再次與肌動蛋白結合。
+
+因此，正確的答案是選項 (C)：『ATP』結合到肌球蛋白頭部，導致其與肌動蛋白的分離。這一過程是交叉橋循環的第一步，為隨後的『動力衝擊』和肌肉收縮奠定基礎。"
+30,"In a skeletal muscle fiber at maximal relaxation, which of the following is TRUE about the sarcomere structure?",(A) Z lines are no longer visible under the microscope,(B) The A band becomes longer than in contraction,(C) The H zone and I band are at their widest extent,(D) Thick and thin filaments completely overlap,C,(A) Z line 不 論 收 縮、 放 鬆 皆 可 見 (B) A band 不 論 收 縮、 放 鬆 皆 等 長 (C) 正 確 (D) 放 鬆 時 並 不 重 疊,組織學-肌腱、韌帶、肌肉 陳永佳,"📖 chatGPT 學長背景知識  
+- 骨骼肌纖維的基本結構單位為『肌節』(sarcomere)。  
+- 肌節由『Z線』、『A帶』、『I帶』和『H帶』組成。  
+- 在肌肉放鬆時，『I帶』和『H帶』的寬度會增加，而『A帶』的長度則保持不變。  
+
+在最大放鬆的狀態下，肌節的結構特徵如下：  
+- 『Z線』仍然可見，因為它們是肌節的邊界。  
+- 『A帶』的長度不會因為放鬆而改變，仍然保持與收縮時相同。  
+- 『H帶』和『I帶』在放鬆時達到最寬的程度，因為薄絲和粗絲之間的重疊減少。  
+- 在放鬆狀態下，『粗絲』和『細絲』的重疊程度減少，並不會完全重疊。  
+
+因此，正確的選項是(C)『H zone and I band are at their widest extent』，因為這反映了肌肉在放鬆狀態下的結構特徵。"
+31,Which of the following statements about cranium development is incorrect?,(A)Most parts originate from the neural crest,(B)Parts of the neurocranium are formed by the fusion of multiple cartilages,(C)The neurocranium is the main protective structure for the brain,(D)The third and fourth pharyngeal arches contribute to the formation of the cartilaginous viscerocranium,D,(A) 正 確。 軟 骨 條 的 胚 層 來 源 notochord 為 界 ， notochord 以 上 ( 頭 ) 由 neural crest 發 育 ，以 下 來 自 paraxial mesoderm 。 (B) 是 ， 以 蝶 骨 為 例 ： hypophyseal cartilage 形 成 body ， optic capsule 則 形 成 wings (C)neurocranium 保 護 腦 ， viscerocranium 形 成 臉、 鼻 腔、 口 腔 (D)cartilaginous viscerocranium 主 要 發 育 自 第 一、 二 對 咽 弓,肌肉骨骼胚胎學 施耀翔,"📖 chatGPT 學長背景知識
+
+在顱骨發育過程中，顱骨可分為『神經顱』和『面顱』兩大部分。神經顱主要保護大腦，而面顱則涉及面部結構的形成。以下是對題目中各選項的綜合解析：
+
+- 大部分顱骨的發育來源於『神經嵴』細胞，這些細胞在胚胎發育過程中從神經管周圍的組織中分化而來。
+- 神經顱的形成確實涉及多個『軟骨』的融合，這些軟骨在胚胎發育中逐漸硬化，形成堅固的顱骨結構。
+- 神經顱作為大腦的主要保護結構，提供了必要的防護以防止外部衝擊。
+- 第三和第四咽弓主要參與的是『面顱』的發育，而非『軟骨性面顱』的形成，這一點是錯誤的。
+
+因此，正確答案是(D)，因為第三和第四咽弓主要貢獻於面顱的發育，而非直接形成軟骨性面顱。"
+32,Which of the following is derived from endochondral ossification?,(A)Frontal bone,(B)Mandibular bone,(C) Clavicle,(D) Skull base,送分,"如 圖 所 示 ， 經 由 軟 骨 內 骨 化 發 育 而 來 的 有 顱 底、 脊 椎、 骨 盆 及 長 骨 ， 但 鎖 骨 也 有 部 分（兩 端） 是 經 由 軟 骨 內 骨 化 而 來 ， 故 經 申 覆 後 也 為 正 確 答 案。 申 覆 ： 如 同 學 所 言 , 在 胚 胎 發 育 的 講 義 內 第 14 頁 的 確 提 到 鎖 骨 屬 於 軟 骨 內 骨 化 , 但 同 時 也 有 下 列 這 句 話 : Initially intramembranous ossification, then forms cartilages at both ends 意 思 是 說 鎖 骨 是 膜 內 骨 化 先 開 始 , 爾 後 才 有 兩 端 的 軟 骨 內 骨 化 進 行。 所 以 在 同 份 講 義 的 12 頁 開 始 就 有 將 其 定 義 為 膜 內 骨 化 , 因 為 其 初 級 骨 化 中 心 是 膜 內 骨 化。 但 由 於 英 文 題 幹 命 名 不 精 確 , derived from 詞 的 確 不 具 有 時 間 性 , 因 此 答 案 CD 都 給 分。 但 注 意 的 是 第 三 位 同 學 的 申 覆 內 容 有 誤 : ""Clavicle 發 育 時 開 始 先 進 行 膜 內 骨 化 , 之 後 在 兩 端 形 成 軟 骨 內 骨 化。 因 此 本 題 要 選 出 哪 個 構 造 是 源 自 於 軟 骨 內 骨 化 , 答 案 應 該 選 (C)Clavicle"" 如 同 學 所 言 , 鎖 骨 既 有 膜 內 骨 化 , 次 級 骨 化 中 心 又 是 軟 骨 內 骨 化。 因 此 如 果 要 選 純 然 的 軟 骨 內 骨 化 , 則 應 該 是 選 擇 答 案 (D)Skull base ( 顱 底 ) 較 無 爭 議",肌肉骨骼胚胎學 施耀翔,"📖 chatGPT 學長背景知識
+
+- 『內軟骨骨化』是骨骼發育的一種過程，主要在長骨及某些扁平骨的形成中發揮作用。
+- 在此過程中，『軟骨模型』首先形成，然後逐漸被『骨組織』取代。
+- 主要涉及的骨骼包括長骨（如股骨、胫骨）及某些扁平骨（如顱底）。
+
+在題目中，選項中只有『顱底骨』是由內軟骨骨化所形成的。顱底的發育過程中，首先形成的軟骨模型會在後期轉化為骨組織。而其他選項中，額骨（Frontal bone）和下頜骨（Mandibular bone）主要是由『膜內骨化』形成，這種過程不涉及軟骨模型的階段。鎖骨（Clavicle）則是唯一一種同時具有膜內骨化和內軟骨骨化特徵的骨骼，但其主要部分是膜內骨化。因此，正確答案是『顱底骨』，因為它完全依賴於內軟骨骨化的過程。"
+33,The greater cornu of the hyoid bone develops from which pharyngeal arch?,(A) First pharyngeal arch,(B) Second pharyngeal arch,(C) Third pharyngeal arch,(D) Fourth pharyngeal arch,C,如 下 圖 所 示 ， 舌 骨 大 角 由 第 三 咽 弓 發 育 而 來。,肌肉骨骼胚胎學 施耀翔,"📖 chatGPT 學長背景知識
+
+- 『舌骨』是位於頸部的U形骨骼，主要功能是支持舌頭及相關肌肉。
+- 舌骨由兩部分組成：『大角』和『小角』，其發育源自不同的『咽弓』。
+- 『咽弓』是胚胎發育過程中的重要結構，分為五個主要的咽弓，分別編號為一至五。
+
+在舌骨的發育中，『大角』主要來自於『第一咽弓』，而『小角』則源自於『第二咽弓』。具體來說，第一咽弓的發育涉及到下頜骨、上頜骨及舌骨的形成。因此，對於本題的正確答案，『大角』的發展與第一咽弓密切相關。
+
+綜合以上知識，正確答案為 (A) 第一咽弓。這一點在解剖學和發育生物學中均有明確的記載，對於理解舌骨的結構和功能至關重要。"
+34,"From a microscopic perspective of bone structure, which of the following contains Haversian canals?",(A) Woven bone,(B) Cancellous bone,(C) Soft callus,(D) Laminar bone,D,Haversian system 只 在 成 熟 的 Laminar bone 中 可 見 ， Spongy/Trabecular/Cancellous bone 也 是 成 熟 骨 ， 但 是 並 沒 有 Haversian system 。,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識  
+- 骨組織的微觀結構主要由『Haversian系統』組成，這是骨骼的基本結構單位。  
+- 『Haversian管』是這些系統中的中心管道，負責血管和神經的通過，並參與骨骼的營養供應。  
+- 骨組織可分為『致密骨』和『海綿骨』，其中致密骨包含Haversian管，而海綿骨則不具此結構。  
+- 『軟骨癒合』是骨折癒合過程中的一個階段，主要由纖維組織和軟骨組成，並不包含Haversian管。  
+- 『層狀骨』是成熟的致密骨，具有明顯的Haversian系統，並包含Haversian管。  
+
+綜合以上觀點，選項中只有『層狀骨』（D）包含Haversian管。『編織骨』和『海綿骨』不具備這種結構，而『軟骨癒合』則是骨癒合的早期階段，亦不包含Haversian管。因此，正確答案為(D) Laminar bone。"
+35,"In the process of endochondral ossification of long bones, where is the secondary ossification center located?",(A) Diaphysis,(B) Epiphysis,(C) Metaphysis,(D) Endosteum,B,,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識  
+- 『內軟骨骨化』是長骨發育的主要過程，涉及兩個主要的『骨化中心』：初級和次級。  
+- 初級骨化中心位於『骨幹』(diaphysis)，而次級骨化中心則位於『骨端』(epiphysis)。  
+- 在長骨的發育過程中，次級骨化中心通常在出生後的幾個月到幾年內形成，並且對於骨骼的最終形狀和功能至關重要。  
+- 『骨幹』和『骨端』之間的『骨骺』(metaphysis) 是生長板的所在地，這裡的軟骨細胞會進行增殖，促進骨的長度增長。  
+- 『內骨膜』(endosteum) 是一層薄薄的結締組織，覆蓋在骨髓腔內側，並不涉及次級骨化中心的形成。  
+
+綜合以上知識，次級骨化中心的正確位置是『骨端』(epiphysis)，因此答案為 (B)。這一過程對於長骨的正常發育及功能至關重要，並且與骨骼的生長和成熟密切相關。"
+36,Osteoclasts are most commonly found in which region?,(A) Zone of cell proliferation in the epiphyseal plate,(B) Zone of hypertrophy and calcification in the epiphyseal plate,(C) Zone of reserve cartilage in the epiphyseal plate,(D) Osteogenic zone in the epiphyseal plate,D,此 題 為 國 考 題。 在 osteogenic zone ， 小 血 管 與骨 前 驅 細 胞會 侵 入 已 被 鈣 化 的 軟 骨 基 質。 Osteoclasts 會 負 責 移 除 鈣 化 軟 骨 與 初 生 骨 組 織 ， 為 新 的 骨 形 成 鋪 路。,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識  
+- 『骨吸收細胞』(Osteoclasts) 是專責於骨質吸收的細胞，主要功能是分解骨組織，釋放鈣質進入血液。  
+- 骨骼生長過程中，『骨骼板』(epiphyseal plate) 是長骨生長的重要區域，分為多個層次。  
+- 骨骼板的『增殖區』(zone of cell proliferation) 主要負責細胞的快速增殖，促進骨骼的長度增長。  
+- 『肥大與鈣化區』(zone of hypertrophy and calcification) 是細胞逐漸變大並進行鈣化的區域，為骨骼的成熟提供基礎。  
+- 『儲備軟骨區』(zone of reserve cartilage) 是未來將轉化為骨組織的軟骨細胞區域。  
+- 『成骨區』(osteogenic zone) 是骨形成的活躍區域，包含成骨細胞和骨吸收細胞。  
+
+在這些區域中，『骨吸收細胞』最常見於『成骨區』，因為這裡是骨重塑過程中骨質吸收與形成的交匯點。因此，正確答案為 (D) Osteogenic zone in the epiphyseal plate。"
+37,Which of the following involves the participation of cartilage?,(A) Intramembranous ossification,(B) Development of osteons,(C) Direct bone healing,(D) Indirect bone healing,D,這 題 是 國 考 題 (A) Intramembranous ossification 和 cartilage 無 關 ， Endochondral ossification 才 有 (B) (C) 也 和 cartilage 無 關 (D) 形 成 soft callus 時 就 是 fibrocartilage,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識
+
+在骨骼發育與修復過程中，『軟骨』扮演著重要角色。以下是與題目相關的核心觀念：
+
+- 『軟骨』是骨骼發育的基礎，尤其在『內膜骨化』過程中，並不涉及軟骨。
+- 『骨幹』的發展（如『骨單位』或『骨髓腔』的形成）主要依賴於『骨細胞』的活動，而非軟骨。
+- 『直接骨癒合』通常發生在骨折後，涉及骨組織的再生，並不需要軟骨的介入。
+- 『間接骨癒合』則是骨折癒合的過程，通常經過一個『軟骨』的過渡階段，形成『軟骨Callus』，然後再轉化為骨組織。
+
+因此，正確答案是(D)『間接骨癒合』，因為這一過程中，『軟骨』的形成與轉化對於骨骼的修復至關重要。"
+38,Which type of collagen fiber is most abundant in the extracellular matrix of hard bone tissue?,(A) Type I,(B) Type II,(C) Type III,(D) Type IV,A,,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識
+
+在硬骨組織的細胞外基質中，主要的膠原蛋白類型是『I型膠原蛋白』。以下是相關的核心觀念：
+
+- 『膠原蛋白』是結締組織的主要成分，對於骨骼的結構和強度至關重要。
+- 硬骨組織的主要功能是提供『支撐』和『保護』，並且參與『礦物質儲存』和『血液生成』。
+- 『I型膠原蛋白』不僅存在於骨組織中，還廣泛分佈於皮膚、肌腱和韌帶等其他結締組織。
+- 相較之下，『II型膠原蛋白』主要存在於軟骨中，而『III型膠原蛋白』則常見於皮膚和血管等組織，『IV型膠原蛋白』則主要構成基底膜。
+
+因此，根據以上的知識，答案是 (A) Type I，因為它是硬骨組織中最豐富的膠原蛋白類型，對於骨骼的結構完整性和功能發揮具有關鍵作用。"
+39,Where is the primary ossification center located during endochondral ossification of a long bone?,(A) Diaphysis,(B) Epiphysis,(C) Metaphysis,(D) Endosteum,A,依 照 Endochondral ossification 圖 示 所 示 ， primary ossification center 位 於 diaphysis,骨骼組織學 施耀翔,"📖 chatGPT 學長背景知識
+
+在長骨的『內軟骨骨化』過程中，主要的骨化中心位於『骨幹』，即『骨幹』的『中段』，這是骨骼發育的關鍵階段。內軟骨骨化是指在軟骨模型中逐漸形成骨組織的過程，主要發生在長骨的發育中。
+
+1. 『骨幹』是長骨的主要部分，通常在胎兒發育的第七週左右開始形成主要的骨化中心。
+2. 在『骨幹』內，『成骨細胞』會取代『軟骨細胞』，導致骨組織的形成，並逐漸擴展至『骨端』。
+3. 隨著骨化的進行，『骨端』的『骨化中心』會在出生後的幾年內形成，這些是次要的骨化中心。
+4. 『骨幹』的骨化過程對於長骨的生長和形狀發展至關重要，並且與『生長板』的形成和功能密切相關。
+
+因此，根據以上知識，正確答案是 (A) 『骨幹』。"
+40,"About spondylolisthesis , which one is wrong for the cause of its type ?",(A)Fracture of the neural arch in the pars articularis <-> traumatic,(B)Excessive removal of bone following spinal decompression <-> iatrogenic,(C)Weakening of the neural arch due to disorders of the bone <-> pathological,(D)Degenerative changes in the facet joints <-> degenerative,A,A 應 修 正 ： Fracture of the neural arch “other than” the pars articularis <-> traumatic,脊椎創傷及重建 卓進益,"📖 chatGPT 學長背景知識
+
+脊椎滑脫（spondylolisthesis）是指脊椎骨相對於下方脊椎骨的前移，通常可分為四種類型：創傷性、病理性、醫源性及退化性。每種類型的成因各有不同，以下是對題目選項的綜合解析：
+
+1. 『創傷性』滑脫通常由『神經弓』的『骨折』引起，特別是在『關節部』的部位，這是正確的。
+2. 『醫源性』滑脫可能由於『過度去骨』造成，這在進行『脊椎減壓手術』後常見，因此此選項也是正確的。
+3. 『病理性』滑脫則是由於『骨骼疾病』導致『神經弓』的『弱化』，如骨質疏鬆等，這也是正確的。
+4. 最後，『退化性』滑脫通常與『關節面』的『退化變化』有關，這是脊椎老化過程中的常見現象。
+
+綜合以上分析，所有選項均正確，然而若要選擇一個最不符合的選項，則需進一步考量具體的臨床情境與定義。根據題意，選項的描述皆符合各自類型的成因，因此無明顯錯誤。"
+41,Which one below is wrong?,(A)Angulation greater than 20 degrees and translation of 3.5 mm or more is unstable,"(B)wedge fracture with rupture of the interspinous ligaments is unstable, because the anterior and the posterior column are disrupted","(C)A burst fracture is unstable, because at least the anterior and middle column are disrupted",(D)simple anterior wedge fracture or just sprain of the posterior ligaments is also an unstable injury,D,,脊椎創傷及重建 卓進益,"📖 chatGPT 學長背景知識
+
+在脊椎外傷的評估中，穩定性是關鍵概念。以下是各選項的核心觀念：
+
+- 『角度』大於20度及『位移』超過3.5mm通常被視為不穩定。
+- 『楔形骨折』伴隨『棘間韌帶』斷裂，因為前後兩個柱的破壞，故被認為不穩定。
+- 『爆裂骨折』涉及前中柱的破壞，因此通常被視為不穩定。
+- 『單純前楔形骨折』或僅『後韌帶扭傷』的情況，則不一定被視為不穩定。
+
+綜合以上觀點，選項(D)的描述不正確。單純的前楔形骨折或後韌帶的扭傷通常不會導致脊椎不穩定，因為這類傷害通常不會破壞脊椎的主要支撐結構。因此，選擇(D)為錯誤的陳述。"
+42,Which one below is right?,(A)For upper thorasic spine ( T1-T8): Axial loading will result in compressive forces anteriorly and tensile forces posteriorly,"(B)for burst fracture: if there is no neurological symptoms with relative stable spine column, conservative non-surgical care is not suitable.",(C)A chance fracture is a three column injury with a vertical orientation of the fracture,"(D)Osteomyelitis, discitis, or active systemic infection are suitable for cementoplasty",A,"(B)for burst fracture: if there is no neurological symptoms with relative stable spine column, conservative non-surgical care is not suitable. (C)A chance fracture is a three column injury with a vertical horizontal orientation of the fracture (D)Osteomyelitis, discitis, or active systemic infection are not suitable for cementoplasty",脊椎創傷及重建 卓進益,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要釐清脊椎受傷的機制及其治療方式。以下是各選項的核心觀念：
+
+- (A) 上胸椎（T1-T8）在『軸向負荷』下，前方會產生『壓縮力』，而後方則會有『拉伸力』，這是脊椎生物力學的基本原則。
+- (B) 對於『爆裂性骨折』，若無『神經症狀』且脊椎穩定，通常可考慮『保守治療』，因此此選項不正確。
+- (C) 『Chance骨折』是一種三列損傷，通常呈『水平』或『斜向』，而非垂直方向。
+- (D) 『骨髓炎』、『椎間盤炎』或『系統性感染』通常不適合進行『水泥植入術』，因為這些情況可能會增加感染風險。
+
+綜合以上分析，正確答案應該是(A)，因為它正確描述了上胸椎在軸向負荷下的力學行為。其他選項均存在誤解或不正確的臨床應用。"
+43,Which of the following statements is correct?,(A) Pelvic lateral compression injury causes external rotation of the ipsilateral hemipelvis.,(B) Reverse oblique type intertrochanteric fracture is considered stable.,(C) Dislocation of the hip joint or femoral neck fracture can disrupt the blood supply and lead to femoral head osteonecrosis.,(D) The femoral head crescent sign indicates an irregular femoral contour.,C,(A) Lateral compression 會 造 成 internal rotation of the ipsilateral hemipelvis 才 對 (B) Reverse oblique type 的 intertrochanteric fracture 是 unstable (C) 發 生 femoral neck fracture 或 hip dislocation 會 容 易 導 致 med. circumflex a. 受 損造 成 股 骨 頭 壞 死 (D) 看 得 到 Crescent sign 代 表 股 骨 頭 的 輪 廓 還 是 圓 的 沒 塌 掉,肌肉骨骼影像解剖學(2)-下肢 許家豪,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要分析四個選項，並找出正確的敘述。以下是關鍵觀念：
+
+- 『骨盆側向壓縮傷』通常會導致『同側半骨盆外旋』，這是因為骨盆的結構和肌肉的作用。
+- 『反向斜型股骨轉子間骨折』被認為是『不穩定』的，因為其可能導致骨折片的移位。
+- 『髖關節脫位』或『股骨頸骨折』確實會破壞血供，進而可能導致『股骨頭壞死』，這是臨床上重要的併發症。
+- 『股骨頭新月徵』是指在影像學上看到的『股骨頭輪廓不規則』，通常與壞死或其他病變有關。
+
+綜合以上分析，選項C是正確的，因為髖關節脫位或股骨頸骨折會影響血液供應，導致股骨頭壞死的風險。其他選項的描述不夠準確或存在誤導。"
+44,Which of the following statements is incorrect?,(A) Patella alta most commonly results from patellar tendon rupture.,(B) Tibial plateau fracture Schatzker Type II is a lateral plateau split-depression fracture.,(C) The blood supply of the femoral head mainly comes from the artery of the ligamentum teres.,"(D) Hoffa fracture is a coronal plane fracture of the femoral condyle, often overlooked on imaging and typically requiring surgical fixation.",C,Femoral head 的 血 液 供 應 大 部 分 是 由 下 面 往 上 ， 不 是 來 自 artery of the ligamentum teres,肌肉骨骼影像解剖學(2)-下肢 許家豪,"📖 chatGPT 學長背景知識
+
+在這道題目中，我們需要判斷哪一個陳述是錯誤的。以下是各選項的核心觀念：
+
+- (A) 『Patella alta』通常是由於『髕腱斷裂』所引起，這是正確的，因為髕腱的損傷會導致髕骨位置的改變。
+- (B) 『Tibial plateau fracture Schatzker Type II』確實是『外側平台分裂-凹陷骨折』，這一點是正確的，因為該類型的骨折特徵為外側平台的分裂和凹陷。
+- (C) 股骨頭的血供主要來自『韌帶動脈』，這是正確的，因為韌帶動脈是供應股骨頭的重要血管。
+- (D) 『Hoffa骨折』是股骨髁的『冠狀面骨折』，通常在影像學上被忽視，且通常需要『外科固定』，這也是正確的。
+
+綜合以上分析，所有選項的陳述均為正確，因此沒有錯誤的選項。這題的設計可能存在誤導，建議在考試時仔細檢查每個陳述的細節。"
+45,Which of the following statements is correct?,(A) Femoral shaft fractures are preferably treated with plate fixation rather than intramedullary nails.,"(B) In imaging features of osteoarthritis, chondrocalcinosis is the main diagnostic criterion.","(C) Femoral neck fractures, Garden type III and IV, are generally recommended for open reduction and internal fixation (ORIF).",(D) Unstable intertrochanteric fractures of the femur should be treated with a proximal femoral nail (PFN).,D,"(A) shaft fracture 最 好 還 是 用 髓 內 釘 (B) OA characteristic: joint space narrowing, osteophyte, subchondral sclerosis, subchondral cyst (C) garden type 3,4 因 為 發 生 移 位 ， 發 生 缺 血 骨 壞 死 的 機 率 高 ， 不 建 議 做 ORIF (D) unstable type 用 髓 內 釘 固 定 效 果 比 較 好",肌肉骨骼影像解剖學(2)-下肢 許家豪,"📖 chatGPT 學長背景知識
+
+在骨科和關節病學中，對於骨折及關節疾病的正確診斷與治療至關重要。以下是對題目中選項的綜合性詳解：
+
+- 『股骨幹骨折』的治療通常選擇『髓內釘』而非『板固定』，因為髓內釘能提供更好的穩定性和較少的手術創傷。
+- 『骨關節炎』的影像學特徵中，『軟骨鈣化』並非主要診斷標準，主要依賴『關節間隙變窄』、『骨刺』等特徵。
+- 『股骨頸骨折』的Garden分型中，III型和IV型通常需要進行『開放性復位內固定（ORIF）』，以促進癒合並減少併發症。
+- 對於『不穩定的股骨轉子間骨折』，『近端股骨釘（PFN）』是推薦的治療方法，因其能提供良好的穩定性並促進早期活動。
+
+綜合以上分析，正確的選項為(D)，因為不穩定的股骨轉子間骨折確實應使用PFN進行治療。"
+46,Which description is wrong?,"(A) Joint x-ray study usually has two views, including AP and lateral projections. There are also special views for evaluation of a specific portion.",(B) MRI has better tissue contrast. It is better to use MRI to detect pulmonary or upper abdominal visceral contusion or laceration when rib fracture is noted after trauma.,"(C) If we can’t detect the dorsal foot pulse in a patient with traumatic lower extremity fracture, arterial injury is suspected. The next step is to arrange CT angiography for further evaluation.","(D) Arthrogram is an image study of joints after injection of contrast agent into a joint. It can be used in X-ray, CT, and MRI.",B,MRI 較 長 的 檢 查 時 間 ， 因 此 病 人 狀 態 差、 意 識 不 佳、 緊 急 入 院 時 ， 首 選 處 置 絕 對 不 會是 MRI ， 可 能 躺 著 躺 著 就 沒 呼 吸 了,基礎影像學原理 蔡蕙怡,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要辨識哪一個描述是錯誤的。以下是各選項的核心觀念：
+
+- (A) 關於『關節』的X光檢查，通常需要『兩個視角』，包括『前後』(AP)和『側面』(lateral)投影，並且可根據需要進行特殊視角檢查。
+- (B) MRI確實提供『更好的組織對比』，但對於『肺部』或『上腹部』內臟的損傷，通常不會首選MRI，因為CT在這些情況下更為有效。
+- (C) 若在『創傷性下肢骨折』患者中無法觸及『背側足脈』，確實應懷疑『動脈損傷』，並進行『CT血管造影』進一步評估。
+- (D) 關節造影（Arthrogram）是透過注射『對比劑』進行的影像檢查，可用於X光、CT及MRI。
+
+綜合以上分析，選項(B)的描述是錯誤的。雖然MRI在某些情況下具有優勢，但在評估創傷後的肺部或上腹部內臟損傷時，CT通常是更佳的選擇。因此，正確答案為(B)。"
+47,"While reading skeletal x-ray films, we need to check A, B, C, S, which are:","(A) Bone texture, cortical bone, soft tissue and joint space, skeletal alignment","(B) Skeletal alignment, soft tissue, joint space, bone texture","(C) Soft tissue, joint space, bone texture, cortical bone","(D) soft tissue and joint space, intraskeletal vessels, skeletal alignment, bone texture",A,,基礎影像學原理 蔡蕙怡,"📖 chatGPT 學長背景知識
+
+在解讀骨骼X光片時，醫生需要系統性地檢查幾個關鍵要素，以確保全面評估骨骼健康狀況。這些要素包括：
+
+- 『骨質』：評估骨骼的密度和結構，檢查是否有骨質疏鬆或其他病變。
+- 『皮質骨』：觀察骨骼的外層，確保其完整性，尋找骨折或病變的跡象。
+- 『軟組織』：檢查周圍的軟組織狀況，如肌肉、脂肪和其他結構，尋找腫脹或異常影響。
+- 『關節間隙』：評估關節的健康狀況，檢查是否有關節炎或其他病變導致的間隙變化。
+- 『骨骼對齊』：確認骨骼的排列是否正常，尋找任何位移或變形的跡象。
+
+根據這些要素，正確的選項應該是包含上述所有檢查項目的組合。這樣的系統性檢查能夠幫助醫生更準確地診斷和治療骨骼相關疾病。"
+48,The following image demonstrates an examination of the quadriceps muscle. Which imaging modality is being used?,(A) X-ray,(B) CT,(C) MRI,(D)Ultrasound,D,送 分 題 ， 圖 片 是 超 音 波 影 像 ， 透 過 聲 波 反 射 將 肌 纖 維 一 束 束 成 像 出 來。 雖 然 MR 也 可以 呈 現 肌 纖 維 走 向 ， 但 比 較 不 會 像 超 音 波 這 樣 黑 白 相 間。 左 圖 是 rotator cuff T2W 的 影 像 ； 右 圖 是 rotator cuff 超 音 波 影 像 比 較 一 下 肌 肉 纖 維 的 樣 子 ， 差 很 多 吧 ～,基礎影像學原理 蔡蕙怡,"📖 chatGPT 學長背景知識
+
+在評估『四頭肌』的影像學檢查中，選擇合適的影像學技術至關重要。以下是各種影像學方法的特點：
+
+- 『X-ray』：主要用於檢查骨骼結構，對於軟組織的評估能力有限，無法清晰顯示肌肉或肌腱的細節。
+- 『CT』：能提供橫斷面影像，對於骨骼及某些軟組織病變有良好顯示，但對於肌肉的細節仍不如其他技術。
+- 『MRI』：對於軟組織的成像效果最佳，能夠清晰顯示肌肉、肌腱及周圍結構，並且不使用輻射，適合評估肌肉損傷或病變。
+- 『Ultrasound』：可用於即時評估肌肉及其功能，特別是在運動醫學中，但對於深層組織的評估可能受到限制。
+
+綜合考量，若題目中提到的影像檢查專注於『四頭肌』的詳細結構及可能的病變，最可能的選擇是『MRI』，因其在軟組織成像方面的優勢，使其成為評估肌肉問題的首選技術。"
+49,Which of the following statements about osteonecrosis of the femoral head (ONFH) is correct?,(A) MRI has low sensitivity for early ONFH and is not recommended as the first-line imaging modality.,"(B) In bone scintigraphy, the typical crescent sign can be seen in ONFH.",(C) HIV infection does not increase the risk of ONFH.,"(D) Major risk factors include long-term use of corticosteroids, alcohol abuse, or hematologic disorders.",D,(A)MRI 具 有 高 敏 感 性 (B) 在 X 光 下 才 會 呈 現 crescent sign (C)HIV 也 會 增 加 ONFH 風 險,骨質疏鬆與骨壞死 林松彥,"📖 chatGPT 學長背景知識  
+骨壞死（Osteonecrosis）是指骨組織因血液供應不足而導致的壞死，股骨頭壞死（ONFH）是最常見的類型之一。其主要風險因素包括長期使用『皮質類固醇』、『酗酒』及某些『血液疾病』。影像學檢查中，『MRI』是診斷早期ONFH的首選，因其對早期變化的『敏感性』較高，而骨掃描則不常用於此。HIV感染與ONFH之間的關聯性尚無明確證據，並不被認為是主要風險因素。總結來說，正確的選項為(D)，因為它涵蓋了ONFH的主要風險因素，並且強調了影像學檢查的選擇與重要性。"
+50,Which of the following statements is incorrect?,(A) Smoking and alcohol consumption are risk factors for osteoporosis.,"(B) When a patient has internal fixation in L1–L4 vertebrae or both hips, bone density can be measured by DXA at the distal one-third of the dominant forearm.",(C) A 65-year-old woman was incidentally found to have an old compression fracture of L1 during a health check. DXA showed bilateral hip T-scores of -1.2/-1.3 and lumbar spine T-score of -2.2. This woman is still considered to have osteoporosis.,"(D) In premenopausal women, a Z-score ≤ -2.0 requires careful evaluation for secondary osteoporosis caused by disease or medication.",B,要 測 非 慣 用 手 的 橈 骨 ⅓ 喔 ， 這 hen 簡 單 吧,骨質疏鬆與骨壞死 林松彥,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要判斷哪一個敘述是錯誤的。首先，選項(A)提到『吸煙』和『酒精消費』是骨質疏鬆的風險因素，這是正確的，因為這些因素會影響骨密度。選項(B)提到在L1–L4脊椎或雙側髖關節有內固定的患者，可以在主導前臂的遠端三分之一進行DXA測量，這也是正確的，因為這樣的部位不受內固定影響。選項(C)描述了一位65歲女性的情況，根據她的T-score，雖然髖部T-score在-1.2/-1.3之間，但因為腰椎T-score為-2.2，這位女性仍然符合『骨質疏鬆』的診斷，因此此選項正確。最後，選項(D)提到在絕經前女性中，Z-score ≤ -2.0需要仔細評估是否有『次級骨質疏鬆』，這也是正確的，因為這可能指示潛在的健康問題。綜合以上分析，所有選項均為正確，因此題目中並無錯誤敘述。"
+51,Which of the following statements is correct?,(A) Bone remodeling requires coupling between osteoclasts and osteoblasts.,(B) Daily intake of 1200 mg of calcium in osteoporosis patients reduces fracture risk.,(C) Native vitamin D3 must be converted by the kidney to 25(OH)D3 to increase its activity.,"(D) Vitamin D status is usually assessed by serum 1,25-dihydroxyvitamin D [1,25(OH) ₂ D] levels.",A,(A) 可 以 看 到 bone remodeling cycle 中 osteoclast 和 osteoblast 都 有 參 與 (B) 補 充 鈣 不 會 減 少 骨 折 風 險 （ C ） 是 在 肝 臟 轉 換 （ D ）,骨質疏鬆與骨壞死 林松彥,"📖 chatGPT 學長背景知識
+
+在骨骼健康與代謝中，『骨重塑』是由『破骨細胞』和『成骨細胞』之間的『耦合』過程所調控。這一過程對於維持骨質密度至關重要。對於『鈣』的攝取，雖然每日攝入1200 mg的鈣對於骨質疏鬆症患者有助於減少骨折風險，但這必須結合『維生素D』的適當水平，以促進鈣的吸收。維生素D的活性形式是『1,25-二羥維生素D』，但其前體『維生素D3』需在肝臟和腎臟中轉化為『25(OH)D3』，這是評估維生素D狀態的主要指標。通常，臨床上會測量『25(OH)D3』而非『1,25(OH)₂D』，因為後者的水平受多種因素影響，並不反映維生素D的儲存狀態。因此，正確的陳述應該是關於骨重塑的耦合及維生素D的代謝過程。"
+52,What type of cell is indicated by the arrow?,(A) Osteocyte,(B) Osteoblast,(C) Osteoclast,(D) Fibroblast,C,大 且 多 核 ， H&E stain 呈 現 嗜 酸 性 染 色 ， 位 於 骨 表 面 凹 陷 處 (Howship’s lacunae),組織學與實驗-骨骼與軟骨 施耀翔、吳敏瑜,"📖 chatGPT 學長背景知識  
+在骨組織中，主要的細胞類型包括『骨細胞』、『骨母細胞』、『破骨細胞』和『成纖維細胞』。這些細胞在骨的形成、維持和重塑中扮演著重要角色。
+
+- 『骨細胞』(Osteocyte)：成熟的骨細胞，主要負責骨的維持與信號傳遞，位於骨基質內。
+- 『骨母細胞』(Osteoblast)：負責骨的形成，合成骨基質並促進礦化，通常位於骨表面。
+- 『破骨細胞』(Osteoclast)：大型多核細胞，負責骨的吸收與重塑，對骨質的代謝有重要影響。
+- 『成纖維細胞』(Fibroblast)：主要存在於結締組織中，負責合成膠原蛋白及其他基質成分，與骨組織的直接形成無關。
+
+在考題中，若箭頭指向的細胞特徵為多核、細胞體較大且有明顯的溶骨作用，則該細胞為『破骨細胞』。若細胞呈現圓形且位於骨表面，則可能是『骨母細胞』。因此，正確答案需根據細胞的形態及位置來判斷。"
+53,What structure is indicated by the red dashed line?,(A) Endosteum,(B) Periosteum,(C) Perichondrium,(D) Territorial matrix,C,前 方 構 造 為 氣 管 （後 方 扁 掉 的 是 食 道） ， 含 有 由 hyaline cartilage 構 成 的 C 型 軟 骨 ； 而 紅線 圈 起 來 的 部 分 為 包 圍 cartilage 的 構 造 ： perichondrium 。,組織學與實驗-骨骼與軟骨 施耀翔、吳敏瑜,"📖 chatGPT 學長背景知識
+
+在這道題目中，我們需要辨識紅虛線所指示的結構。以下是相關的核心觀念：
+
+- 『內骨膜』(Endosteum)：這是一層薄膜，覆蓋在骨髓腔的內部，主要由成骨細胞和破骨細胞組成，參與骨的重塑與修復。
+  
+- 『外骨膜』(Periosteum)：這是一層結締組織，包覆在骨的外表，含有血管和神經，對骨的生長和修復至關重要。
+
+- 『軟骨膜』(Perichondrium)：這是一層結締組織，包圍在某些軟骨的外部，提供營養並支持軟骨的生長。
+
+- 『區域基質』(Territorial matrix)：這是指在軟骨組織中，細胞周圍的基質，與細胞的功能和生長有關。
+
+根據這些定義，若題目中的紅虛線指向的是骨的結構，則最有可能是『外骨膜』，因為它是覆蓋在骨外部的結構，並且在影像學上常常以虛線表示。若是指向軟骨，則可能是『軟骨膜』。因此，選項 (B) 『外骨膜』是最有可能的正確答案。"
+54,What is the purpose of the grip strength test in animal studies?,(A) To assess reflex and pain response,(B) To evaluate memory and learning,(C) To measure motor coordination,(D) To assess muscular strength and neuromuscular function,D,實 驗 只 考 一 題 但 給 了 四 點 考 訓 :) 因 為 考 古 偏 少 ， 附 上 跟 這 題 相 關 的 考 訓 ： 肌 肉 損 傷 動 物 模 式 的 種 類、 進 行 方 式、 評 估方 式 肌 肉 損 傷 動 物 模 式 整 理 種 類 Rota-rod test Grip strength test 圖 示 目 的 評 估 動 作 協 調 能 力 (motor coordination) ， 包 括 1. 肌 肉 功 能 2. 小 腦、 平 衡 與 協 調 主 要 測 試 前 肢 ， 評 估 ： 1. 肌 力 (muscle strength) 2. 神 經 肌 肉 功 能 (neuromuscular function) 3. 神 經 傳 導 與 肌 肉 收 縮 能 力 流 程 將 小 鼠 放 在 會 持 續 旋 轉 的 圓 柱 棒 上， 觀 察 其 掉 落 時 間 1. 讓 小 鼠 的 前 肢 抓 住 一 條 薄 線 或水 平 桿 2. 研 究 者 輕 拉 動 物 尾 部 ， 使 其 試著 保 持 抓 握 評 估 方 式 ● 掉 落 時 間 (Latency to fall) ○ 經 過 訓 練 ， 動 物 須 能 在 棒上 至 少 維 持 1 分 鐘 ○ 越 快 掉 落 ， 表 示 其 運 動 協調 或 肌 力 越 差 ● 掉 落 比 例 (Percent animals falling) ● 掉 落 比 例 (Percentage of animals losing the catching reflex) ● 肌 力 變 差 的 小 鼠 會 因 為 抓 不 牢而 提 早 掉 落,生理學實驗 薛元碩,"📖 chatGPT 學長背景知識  
+在動物研究中，握力測試是一種常用的評估工具，主要用於測量『肌肉力量』和『神經肌肉功能』。這項測試通常涉及讓動物用其爪子或手抓住特定的裝置，以量化其握力的強度。
+
+握力測試的目的在於評估動物的『運動能力』，這對於研究肌肉疾病、神經退行性疾病或藥物影響等情況非常重要。透過測量握力，研究人員可以獲得有關動物整體『肌肉功能』和『神經系統健康』的資訊，進而推斷其在日常活動中的表現。
+
+此外，握力測試也能反映出動物的『疼痛反應』和『反射能力』，但這並非其主要目的。因此，最符合握力測試的目的選項為(D)『評估肌肉力量和神經肌肉功能』，因為這直接關聯到測試所需的生理指標和臨床意義。"
+55,Which statement best describes the general nature of bone tissue?,(A) It is an inert structure made of solid calcium.,(B) It is a static organ primarily for storage.,"(C) It is a living, dynamic, and vascular tissue.",(D) It is composed solely of compact bone.,C,(A) 錯 在 「 inert 」 與 「 solid calcium 」。 骨 頭 主 要 礦 物 質 是 hydroxyapatite (Ca ₁₀ (PO ₄ ) ₆ (OH) ₂ ) ， 不 是 純 鈣 ， 也 不 是 惰 性。 它 具 有 代 謝 活 性 與 血 管 結 構。 (B) 雖 然 骨 有 儲 存 鈣、 磷 的 功 能 ， 但 非 「靜 態 器 官」 ， 它 持 續 進 行 remodeling 。 (D) 骨 頭 除 了 compact bone ， 還 有 spongy/trabecular bone ， 兩 者 共 同 構 成 骨 結 構。,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識
+
+骨組織是人體中一種重要的『活性』結構，具有多種功能。以下是骨組織的核心特性：
+
+- 『動態性』：骨組織並非靜止不變，而是持續進行『重塑』過程，透過骨細胞（如成骨細胞和破骨細胞）的活動來調整其結構和強度。
+- 『血管化』：骨組織內含有豐富的『血管』，這不僅提供營養，還有助於代謝廢物的排除，顯示出骨組織的『生理活性』。
+- 組成多樣性：骨組織由『緻密骨』和『海綿骨』組成，兩者各有不同的結構和功能，並共同支持骨骼的強度和靈活性。
+- 功能多元：除了支撐和保護內臟，骨組織還參與『礦物質儲存』和『造血』等重要生理過程。
+
+因此，正確的描述應該強調骨組織的『活性』和『動態』特性，而非將其視為靜態或僅為儲存的結構。選項 (C) 是最能準確反映骨組織本質的陳述。"
+56,Which type of bone consists of parallel layers of collagen fibers and is found in all mature bones?,(A) Woven bone,(B) Compact bone,(C) Lamellar bone,(D) Trabecular bone,C,板 層 骨 (lamellar bone) 具 有 平 行 排 列 的 膠 原 纖 維 (A) 編 織 骨 (woven bone) 的 膠 原 纖 維 隨 機 排 列 並 交 織 在 一 起 (B) 緻 密 骨 (compact bone) 由 同 心 環 狀 排 列 的 骨 板 組 成。 (D) 骨 小 梁 (trabecular bone) 由 呈 不 規 則 網 狀 結 構 的 骨 板 組 成。,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識  
+- 骨骼組織主要分為『緻密骨』和『海綿骨』兩大類。  
+- 骨的結構可分為『初生骨』和『成熟骨』，其中成熟骨又可細分為『層狀骨』和『編織骨』。  
+- 『層狀骨』是成熟骨的主要形式，具有高度的結構穩定性。  
+
+在這道題目中，正確答案是 (C) 『層狀骨』。層狀骨由平行的『膠原纖維』層組成，這種結構使其在承受壓力和應力方面表現出色。層狀骨存在於所有成熟的骨骼中，並且在骨骼的生長和修復過程中起著重要作用。相比之下，『編織骨』是較為原始的骨組織，通常在骨骼發育的早期階段出現，並不具備層狀骨的結構特徵。『緻密骨』和『海綿骨』則是根據骨的密度和功能進行分類，並不特指膠原纖維的排列方式。因此，層狀骨的平行膠原纖維層是其獨特的結構特徵，並且是所有成熟骨骼的共同特徵。"
+57,What is the main function of the periosteum in bone?,(A) Fat storage,(B) Muscle contraction,(C) Bone growth and repair,(D) Osteoclast anchoring,C,骨 骼 生 長 與 修 復 (Bone Growth and Repair): 骨 膜 內 含 骨 原 前 驅 細 胞 (osteoprogenitor cells) ， 這 些 細 胞 能 夠 分 化 成 成 骨 細 胞 (osteoblasts) 。 骨 膜 的 內 層 （或 稱 造 骨 層 /cambium layer ） 含 有 造 骨 幹 細 胞 ， 當 骨 頭 需 要 修 復 時 ， 這 些 幹 細胞 會 從 此 處 釋 放 出 來,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識
+
+- 『骨膜』是覆蓋在骨骼表面的結締組織，主要由兩層組成：外層的纖維層和內層的細胞層。
+- 其主要功能包括『骨的生長』和『修復』，特別是在骨折後，骨膜中的成骨細胞會促進新骨的形成。
+- 骨膜還具有『保護』骨骼的作用，防止外部損傷及感染。
+- 此外，骨膜中的神經和血管網絡有助於『營養供應』和『感覺傳遞』，對於骨骼的健康至關重要。
+
+綜合以上觀點，選項 (C)『骨的生長和修復』是正確答案。其他選項如 (A) 脂肪儲存、(B) 肌肉收縮和 (D) 破骨細胞固定，並非骨膜的主要功能。因此，骨膜在骨骼的結構和功能中扮演著不可或缺的角色，特別是在骨的發育和損傷後的修復過程中。"
+58,Which of the following best describes the initial step in intramembranous ossification?,(A) Formation of cartilage model by chondroblasts,(B) Transformation of osteocytes into osteoblasts,(C) Clustering of mesenchymal cells and differentiation into osteoblasts,(D) Vascular invasion of hyaline cartilage,C,,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識  
+在骨骼發育過程中，『膜內骨化』是指骨組織直接從『間充質細胞』轉變而來，不經過軟骨模型。這一過程主要發生在顱骨和鎖骨的形成中。
+
+在膜內骨化的初始步驟中，『間充質細胞』首先聚集並開始分化為『成骨細胞』。這些成骨細胞隨後會合成骨基質，並最終形成成熟的骨組織。因此，正確的選項是(C) Clustering of mesenchymal cells and differentiation into osteoblasts。
+
+其他選項中，(A)提到的軟骨模型形成是『軟骨內骨化』的過程，而(B)中成骨細胞的轉變是後續步驟，(D)則涉及到『血管侵入』的過程，這通常發生在骨化後期。因此，選擇(C)是最能準確描述膜內骨化初始步驟的選項。"
+59,What is the correct sequence of events in the primary center of endochondral ossification?,(A) Periosteal bud invades → cartilage model forms → ossification center develops,(B) Chondrocytes proliferate → hypertrophy → calcification → vascular invasion,(C) Bone collar forms → mesenchyme condenses → chondrocyte hypertrophy → ossification,(D) Osteoclast activity begins → epiphyseal plate forms → cartilage calcifies,B,(A) Cartilage model forms → periosteal bud invades → ossification center develops (B) 正 確 (C) Mesenchyme condenses → chondrocyte hypertrophy → bone collar forms → ossification (D) Cartilage calcifies → osteoclast activity begins → epiphyseal plate forms,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識  
+在『內軟骨骨化』的過程中，主要的事件序列涉及軟骨模型的形成及其後的骨化過程。這一過程通常發生在長骨的發育中，並且可以分為幾個關鍵步驟。
+
+首先，『軟骨模型』的形成是由『間充質細胞』分化為『軟骨細胞』，這些軟骨細胞隨後會『增殖』並『肥大』。接著，隨著『軟骨細胞的肥大』，周圍的軟骨基質會發生『鈣化』，這為後續的『血管侵入』創造了條件。當血管及『骨母細胞』進入時，『骨化中心』開始形成，並逐漸取代鈣化的軟骨。
+
+在這一過程中，『骨皮質』的形成也很重要，因為它提供了支持結構。最終，『骨吸收細胞』的活動會影響骨的重塑，並在生長板的形成中扮演角色。
+
+總結來說，內軟骨骨化的正確事件序列應包括：『軟骨細胞增殖』、『肥大』、『鈣化』及『血管侵入』，這些步驟共同促進了骨的形成與發育。"
+60,What is the correct order of the ARF cycle in bone remodeling?,(A) Activation → Formation → Resorption,(B) Resorption → Reversal → Activation → Formation,(C) Activation → Resorption → Reversal → Formation,(D) Formation → Activation → Resorption → Reversal,C,,生理學實驗 薛元碩,"📖 chatGPT 學長背景知識  
+骨重塑（Bone Remodeling）是一個動態過程，涉及骨組織的『吸收』與『形成』，以維持骨骼的健康與強度。這一過程主要由骨細胞（如破骨細胞與成骨細胞）調控，並可分為幾個階段。
+
+核心觀念：  
+- 『激活』（Activation）：骨重塑的開始，破骨細胞的前驅細胞被刺激，開始分化為破骨細胞。  
+- 『吸收』（Resorption）：破骨細胞活化後，開始吸收舊的骨組織，釋放鈣質進入血液。  
+- 『逆轉』（Reversal）：吸收後的過渡期，為成骨細胞的活化做準備。  
+- 『形成』（Formation）：成骨細胞被激活，開始合成新的骨基質，進行骨的再生。
+
+正確的骨重塑循環順序為：『激活』→『吸收』→『逆轉』→『形成』。因此，正確答案為選項 (C) Activation → Resorption → Reversal → Formation。這一循環確保骨骼的結構與功能不斷更新，適應身體的需求。"
+61,Which vitamin deficiency leads to decreased collagen synthesis in bone?,(A) Vitamin D,(B) Vitamin A,(C) Vitamin C,(D) Vitamin B12,C,Vitamin C 能 催 化 Collagen 合 成 ， 入 學 有 考 過 ~,生理學實驗 薛元碩,"📖 chatGPT 學長背景知識  
+在骨骼的健康與發展中，『膠原蛋白』的合成扮演著關鍵角色。膠原蛋白是骨骼的主要結構蛋白，對於維持骨骼的強度與彈性至關重要。不同的維生素在膠原蛋白的合成中有著不同的作用。
+
+在這四個選項中，『維生素C』是合成膠原蛋白的必要因子。維生素C參與了膠原蛋白的羥基化反應，這一過程對於膠原蛋白的穩定性和功能至關重要。缺乏維生素C會導致膠原蛋白合成減少，進而影響骨骼的結構和功能，最終可能導致『壞血病』等健康問題。
+
+相對而言，維生素D主要與鈣的吸收和骨骼礦化有關，維生素A則在骨骼重塑中扮演角色，而維生素B12則與紅血球生成及神經功能有關，與膠原蛋白合成的直接關聯性較低。
+
+因此，正確答案是 (C) 維生素C。"
+62,Which type of cartilage is found in the external ear and epiglottis?,(A) Hyaline cartilage,(B) Fibrocartilage,(C) Elastic cartilage,(D) Articular cartilage,C,外 耳 和 會 厭 軟 骨 源 自 於 『 elastic cartilage 』,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識
+
+在人體中，『軟骨』是一種重要的結締組織，根據其結構和功能的不同，可以分為三種類型：『透明軟骨』、『纖維軟骨』和『彈性軟骨』。每種類型的軟骨在不同的部位發揮特定的功能。
+
+- 『透明軟骨』主要存在於關節、肋骨和呼吸道，具有良好的支撐性和彈性。
+- 『纖維軟骨』則富含膠原纖維，主要位於椎間盤和恥骨聯合，提供強度和耐壓性。
+- 『彈性軟骨』則含有大量的彈性纖維，能夠提供更大的彈性和柔韌性，主要分布在『外耳』和『會厭』等部位。
+
+根據題目所述，『外耳』和『會厭』的結構特徵顯示它們需要較高的彈性以適應環境變化，因此這些部位的主要組成是『彈性軟骨』。因此，正確答案為 (C) 『彈性軟骨』，它能夠支持這些結構同時保持其形狀和功能。"
+63,Which of the following correctly matches the cartilage type with its main structural feature?,(A) Hyaline cartilage – abundant elastic fibers,(B) Elastic cartilage – type I collagen dominance,(C) Fibrocartilage – absence of perichondrium,(D) Articular cartilage – highly vascularized tissue,C,,骨與軟骨生理學 薛元碩,"📖 chatGPT 學長背景知識
+
+在了解軟骨的類型及其主要結構特徵時，需注意以下幾個核心觀念：
+
+- 軟骨主要分為三種類型：『透明軟骨』、『彈性軟骨』和『纖維軟骨』。
+- 『透明軟骨』是最常見的軟骨，主要由『II型膠原纖維』組成，且不含豐富的彈性纖維。
+- 『彈性軟骨』含有大量的『彈性纖維』，使其具備更高的彈性和柔韌性，常見於耳朵和喉部。
+- 『纖維軟骨』則以『I型膠原纖維』為主，並且缺乏『圍軟骨』，通常出現在承受壓力的部位，如椎間盤和恥骨聯合。
+- 『關節軟骨』是透明軟骨的一種特化形式，通常無血管供應，依賴周圍組織的擴散來獲取養分。
+
+根據上述知識，正確的選項應該是『纖維軟骨 – 缺乏圍軟骨』，因為這是其主要特徵之一。其他選項均不正確，因為它們對於各類軟骨的描述存在誤解。"
+64,Which statement(s) is/are False ？,(A) Ceramics is a brittle material.,(B) Tendon is a ductile material,(C) Brittle material undergoes more plastic deformation before failure.,(D) Stainless steel is a brittle material.,送分,(A) Ceramics is a brittle material.→ 陶 瓷 杯 摔 到 地 板 會 碎 即 為 brittle material 的 表 現 (B) Tendon is a ductile material →tendon 可 以 拉 伸 ， 具 有 延 展 性 (ductility) (C) Brittle material undergoes more plastic deformation before failure.→brittle material 在 超 過 彈 性 變 形 的 極 限 (elastic limit) 後 ， 在 經 過 ” 一 小 段 ” plastic deformation就 會 rupture ； 反 之 ， ductile material 在 超 過 彈 性 變 形 的 極 限 (elastic limit) 後 ， 會 進 入 一段 不 短 的 塑 性 變 形 (plastic deformation) 才 會 rupture 。 (D) Stainless steel is a brittle material.→ 不 鏽 鋼 杯 摔 到 地 板 只 會 凹 進 去 ， 不 會 碎 掉 ，所 以 不 為 brittle material ， 而 是 ductile material 。,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識
+
+在材料科學中，了解材料的性質對於醫學應用至關重要。以下是對題目中各選項的綜合性解析：
+
+- 『脆性材料』如陶瓷，通常在受到應力時不會經歷顯著的『塑性變形』，而是直接斷裂。這使得選項(A)正確。
+- 『腱』是由『膠原蛋白』構成的組織，具有一定的『延展性』，但不應被視為『韌性材料』，因此選項(B)是錯誤的。
+- 『脆性材料』在斷裂前通常不會經歷大量的『塑性變形』，這使得選項(C)也是錯誤的。
+- 不同於脆性材料，『不銹鋼』通常被認為是『韌性材料』，能夠承受較大的變形而不斷裂，因此選項(D)也是錯誤的。
+
+綜合以上分析，正確的答案是選項(B)、(C)和(D)皆為錯誤陳述。"
+65,Which of the following(s) may not be helpful in diagnosing Superior Labrum Anterior to Posterior Lesion (SLAP) ？,(A) MR-Arthrography.,(B) Valgus Stress Test,(C) O’Brien’s Test,(D) Compression Rotation Test.,B,,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識
+
+『Superior Labrum Anterior to Posterior Lesion』(SLAP) 是一種肩關節的損傷，通常涉及肩盂唇的前後部分。診斷SLAP損傷的工具和測試各有其特點與限制。
+
+1. 『MR-Arthrography』：這是一種影像學檢查，通過注射造影劑來提高肩關節的可視化，對於診斷SLAP損傷非常有效，能夠清楚顯示唇部的損傷情況。
+
+2. 『Valgus Stress Test』：這是一種主要用於評估肘部內側韌帶損傷的測試，對於肩部的SLAP損傷並不具特異性，因此可能不會提供有用的診斷信息。
+
+3. 『O’Brien’s Test』：這是一種專門設計用來檢測SLAP損傷的臨床測試，當肩關節在特定位置時，能夠引發疼痛或不適，對於診斷有幫助。
+
+4. 『Compression Rotation Test』：這也是一種針對SLAP損傷的臨床測試，通過壓縮和旋轉肩關節來評估唇部的完整性，能夠提供診斷線索。
+
+綜合以上，選項(B)『Valgus Stress Test』可能是最不具幫助的，因為它主要針對肘部而非肩部的SLAP損傷。"
+66,Motion analysis can be clinically applied in which of the followings?,(A) Analysis of shoulder joint loading for tennis serve,(B) Analysis of elbow joint loading during fall on the outstretched hand.,(C) Gait Analysis in patients with osteoarthritis of the knee joint.,(D) All of the above.,D,(A) 手 舉 過 肩 的 運 動 ， 如 網 球、 棒 球、 排 球、 羽 球 都 有 可 能 出 現 RCT 的 運 動 傷 害 （旋 轉肌 部 分 損 傷 甚 至 完 全 斷 裂） (B) 很 多 的 骨 科 創 傷 來 自 跌 倒、 車 禍 等 原 因。 跌 倒 時 用 手 撐 地 上 (outstretched hand) 是上 肢 創 傷 （ eg. 手 腕、 肩 膀、 手 肘） 的 重 要 因 素 (C) 正 確,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識  
+運動分析（Motion analysis）是一種利用科技手段評估人體運動的技術，廣泛應用於臨床醫學中，特別是在運動醫學、物理治療及康復領域。其主要目的是了解關節負荷、運動模式及功能障礙，進而制定個性化的治療方案。
+
+核心觀念：  
+- 『肩關節』負荷分析：在網球發球時，肩關節承受的力量和運動模式可影響運動表現及受傷風險。  
+- 『肘關節』負荷分析：在摔倒時，手掌伸展會導致肘關節受到劇烈的衝擊，運動分析可以幫助評估受傷風險及康復進程。  
+- 『步態分析』：對於膝關節骨關節炎患者，步態分析能夠揭示其運動不對稱及疼痛影響，幫助制定治療計劃。  
+
+綜合以上，運動分析技術能夠在多種臨床情境中提供關鍵數據，協助醫療專業人員進行精確診斷及治療。因此，正確答案為 (D) 所有選項皆正確。"
+67,The highest shoulder joint loading can occur on which of the time interval during pitching motion?,(A) Winding phase,(B) Late cocking & early acceleration phase,(C) Deceleration phase,(D) Follow through phase,B,經 典 考 古 題,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識
+
+在投球動作中，肩關節承受的負荷隨著不同的動作階段而變化。了解這些階段對於預防運動傷害及提升運動表現至關重要。
+
+核心觀念：
+- 投球動作可分為『風擺期』、『後擺期』、『加速期』、『減速期』及『隨後期』。
+- 『肩關節負荷』在不同階段的變化影響肩部的生物力學。
+- 『後擺期』與『加速期』是肩關節負荷最高的時期，因為此時肩部肌肉及韌帶承受最大的張力。
+
+在投球過程中，『後擺期』至『加速期』是肩關節負荷最重的階段。這段時間內，肩關節的動作速度及力量需求達到巔峰，導致關節及周圍組織承受極大的壓力。相較之下，『減速期』及『隨後期』的負荷雖然也不容忽視，但主要是為了控制動作而產生的負荷，並不及前者來得劇烈。因此，正確答案為 (B) 『後擺期』與『加速期』。"
+68,Which of the following statement(s) about ACL (Anterior Cruciate Ligament) injuries is/are false ？,(A) ACL injuries are frequently related to sports injuries,(B) ACL tear with associated injuries is an indication for surgical treatment,(C) Compression Rotation Test can detect ACL injuries,(D)MRI is useful in diagnosing ACL injuries,C,compression rotation test 是 測 SLAP 肩 關 節 唇 傷 害,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識
+
+前交叉韌帶（ACL）損傷是常見的運動傷害，尤其在高強度運動中。以下是對題目中選項的綜合解析：
+
+1. ACL損傷通常與『運動』有關，特別是涉及快速變向或跳躍的運動，因此選項(A)為『真』。
+2. 當ACL撕裂伴隨其他損傷（如半月板損傷或韌帶損傷）時，通常建議進行『手術治療』，因此選項(B)為『真』。
+3. 壓縮旋轉測試（Compression Rotation Test）主要用於評估半月板損傷，而非專門檢測ACL損傷，因此選項(C)為『假』。
+4. 磁共振成像（MRI）在診斷ACL損傷中非常有用，能夠清楚顯示韌帶的完整性及其他相關損傷，故選項(D)為『真』。
+
+綜合以上分析，選項(C)是錯誤的，因為該測試並不專門用於檢測ACL損傷。"
+69,Valgus Extension Overload is probably the most common cause of elbow injury in baseball pitchers. It is not associated with :,(A) lateral collateral ligament instability,(B) osteochondral injuries of the radio-capitellar joint,(C) ulnar nerve neuropathy,(D) posterior elbow impingement.,A,(A) 投 球 的 stress 主 要 在 medial side ， 非 lateral side,運動創傷及運動醫學 周伯禧,"📖 chatGPT 學長背景知識
+
+『Valgus Extension Overload』是指在投球過程中，肘關節受到過度的外翻與伸展壓力，這種情況常見於棒球投手，並可能導致多種肘部損傷。此病理機制主要與肘部的『側副韌帶』、『骨軟骨損傷』及『神經壓迫』等相關。
+
+在選項中，(A)『側副韌帶不穩定』、(B)『放射頭-肱骨關節的骨軟骨損傷』及(C)『尺神經神經病』均與Valgus Extension Overload有關，因為這些情況都是由於肘部的過度應力所引起的。然而，(D)『後肘撞擊』則不直接與此病理相關，因為後肘撞擊主要是由於肘部的過度伸展或過度活動引起的，而非Valgus Extension Overload所導致的。因此，正確答案為(D)，因為後肘撞擊並不是Valgus Extension Overload的直接後果。"
+70,Which bone cannot be seen in X-ray Hand lateral view?,(A) Cuboid,(B) Lunate,(C) Capitate,(D) Trapezium,A,送 分 題 ， 8 塊 腕 骨 沒 有 一 塊 叫 Cuboid 看 一 下 真 正 的 lateral view 可 以 看 到 什 麼 吧！ 1. Capitate 2. Trapezium 3. Pisiform 4. Scaphoid 5. Lunate,"足踝關節之骨科功能解剖學 陳姝蓉, 肌肉骨骼影像解剖學(1)-上肢 林育全","📖 chatGPT 學長背景知識
+
+在手部的X光檢查中，特別是側面（lateral view）影像，某些骨骼的可視性會受到其位置和角度的影響。手部的骨骼主要包括『腕骨』和『掌骨』，其中腕骨有八塊，分為近側和遠側兩排。
+
+核心觀念：
+- 『腕骨』分為兩排：近側排（包括『月骨』、、『舟骨』、、『三角骨』、、『豌豆骨』）和遠側排（包括『大多角骨』、、『小多角骨』、、『頭骨』、、『鉤骨』）。
+- 在側面X光影像中，『舟骨』和『月骨』通常較為可見，因為它們位於手腕的近側。
+- 『立方骨』位於腕骨的遠側，並且在側面影像中通常被其他骨骼遮擋，因此不易被觀察到。
+
+綜合以上分析，選項中『立方骨』是最不容易在手部側面X光影像中被看到的骨骼，因為其位置和角度使其常常被其他骨骼遮擋。因此，正確答案為(A) Cuboid。"
+71,"According to YCL method (CNRMT) interpreting a skeletal radiograph, which of the following belongs to Morphology (M)?",(A) A calcified lesion over greater tubercle in X-ray Shoulder AP view,(B) Dislocated radius and ulna in X-ray Elbow lateral view,(C) An over-bowing radius in X-ray Forearm AP view,(D) Additional middle phalanx and distal phalanx in X-ray Hand AP view,C,(A) 鈣 化 為 Texture (B)Dislocated 屬 於 Relation (C)over-bowing 屬 於 Morphology (D)Additional middle phalanx and distal phalanx 屬 於 Number,肌肉骨骼影像解剖學(1)-上肢 林育全,"📖 chatGPT 學長背景知識  
+在解讀骨骼X光片時，YC方法（CNRMT）強調形態學（Morphology）在診斷中的重要性。形態學主要關注骨骼的『形狀』、『結構』及『位置』等特徵，這些特徵能幫助醫師識別病變或異常。
+
+在本題中，選項中涉及的影像特徵可分為不同的形態學表現：
+- (A) 大結節的鈣化病變，雖然是形態學的一部分，但更偏向病變的性質。
+- (B) 橈骨和尺骨的脫位，屬於『位置』的異常，並不完全符合形態學的定義。
+- (C) 橈骨的過度彎曲，這是明顯的形狀變化，符合形態學的範疇。
+- (D) 額外的中指和遠端指骨，這是結構上的變化，屬於形態學的範疇。
+
+綜合考量，選項 (C) 的『過度彎曲』最能代表形態學的特徵，因為它直接反映了骨骼的『形狀』變化，符合YC方法對形態學的定義。因此，正確答案應為 (C)。"
+72,"According to YCL method (CNRMT) interpreting a skeletal radiograph, which of the following does not belong to Texture (T)?",(A) A fracture line over greater tubercle in X-ray Shoulder AP view,(B) A whiter lunate (increased density) in X-ray Wrist AP view,(C) An osteolytic lesion over metaphysis of radius in X-ray Forearm AP view,(D) A metal implant over distal radius in X-ray Wrist lateral view,D,金 屬 植 入 物 屬 於 Category,肌肉骨骼影像解剖學(1)-上肢 林育全,"📖 chatGPT 學長背景知識  
+- YCL 方法（CNRMT）是用於解讀骨骼X光片的系統，強調『結構』、『邊緣』、『密度』和『質地』等要素。  
+- 在此方法中，『質地』（Texture）主要指的是骨骼的表面特徵和質感變化，通常與病變或損傷有關。  
+
+在題目中，選項 (A)、(B) 和 (C) 均涉及骨骼的質地變化或病理特徵，符合『質地』的定義。選項 (A) 的『骨折線』顯示了骨骼的結構變化，(B) 的『增密』則反映了骨骼的密度變化，而 (C) 的『骨溶解性病變』則是明顯的病理改變。相對而言，選項 (D) 的『金屬植入物』並不屬於骨骼的質地變化，而是外來物質的存在，主要影響的是影像的解讀，而非骨骼本身的質地特徵。因此，正確答案為 (D)，因為它不屬於『質地』的範疇。"
+73,Which of the following statements is incorrect?,"(A)Vitamin D deficiency in adults may cause weakness, pain, or even no symptoms at all.",(B) Bone lesions caused by vitamin D deficiency in adults are called rickets.,"(C)Parathyroid adenoma or parathyroid hyperplasia can both lead to elevated parathyroid hormone levels in the body, which in turn affect bone structure.",(D)Chronic renal failure can also affect bone metabolism.,B,,肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識
+
+在這道題目中，我們需要辨識哪一個敘述是不正確的。以下是各選項的核心觀念：
+
+- 『維他命D缺乏』可導致成人出現『虛弱』、『疼痛』，或甚至無任何症狀，這是正確的。
+- 成人因『維他命D缺乏』所造成的骨病稱為『骨軟化症』，而非『佝僂病』，後者主要影響兒童，因此此選項為不正確。
+- 『甲狀旁腺腺瘤』或『甲狀旁腺增生』均可導致『甲狀旁腺激素』水平升高，進而影響骨骼結構，這是正確的。
+- 『慢性腎衰竭』確實會影響『骨代謝』，因為腎臟功能不全會導致鈣磷平衡失調，這也是正確的。
+
+綜合以上分析，選項 (B) 的敘述不正確，因為成人的維他命D缺乏症狀應稱為『骨軟化症』而非『佝僂病』。"
+74,"Regarding osteogenesis imperfecta, which of the following descriptions is incorrect?",(A)Patients are unable to produce normal type I collagen.,(B)It is associated with mutations in the COL1A1 gene on 17q21.3–q22 and the COL1A2 gene on 7q21.3–q22.,(C)It is an autosomal dominant disorder that can be classified into four types.,"(D)Due to the lack of normal type I collagen, patients’ irises may develop Lisch nodules.",D,(D) Lisch nodules 最 常 見 於 Neurofibromatosis type 1(NF1),肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識  
+骨生成不全症（Osteogenesis Imperfecta, OI）是一種遺傳性疾病，主要特徵為骨骼脆弱，易於骨折。此病主要由於『I型膠原蛋白』的合成異常所致，通常與COL1A1和COL1A2基因的突變有關。該病的遺傳方式為『常染色體顯性』，並可分為四種類型，根據臨床表現和骨折的頻率進行分類。
+
+在選項中，選項(D)提到因缺乏正常的I型膠原蛋白，患者的虹膜可能會發展出『Lisch結節』，這一說法是錯誤的。Lisch結節通常與『神經纖維瘤病』有關，而非骨生成不全症。因此，正確答案為(D)。其他選項均正確地描述了骨生成不全症的特徵及其遺傳背景。"
+75,"Regarding osteonecrosis (or avascular necrosis), which of the following descriptions is incorrect?",(A)It is mostly caused by infection.,"(B) It is associated with trauma, chronic alcohol abuse, or steroid use.","(C)In patients with long-term alcohol abuse, osteonecrosis often occurs in the femoral head.","(D)When it occurs, the medullary bone is often affected first, while the overlying cortical bone and cartilage cap remain unaffected for the time being, mainly due to differences in blood supply.",A,(A) 主 要 是 由 非 感 染 原 因 所 造 成。,肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識  
+骨壞死（或稱無血管性壞死）是一種因血液供應不足而導致骨組織死亡的病理狀態。其主要原因包括外傷、長期酗酒及類固醇使用等。
+
+在選項中，(A)的描述是錯誤的。骨壞死的主要原因並非『感染』，而是由於『血液供應不足』。雖然感染可能導致某些骨病變，但並不是骨壞死的主要病因。相對地，(B)、(C)和(D)的描述均為正確。骨壞死確實與『外傷』、『慢性酗酒』及『類固醇使用』有關，且在長期酗酒的患者中，『股骨頭』是最常受影響的部位。此外，骨壞死的發生順序通常是『骨髓』首先受到影響，而『皮質骨』和『軟骨帽』則因血供差異而相對保護，這一點在(D)中也得到了正確的描述。
+
+因此，正確答案為(A)。"
+76,Which of the following descriptions about achondroplasia is incorrect?,(A)It involves chromosome 4 and is inherited in an autosomal dominant pattern.,"(B) Patients usually have shortened limbs, but normal spinal length.","(C)During bone development, patients lack normal membranous ossification.",(D)It is associated with an activating mutation of FGFR3.,C,● 遺 傳 模 式 ： 體 染 色 體 顯 性 遺 傳 ， 第 4 對 染 樂 體 突 變 (4p16.3) ● 病 理 機 轉 ： FGFR3 基 因 發 生 活 化 突 變 (activation mutation) ，過 度 抑 制 軟 骨 內 骨化 (C) ○ 活 化 突 變 ： 讓 原 本 的 蛋 白 質 變 得 「過 度 活 躍」 的 突 變 ○ FGFR3 主 要 功 能 是 「適 度 的」 抑 制 軟 骨 細 胞 增 殖 與 骨 骼 生 長 速 度 ， 活 化 突變 會 使 得 FGFR3 過 度 活 化 ， 造 成 骨 骼 無 法 正 常 伸 長 ○ 主 要 影 響 長 骨 骨 化 的 過 程 ， 膜 內 骨 化不受 影 響 (C) ● 臨 床 表 現 ○ 骨 骼 ： 四 肢 短 小 ， 軀 幹 正 常 ○ 生 育 能 力、 致 力、 壽 命 皆 正 常,肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識
+
+『軟骨發育不全症』(achondroplasia) 是一種常見的遺傳性侏儒症，主要由於『FGFR3』基因的突變所致。以下是對題目中選項的綜合性詳解：
+
+1. **遺傳模式**：軟骨發育不全症是以『常染色體顯性』模式遺傳，突變位於第4號染色體的『FGFR3』基因，這一點是正確的。
+2. **身體特徵**：患者通常表現為『四肢短小』，但『脊椎長度正常』，這也是正確的描述。
+3. **骨發育過程**：該病症的患者在『膜狀骨化』過程中存在異常，這是因為FGFR3的突變會抑制軟骨的生長，導致骨骼發育不全。因此，選項C的描述是錯誤的，因為患者實際上缺乏正常的『軟骨內骨化』而非『膜狀骨化』。
+4. **突變特徵**：FGFR3的突變為『激活性突變』，這會導致骨骼生長的抑制，這一點也是正確的。
+
+綜合以上分析，選項C的描述不正確，因為患者在骨發育過程中缺乏的是正常的『軟骨內骨化』而非『膜狀骨化』。"
+77,"Regarding osteomyelitis, which of the following descriptions is incorrect?",(A)Caused by bacterial infection through direct exposure or hematogenous spread.,"(B) In children, it often occurs near the knee joint, while in adults it is more common in the foot.","(C)In 5–10-year-old children, osteomyelitis near the metaphysis of long bones is most commonly caused by Escherichia coli.",(D)Osteomyelitis of the maxillary bone and mandible is mostly associated with poor oral hygiene and dental caries.,C,(C) 選 項 錯 在 病 原 菌 的 歸 屬 ： ● 小 兒 （ 5–10 歲） 骨 髓 炎 最 常 見 的 病 原 菌 為 金 黃 色 葡 萄 球 菌 (Staphylococcus aureus) 。 ● Escherichia coli 通 常 見 於 泌 尿 道 感 染 或 免 疫 功 能 低 下 者 的 繼 發 性 感 染 ， 並 非常 見 於 小 兒 長 骨 骨 髓 炎。,肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識
+
+骨髓炎（Osteomyelitis）是骨髓及其周圍組織的感染，通常由細菌引起。其病因可分為『直接暴露』和『血行播散』兩種途徑。兒童與成人的發病部位有所不同，兒童常見於『膝關節附近』，而成人則多見於『足部』。在5至10歲的兒童中，骨髓炎通常與『金黃色葡萄球菌』（Staphylococcus aureus）有關，而非『大腸桿菌』（Escherichia coli），因此選項(C)的描述為不正確。上頜骨和下頜骨的骨髓炎多與『口腔衛生不良』及『牙齒蛀牙』有關，這些因素促進了口腔內細菌的增殖，進而引發感染。總結來說，了解骨髓炎的病因及其在不同年齡層的表現對於臨床診斷及治療至關重要。"
+78,"Regarding osteoporosis, which of the following descriptions is incorrect?","(A)In humans, bone mass usually peaks around 25–35 years of age.","(B) Patients’ trabeculae become smaller and thinner, failing to provide adequate structural support.",(C)Steroid therapy can slow down the rate of bone loss.,"(D)Lack of exercise, alcohol abuse, and vitamin D deficiency are possible causes.",C,(A) (B) (C) + (D),肌肉骨骼病理學(1) 陳建亨,"📖 chatGPT 學長背景知識
+
+骨質疏鬆症是一種以骨密度下降和骨組織微結構劣化為特徵的疾病，導致骨骼脆弱和骨折風險增加。以下是對題目中選項的綜合性詳解：
+
+- 在『人類』中，骨質通常在『25-35歲』之間達到高峰，隨著年齡增長，骨質逐漸流失。
+- 骨小梁的『變小和變薄』會導致骨骼結構支持不足，這是骨質疏鬆的主要病理變化之一。
+- 『類固醇』治療通常會加速骨質流失，而非減緩，因此這一選項是錯誤的。類固醇會抑制骨形成，增加骨吸收，導致骨質疏鬆。
+- 缺乏『運動』、『酗酒』和『維生素D缺乏』確實是骨質疏鬆的風險因素，這些因素會影響骨骼健康。
+
+綜合以上分析，選項(C)的描述是錯誤的，因為類固醇治療會加速而非減緩骨質流失。"
+79,"Regarding soft tissue tumors, which of the following descriptions is incorrect?","(A)When filling out a pathology submission form, in addition to correctly recording the anatomical location of the lesion, it is also best to describe the depth of the lesion at that site.","(B) Most tumors are benign; malignant tumors are mostly sporadic, with only a few related to genetics.","(C)Environmental risk factors include radiation, burns, and toxins.","(D)Most malignant sarcomas have a simple karyotype with euploid chromosomes; these tumors often occur in young patients, and the tumor cells appear relatively uniform (monomorphic).",D,大 多 數 （ 80% 至 85% ） 的 惡 性 肉 瘤 屬 於 複 雜 核 型 （ Complex karyotype ） ， 這 些 腫 瘤 通 常 是非 整 倍 體 （ Aneuploid ） 或 多 倍 體 （ Polyploid ） ， 好 發 於 成 人 ， 且 腫 瘤 細 胞 形 態 多 樣 （Pleomorphic ）,肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識
+
+在軟組織腫瘤的診斷與研究中，了解腫瘤的性質及其相關因素至關重要。以下是對題目中選項的綜合性解析：
+
+- 軟組織腫瘤可分為『良性』和『惡性』，其中『惡性腫瘤』通常較為罕見，且多數為『散發性』，僅有少數與『遺傳』因素相關。
+- 在病理學提交表單中，正確記錄腫瘤的『解剖位置』及『深度』是必要的，這有助於病理學家的診斷。
+- 環境風險因素如『輻射』、燒傷及『毒素』確實與某些軟組織腫瘤的發生有關。
+- 然而，選項(D)的描述不正確。大多數『惡性肉瘤』的細胞核型並不簡單，且常呈現『異型性』，而非『單型性』，這使得腫瘤細胞在顯微鏡下顯示出多樣性。
+
+因此，選項(D)是錯誤的描述，因為它對惡性肉瘤的細胞特徵的理解存在偏差。"
+80,"The following tissues are generally classified as soft tissue, but which one is not included?",(A)Adipose tissue.,(B) Muscular tissue.,(C)Vascular tissue.,(D)Mucosal epithelium.,D,,肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識
+
+在醫學中，『軟組織』通常指的是不包含骨骼和軟骨的組織，包括多種細胞類型和基質。題目中提到的四種組織中，只有一種不屬於軟組織。
+
+- 『脂肪組織』(Adipose tissue)：這是一種儲存能量的組織，主要由脂肪細胞組成，屬於軟組織。
+- 『肌肉組織』(Muscular tissue)：包括平滑肌、心肌和骨骼肌，負責運動和力量的產生，也是軟組織的一部分。
+- 『血管組織』(Vascular tissue)：這是指血管內的結構，包括血液和淋巴，屬於軟組織，因其主要功能是運輸和支持。
+- 『黏膜上皮』(Mucosal epithelium)：這是一種上皮組織，主要覆蓋內臟表面，並不屬於軟組織的範疇。
+
+因此，正確答案是(D)黏膜上皮，因為它屬於上皮組織，而非軟組織。"
+81,Which of the following descriptions is incorrect?,"(A) Lipomas usually have a capsule at the margin, clearly demarcated from surrounding tissues. Morphologically, they can be classified into conventional, fibrolipoma, angiolipoma, spindle cell lipoma, etc.","(B) Liposarcomas commonly occur in the limbs or retroperitoneum, in locations closer to the skin and more superficial, making them easier to excise.","(C) Liposarcomas can be further classified into atypical lipomatous tumor/well-differentiated liposarcoma, myxoid liposarcoma, and pleomorphic liposarcoma.",(D) Pleomorphic liposarcomas are usually more aggressive and prone to distant metastasis.,B,(B) 錯 誤。 脂 肪 肉 瘤 (Liposarcoma) 常 見 於 四 肢 近 端 或 腹 膜 後 (retroperitoneum) ， 且位 於 深 部 (deep part) ， 並 非 靠 近 皮 膚 或 表 淺 部 位。 (C)(D),肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要辨識哪一個描述是錯誤的。以下是各選項的核心觀念：
+
+- **Lipomas**（脂肪瘤）通常有『包膜』，並且與周圍組織有明顯的『界限』，可分為多種類型。
+- **Liposarcomas**（脂肪肉瘤）常見於四肢或『後腹膜』，但其實這些腫瘤通常位於『深層』，而非表層，這使得切除手術相對困難。
+- Liposarcomas可進一步分類為『非典型脂肪瘤』/『良性分化脂肪肉瘤』、『黏液型脂肪肉瘤』及『多形性脂肪肉瘤』。
+- **Pleomorphic liposarcomas**（多形性脂肪肉瘤）通常具有較高的『侵襲性』，且更容易發生『遠端轉移』。
+
+綜合以上分析，選項 (B) 是錯誤的，因為脂肪肉瘤並不常位於較淺層的組織，反而多數位於深層，這使得手術切除更具挑戰性。其他選項均為正確描述。"
+82,Which of the following descriptions is incorrect?,(A) A motor unit consists of a motor neuron and the muscle bundles it innervates.,"(B ) Type I muscle fibers perform aerobic exercise, allowing for prolonged contraction; they contain less intracellular fat and more glycogen. Type II muscle fibers perform anaerobic exercise, generating greater contraction force but with lower mitochondrial density. These two muscle types can convert into each other depending on reinnervation by different neurons.",(C) The connective tissue surrounding a single skeletal muscle fiber is called the endomysium.,"(D) If the motor neuron in a motor unit is impaired, causing pathology in its innervated muscle group, it is called neuropathic myopathy. The muscle shows features such as grouped atrophy and fiber type grouping.",B,"Type I muscle fibers perform aerobic exercise, allowing for prolonged contraction; they contain less intracellular fat and more glycogen. 這 句 描 述 中 ， 前 半 段 正 確 ， 但 是 type I muscle fibers is higher in its lipid content and lower in its glycogen content. Type II muscle fibers perform anaerobic exercise, generating greater contraction force but with lower mitochondrial density. 這 句 描 述 是 正 確 的。 These two muscle types can convert into each other depending on reinnervation by different neurons. 老 師 在 上 課 時 也 有 口 述 ： 「通 常 一 條 神 經 支 配 同 一 種 肌 肉 ， 但 type I 和 type II 在 特 定 情 況 下 可 互 換 ， 稍 後 會 提 到 (fiber type grouping) 」 因 此 這 句 是 正確的。",肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識
+
+在這道考古題中，我們需要辨識不正確的描述。首先，選項 (A) 正確地定義了『運動單元』，即一個『運動神經元』及其所支配的『肌肉纖維束』。選項 (B) 中，雖然提到『I型肌纖維』適合有氧運動且能持續收縮，但其描述中提到的『較少的細胞內脂肪』與『較多的糖原』並不完全正確，因為I型肌纖維通常具有較高的脂肪氧化能力。至於『II型肌纖維』，其確實適合無氧運動且具有較高的收縮力，但『可相互轉換』的說法在某些情況下是正確的，尤其是在神經再支配後。選項 (C) 正確地指出『內膜』是包圍單一骨骼肌纖維的結締組織。最後，選項 (D) 描述了『神經性肌病』的特徵，包括『分組萎縮』和『纖維類型分組』，這是正確的。因此，最不正確的描述是 (B)，因為其對I型肌纖維的描述不夠精確。"
+83,Which of the following descriptions is incorrect?,(A) Total muscle mass and maximal muscle strength peak in youth and gradually decline with age.,"(B) If this decline occurs too rapidly, resulting in muscle mass and maximal strength falling below a certain standard, it is currently called sarcopenia.","(C) Sarcopenia mainly affects daily activities and does not increase the risk of cardiopulmonary diseases; besides aging, it can also be caused by neurological disorders, lack of physical training, and obesity.","(D) Using muscle strength as an indicator, men with a dominant-hand grip strength below 27 kg should be concerned about sarcopenia.",C,(A) 正 確。 根 據 講 義 第 94 圖 表 ， 肌 力 在 「年 輕 時」 達 到 最 大 化 ， 在 「中 年 時」 維 持 ， 並 在「老 年 時」 最 小 化 流 失 （即 逐 漸 下 降）。 (B) 正 確。 講 義 第 94 、 95 頁 將 肌 少 症 定 義 為 與 老 化 相 關 的 肌 肉 流 失 。 圖 表 也 顯 示 當 肌力 下 降 到 「低 體 能 表 現」 或 「臨 界 失 能」 的 標 準 時 ， 即 需 「預 防 和 延 後 肌 少 症 發 生」。 該 敘述 符 合 肌 少 症 的 臨 床 概 念。 (C) 錯 誤。 肌 少 症 （ Sarcopenia ） 的 影 響 包 括 ： 跌 倒、 骨 折、 身 體 失 能、 死 亡 率 ， 以 及 心 臟疾 病 (Cardiac dz) 、 呼 吸 系 統 疾 病 (respiratory dz) 和 認 知 障 礙 。 因 此 ， 肌 少 症 是 會增 加 心 肺 疾 病 風 險 的。 (D) 正 確。 在 「肌 肉 力 量 切 點」 中 ， 男 性 慣 用 手 握 力 的 切 點 為 < 27 kg 。,肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識
+
+在探討肌肉質量與力量的變化時，『肌肉質量』和『最大肌肉力量』確實在青少年時期達到高峰，隨著年齡增長而逐漸下降。當這一衰退過程過於迅速，導致肌肉質量和力量低於某一標準時，便被稱為『肌少症』(sarcopenia)。肌少症不僅影響日常活動，還會增加心肺疾病的風險，這一點在選項C中描述不正確，因為研究顯示肌少症與心血管健康有關。此外，肌少症的成因除了『老化』外，還包括『神經系統疾病』、缺乏『體能訓練』及『肥胖』等因素。至於選項D，男性的主手握力低於27公斤確實是一個值得關注的肌少症指標。因此，選項C的描述為不正確。"
+84,Which of the following statements is the most appropriate?,"(A) Synovial sarcoma commonly shows t(X;18)(p11;q11), resulting in SS18-SSX1, SS18-SSX2, or SS18- SSX4 gene fusions.","(B) Ewing sarcoma commonly shows t(11;22)(q24;q12) or t(21;22)(q22;q12), resulting in EWS-FLI1 or EWS-ERG gene fusions.","(C) Alveolar rhabdomyosarcoma can show t(2;13)(q35;q14) or t(1;13)(p36;q14), resulting in PAX3- FOXO1 or PAX7-FOXO1 gene fusions.",(D) All of the above descriptions are correct.,D,本 題 Ａ Ｂ Ｃ 三 個 選 項 皆 正 確 ， 就 請 記 起 來 來 源 各 自 在 老 師 的 講 義 裡 （Ａ） 選 項 在 老 師 講 義 第 67 頁 ， 如 下 方 ： （ B ） 選 項 在 老 師 講 義 第 11 頁 表 格 第 一 行 ， 如 下 方 ： （Ｃ） 選 項 在 老 師 講 義 第 51 頁 ， 如 下 方 ：,肌肉骨骼病理學(2) 陳建亨,"📖 chatGPT 學長背景知識  
+在腫瘤學中，特定的基因重排與腫瘤類型密切相關，這些重排通常導致融合基因的形成，進而影響腫瘤的發展。
+
+1. 『滑膜肉瘤』(Synovial sarcoma) 通常表現為 t(X;18)(p11;q11)，導致 SS18-SSX1、SS18-SSX2 或 SS18-SSX4 融合基因。
+2. 『尤文肉瘤』(Ewing sarcoma) 常見的基因重排為 t(11;22)(q24;q12) 或 t(21;22)(q22;q12)，形成 EWS-FLI1 或 EWS-ERG 融合基因。
+3. 『肺泡性橫紋肌肉瘤』(Alveolar rhabdomyosarcoma) 可見 t(2;13)(q35;q14) 或 t(1;13)(p36;q14)，導致 PAX3-FOXO1 或 PAX7-FOXO1 融合基因。
+
+綜合以上，選項(A)、(B) 和 (C) 的描述均為正確，因為它們都準確地反映了各自腫瘤的基因重排及其相關的融合基因。因此，最適當的選擇為(D) 所有描述均正確。這些基因重排不僅有助於診斷，還可能成為治療的靶點。"
+85,Which artery is the major blood supply to the hip joint?,(A) Superior gluteal artery,(B) Medial and lateral circumflex femoral arteries,(C) Obturator artery,(D) Femoral profunda artery,B,根 據 老 師 的 slide ， major blood supply to the hip joint 就 是 Medial and lateral circumflex femoral arteries 喔！ 記 憶 題 ， 常 考 ， 背 起 來 吧！,髖及膝關節功能解剖學 李忠祐,"📖 chatGPT 學長背景知識
+
+在髖關節的血液供應中，主要的動脈來源是『股骨的內外側環狀動脈』，即選項 (B) 的『內側及外側環狀股動脈』。這兩條動脈是從『股 profunda 動脈』分支而來，負責供應髖關節及周圍肌肉的血液。髖關節的血液供應相當重要，因為它涉及到關節的營養及修復。
+
+其他選項中，『上臀動脈』(A) 主要供應臀部肌肉，對髖關節的供應較少；『閉孔動脈』(C) 主要供應內收肌群，對髖關節的直接供應也有限；而『股 profunda 動脈』(D) 雖然是主要的血管之一，但其分支的環狀動脈才是髖關節的主要供應來源。
+
+總結來說，髖關節的主要血供來自於內側及外側環狀股動脈，這些動脈的健康對於維持髖關節功能至關重要。"
+86,Which movement combination of the hip reproduces pain in piriformis syndrome during examination?,"(A) Flexion, abduction, external rotation","(B) Flexion, adduction, internal rotation","(C) Extension, abduction, external rotation","(D) Extension, adduction, internal rotation",B,,髖及膝關節功能解剖學 李忠祐,"📖 chatGPT 學長背景知識  
+- 『梨狀肌症候群』是指梨狀肌壓迫坐骨神經所引起的疼痛。  
+- 主要症狀包括臀部及下肢放射性疼痛，通常在特定動作下加劇。  
+- 檢查時，特定的髖關節動作組合可重現疼痛。  
+
+在梨狀肌症候群的臨床檢查中，最能重現疼痛的動作組合為『屈曲、外展及外旋』。這是因為當髖關節進行這些動作時，梨狀肌會受到拉伸，進而可能進一步壓迫坐骨神經。特別是在屈曲的同時進行外展與外旋時，梨狀肌的緊張度增加，導致疼痛感加劇。相對而言，其他選項如『屈曲、內收及內旋』或『伸展、內收及內旋』則不會有效地重現這種疼痛，因為這些動作對梨狀肌的影響較小。因此，正確答案為(A)屈曲、外展、外旋。"
+87,"In the knee’s screw-home mechanism (open chain), during the last 20° of extension, the tibia:","(A) Internally rotates, tightening cruciate ligaments","(B) Externally rotates, tightening cruciate ligaments","(C) Internally rotates, loosening cruciate ligaments","(D) Externally rotates, loosening cruciate ligaments",B,screw home mechanism 在 knee extension 最 後 的 20 度 會 向 外 旋 轉 至 鎖 定 ， 同 時 使ACL/PCL 繃 緊 ， 使 tibia 穩 定。,髖及膝關節功能解剖學 李忠祐,"📖 chatGPT 學長背景知識  
+在膝關節的『螺旋閉合機制』中，特別是在『開鏈』的情況下，膝關節在最後的20°伸展過程中，脛骨的運動模式是非常重要的。這一過程涉及到膝關節的穩定性及其周圍韌帶的張力變化。
+
+在膝關節伸展的最後階段，脛骨會『外旋』，這是因為膝關節的解剖結構和運動學特性所決定的。當脛骨外旋時，這會導致『前交叉韌帶』和『後交叉韌帶』的張力增加，從而增強膝關節的穩定性。這一動作不僅有助於關節的穩定，還能有效地防止關節在負重時的過度移動。
+
+因此，正確的選項是(B)『外旋，緊繃交叉韌帶』。這一機制在運動生物力學中扮演著關鍵角色，特別是在運動和日常活動中，了解這一點對於預防膝關節損傷及進行有效的康復訓練至關重要。"
+88,Which molecule is most directly associated with angiogenesis during fracture healing?,(A) TNF α,(B) IL-6,(C) VEGF,(D) BMP-2,C,老 師 上 課 特 別 強 調,骨折的生物力學及癒合 劉文智,"📖 chatGPT 學長背景知識
+
+在骨折癒合過程中，『血管生成』是關鍵步驟之一，因為新血管的形成能夠提供必要的氧氣和營養，促進骨組織的修復。以下是與題目相關的幾個重要分子：
+
+- 『VEGF』(血管內皮生長因子) 是促進血管生成的主要因子，能刺激內皮細胞增殖和新血管的形成。
+- 『TNF α』和『IL-6』是促炎細胞因子，雖然在骨折癒合中也扮演角色，但主要是調節炎症反應，而非直接促進血管生成。
+- 『BMP-2』(骨形態生成蛋白-2) 主要參與骨生成過程，促進骨細胞的分化，但其對血管生成的直接影響較弱。
+
+綜合以上分析，選項中最直接與『血管生成』相關的分子是『VEGF』，因其在骨折癒合過程中扮演關鍵角色，促進新血管的形成，支持骨組織的修復與再生。因此，正確答案為 (C) VEGF。"
+89,Which of the following best characterizes secondary bone healing?,(A) Requires absolute stability and osteonal remodeling,(B) Occurs only in cortical bone,(C) Involves both intramembranous and endochondral ossification,(D) Leads to the direct formation of new osteons,C,(A) 需 要 絕 對 穩 定 性 和 骨 單 位 重 塑 (osteonal remodeling) ： 這 描 述 的 是 一 期 骨 癒 合 (Primary Healing) 。 繼 發 性 骨 癒 合 要 求 相 對 穩 定 性 (Relative stability) 。 (B) 只 發 生 在 皮 質 骨 (cortical bone) ： 繼 發 性 骨 癒 合 是 一 種 通 用 的 癒 合 機 制 ， 在 相 對 穩定 的 情 況 下 發 生。 海 綿 骨 (Cancellous bone) 的 癒 合 在 發 炎 期 後 主 要 由 膜 內 骨 化 主 導， 且 不 形 成 明 顯 的 外 部 骨 痂 ， 但 繼 發 性 癒 合 並 非 只 發 生 在 皮 質 骨 中。 (C) 涉 及 膜 內 骨 化 (intramembranous) 和 軟 骨 內 骨 化 (endochondral) 兩 種 過 程 繼 發 性 骨 癒 合 ， 也 被 稱 為 間 接 骨 癒 合 （透 過 骨 痂 形 成） ， 其 特 點 是 膜 內 骨 化 和 軟 骨 內 骨化 共 同 作 用 。 (D) 導 致 新 骨 單 位 (osteons) 的 直 接 形 成 ： 骨 單 位 重 塑 (Osteonal remodeling) 是 一 期骨 癒 合 的 核 心 過 程 。 繼 發 性 骨 癒 合 的 初 期 是 透 過 軟 骨 痂 和 硬 骨 痂 的 形 成 ， 最 終 的 重塑 階 段 才 涉 及 骨 單 位 的 重 組 ， 但 不 是 其 直 接 或 核 心 的 形 成 機 制。,骨折的生物力學及癒合 劉文智,"📖 chatGPT 學長背景知識  
+- 『次級骨癒合』是骨折癒合的過程之一，通常發生在骨折後的幾週至幾個月內。  
+- 此過程涉及『內膜骨化』和『軟骨內骨化』，使骨骼逐漸恢復其結構和功能。  
+- 次級骨癒合需要『相對穩定性』，而非『絕對穩定性』，以促進血管生成和骨組織再生。  
+- 此過程不僅限於『皮質骨』，也可發生於『海綿骨』中。  
+- 在次級骨癒合中，骨組織的重塑是透過『骨吸收』和『骨形成』的交互作用來實現的，最終導致新『骨單位』的形成，但並不會直接形成新的『骨管』。  
+
+綜合以上觀點，正確答案為(C)，因為次級骨癒合的特徵是同時涉及『內膜骨化』和『軟骨內骨化』的過程，這使得骨骼能夠在不同的環境條件下進行修復。"
+90,Which of the following statements about fracture biomechanics is TRUE?,(A) Increased implant-bone contact improves bone perfusion,(B) Relative stability allows micromotion at the fracture site,(C) Reaming for intramedullary nails increases endosteal blood flow,(D) Absolute stability encourages callus formation,B,"(A) larger implant-bone contact: reducing bone perfusion (C)reaming for intramedullary nails (IM nails): reduces endosteal blood flow (D)callus formation : relative stability 說 明 : 在 骨 折 癒 合 的 生 物 力 學 中 有 Primary/ Secondary healing, 其 中 Secondary Healing 講 義 中 提 到 ● Indirect healing by callus formation ○ Relative stability ○ Both intramembranous and endochondral bone formation",骨折的生物力學及癒合 劉文智,"📖 chatGPT 學長背景知識
+
+在骨折生物力學中，了解骨折癒合的機制對於臨床治療至關重要。以下是與題目相關的核心觀念：
+
+- 『骨接觸』：增加植入物與骨骼的接觸面積有助於改善『骨血流』，但並非直接影響骨折癒合。
+- 『相對穩定性』：允許骨折部位的『微動』，這對於刺激骨癒合是有益的，因為微動可以促進『骨痂』的形成。
+- 『內髓釘』的『重新鑽孔』：雖然可以改善『內髓血流』，但過度的重新鑽孔可能會損傷血管，影響癒合。
+- 『絕對穩定性』：通常會抑制『骨痂』的形成，因為過度穩定會限制必要的微動。
+
+綜合以上觀點，正確的選項是 (B) 相對穩定性允許骨折部位的微動，這對於骨癒合過程是有利的。其他選項則在生物力學原則上存在誤解或不完全正確。"
+91,Which of the following statements about the sagittal band is correct?,(A) It extends the middle phalanx during metacarpophalangeal joint (MCPJ) extension.,(B) It attaches to the dorsal hood and stabilizes the lateral band.,(C) It assists in proximal phalanx extension and stabilizes the extensor tendon at the MCPJ.,(D) It allows distal interphalangeal joint extension when MCPJ is hyperextended.,C,Sagittal bands: ● attaches to the volar plate ● extend the P1 ● the extrinsic extensors can’t extend the P2 while MCPJ is hyperextended Also: ● Central slip extends the middle phalanx ● Triangular & Transverse reticular ligament stabilize the lateral band ● Terminal tendon allows DIP extension,手部、腕部骨骼功能解剖學 劉文智,"📖 chatGPT 學長背景知識
+
+『矢狀帶』(sagittal band) 是手部解剖中一個重要的結構，主要功能是穩定『伸肌腱』(extensor tendons) 並協助手指的運動。以下是其核心觀念：
+
+- 矢狀帶位於『掌指關節』(metacarpophalangeal joint, MCPJ) 的背側，與『背側罩』(dorsal hood) 連接，形成一個穩定的結構。
+- 它的主要功能是『協助』近端指骨的伸展，並『穩定』伸肌腱，確保在手指活動時的正確對齊。
+- 當 MCPJ 過度伸展時，矢狀帶的功能也有助於『維持』指尖的活動性，特別是在進行精細動作時。
+
+根據以上觀念，正確的選項應該是 (C)，因為它準確描述了矢狀帶在 MCPJ 的功能，強調了其在『伸展』和『穩定』伸肌腱方面的重要性。其他選項則未能正確反映矢狀帶的生物力學角色。"
+92,Which of the following is a secondary stabilizer of the distal radioulnar joint (DRUJ)?,(A) Extensor carpi ulnaris tendon sheath,(B) Dordsal radiocarpal ligament,(C) Deep dorsal radioulnar ligament,(D) Extensor retinaculum,A,以 下 為 secondary stabilizer of the distal radioulnar joint (DRUJ) ： ECU (extensor carpi ulnaris) tendon sheath 6th dorsal compartment (ECU) sub-sheath Deep head of pronator quadratus(PQ) Interosseous lig. Of the forearm(central band) Ulnotriquetral lig. Ulnolunate lig.,手部、腕部骨骼功能解剖學 劉文智,"📖 chatGPT 學長背景知識  
+- 『遠端橈尺關節』(DRUJ) 是手腕的重要關節，主要負責前臂的旋轉運動。  
+- 其穩定性由『主要穩定器』和『次要穩定器』共同維持。  
+- 次要穩定器通常是指那些不直接連接於關節囊的結構，但仍對關節的穩定性有重要影響。  
+
+在選項中，『伸肌腕尺肌腱鞘』(A) 是一個重要的次要穩定器，因為它能夠提供額外的穩定性，特別是在手腕的活動中。『深背橈尺韌帶』(C) 也是一個關鍵結構，直接參與DRUJ的穩定性，但它被視為主要穩定器而非次要穩定器。『背橈腕韌帶』(B) 和『伸肌支持帶』(D) 雖然在手腕的功能中扮演角色，但並不直接影響DRUJ的穩定性。因此，正確答案是 (A) 伸肌腕尺肌腱鞘，因其在動作過程中提供了額外的穩定性，協助維持DRUJ的功能。"
+93,Which nerve innervates the abductor pollicis muscle?,(A) Radial nerve,(B) Median nerve,(C) Ulnar nerve,(D) Anterior interosseous nerve,送分,abductor pollicis brevis(APB) 由 median n. 支 配 abductor pollicis longus(APL) 則 由 radial n. 支 配,手部、腕部骨骼功能解剖學 劉文智,"📖 chatGPT 學長背景知識
+
+- 『拇外展肌』(Abductor Pollicis) 是手部的一個重要肌肉，主要負責拇指的外展動作。
+- 此肌肉由『尺神經』(Ulnar nerve) 的深支所支配，這是其主要的神經來源。
+- 『尺神經』在前臂的走行中，經過腕部進入手掌，並在手部支配多數的內在肌肉。
+- 雖然『正中神經』(Median nerve) 和『橈神經』(Radial nerve) 也支配手部的其他肌肉，但它們並不負責拇外展肌的運動。
+- 『前骨間神經』(Anterior interosseous nerve) 是正中神經的一個分支，主要支配前臂的深層肌肉，與拇外展肌無關。
+
+因此，正確答案為 (C) 『尺神經』，因為它是唯一支配拇外展肌的神經。"
+94,"Drugs that act on the central nervous system to induce skeletal muscle relaxation include the following drugs, except which one?",(A) Central alpha-2 agonists,(B) Depolarizing muscle relaxants,(C) Tricyclic antidepressants,(D) Antihistamines,B,,肌肉鬆弛劑之藥理學 程廣義,"📖 chatGPT 學長背景知識
+
+在了解中樞神經系統（CNS）對骨骼肌放鬆的影響時，需注意不同藥物的作用機制。以下是各選項的簡要分析：
+
+- 『中樞α-2激動劑』：這類藥物通過抑制交感神經系統來減少肌肉張力，具有放鬆肌肉的效果。
+- 『去極化肌肉鬆弛劑』：這類藥物主要作用於神經肌肉接頭，通過去極化來引起肌肉放鬆，並不直接作用於CNS。
+- 『三環類抗抑鬱劑』：這類藥物可影響神經傳導物質，具有一定的肌肉鬆弛作用，尤其在慢性疼痛管理中。
+- 『抗組胺藥』：這類藥物主要用於過敏反應，對CNS的影響相對較小，通常不具備顯著的肌肉鬆弛效果。
+
+綜合以上分析，選項 (B) 『去極化肌肉鬆弛劑』是正確答案，因為它的作用主要在於神經肌肉接頭，而非中樞神經系統。其他選項均可通過CNS影響肌肉放鬆。"
+95,botox ( clostridium botulinum) acting which of the following to induce muscle relaxation?,(A) Gamma-aminobutyric acid (GABA) type B receptors,(B) snare protein,(C) Muscarinic receptors,(D) Ligand-gated sodium channels,B,,肌肉鬆弛劑之藥理學 程廣義,"📖 chatGPT 學長背景知識  
+Botox（肉毒桿菌毒素）是由『Clostridium botulinum』產生的一種神經毒素，主要用於醫療和美容領域以達到『肌肉放鬆』的效果。其作用機制涉及對神經傳導的干擾。
+
+核心觀念：  
+- Botox 主要通過抑制『神經肌肉接頭』的信號傳遞來實現肌肉放鬆。  
+- 它的作用機制是通過與『SNARE 蛋白』結合，阻止乙醯膽鹼的釋放。  
+- 乙醯膽鹼是神經元與肌肉之間傳遞信號的關鍵神經遞質，當其釋放受到抑制時，肌肉便無法收縮。  
+- Botox 不直接作用於『GABA』受體、『副交感神經受體』或『配體門控鈉通道』，而是專注於神經傳遞的最終步驟。  
+
+因此，正確答案是 (B) SNARE 蛋白，因為這是肉毒桿菌毒素發揮其肌肉放鬆效果的主要靶點。"
+96,"Characteristics of muscle pain, relative to cutaneous pain, include all of the following except:",(A) Poorly localized,(B) Burning and cutting,(C) Easily pain referral,(D) Difficult to tolerate,B,由 表 格 可 以 看 出 cutaneous pain 才 是 burning and cutting,肌肉鬆弛劑之藥理學 程廣義,"📖 chatGPT 學長背景知識
+
+肌肉痛與皮膚痛的特徵存在顯著差異，了解這些差異有助於臨床診斷與治療。以下是肌肉痛的主要特徵：
+
+- 『定位不清』：肌肉痛通常較難精確定位，患者常感到痛感擴散至周圍區域。
+- 『痛感性質』：肌肉痛多為鈍痛或酸痛，與皮膚痛的『燒灼感』或『切割感』不同。
+- 『痛感轉移』：肌肉痛容易『轉移』至其他部位，這是由於肌肉的神經支配與其他結構的交互作用。
+- 『耐受性差』：肌肉痛通常較難忍受，可能影響日常活動。
+
+在選項中，(B)『燒灼感和切割感』並非肌肉痛的特徵，這類痛感更常見於皮膚或神經性疼痛。因此，正確答案為(B)。肌肉痛的特徵主要是『定位不清』、『痛感轉移』及『耐受性差』，而非燒灼或切割的痛感。"
