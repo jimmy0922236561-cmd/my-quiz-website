@@ -393,11 +393,12 @@
 
     // 4. 渲染當前題目的函式 (維持原樣)
     function renderQuestion() {
-        if (currentIndex >= currentQuestions.length) {
-            const expBox = document.getElementById("explanation-box");
+        const expBox = document.getElementById("explanation-box");
         if (expBox) {
         expBox.removeAttribute("open");
         }
+        if (currentIndex >= currentQuestions.length) {
+            const expBox = document.getElementById("explanation-box");
             alert("恭喜你寫完全部題目了！");
             // 寫完該科目後，退回該考卷的科目選擇區
             quizView.classList.add("hidden");
