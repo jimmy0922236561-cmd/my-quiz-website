@@ -42,7 +42,10 @@ def read_questions_from_specific_csv(quiz_name: str):
                     "option_d": row.get("option_d", ""),
                     "correct_answer": row.get("correct_answer", "").strip().upper(),
                     "explanation": row.get("explanation", ""),
-                    "category": row.get("category", "未分類").strip()
+                    "category": row.get("category", "未分類").strip(),
+                    
+                    # 🎯 核心修正 1：確保從 CSV 讀取時，有把 AI 詳解抓進記憶體！
+                    "ai_explanation": row.get("ai_explanation", "").strip()
                 }
                 questions_list.append(q_data)
             except Exception as e:
@@ -54,11 +57,17 @@ def write_questions_to_csv(quiz_name: str, questions_list: list):
     if not os.path.exists(csv_path):
         csv_path = os.path.join(os.path.dirname(__file__), f"{quiz_name}.csv")
         
-    fieldnames = ["id", "question", "option_a", "option_b", "option_c", "option_d", "correct_answer", "explanation", "category"]
+    # 🎯 核心修正 2：在欄位清單最後面補上 "ai_explanation"。
+    # 這樣同學儲存手寫筆記時，AI 欄位才不會被當成垃圾蒸發掉，而是會安全地一起存回去！
+    fieldnames = ["id", "question", "option_a", "option_b", "option_c", "option_d", "correct_answer", "explanation", "category", "ai_explanation"]
+    
     with open(csv_path, mode="w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for q in questions_list:
+            # 防禦性確保每一題都有這個 key
+            if "ai_explanation" not in q:
+                q["ai_explanation"] = ""
             writer.writerow(q)
 
 @app.get("/")
@@ -82,7 +91,11 @@ async def get_questions(quiz_name: str, category: str = None):
             "option_b": q["option_b"],
             "option_c": q["option_c"],
             "option_d": q["option_d"],
-            "category": q["category"]
+            "category": q["category"],
+            "explanation": q.get("explanation", ""),
+            
+            # 🎯 核心修正 3：此時記憶體裡有資料了，順利放行傳給前端網頁
+            "ai_explanation": q.get("ai_explanation", "")
         })
     return safe_questions
 
@@ -105,10 +118,10 @@ def submit_answer(quiz_name: str, question_id: int, user_choice: str):
         "your_answer": user_choice.upper(),
         "is_correct": (user_choice.upper() == target_question["correct_answer"]),
         "correct_answer": target_question["correct_answer"],
-        "explanation": target_question["explanation"] # 💡 前端直接拿去呈現在文字框裡
+        "explanation": target_question["explanation"] 
     }
 
-# 🚀 核心新增：直接更新並複寫某題 explanation 的 API
+# 直接更新並複寫某題 explanation 的 API
 @app.post("/api/explanation/{quiz_name}")
 def update_question_explanation(quiz_name: str, data: ExplanationUpdate):
     db_questions = read_questions_from_specific_csv(quiz_name)
@@ -118,7 +131,7 @@ def update_question_explanation(quiz_name: str, data: ExplanationUpdate):
     found = False
     for q in db_questions:
         if q["id"] == data.question_id:
-            q["explanation"] = data.explanation # 💡 直接把新的內容覆蓋在 explanation 上
+            q["explanation"] = data.explanation 
             found = True
             break
             
