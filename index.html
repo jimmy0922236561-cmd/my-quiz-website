@@ -95,6 +95,20 @@
             background-color: #f0f4f8;
             border-color: var(--primary-color);
         }
+        /* 隱藏 Mac/Safari 瀏覽器內建的醜醜預設箭頭 */
+        details summary::-webkit-details-marker {
+            display: none;
+         }
+
+/* 🚀 當 <details> 標籤處於展開狀態 (open) 時，讓箭頭 icon 旋轉 180 度變朝上 */
+        details[open] summary .arrow-icon {
+            transform: rotate(180deg);
+         }
+
+/* 讓整區點擊時有微亮高光 */
+         details summary:active {
+            background-color: #fce7f3 !important;
+         }
     </style>
 </head>
 <body>
@@ -181,16 +195,40 @@
                 <label class="option-label"><input type="radio" name="answer" value="D"> <span id="opt-d">選項 D</span></label>
             </div>
 
-            <div id="explanation-box" class="hidden" style="margin: 20px 0; padding: 15px; border-radius: 8px; font-size: 1rem; line-height: 1.5;">
-                <strong id="result-status" style="font-size: 1.1rem;"></strong>
-                <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #444;">📝 詳解 / 我的筆記：</label>
-                    <textarea id="explanation-input" rows="4" style="width: 100%; box-sizing: border-box; padding: 8px; border-radius: 6px; border: 1px solid #bbb; font-family: inherit;" placeholder="此題目目前尚無筆記或詳解，點此輸入你的心得口訣..."></textarea>
-                    <div style="text-align: right; margin-top: 5px;">
-                        <button id="btn-save-explanation" style="background-color: #4e4376; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">💾 儲存修改</button>
-                    </div>
-                </div>
+            <details id="explanation-box" class="hidden" style="margin: 20px 0; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    
+    <summary style="list-style: none; cursor: pointer; padding: 12px 16px; background: #fdf2f8; border-bottom: 1px solid #fbcfe8; display: flex; align-items: center; justify-content: space-between; user-select: none;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 1.1rem;">💡</span>
+            <strong style="color: #9d174d; font-size: 1rem;">查看完整解析與筆記</strong>
+        </div>
+        <span class="arrow-icon" style="transition: transform 0.2s ease; font-weight: bold; color: #9d174d;">▼</span>
+    </summary>
+
+    <div style="padding: 20px; background: #ffffff;">
+        
+        <div style="margin-bottom: 15px;">
+            <strong id="result-status" style="font-size: 1.2rem; color: #16a34a;"></strong>
+        </div>
+
+        <div style="margin-bottom: 25px; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 15px;">
+            <label style="font-weight: bold; display: block; margin-bottom: 8px; color: #374151; font-size: 0.95rem;">📝 班級心得 / 勘誤筆記：</label>
+            <div id="editor-container" style="height: 120px; background: #fff; border: 1px solid #d1d5db; border-radius: 6px;"></div>
+            <div style="text-align: right; margin-top: 8px;">
+                <button id="btn-save-explanation" style="background-color: #4e4376; color: white; border: none; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: background 0.2s;">💾 儲存修改</button>
             </div>
+        </div>
+
+        <div id="ai-explanation-zone" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 18px; display: none;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; border-bottom: 1px dashed #bbf7d0; padding-bottom: 8px;">
+                <span style="font-size: 1.2rem;">✨</span>
+                <strong style="color: #166534; font-size: 1rem; letter-spacing: 0.5px;">OpenAI 學長自動詳解庫</strong>
+            </div>
+            <div id="ai-explanation-text" style="color: #14532d; font-size: 0.98rem; line-height: 1.7; white-space: pre-wrap;"></div>
+        </div>
+
+    </div>
+</details>
             
             <div style="text-align: right;">
                 <button id="btn-submit" style="background-color: #2b5876; color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 6px; cursor: pointer;">下一頁 / 送出</button>
@@ -356,6 +394,10 @@
     // 4. 渲染當前題目的函式 (維持原樣)
     function renderQuestion() {
         if (currentIndex >= currentQuestions.length) {
+            const expBox = document.getElementById("explanation-box");
+        if (expBox) {
+        expBox.removeAttribute("open");
+        }
             alert("恭喜你寫完全部題目了！");
             // 寫完該科目後，退回該考卷的科目選擇區
             quizView.classList.add("hidden");
@@ -448,6 +490,16 @@
             }
             
             explanationInput.value = result.explanation || "";
+            const aiZone = document.getElementById("ai-explanation-zone");
+            const aiText = document.getElementById("ai-explanation-text");
+            if (aiZone && aiText) {
+                if (q.ai_explanation && q.ai_explanation.trim() !== "") {
+                    aiText.innerText = q.ai_explanation; 
+                    aiZone.style.display = "block"; // 有 AI 詳解就讓綠色看板亮起來
+                 } else {
+                     aiZone.style.display = "none";  // 沒資料就優雅隱藏，不留死白
+        }
+    }
 
             btnSaveExplanation.onclick = async () => {
                 const updatedText = explanationInput.value;
