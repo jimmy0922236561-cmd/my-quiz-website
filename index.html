@@ -174,13 +174,13 @@
             <p style="color: #666; font-size: 0.95rem;">請選擇你想挑戰的考試年份與題型：</p>
             
             <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
-                <button class="year-btn" data-year="115_Mid">115年 第一次</button>
-                <button class="year-btn" data-year="114_Final">114年 第二次</button>
-                <button class="year-btn" data-year="114_Mid">114年 第二次</button>
-                <button class="year-btn" data-year="113_Final">113年 第二次</button>
-                <button class="year-btn" data-year="113_Mid">113年 第二次</button>
-                <button class="year-btn" data-year="112_Final">112年 第二次</button>
-                <button class="year-btn" data-year="112_Mid">112年 第一次</button>
+                <button class="year-btn" data-year="115_Fir">115年 第一次</button>
+                <button class="year-btn" data-year="114_Sec">114年 第二次</button>
+                <button class="year-btn" data-year="114_Fir">114年 第一次</button>
+                <button class="year-btn" data-year="113_Sec">113年 第二次</button>
+                <button class="year-btn" data-year="113_Fir">113年 第一次</button>
+                <button class="year-btn" data-year="112_Sec">112年 第二次</button>
+                <button class="year-btn" data-year="112_Fir">112年 第一次</button>
             </div>
         </div>
     </div>
@@ -316,7 +316,18 @@ document.querySelectorAll(".year-btn").forEach(button => {
     button.addEventListener("click", function() {
         const selectedYear = this.getAttribute("data-year"); 
         const yearDisplayName = this.innerText; 
-        currentQuizName = `${currentBlockName}_${selectedYear}`; 
+        let quizSuffix = selectedYear;
+
+        if (yearSelectionZone2.contains(this)) {
+            const [year, examType] = selectedYear.split("_");
+            if (examType === "Mid") {
+                quizSuffix = `${year}_Fir`;
+            } else if (examType === "Final") {
+                quizSuffix = `${year}_Sec`;
+            }
+        }
+
+        currentQuizName = `${currentBlockName}_${quizSuffix}`; 
         const fullDisplayName = `${currentBlockName} ${yearDisplayName}`; 
         openCategorySelection(currentQuizName, fullDisplayName);
     });
