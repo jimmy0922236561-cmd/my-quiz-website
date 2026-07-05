@@ -154,6 +154,10 @@
                 <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">MED1</span>
                 <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">歷屆國家考試題庫</span>
             </button>
+            <button class="block-select-btn" data-block="MED2" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #1f8a70, #2bb673); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">MED2</span>
+                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">歷屆國家考試題庫</span>
+            </button>
         </div>
 
         <div id="year-selection-zone-1" class="hidden" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center;">
@@ -299,7 +303,7 @@ document.querySelectorAll(".block-select-btn").forEach(button => {
         currentBlockName = this.getAttribute("data-block");
         selectedBlockHints.forEach(el => el.innerText = `🎯 已選擇：${this.innerText.trim()}`);
 
-        if (currentBlockName === "MED1") {
+        if (currentBlockName === "MED1" || currentBlockName === "MED2") {
             yearSelectionZone.classList.add("hidden");
             yearSelectionZone2.classList.remove("hidden");
         } else {
@@ -320,7 +324,7 @@ document.querySelectorAll(".year-btn").forEach(button => {
 
         if (yearSelectionZone2.contains(this)) {
             const [year, examType] = selectedYear.split("_");
-            if (examType === "Mid") {
+            if (examType === "Mid" ) {
                 quizSuffix = `${year}_Fir`;
             } else if (examType === "Final") {
                 quizSuffix = `${year}_Sec`;
