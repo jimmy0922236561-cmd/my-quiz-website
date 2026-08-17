@@ -147,5 +147,9 @@ def get_categories(quiz_name: str):
     db_questions = read_questions_from_specific_csv(quiz_name)
     if db_questions is None:
         raise HTTPException(status_code=404, detail="找不到考卷")
-    categories = set([q["category"] for q in db_questions if q.get("category")])
-    return list(categories)
+    
+    # 用 dict.fromkeys 保留「第一次出現」的順序，同時自動去重
+    categories = list(dict.fromkeys(
+        q["category"] for q in db_questions if q.get("category")
+    ))
+    return categories
