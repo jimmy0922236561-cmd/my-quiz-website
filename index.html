@@ -540,23 +540,6 @@ btnSubmitAll.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-    // 結算成績板
-    const wrongCount = totalCount - correctCount;
-    const rate = Math.round((correctCount / totalCount) * 100);
-
-    document.getElementById("summary-total").innerText = totalCount;
-    document.getElementById("summary-correct").innerText = correctCount;
-    document.getElementById("summary-wrong").innerText = wrongCount;
-    document.getElementById("summary-rate").innerText = `${rate}%`;
-
-    resultSummaryCard.classList.remove("hidden");
-    filterZone.classList.remove("hidden");
-    btnSubmitAll.style.display = "none";
-
-    // 自動捲動到最頂部看成績
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 // 8. 錯題快速過濾器
 document.getElementById("btn-show-wrong-only").addEventListener("click", () => {
     currentQuestions.forEach(q => {
