@@ -91,6 +91,7 @@ async def get_questions(quiz_name: str, category: str = None):
             "option_b": q["option_b"],
             "option_c": q["option_c"],
             "option_d": q["option_d"],
+            "correct_answer": q["correct_answer"],
             "category": q["category"],
             "explanation": q.get("explanation", ""),
             
