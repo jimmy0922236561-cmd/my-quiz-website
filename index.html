@@ -99,8 +99,9 @@
             cursor: pointer;
             transition: all 0.2s;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
         }
         .option-label:hover {
             background-color: #f1f5f9;
@@ -109,6 +110,20 @@
         .option-label.selected {
             background-color: #e0e7ff;
             border-color: #4f46e5;
+        }
+        .option-main-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+        .option-image {
+            max-width: 100%;
+            max-height: 220px;
+            border-radius: 6px;
+            margin-top: 4px;
+            display: block;
+            cursor: pointer;
         }
         /* 交卷後的正解/錯解著色 */
         .option-label.ans-correct {
@@ -156,10 +171,9 @@
             </div>
             
             <ul style="margin: 0; padding-left: 20px; color: #533f03; line-height: 1.6; font-size: 0.95rem;">
+                <li><strong>【260817】</strong> 恭喜大家考完block7期中考，本網站將持續更新題庫，並優化功能</li>
                 <li><strong>【Block 7 期中考】</strong> 新增M112期中考題，另外AI詳解有些怪怪的，暫時僅供參考</li>
-                <li><strong>【Block 7 期中考】</strong> 114年上課考訓已更新，請選取「114年 期中考 考訓整理」使用</li>
-                <li><strong>【Block 7 期末考】</strong> 113年期末考題庫已全數上線！包含王耀廣、王森稔等老師共 90 題分類。</li>
-                <li><strong>【功能更新】</strong> 在每題答題後新增AI詳解，如有問題歡迎通報！</li>
+                
             </ul>
         </div>
         <div style="display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap;">
@@ -300,6 +314,20 @@ const btnSubmitAll = document.getElementById("btn-submit-all");
 const resultSummaryCard = document.getElementById("result-summary-card");
 const filterZone = document.getElementById("filter-zone");
 
+// 🎯 新增：自動偵測文字裡的圖片網址，回傳「去掉網址後的純文字」與「圖片網址」
+// 支援題目或選項句子中直接貼上圖片連結，不需要額外的欄位
+function extractImageFromText(text) {
+    if (!text) return { cleanText: "", imageUrl: "" };
+    const imgUrlRegex = /(https?:\/\/\S+\.(?:png|jpg|jpeg|gif|webp))/i;
+    const match = text.match(imgUrlRegex);
+    if (match) {
+        const imageUrl = match[1];
+        const cleanText = text.replace(imageUrl, "").trim();
+        return { cleanText, imageUrl };
+    }
+    return { cleanText: text, imageUrl: "" };
+}
+
 // 1. 選擇 Block
 document.querySelectorAll(".block-select-btn").forEach(btn => {
     btn.addEventListener("click", function() {
@@ -402,6 +430,22 @@ async function startFullQuiz(quizName, displayName, category) {
     }
 }
 
+// 🎯 新增：產生單一選項的 HTML（文字 + 若偵測到圖片網址則附上圖片）
+function renderOption(q, optLetter, optText) {
+    const parsed = extractImageFromText(optText);
+    const imgHtml = parsed.imageUrl
+        ? `<img src="${parsed.imageUrl}" alt="選項${optLetter}圖片" class="option-image" onclick="event.preventDefault(); window.open(this.src, '_blank');">`
+        : "";
+    return `
+        <label class="option-label" data-opt="${optLetter}">
+            <div class="option-main-row">
+                <input type="radio" name="ans_${q.id}" value="${optLetter}"> ${optLetter}. ${parsed.cleanText}
+            </div>
+            ${imgHtml}
+        </label>
+    `;
+}
+
 // 5. 渲染整份考卷的所有題目卡片
 function renderAllQuestions() {
     questionsContainer.innerHTML = "";
@@ -411,12 +455,13 @@ function renderAllQuestions() {
         qCard.className = "question-card";
         qCard.id = `q-card-${q.id}`;
 
-        // 圖片區塊判斷
+        // 🎯 從題目文字裡自動偵測圖片網址
+        const questionParsed = extractImageFromText(q.question);
         let imgHtml = "";
-        if (q.image_url && q.image_url.trim() !== "") {
+        if (questionParsed.imageUrl) {
             imgHtml = `
                 <div style="text-align: center; margin: 15px 0;">
-                    <img src="${q.image_url.trim()}" alt="題目圖" style="max-width: 100%; max-height: 350px; border-radius: 8px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+                    <img src="${questionParsed.imageUrl}" alt="題目圖" style="max-width: 100%; max-height: 350px; border-radius: 8px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
                 </div>
             `;
         }
@@ -426,14 +471,14 @@ function renderAllQuestions() {
                 <span><strong>第 ${idx + 1} 題</strong> ｜ 題號：${q.id}</span>
                 <span style="background: #e2e8f0; padding: 2px 8px; border-radius: 4px;">${q.category || "未分類"}</span>
             </div>
-            <div style="font-size: 1.05rem; font-weight: 500; line-height: 1.6; margin-bottom: 12px;">${q.question}</div>
+            <div style="font-size: 1.05rem; font-weight: 500; line-height: 1.6; margin-bottom: 12px;">${questionParsed.cleanText}</div>
             ${imgHtml}
             
             <div class="options-group" id="options-group-${q.id}">
-                <label class="option-label" data-opt="A"><input type="radio" name="ans_${q.id}" value="A"> A. ${q.option_a}</label>
-                <label class="option-label" data-opt="B"><input type="radio" name="ans_${q.id}" value="B"> B. ${q.option_b}</label>
-                <label class="option-label" data-opt="C"><input type="radio" name="ans_${q.id}" value="C"> C. ${q.option_c}</label>
-                <label class="option-label" data-opt="D"><input type="radio" name="ans_${q.id}" value="D"> D. ${q.option_d}</label>
+                ${renderOption(q, "A", q.option_a)}
+                ${renderOption(q, "B", q.option_b)}
+                ${renderOption(q, "C", q.option_c)}
+                ${renderOption(q, "D", q.option_d)}
             </div>
 
             <!-- 交卷後才展開的詳解盒子 -->
