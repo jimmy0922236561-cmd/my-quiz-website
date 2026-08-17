@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block 分類題庫系統</title>
+    <title>醫學系 Block / 國考 分類題庫系統</title>
     <style>
         :root {
             --primary-color: #2b5876;
             --secondary-color: #4e4376;
             --bg-color: #f5f7fa;
             --card-bg: #ffffff;
+            --correct-bg: #dcfce7;
+            --correct-border: #22c55e;
+            --wrong-bg: #fee2e2;
+            --wrong-border: #ef4444;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -19,26 +23,15 @@
             color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
         h1, h2 {
             text-align: center;
             color: var(--primary-color);
         }
-        /* 隱藏區塊用的 CSS */
         .hidden {
             display: none !important;
-        }
-        /* 考卷選擇大廳樣式 */
-        .quiz-lobby {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        @media (max-width: 700px) {
-            .quiz-lobby { grid-template-columns: 1fr; }
         }
         .lobby-btn {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -56,298 +49,272 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
-        /* 測驗區域與回首頁按鈕 */
         .nav-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 10px;
+            z-index: 100;
         }
         .back-btn {
-            background-color: #666;
+            background-color: #64748b;
             color: white;
             border: none;
-            padding: 10px 15px;
+            padding: 8px 16px;
             border-radius: 6px;
             cursor: pointer;
+            font-weight: 500;
         }
-        .quiz-card {
+        .question-card {
             background-color: var(--card-bg);
-            padding: 30px;
+            padding: 24px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
+            margin-bottom: 24px;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .question-card.is-wrong {
+            border-color: #fca5a5;
+        }
+        .question-card.is-correct {
+            border-color: #86efac;
         }
         .options-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin: 20px 0;
+            gap: 10px;
+            margin: 15px 0;
         }
         .option-label {
-            padding: 15px;
-            border: 2px solid #e0e0e0;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
             border-radius: 8px;
             cursor: pointer;
-            transition: background 0.2s, border-color 0.2s;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .option-label:hover {
-            background-color: #f0f4f8;
+            background-color: #f1f5f9;
             border-color: var(--primary-color);
         }
-        /* 隱藏 Mac/Safari 瀏覽器內建的醜醜預設箭頭 */
-        details summary::-webkit-details-marker {
-            display: none;
-         }
-
-/* 🚀 當 <details> 標籤處於展開狀態 (open) 時，讓箭頭 icon 旋轉 180 度變朝上 */
-        details[open] summary .arrow-icon {
-            transform: rotate(180deg);
-         }
-
-/* 讓整區點擊時有微亮高光 */
-         details summary:active {
-            background-color: #fce7f3 !important;
-         }
+        .option-label.selected {
+            background-color: #e0e7ff;
+            border-color: #4f46e5;
+        }
+        /* 交卷後的正解/錯解著色 */
+        .option-label.ans-correct {
+            background-color: var(--correct-bg) !important;
+            border-color: var(--correct-border) !important;
+            font-weight: bold;
+            color: #15803d;
+        }
+        .option-label.ans-wrong {
+            background-color: var(--wrong-bg) !important;
+            border-color: var(--wrong-border) !important;
+            color: #b91c1c;
+        }
+        /* 計分板樣式 */
+        .score-board {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .score-item h4 { margin: 0 0 5px 0; font-size: 0.9rem; opacity: 0.8; }
+        .score-item span { font-size: 1.8rem; font-weight: bold; }
+        
+        details summary::-webkit-details-marker { display: none; }
+        details[open] summary .arrow-icon { transform: rotate(180deg); }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <!-- 1. 首頁大廳視圖 -->
     <div id="lobby-view">
-        <h1 style="color: var(--primary-color); margin-bottom: 5px;">🎓 後醫系 Block 考古</h1>
-        <p style="color: #666; margin-bottom: 30px;">請先選擇你想複習的 Block 區塊與考試年份：</p>
-        <div id="announcement-board" style="background: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-                <span style="font-size: 1.3rem;">📢</span>
-                <strong style="color: #856404; font-size: 1.1rem;">布告欄</strong>
-                <span style="margin-left: auto; font-size: 0.85rem; color: #856404; background: #ffeeba; padding: 2px 8px; border-radius: 20px; font-weight: bold;">最新更新：2026/08/13</span>
-            </div>
-            
-            <ul style="margin: 0; padding-left: 20px; color: #533f03; line-height: 1.6; font-size: 0.95rem;">
-                <li><strong>【Block 7 期中考】</strong> 新增M112期中考題，另外AI詳解有些怪怪的，暫時僅供參考</li>
-                <li><strong>【Block 7 期中考】</strong> 114年上課考訓已更新，請選取「114年 期中考 考訓整理」使用</li>
-                <li><strong>【Block 7 期末考】</strong> 113年期末考題庫已全數上線！包含王耀廣、王森稔等老師共 90 題分類。</li>
-                <li><strong>【功能更新】</strong> 在每題答題後新增AI詳解，如有問題歡迎通報！</li>
-            </ul>
-        </div>
-        <div style="display: flex; gap: 15px; margin-bottom: 25px;">
-            <button class="block-select-btn" data-block="Block7" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">Block 7</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">消化系統</span>
+        <h1 style="color: var(--primary-color); margin-bottom: 5px;">🎓 醫學系 Block / 國考 考古題庫</h1>
+        <p style="color: #666; margin-bottom: 30px; text-align: center;">請選擇你想複習的 Block 或 國考科目：</p>
+        
+        <div style="display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap;">
+            <button class="block-select-btn" data-block="Block7" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">Block 7</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">消化系統</span>
             </button>
-            <button class="block-select-btn" data-block="Block8" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">Block 8</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">骨骼肌肉EMI</span>
+            <button class="block-select-btn" data-block="Block8" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">Block 8</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">骨骼肌肉EMI</span>
             </button>
-            <button class="block-select-btn" data-block="Block9" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">Block 9</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">神經系統</span>
+            <button class="block-select-btn" data-block="Block9" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">Block 9</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">神經系統</span>
             </button>
-            <button class="block-select-btn" data-block="Block10" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">Block 10</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">精神醫學</span>
+            <button class="block-select-btn" data-block="Block10" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">Block 10</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">精神醫學</span>
             </button>
-            <button class="block-select-btn" data-block="Block11" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">Block 11</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">地獄血腫EMI</span>
+            <button class="block-select-btn" data-block="Block11" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">Block 11</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">地獄血腫EMI</span>
             </button>
-            <button class="block-select-btn" data-block="MED1" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #1f8a70, #2bb673); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">MED1</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">歷屆國家考試題庫</span>
-            </button>
-            <button class="block-select-btn" data-block="MED2" style="flex: 1; padding: 25px 20px; font-weight: bold; background: linear-gradient(135deg, #1f8a70, #2bb673); color: white; border: none; border-radius: 12px; cursor: pointer; line-height: 1.4; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <span style="font-size: 1.4rem; display: block; margin-bottom: 4px;">MED2</span>
-                <span style="font-size: 1rem; font-weight: 500; opacity: 0.9;">歷屆國家考試題庫</span>
+            <button class="block-select-btn" data-block="MED1" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #1f8a70, #2bb673); color: white; border: none; border-radius: 12px; cursor: pointer;">
+                <span style="font-size: 1.2rem; display: block;">MED1</span>
+                <span style="font-size: 0.85rem; opacity: 0.9;">國考題庫</span>
             </button>
         </div>
 
-        <div id="year-selection-zone-1" class="hidden" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center;">
-            <h3 id="selected-block-hint" style="margin-top: 0; color: #333;">已選擇：Block 7</h3>
-            <p style="color: #666; font-size: 0.95rem;">請選擇你想挑戰的考試年份與題型：</p>
-            
-            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+        <div id="year-selection-zone-1" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
+            <h3 id="selected-block-hint-1" style="margin-top: 0;">已選擇：Block</h3>
+            <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
                 <button class="year-btn" data-year="113_Mid">113年 期中考</button>
                 <button class="year-btn" data-year="113_Final">113年 期末考</button>
                 <button class="year-btn" data-year="112_Mid">112年 期中考</button>
                 <button class="year-btn" data-year="112_Final">112年 期末考</button>
-                <button class="year-btn" data-year="111_Mid">111年 期中考</button>
-                <button class="year-btn" data-year="111_Final">111年 期末考</button>
-                <button class="year-btn" data-year="114_Mid">114年 期中考 考訓整理</button>
-                <button class="year-btn" data-year="114M_Mid">M112 期中考 </button>
-                <button class="year-btn" data-year="114M_Final">M112 期末考 </button>
             </div>
         </div>
-        <div id="year-selection-zone-2" class="hidden" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center;">
-            <h3 id="selected-block-hint" style="margin-top: 0; color: #333;">已選擇：Block 7</h3>
-            <p style="color: #666; font-size: 0.95rem;">請選擇你想挑戰的考試年份與題型：</p>
-            
-            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+
+        <div id="year-selection-zone-2" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
+            <h3 id="selected-block-hint-2" style="margin-top: 0;">已選擇：MED1 歷屆國考</h3>
+            <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
                 <button class="year-btn" data-year="115_Fir">115年 第一次</button>
                 <button class="year-btn" data-year="114_Sec">114年 第二次</button>
                 <button class="year-btn" data-year="114_Fir">114年 第一次</button>
                 <button class="year-btn" data-year="113_Sec">113年 第二次</button>
                 <button class="year-btn" data-year="113_Fir">113年 第一次</button>
-                <button class="year-btn" data-year="112_Sec">112年 第二次</button>
-                <button class="year-btn" data-year="112_Fir">112年 第一次</button>
             </div>
         </div>
     </div>
+
+    <!-- 2. 科目分類視圖 -->
     <div id="category-view" class="hidden">
         <div class="nav-bar">
-            <button class="back-btn" id="btn-back-to-lobby">⬅ 返回考卷大廳</button>
+            <button class="back-btn" id="btn-back-to-lobby">⬅ 返回大廳</button>
+            <span id="category-quiz-title" style="font-weight: bold; color: var(--primary-color);"></span>
         </div>
-        <h1 id="category-quiz-title" style="color: var(--primary-color);">考卷名稱</h1>
-        <h2 style="font-size: 1.2rem; color: #666;">請選擇你想複習的科目分類：</h2>
-        
-        <div id="category-list" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;"></div>
+        <h2 style="font-size: 1.1rem; color: #64748b; text-align: left;">請選擇你想進行測驗的學科範圍：</h2>
+        <div id="category-list" style="display: flex; flex-direction: column; gap: 12px; margin-top: 15px;"></div>
     </div>
+
+    <!-- 3. 全卷整份答題模式視圖 -->
     <div id="quiz-view" class="hidden">
         <div class="nav-bar">
-            <button class="back-btn" id="btn-back">⬅ 回大廳選考卷</button>
-            <span id="quiz-title" style="font-weight: bold; color: var(--primary-color);"></span>
-        </div>
-
-        <div class="quiz-card">
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #777;">
-                <span id="q-category">科目分類：載入中...</span>
-                <span id="q-progress">題號：0 / 0</span>
-            </div>
-            <h3 id="q-text" style="margin-top: 15px; line-height: 1.5;">題目載入中...</h3>
-
-            <div class="options-group">
-                <label class="option-label"><input type="radio" name="answer" value="A"> <span id="opt-a">選項 A</span></label>
-                <label class="option-label"><input type="radio" name="answer" value="B"> <span id="opt-b">選項 B</span></label>
-                <label class="option-label"><input type="radio" name="answer" value="C"> <span id="opt-c">選項 C</span></label>
-                <label class="option-label"><input type="radio" name="answer" value="D"> <span id="opt-d">選項 D</span></label>
-            </div>
-
-            <details id="explanation-box" class="hidden" style="margin: 20px 0; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-    
-    <summary style="list-style: none; cursor: pointer; padding: 12px 16px; background: #fdf2f8; border-bottom: 1px solid #fbcfe8; display: flex; align-items: center; justify-content: space-between; user-select: none;">
-        <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 1.1rem;">💡</span>
-            <strong style="color: #9d174d; font-size: 1rem;">查看完整解析與筆記</strong>
-        </div>
-        <span class="arrow-icon" style="transition: transform 0.2s ease; font-weight: bold; color: #9d174d;">▼</span>
-    </summary>
-
-    <div style="padding: 20px; background: #ffffff;">
-        
-        <div style="margin-bottom: 15px;">
-            <strong id="result-status" style="font-size: 1.2rem; color: #16a34a;"></strong>
-        </div>
-
-        <div style="margin-bottom: 25px; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 15px;">
-            <label style="font-weight: bold; display: block; margin-bottom: 8px; color: #374151; font-size: 0.95rem;">📝 學霸筆記：</label>
-            <div id="editor-container" style="height: 120px; background: #fff; border: 1px solid #d1d5db; border-radius: 6px;"></div>
-            <div style="text-align: right; margin-top: 8px;">
-                <button id="btn-save-explanation" style="background-color: #4e4376; color: white; border: none; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: background 0.2s;">💾 儲存修改</button>
-            </div>
-        </div>
-
-        <div id="ai-explanation-zone" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 18px; display: none;">
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; border-bottom: 1px dashed #bbf7d0; padding-bottom: 8px;">
-                <span style="font-size: 1.2rem;">✨</span>
-                <strong style="color: #166534; font-size: 1rem; letter-spacing: 0.5px;">OpenAI 學長自動詳解庫</strong>
-            </div>
-            <div id="ai-explanation-text" style="color: #14532d; font-size: 0.98rem; line-height: 1.7; white-space: pre-wrap;"></div>
-        </div>
-
-    </div>
-</details>
-            
+            <button class="back-btn" id="btn-back-to-category">⬅ 重選科目</button>
             <div style="text-align: right;">
-                <button id="btn-submit" style="background-color: #2b5876; color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 6px; cursor: pointer;">下一頁 / 送出</button>
+                <div id="quiz-title" style="font-weight: bold; color: var(--primary-color);">考卷名稱</div>
+                <div id="quiz-progress-text" style="font-size: 0.85rem; color: #64748b;">作答進度：0 / 0 題</div>
             </div>
+        </div>
+
+        <!-- 交卷後的成績結算看板 -->
+        <div id="result-summary-card" class="score-board hidden">
+            <div class="score-item">
+                <h4>總題數</h4>
+                <span id="summary-total">0</span>
+            </div>
+            <div class="score-item">
+                <h4 style="color: #86efac;">答對</h4>
+                <span id="summary-correct" style="color: #86efac;">0</span>
+            </div>
+            <div class="score-item">
+                <h4 style="color: #fca5a5;">答錯</h4>
+                <span id="summary-wrong" style="color: #fca5a5;">0</span>
+            </div>
+            <div class="score-item">
+                <h4>正確率</h4>
+                <span id="summary-rate">0%</span>
+            </div>
+        </div>
+
+        <!-- 錯題快速過濾按鈕區 (交卷後出現) -->
+        <div id="filter-zone" class="hidden" style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button id="btn-show-all" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; cursor: pointer; font-weight: bold;">📋 顯示全部題目</button>
+            <button id="btn-show-wrong-only" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ef4444; background: #fee2e2; color: #b91c1c; cursor: pointer; font-weight: bold;">❌ 僅顯示錯題</button>
+        </div>
+
+        <!-- 所有題目卡片的動態注入容器 -->
+        <div id="questions-container"></div>
+
+        <!-- 底部交卷控制列 -->
+        <div id="submit-bar" style="text-align: center; margin: 40px 0 60px 0;">
+            <button id="btn-submit-all" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 16px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 15px rgba(37,99,235,0.3);">
+                📝 寫完全部，交卷並批改
+            </button>
         </div>
     </div>
 </div>
 
 <script>
-    // 💡 你的超帥後端網址
-const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com"; 
+const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com";
 
-// 全域變數狀態儲存
-let currentBlockName = "";          
-let currentQuizName = "";           
-let currentSelectedCategory = null; 
+let currentBlockName = "";
+let currentQuizName = "";
 let currentQuestions = [];
-let currentIndex = 0;
-let isShowingResult = false;
+let userAnswers = {};      // 記錄使用者的選擇 { "題目ID": "A" }
+let isSubmitted = false;   // 是否已經交卷
 
-// 取得 DOM 節點
+// DOM 節點
 const lobbyView = document.getElementById("lobby-view");
-const yearSelectionZone = document.getElementById("year-selection-zone-1");
-const yearSelectionZone2 = document.getElementById("year-selection-zone-2");  
-const selectedBlockHints = document.querySelectorAll("#selected-block-hint");   
-const categoryView = document.getElementById("category-view"); 
-const categoryList = document.getElementById("category-list"); 
-const categoryQuizTitle = document.getElementById("category-quiz-title"); 
+const yearZone1 = document.getElementById("year-selection-zone-1");
+const yearZone2 = document.getElementById("year-selection-zone-2");
+const categoryView = document.getElementById("category-view");
+const categoryList = document.getElementById("category-list");
+const categoryQuizTitle = document.getElementById("category-quiz-title");
 
 const quizView = document.getElementById("quiz-view");
 const quizTitle = document.getElementById("quiz-title");
-const qCategory = document.getElementById("q-category");
-const qProgress = document.getElementById("q-progress");
-const qText = document.getElementById("q-text");
-const optA = document.getElementById("opt-a");
-const optB = document.getElementById("opt-b");
-const optC = document.getElementById("opt-c");
-const optD = document.getElementById("opt-d");
-const explanationBox = document.getElementById("explanation-box");
-const resultStatus = document.getElementById("result-status");
-const btnSaveExplanation = document.getElementById("btn-save-explanation");
+const quizProgressText = document.getElementById("quiz-progress-text");
+const questionsContainer = document.getElementById("questions-container");
+const btnSubmitAll = document.getElementById("btn-submit-all");
+const resultSummaryCard = document.getElementById("result-summary-card");
+const filterZone = document.getElementById("filter-zone");
 
-// =======================================================================
-// 💡 1. 第一層控制：點擊 Block 大按鈕
-// =======================================================================
-document.querySelectorAll(".block-select-btn").forEach(button => {
-    button.addEventListener("click", function() {
+// 1. 選擇 Block
+document.querySelectorAll(".block-select-btn").forEach(btn => {
+    btn.addEventListener("click", function() {
         document.querySelectorAll(".block-select-btn").forEach(b => b.style.opacity = "0.6");
         this.style.opacity = "1";
         currentBlockName = this.getAttribute("data-block");
-        selectedBlockHints.forEach(el => el.innerText = `🎯 已選擇：${this.innerText.trim()}`);
 
-        if (currentBlockName === "MED1" || currentBlockName === "MED2") {
-            yearSelectionZone.classList.add("hidden");
-            yearSelectionZone2.classList.remove("hidden");
+        if (currentBlockName === "MED1") {
+            yearZone1.classList.add("hidden");
+            yearZone2.classList.remove("hidden");
+            document.getElementById("selected-block-hint-2").innerText = `已選擇：${this.innerText.trim()}`;
         } else {
-            yearSelectionZone2.classList.add("hidden");
-            yearSelectionZone.classList.remove("hidden");
+            yearZone2.classList.add("hidden");
+            yearZone1.classList.remove("hidden");
+            document.getElementById("selected-block-hint-1").innerText = `已選擇：${this.innerText.trim()}`;
         }
     });
 });
 
-// =======================================================================
-// 💡 2. 第二層控制：點擊具體年份按鈕
-// =======================================================================
-document.querySelectorAll(".year-btn").forEach(button => {
-    button.addEventListener("click", function() {
-        const selectedYear = this.getAttribute("data-year"); 
-        const yearDisplayName = this.innerText; 
-        let quizSuffix = selectedYear;
-
-        if (yearSelectionZone2.contains(this)) {
-            const [year, examType] = selectedYear.split("_");
-            if (examType === "Mid" ) {
-                quizSuffix = `${year}_Fir`;
-            } else if (examType === "Final") {
-                quizSuffix = `${year}_Sec`;
-            }
-        }
-
-        // MED 系列考卷檔名範例：MED1_115_Fir、MED1_114_Sec
-        currentQuizName = `${currentBlockName}_${quizSuffix}`; 
-        const fullDisplayName = `${currentBlockName} ${yearDisplayName}`; 
-        openCategorySelection(currentQuizName, fullDisplayName);
+// 2. 選擇年份
+document.querySelectorAll(".year-btn").forEach(btn => {
+    btn.addEventListener("click", function() {
+        const selectedYear = this.getAttribute("data-year");
+        const yearDisplayName = this.innerText;
+        currentQuizName = `${currentBlockName}_${selectedYear}`;
+        openCategorySelection(currentQuizName, `${currentBlockName} ${yearDisplayName}`);
     });
 });
 
-// 向後端抓取該考卷有哪些科目分類
+// 3. 載入科目分類
 async function openCategorySelection(quizName, displayName) {
     try {
         categoryQuizTitle.innerText = displayName;
-        categoryList.innerHTML = "<p style='text-align:center;'>正在載入科目分類...</p>";
+        categoryList.innerHTML = "<p style='text-align:center;'>正在從雲端載入科目分類...</p>";
         
         lobbyView.classList.add("hidden");
         categoryView.classList.remove("hidden");
@@ -359,238 +326,238 @@ async function openCategorySelection(quizName, displayName) {
 
         categoryList.innerHTML = "";
 
-        // 全科目隨機混刷按鈕
+        // 全科刷題按鈕
         const allBtn = document.createElement("button");
-        allBtn.innerText = "📚 全科目隨機混刷";
-        allBtn.className = "lobby-btn"; 
-        allBtn.style.padding = "15px";
-        allBtn.onclick = () => startQuiz(quizName, displayName, null);
+        allBtn.innerText = "📚 挑戰整份考卷 (所有題目一次寫)";
+        allBtn.className = "lobby-btn";
+        allBtn.style.padding = "18px";
+        allBtn.onclick = () => startFullQuiz(quizName, displayName, null);
         categoryList.appendChild(allBtn);
 
         // 個別科目按鈕
         categories.forEach(cat => {
-            if(!cat) return;
+            if (!cat) return;
             const btn = document.createElement("button");
             btn.innerText = `📖 ${cat}`;
-            btn.style.cssText = "background-color: #ffffff; color: #2b5876; border: 2px solid #2b5876; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left; transition: all 0.2s;";
-            
-            btn.onmouseenter = () => { btn.style.backgroundColor = "#f0f4f8"; };
-            btn.onmouseleave = () => { btn.style.backgroundColor = "#ffffff"; };
-            btn.onclick = () => startQuiz(quizName, `${displayName} - ${cat}`, cat);
+            btn.style.cssText = "background-color: #ffffff; color: #2b5876; border: 2px solid #cbd5e1; padding: 15px; font-size: 1.05rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left;";
+            btn.onclick = () => startFullQuiz(quizName, `${displayName} - ${cat}`, cat);
             categoryList.appendChild(btn);
         });
 
     } catch (error) {
-        alert("讀取分類失敗: " + error.message);
+        alert("載入失敗: " + error.message);
         goBackToLobby();
     }
 }
 
-// 正式進入測驗模式
-async function startQuiz(quizName, displayName, category) {
+// 4. 開始全卷測驗模式
+async function startFullQuiz(quizName, displayName, category) {
     try {
         quizTitle.innerText = displayName;
-        currentSelectedCategory = category; 
-
         categoryView.classList.add("hidden");
         quizView.classList.remove("hidden");
+        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px;'>正在準備整份題目，請稍候...</p>";
 
         let url = `${API_BASE_URL}/api/questions/${quizName}`;
-        if (category) {
-            url += `?category=${encodeURIComponent(category)}`;
-        }
+        if (category) url += `?category=${encodeURIComponent(category)}`;
 
         const response = await fetch(url);
-        if (!response.ok) throw new Error("找不到考卷檔案");
+        if (!response.ok) throw new Error("題庫讀取失敗");
         
         currentQuestions = await response.json();
-        currentIndex = 0;
-        isShowingResult = false;
+        userAnswers = {};
+        isSubmitted = false;
 
-        if (currentQuestions.length === 0) {
-            qText.innerText = "這個科目目前沒有任何題目喔！";
-            return;
+        // 重設結算與篩選狀態
+        resultSummaryCard.classList.add("hidden");
+        filterZone.classList.add("hidden");
+        btnSubmitAll.style.display = "inline-block";
+        btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
+        btnSubmitAll.disabled = false;
+
+        renderAllQuestions();
+        updateProgress();
+    } catch (err) {
+        alert("讀取失敗: " + err.message);
+        goBackToCategory();
+    }
+}
+
+// 5. 渲染整份考卷的所有題目卡片
+function renderAllQuestions() {
+    questionsContainer.innerHTML = "";
+
+    currentQuestions.forEach((q, idx) => {
+        const qCard = document.createElement("div");
+        qCard.className = "question-card";
+        qCard.id = `q-card-${q.id}`;
+
+        // 圖片區塊判斷
+        let imgHtml = "";
+        if (q.image_url && q.image_url.trim() !== "") {
+            imgHtml = `
+                <div style="text-align: center; margin: 15px 0;">
+                    <img src="${q.image_url.trim()}" alt="題目圖" style="max-width: 100%; max-height: 350px; border-radius: 8px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+                </div>
+            `;
         }
 
-        renderQuestion();
-    } catch (error) {
-        alert("讀取題庫失敗: " + error.message);
-        quizView.classList.add("hidden");
-        categoryView.classList.remove("hidden");
-    }
-}
-
-// 4. 渲染當前題目的函式（全面加上安全防禦）
-function renderQuestion() {
-    // 💡 安全防禦 1：切換新題目時，自動將收折蓋子闔上
-    const expBox = document.getElementById("explanation-box");
-    if (expBox) {
-        expBox.removeAttribute("open");
-    }
-
-    // 💡 安全防禦 2：檢查是否超越最後一題
-    if (currentIndex >= currentQuestions.length) {
-        alert("恭喜你寫完全部題目了！");
-        quizView.classList.add("hidden");
-        categoryView.classList.remove("hidden");
-        return;
-    }
-
-    const q = currentQuestions[currentIndex];
-    if (!q) return;
-
-    // 清除單選鈕狀態
-    document.querySelectorAll('input[name="answer"]').forEach(el => {
-        el.checked = false;
-        el.disabled = false;
-    });
-    document.querySelectorAll('.option-label').forEach(label => {
-        label.style.backgroundColor = "";
-        label.style.borderColor = "#e0e0e0";
-        label.style.pointerEvents = "auto";
-    });
-
-    // 初始化詳解顯示元件
-    if (explanationBox) explanationBox.classList.add("hidden");
-    if (resultStatus) resultStatus.innerText = "";
-    
-    // 💡 安全防禦 3：加上保護，找不到一律跳過，絕對不崩潰
-    const explanationInput = document.getElementById("explanation-input");
-    if (explanationInput) {
-        explanationInput.value = ""; 
-    }
-
-    // 塞入題目資訊
-    qCategory.innerText = `科目分類：${q.category}`;
-    qProgress.innerText = `題號：${currentIndex + 1} / ${currentQuestions.length}`;
-    qText.innerText = q.question;
-    optA.innerText = q.option_a;
-    optB.innerText = q.option_b;
-    optC.innerText = q.option_c;
-    optD.innerText = q.option_d;
-}
-
-// 5. 下一題 / 送出答案 點擊邏輯
-document.getElementById("btn-submit").addEventListener("click", async () => {
-    const btn = document.getElementById("btn-submit");
-
-    if (isShowingResult) {
-        currentIndex++;
-        isShowingResult = false;
-        btn.innerText = "下一頁 / 送出";
-        btn.style.backgroundColor = "#2b5876"; 
-        renderQuestion();
-        return;
-    }
-
-    const selected = document.querySelector('input[name="answer"]:checked');
-    if (!selected) {
-        alert("請選擇一個答案！");
-        return;
-    }
-    
-    const userChoice = selected.value;
-    const q = currentQuestions[currentIndex]; // 💡 補坑：宣告當前題目變數
-    const currentQuestionId = q.id;
-
-    try {
-        const response = await fetch(`${API_BASE_URL}/api/submit/${currentQuizName}?question_id=${currentQuestionId}&user_choice=${userChoice}`, {
-            method: 'POST'
-        });
-
-        if (!response.ok) throw new Error("判定答案失敗");
-        const result = await response.json();
-
-        const labels = document.querySelectorAll('.option-label');
-        labels.forEach(label => {
-            const radio = label.querySelector('input');
-            radio.disabled = true;
-            label.style.pointerEvents = "none";
+        qCard.innerHTML = `
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #64748b; margin-bottom: 8px;">
+                <span><strong>第 ${idx + 1} 題</strong> ｜ 題號：${q.id}</span>
+                <span style="background: #e2e8f0; padding: 2px 8px; border-radius: 4px;">${q.category || "未分類"}</span>
+            </div>
+            <div style="font-size: 1.05rem; font-weight: 500; line-height: 1.6; margin-bottom: 12px;">${q.question}</div>
+            ${imgHtml}
             
-            if (radio.value === result.correct_answer) {
-                label.style.backgroundColor = "#d4edda";
-                label.style.borderColor = "#c3e6cb";
-            }
-            if (radio.checked && !result.is_correct) {
-                label.style.backgroundColor = "#f8d7da";
-                label.style.borderColor = "#f5c6cb";
+            <div class="options-group" id="options-group-${q.id}">
+                <label class="option-label" data-opt="A"><input type="radio" name="ans_${q.id}" value="A"> A. ${q.option_a}</label>
+                <label class="option-label" data-opt="B"><input type="radio" name="ans_${q.id}" value="B"> B. ${q.option_b}</label>
+                <label class="option-label" data-opt="C"><input type="radio" name="ans_${q.id}" value="C"> C. ${q.option_c}</label>
+                <label class="option-label" data-opt="D"><input type="radio" name="ans_${q.id}" value="D"> D. ${q.option_d}</label>
+            </div>
+
+            <!-- 交卷後才展開的詳解盒子 -->
+            <details id="exp-box-${q.id}" class="hidden" style="margin-top: 15px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                <summary style="cursor: pointer; padding: 10px 15px; background: #fdf2f8; color: #9d174d; font-weight: bold; display: flex; justify-content: space-between;">
+                    <span>💡 查看解析、筆記與 AI 詳解</span>
+                    <span class="arrow-icon">▼</span>
+                </summary>
+                <div style="padding: 15px; background: white;">
+                    <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
+                    ${q.ai_explanation ? `
+                        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6; white-space: pre-wrap;">
+                            <strong style="color: #166534;">✨ AI 臨床解析：</strong><br>${q.ai_explanation}
+                        </div>
+                    ` : ''}
+                </div>
+            </details>
+        `;
+
+        // 綁定選項點擊事件
+        qCard.querySelectorAll(`input[name="ans_${q.id}"]`).forEach(radio => {
+            radio.addEventListener("change", (e) => {
+                if (isSubmitted) return;
+                userAnswers[q.id] = e.target.value;
+                
+                // 更新該題的選取高亮樣式
+                qCard.querySelectorAll(".option-label").forEach(lbl => lbl.classList.remove("selected"));
+                e.target.closest(".option-label").classList.add("selected");
+                
+                updateProgress();
+            });
+        });
+
+        questionsContainer.appendChild(qCard);
+    });
+}
+
+// 6. 更新頂部作答題數進度
+function updateProgress() {
+    const answeredCount = Object.keys(userAnswers).length;
+    const totalCount = currentQuestions.length;
+    quizProgressText.innerText = `作答進度：${answeredCount} / ${totalCount} 題`;
+}
+
+// 7. 一鍵交卷並批改全部題目
+btnSubmitAll.addEventListener("click", () => {
+    const answeredCount = Object.keys(userAnswers).length;
+    const totalCount = currentQuestions.length;
+
+    if (answeredCount < totalCount) {
+        const confirmSubmit = confirm(`你還有 ${totalCount - answeredCount} 題未作答，確定要現在交卷嗎？`);
+        if (!confirmSubmit) return;
+    }
+
+    isSubmitted = true;
+    let correctCount = 0;
+
+    currentQuestions.forEach(q => {
+        const userChoice = userAnswers[q.id];
+        const correctAns = (q.correct_answer || "").trim().toUpperCase();
+        const isCorrect = userChoice === correctAns;
+        
+        const qCard = document.getElementById(`q-card-${q.id}`);
+        const expBox = document.getElementById(`exp-box-${q.id}`);
+        const expStatus = document.getElementById(`exp-status-${q.id}`);
+
+        // 標記該卡片是正確還是錯誤
+        if (isCorrect) {
+            correctCount++;
+            qCard.classList.add("is-correct");
+            expStatus.innerHTML = `<span style="color: #15803d;">🎉 答對了！標準答案：[ ${correctAns} ]</span>`;
+        } else {
+            qCard.classList.add("is-wrong");
+            expStatus.innerHTML = `<span style="color: #b91c1c;">❌ 答錯了！你的選擇：[ ${userChoice || "未作答"} ] ｜ 正確答案：[ ${correctAns} ]</span>`;
+        }
+
+        // 幫選項上色
+        qCard.querySelectorAll(".option-label").forEach(label => {
+            const optVal = label.getAttribute("data-opt");
+            const radio = label.querySelector("input");
+            radio.disabled = true;
+
+            if (optVal === correctAns) {
+                label.classList.add("ans-correct");
+            } else if (optVal === userChoice && !isCorrect) {
+                label.classList.add("ans-wrong");
             }
         });
 
-        if (explanationBox) explanationBox.classList.remove("hidden");
-        
-        if (result.is_correct) {
-            resultStatus.innerText = "🎉 答對了！";
-            resultStatus.style.color = "#2e7d32";
-        } else {
-            resultStatus.innerText = `❌ 答錯了！正確答案是 [ ${result.correct_answer} ]`;
-            resultStatus.style.color = "#c62828";
-        }
-        
-        // 💡 安全防禦 4：寫入班級手動心得筆記
-        const explanationInput = document.getElementById("explanation-input");
-        if (explanationInput) {
-            explanationInput.value = result.explanation || "";
-        }
+        // 顯示該題的詳解盒子
+        expBox.classList.remove("hidden");
+    });
 
-        // 💡 倒資料：填入昨天寫好的 AI 自動詳解資訊
-        const aiZone = document.getElementById("ai-explanation-zone");
-        const aiText = document.getElementById("ai-explanation-text");
-        if (aiZone && aiText) {
-            if (q.ai_explanation && q.ai_explanation.trim() !== "") {
-                aiText.innerText = q.ai_explanation; 
-                aiZone.style.display = "block"; 
-             } else {
-                aiZone.style.display = "none";  
-            }
-        }
+    // 結算成績板
+    const wrongCount = totalCount - correctCount;
+    const rate = Math.round((correctCount / totalCount) * 100);
 
-        btnSaveExplanation.onclick = async () => {
-            const explanationInputReal = document.getElementById("explanation-input");
-            if (!explanationInputReal) return;
-            const updatedText = explanationInputReal.value;
-            try {
-                const saveResponse = await fetch(`${API_BASE_URL}/api/explanation/${currentQuizName}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question_id: currentQuestionId, explanation: updatedText })
-                });
-                if (saveResponse.ok) {
-                    alert("🎉 筆記與詳解已同步更新！");
-                } else {
-                    alert("儲存失敗");
-                }
-            } catch (err) {
-                alert("網路連線錯誤: " + err.message);
-            }
-        };
+    document.getElementById("summary-total").innerText = totalCount;
+    document.getElementById("summary-correct").innerText = correctCount;
+    document.getElementById("summary-wrong").innerText = wrongCount;
+    document.getElementById("summary-rate").innerText = `${rate}%`;
 
-        isShowingResult = true;
-        btn.innerText = "下一題 ➡️";
-        btn.style.backgroundColor = "#28a745";
+    resultSummaryCard.classList.remove("hidden");
+    filterZone.classList.remove("hidden");
+    btnSubmitAll.style.display = "none";
 
-    } catch (error) {
-        alert("送出答案時發生錯誤: " + error.message);
-    }
+    // 自動捲動到最頂部看成績
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// 6. 返回功能導航控制
+// 8. 錯題快速過濾器
+document.getElementById("btn-show-wrong-only").addEventListener("click", () => {
+    currentQuestions.forEach(q => {
+        const qCard = document.getElementById(`q-card-${q.id}`);
+        if (qCard.classList.contains("is-correct")) {
+            qCard.classList.add("hidden");
+        } else {
+            qCard.classList.remove("hidden");
+        }
+    });
+});
+
+document.getElementById("btn-show-all").addEventListener("click", () => {
+    currentQuestions.forEach(q => {
+        const qCard = document.getElementById(`q-card-${q.id}`);
+        qCard.classList.remove("hidden");
+    });
+});
+
+// 導航返回控制
 function goBackToLobby() {
     quizView.classList.add("hidden");
     categoryView.classList.add("hidden");
     lobbyView.classList.remove("hidden");
-    currentQuestions = [];
 }
 
 function goBackToCategory() {
     quizView.classList.add("hidden");
-    lobbyView.classList.add("hidden");
     categoryView.classList.remove("hidden");
-    currentQuestions = [];
 }
 
-document.getElementById("btn-back").addEventListener("click", goBackToCategory); 
 document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
+document.getElementById("btn-back-to-category").addEventListener("click", goBackToCategory);
 </script>
 
 </body>
