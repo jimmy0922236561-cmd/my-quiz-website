@@ -459,18 +459,7 @@ function updateProgress() {
     quizProgressText.innerText = `作答進度：${answeredCount} / ${totalCount} 題`;
 }
 
-// 輔助函式：將任何格式的答案（如 "(A)", "A.", " Ａ "）清洗為標準大寫字母
-function cleanAnswer(ans) {
-    if (!ans) return "";
-    let str = String(ans).trim().toUpperCase();
-    // 轉全形英文字母為半形
-    str = str.replace(/[Ａ-Ｄ]/g, s => String.fromCharCode(s.charCodeAt(0) - 65248));
-    // 提取出其中的 A, B, C, D 字母
-    const match = str.match(/[A-D]|送分|ALL/);
-    return match ? match[0] : str;
-}
-
-// 7. 一鍵交卷並批改全部題目（加強防禦版）
+// 7. 一鍵交卷並批改全部題目
 btnSubmitAll.addEventListener("click", () => {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
@@ -484,28 +473,22 @@ btnSubmitAll.addEventListener("click", () => {
     let correctCount = 0;
 
     currentQuestions.forEach(q => {
-        const userChoice = cleanAnswer(userAnswers[q.id]);
-        // 同時相容 correct_answer, answer, ans 等不同欄位命名
-        const rawCorrect = q.correct_answer || q.answer || q.ans || "";
-        const correctAns = cleanAnswer(rawCorrect);
+        const userChoice = userAnswers[q.id];
+        const correctAns = (q.correct_answer || "").trim().toUpperCase();
+        const isCorrect = userChoice === correctAns;
         
-        // 判定：若答案相等，或是送分/ALL 題皆算正確
-        const isCorrect = (userChoice !== "" && userChoice === correctAns) || correctAns === "送分" || correctAns === "ALL";
-        
-        // 💡 可以在 Console 印出除錯資訊，按 F12 即可檢查每題的比對情況
-        console.log(`題號: ${q.id} | 你的選擇: [${userChoice}] | 正確答案: [${correctAns}] (原始值: "${rawCorrect}") | 結果: ${isCorrect}`);
-
         const qCard = document.getElementById(`q-card-${q.id}`);
         const expBox = document.getElementById(`exp-box-${q.id}`);
         const expStatus = document.getElementById(`exp-status-${q.id}`);
 
+        // 標記該卡片是正確還是錯誤
         if (isCorrect) {
             correctCount++;
             qCard.classList.add("is-correct");
             expStatus.innerHTML = `<span style="color: #15803d;">🎉 答對了！標準答案：[ ${correctAns} ]</span>`;
         } else {
             qCard.classList.add("is-wrong");
-            expStatus.innerHTML = `<span style="color: #b91c1c;">❌ 答錯了！你的選擇：[ ${userChoice || "未作答"} ] ｜ 正確答案：[ ${correctAns || "無答案記錄"} ]</span>`;
+            expStatus.innerHTML = `<span style="color: #b91c1c;">❌ 答錯了！你的選擇：[ ${userChoice || "未作答"} ] ｜ 正確答案：[ ${correctAns} ]</span>`;
         }
 
         // 幫選項上色
@@ -521,12 +504,13 @@ btnSubmitAll.addEventListener("click", () => {
             }
         });
 
+        // 顯示該題的詳解盒子
         expBox.classList.remove("hidden");
     });
 
     // 結算成績板
     const wrongCount = totalCount - correctCount;
-    const rate = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+    const rate = Math.round((correctCount / totalCount) * 100);
 
     document.getElementById("summary-total").innerText = totalCount;
     document.getElementById("summary-correct").innerText = correctCount;
@@ -537,6 +521,7 @@ btnSubmitAll.addEventListener("click", () => {
     filterZone.classList.remove("hidden");
     btnSubmitAll.style.display = "none";
 
+    // 自動捲動到最頂部看成績
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
