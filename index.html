@@ -490,9 +490,10 @@ function renderAllQuestions() {
                 <div style="padding: 15px; background: white;">
                     <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
                     ${q.ai_explanation ? `
-                        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6; white-space: pre-wrap;">
-                            <strong style="color: #166534;">✨ AI 臨床解析：</strong><br>${q.ai_explanation}
-                        </div>
+                        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
+    <strong style="color: #166534;">✨ AI 臨床解析：</strong>
+    <div style="white-space: pre-wrap; margin-top: 4px;">${q.ai_explanation}</div>
+</div>
                     ` : ''}
                 </div>
             </details>
