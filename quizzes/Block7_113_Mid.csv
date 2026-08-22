@@ -1,5 +1,5 @@
-﻿id,question,option_a,option_b,option_c,option_d,correct_answer,explanation,category,ai_explanation
-1,下列選項關於腸道 Intraepithelial lymphocytes (IELs)的敘述，何者錯誤？,IELs 都是 CD8陽性T細胞,"IELs 表現 NKG2D 受器與 MIC-A, B交互作用，進而激活IELs 細胞",IELs 毒殺受壓力細胞(Stresses cells)是經由 perforin/granzyme 途徑,IELs 大部分都是樹突細胞(Dendritic cells),D,,消化系統免疫學 林明宏,"📖 chatGPT 學長背景知識  
+﻿id,question,option_a,option_b,option_c,option_d,correct_answer,explanation,category,teacher,ai_explanation
+1,下列選項關於腸道 Intraepithelial lymphocytes (IELs)的敘述，何者錯誤？,IELs 都是 CD8陽性T細胞,"IELs 表現 NKG2D 受器與 MIC-A, B交互作用，進而激活IELs 細胞",IELs 毒殺受壓力細胞(Stresses cells)是經由 perforin/granzyme 途徑,IELs 大部分都是樹突細胞(Dendritic cells),D,,消化系統免疫學,林明宏,"📖 chatGPT 學長背景知識  
 腸道內的『上皮淋巴細胞』(Intraepithelial lymphocytes, IELs) 是一群特殊的免疫細胞，主要存在於腸道上皮層中，對於維持腸道的免疫平衡及防禦病原體具有重要作用。IELs 主要由 T 細胞組成，並且在腸道的免疫反應中扮演關鍵角色。
 
 核心觀念：  
@@ -23,7 +23,7 @@
 
 結論：  
 根據以上解析，選項 (A) 和 (D) 均為錯誤敘述，但若只選擇一個最明顯的錯誤，則選項 (D) 更具誤導性，因為它明確地將 IELs 誤認為主要是樹突細胞。"
-2,下列選項關於腸道微生物相(Gut Microbiota)的敘述，何者錯誤？,"促進腸上皮細胞(Gut epithelial cells)分泌細胞激素 IL-25, IL-33, TSLP, 和 RA",抑制發炎 TH17 輔助型 T 細胞(helper T cells)分化,微生物菌群代謝物 Butyrate 可促進調節性 T 細胞(Regulatory T cells),微生物菌群 Flagellin 可促進 IgA 製造,B,,消化系統免疫學 林明宏,"📖 chatGPT 學長背景知識  
+2,下列選項關於腸道微生物相(Gut Microbiota)的敘述，何者錯誤？,"促進腸上皮細胞(Gut epithelial cells)分泌細胞激素 IL-25, IL-33, TSLP, 和 RA",抑制發炎 TH17 輔助型 T 細胞(helper T cells)分化,微生物菌群代謝物 Butyrate 可促進調節性 T 細胞(Regulatory T cells),微生物菌群 Flagellin 可促進 IgA 製造,B,,消化系統免疫學,林明宏,"📖 chatGPT 學長背景知識  
 腸道微生物相是指生活在腸道內的微生物群落，對宿主的免疫系統、代謝及整體健康有重要影響。以下是對題目中各選項的解析：
 
 - (A) 促進腸上皮細胞(Gut epithelial cells)分泌細胞激素 IL-25, IL-33, TSLP, 和 RA  
@@ -39,7 +39,7 @@
   正確。Flagellin 是一種細菌的鞭毛蛋白，能刺激腸道免疫系統，促進 IgA 的產生，這有助於保護腸道免受病原體的侵害。
 
 結論：根據上述解析，選項 (B) 是錯誤的。腸道微生物相並不抑制 TH17 輔助型 T 細胞的分化，反而是促進其生成。"
-3,幽門成型術(pyloroplasty)，常會伴隨著下列何種術式？,迷走神經幹切斷術(truncal vagotomy),高選擇性迷走神經切斷術(highly selective vagotomy),胃竇切除術(antrectomy),次全胃切除術(subtotal gastrectomy),A,,消化道臨床解剖學 莊樹宏,"📖 chatGPT 學長背景知識  
+3,幽門成型術(pyloroplasty)，常會伴隨著下列何種術式？,迷走神經幹切斷術(truncal vagotomy),高選擇性迷走神經切斷術(highly selective vagotomy),胃竇切除術(antrectomy),次全胃切除術(subtotal gastrectomy),A,,消化道臨床解剖學,莊樹宏,"📖 chatGPT 學長背景知識  
 幽門成型術（pyloroplasty）是一種外科手術，主要用於治療胃排空障礙，特別是在某些胃部疾病的情況下。此手術通常會與其他手術一起進行，以達到更好的治療效果。
 
 核心觀念：  
@@ -63,7 +63,7 @@
 
 結論：  
 幽門成型術最常與『迷走神經幹切斷術』或『高選擇性迷走神經切斷術』合併進行，以達到最佳的治療效果。因此，正確答案為 (A) 迷走神經幹切斷術。"
-4,術中膽道攝影(intraoperative cholangiography)，常以切開哪一個構造來施行？,膽囊(gallbladder),膽囊管(cystic duct),總肝管(common hepatic duct),總膽管(common bile duct),B,,消化道臨床解剖學 莊樹宏,"📖 chatGPT 學長背景知識  
+4,術中膽道攝影(intraoperative cholangiography)，常以切開哪一個構造來施行？,膽囊(gallbladder),膽囊管(cystic duct),總肝管(common hepatic duct),總膽管(common bile duct),B,,消化道臨床解剖學,莊樹宏,"📖 chatGPT 學長背景知識  
 術中膽道攝影（intraoperative cholangiography）是一種在膽囊切除手術中進行的影像學檢查，主要用於評估膽道系統的解剖結構及功能，並檢測可能的膽道結石或其他病變。
 
 核心觀念：  
@@ -86,7 +86,7 @@
 - 也可進行攝影，但通常在膽囊管切開後進行，並非首選。  
 
 結論：術中膽道攝影最常以『膽囊管』作為切開點，以便有效地進行膽道的評估和檢查。正確答案為 (B) 膽囊管(cystic duct)。"
-5,肝臟的解剖切除(anatomical liver resection)，需要緊貼以下何種構造來執行？,肝內膽管(intrahepatic bile duct),肝動脈(hepatic artery),門靜脈(portal vein),肝靜脈(hepatic vein),D,,消化道臨床解剖學 莊樹宏,"📖 chatGPT 學長背景知識  
+5,肝臟的解剖切除(anatomical liver resection)，需要緊貼以下何種構造來執行？,肝內膽管(intrahepatic bile duct),肝動脈(hepatic artery),門靜脈(portal vein),肝靜脈(hepatic vein),D,,消化道臨床解剖學,莊樹宏,"📖 chatGPT 學長背景知識  
 肝臟的解剖切除是一種外科手術，旨在切除肝臟的特定區域，通常用於治療肝臟腫瘤或其他病變。在進行此手術時，了解肝臟的血管及膽管系統的解剖結構至關重要，以確保手術的安全性和有效性。
 
 核心觀念：  
@@ -109,7 +109,7 @@
 
 結論：  
 在肝臟的解剖切除中，最需要緊貼的構造是『肝靜脈』，因此正確答案為 (D) 肝靜脈(hepatic vein)。"
-6,有關胰頭十二指腸切除手術(pancreatoduodenectomy)的適應症，以下何者為非？,十二指腸第二部癌(duodenal second portion cancer),乏特氏壺腹腫瘤(ampulla of Vater tumor),肝門部膽管癌(hilar cholangiocarcinoma),胰頭癌(pancreatic head cancer),C,,消化道臨床解剖學 莊樹宏,"📖 chatGPT 學長背景知識  
+6,有關胰頭十二指腸切除手術(pancreatoduodenectomy)的適應症，以下何者為非？,十二指腸第二部癌(duodenal second portion cancer),乏特氏壺腹腫瘤(ampulla of Vater tumor),肝門部膽管癌(hilar cholangiocarcinoma),胰頭癌(pancreatic head cancer),C,,消化道臨床解剖學,莊樹宏,"📖 chatGPT 學長背景知識  
 胰頭十二指腸切除手術（pancreatoduodenectomy），又稱為Whipple手術，是一種針對胰頭及其周圍結構的外科手術，主要用於治療某些類型的癌症及其他病變。了解其適應症對於臨床醫學的應用至關重要。
 
 核心觀念：  
@@ -123,7 +123,7 @@
   - (C) 『肝門部膽管癌』：此癌症的主要治療方式通常是肝切除，而非胰頭十二指腸切除，因為其主要病變不在胰頭部位。  
 
 結論：根據上述分析，選項(C)『肝門部膽管癌』為非適應症，因其主要治療方式不涉及胰頭十二指腸切除手術。"
-7,有關排便反射及神經調控，下列何者錯誤？,直腸壁伸張可觸發排便反射並刺激內肛括約肌舒張,外肛括約肌為骨骼肌，可隨意收縮控制排便時機,排便完全依賴隨意神經活動，與反射無關,排便反射可受中樞神經調節強弱,C,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+7,有關排便反射及神經調控，下列何者錯誤？,直腸壁伸張可觸發排便反射並刺激內肛括約肌舒張,外肛括約肌為骨骼肌，可隨意收縮控制排便時機,排便完全依賴隨意神經活動，與反射無關,排便反射可受中樞神經調節強弱,C,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 排便反射是一個複雜的生理過程，涉及多種神經機制的協調。此過程主要由自律神經系統和隨意神經系統共同調控，並受到中樞神經的影響。以下是對題目選項的詳細解析：
 
 核心觀念：
@@ -146,7 +146,7 @@
 正確。中樞神經系統可以調節排便反射的強度和時機，影響排便的過程。
 
 結論：根據以上解析，選項(C)是錯誤的，因為排便並非完全依賴隨意神經活動，而是涉及反射機制。"
-8,下列關於肝臟在代謝及分泌功能的敘述，何者錯誤？,肝臟可合成血漿蛋白如白蛋白和多種凝血因子,肝臟將膽固醇轉化為膽鹽，參與脂肪消化,肝臟僅參與膽紅素的生成，無法分解老化紅血球,肝臟可將有害物質進行生物轉化成較無毒物質,C,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+8,下列關於肝臟在代謝及分泌功能的敘述，何者錯誤？,肝臟可合成血漿蛋白如白蛋白和多種凝血因子,肝臟將膽固醇轉化為膽鹽，參與脂肪消化,肝臟僅參與膽紅素的生成，無法分解老化紅血球,肝臟可將有害物質進行生物轉化成較無毒物質,C,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 肝臟是人體內最大的內臟器官，擁有多種重要的代謝及分泌功能，包括合成蛋白質、膽鹽的生成、解毒等。了解肝臟的功能對於臨床醫學及病理學的學習至關重要。
 
 核心觀念：  
@@ -162,7 +162,7 @@
 (D) 正確。肝臟能將『有害物質』進行『生物轉化』，使其變為較無毒的形式，這是肝臟的解毒功能。
 
 結論：選項 (C) 的敘述為錯誤，因為肝臟不僅生成『膽紅素』，還參與『老化紅血球』的分解。"
-9,關於消化道分泌調控之神經傳遞物質，下列何者錯誤？,ENS 興奮時釋放 ACh促進平滑肌收縮,VIP、NO為ENS 抑制性神經傳遞物質,副交感神經刺激時主要釋放去甲腎上腺素,腸神經叢可釋放P物質以促進腸肌活動,C,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+9,關於消化道分泌調控之神經傳遞物質，下列何者錯誤？,ENS 興奮時釋放 ACh促進平滑肌收縮,VIP、NO為ENS 抑制性神經傳遞物質,副交感神經刺激時主要釋放去甲腎上腺素,腸神經叢可釋放P物質以促進腸肌活動,C,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 消化道的神經調控主要依賴於腸神經系統（ENS）及其釋放的神經傳遞物質，這些物質對於消化道的運動、分泌及血流調控具有重要作用。以下是對題目選項的逐一解析：
 
 1. **選項(A)**：ENS 興奮時釋放 ACh 促進平滑肌收縮  
@@ -178,7 +178,7 @@
    - 正確。『P物質』是一種神經傳遞物質，能夠促進腸道平滑肌的活動，並在腸道的運動調控中扮演重要角色。
 
 結論：根據上述分析，選項(C)為錯誤選項，因為副交感神經刺激時釋放的主要神經傳遞物質應為『乙醯膽鹼』而非『去甲腎上腺素』。"
-10,關於膽囊及膽汁分泌調節機制，下列何者錯誤？,膽囊收縮需 CCK刺激及副交感神經參與,Oddi 括約肌收縮會促進膽汁進入小腸,CCK 可促進胰液與膽汁流入十二指腸,高脂飲食可刺激膽囊收縮反射。,B,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+10,關於膽囊及膽汁分泌調節機制，下列何者錯誤？,膽囊收縮需 CCK刺激及副交感神經參與,Oddi 括約肌收縮會促進膽汁進入小腸,CCK 可促進胰液與膽汁流入十二指腸,高脂飲食可刺激膽囊收縮反射。,B,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 本題主要探討『膽囊』及『膽汁』的分泌調節機制，涉及生理學及消化系統的基本知識。
 
 核心觀念：  
@@ -203,7 +203,7 @@
 
 結論：  
 根據以上解析，選項 (B) 是錯誤的，因為 Oddi 括約肌的收縮會阻止膽汁進入小腸，而非促進。"
-11,關於小腸運動型態與其生理意義，下列何者錯誤？,分節運動有助於食物混合並促進養分吸收。,蠕動為推動食糜向遠端移動的主要運動型態。,MMC 主要於空腹時發生，有清除殘渣功能。,MMC 在進食後比空腹更為活躍,D,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+11,關於小腸運動型態與其生理意義，下列何者錯誤？,分節運動有助於食物混合並促進養分吸收。,蠕動為推動食糜向遠端移動的主要運動型態。,MMC 主要於空腹時發生，有清除殘渣功能。,MMC 在進食後比空腹更為活躍,D,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 小腸的運動型態主要包括『分節運動』和『蠕動』，這些運動對於食物的消化與吸收至關重要。此外，『腸道運動』的調控也與生理狀態（如空腹或進食後）密切相關。
 
 核心觀念：  
@@ -219,7 +219,7 @@
 (D) 錯誤。MMC在進食後的活性會降低，因為進食後腸道會轉向其他運動型態以促進消化。
 
 結論：選項(D)為錯誤選項，因為MMC在進食後並不比空腹時更為活躍。"
-12,下列有關腸上皮吸收機制，何者錯誤？,葡萄糖吸收需與鈉離子協同運輸進入腸上皮細胞,長鏈脂肪酸需在細胞內重組成乳糜微粒後進入淋巴循環,鐵主要於空腸經 Na+-bile acid transporter 主動吸收,短鏈脂肪酸可直接進入門脈循環。,C,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+12,下列有關腸上皮吸收機制，何者錯誤？,葡萄糖吸收需與鈉離子協同運輸進入腸上皮細胞,長鏈脂肪酸需在細胞內重組成乳糜微粒後進入淋巴循環,鐵主要於空腸經 Na+-bile acid transporter 主動吸收,短鏈脂肪酸可直接進入門脈循環。,C,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 腸上皮吸收機制是消化生理學中的重要概念，涉及多種營養素的運輸方式。了解這些機制有助於掌握腸道健康及相關疾病的治療。
 
 核心觀念：  
@@ -242,7 +242,7 @@
 正確。短鏈脂肪酸可通過腸上皮細胞直接進入門脈循環，並迅速被肝臟利用。
 
 結論：選項 (C) 是錯誤的，因為鐵的吸收並不依賴 Na+-bile acid transporter，而是透過其他機制進行。"
-13,有關消化道激素及其作用，下列何者錯誤？,Secretin 促使胰臟釋放碳酸氫根以中和胃酸,Gastrin 可促進胃酸與胃蛋白酶釋放，且增強胃黏膜增生,CCK 刺激胰液消化酶及膽囊收縮，並可促進 Oddi 括約肌收縮,Ghrelin分泌與食慾調節相關，分泌高峰常於進食前。,C,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+13,有關消化道激素及其作用，下列何者錯誤？,Secretin 促使胰臟釋放碳酸氫根以中和胃酸,Gastrin 可促進胃酸與胃蛋白酶釋放，且增強胃黏膜增生,CCK 刺激胰液消化酶及膽囊收縮，並可促進 Oddi 括約肌收縮,Ghrelin分泌與食慾調節相關，分泌高峰常於進食前。,C,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 消化道激素在調節消化過程中扮演著重要角色，主要由消化道內分泌細胞分泌，影響胃腸運動、消化液分泌及食慾等功能。以下是各選項的詳細解析：
 
 (A) Secretin 促使胰臟釋放碳酸氫根以中和胃酸  
@@ -258,7 +258,7 @@
 - 正確。『Ghrelin』是由胃分泌的激素，主要在空腹狀態下分泌，並在進食前達到高峰，促進食慾，提醒身體進食。
 
 結論：根據上述分析，選項(C)為錯誤的陳述。"
-14,有關胃腺細胞分泌及功能，下列何者錯誤？,壁細胞可分泌HCI及內因子，有助維生素B12吸收,G 細胞分泌體抑素以抑制胃酸釋放。,主細胞分泌胃蛋白酶原，經酸性環境活化。,類腸嗜鉻細胞(ECL cell)可釋放組織胺，促進胃酸分泌,B,,消化系統生理學 黃烱瑋,"📖 chatGPT 學長背景知識  
+14,有關胃腺細胞分泌及功能，下列何者錯誤？,壁細胞可分泌HCI及內因子，有助維生素B12吸收,G 細胞分泌體抑素以抑制胃酸釋放。,主細胞分泌胃蛋白酶原，經酸性環境活化。,類腸嗜鉻細胞(ECL cell)可釋放組織胺，促進胃酸分泌,B,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 在胃腺中，細胞的分泌功能對於消化過程至關重要。主要的細胞類型包括壁細胞、主細胞、G細胞及類腸嗜鉻細胞（ECL cell）。了解這些細胞的功能及其分泌物的作用，有助於我們解釋題目中的選項。
 
 核心觀念：  
@@ -283,7 +283,7 @@
 
 結論：  
 根據以上分析，選項(B)是錯誤的，因為G細胞分泌的是『胃泌素』，而非『體抑素』。"
-15,關於消化道運動與神經調控，下列何者錯誤？,迷走神經可促進胃及小腸平滑肌收縮，也促進大腸的分節運動。,腸神經叢可在無中樞神經參與下獨立調節部分腸道運動。,交感神經釋放去甲腎上腺素會抑制腸胃平滑肌收縮。,腸道平滑肌的節律性去極化由間質細胞(ICC)主導，並能引發動作電位。,A,,消化系統生理學:消化道 黃烱瑋,"📖 chatGPT 學長背景知識  
+15,關於消化道運動與神經調控，下列何者錯誤？,迷走神經可促進胃及小腸平滑肌收縮，也促進大腸的分節運動。,腸神經叢可在無中樞神經參與下獨立調節部分腸道運動。,交感神經釋放去甲腎上腺素會抑制腸胃平滑肌收縮。,腸道平滑肌的節律性去極化由間質細胞(ICC)主導，並能引發動作電位。,A,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 本題主要考察消化道運動的神經調控機制，涉及迷走神經、腸神經叢、交感神經及間質細胞的功能。
 
 核心觀念：  
@@ -307,7 +307,7 @@
 
 結論：  
 所有選項均為正確陳述，因此本題的正確答案是「無錯誤選項」。若需選擇錯誤選項，則可考慮題目設計的陷阱，因為所有陳述均符合生理學原則。"
-16,關於食物進入消化道後的消化及吸收過程，何者描述最正確？,進食後食物首先在胃內被完全分解為單醣。,吸收葡萄糖時需鈉離子共同運輸。,胰液中的脂肪酶作用不需膽鹽參與。,單醣進入小腸細胞後即直接進入乳糜管。,B,,消化系統生理學:消化道 黃烱瑋,"📖 chatGPT 學長背景知識  
+16,關於食物進入消化道後的消化及吸收過程，何者描述最正確？,進食後食物首先在胃內被完全分解為單醣。,吸收葡萄糖時需鈉離子共同運輸。,胰液中的脂肪酶作用不需膽鹽參與。,單醣進入小腸細胞後即直接進入乳糜管。,B,,消化系統生理學(I)：消化道,黃烱瑋,"📖 chatGPT 學長背景知識  
 本題考察消化道中食物的消化與吸收過程，涉及胃、腸道及相關酶的功能。以下是對各選項的詳細解析：
 
 (A) 進食後食物首先在胃內被完全分解為單醣。  
@@ -323,7 +323,7 @@
 - 錯誤。單醣（如葡萄糖和果糖）在小腸細胞內被吸收後，會進入『血液循環』，而非直接進入乳糜管。乳糜管主要負責吸收脂質及脂溶性維生素。
 
 總結：正確答案為(B)。"
-17,胚胎發育中，哪一個結構會形成 lesser omentum？,肝臟(liver),橫中膈(septum transversum),背側繫膜(dorsal mesogastrium),腹側繫膜(ventral mesogastrium),D,,消化系統胚胎學 陳永佳,"📖 chatGPT 學長背景知識  
+17,胚胎發育中，哪一個結構會形成 lesser omentum？,肝臟(liver),橫中膈(septum transversum),背側繫膜(dorsal mesogastrium),腹側繫膜(ventral mesogastrium),D,,消化系統胚胎學,陳永佳,"📖 chatGPT 學長背景知識  
 在胚胎發育過程中，腹腔的結構發展涉及多種繫膜的形成與變化。了解這些結構的來源對於掌握消化系統的解剖學至關重要。
 
 核心觀念：  
@@ -342,7 +342,7 @@
 4. **選項(D) 腹側繫膜**：這是正確答案。腹側繫膜在胚胎發育過程中，隨著肝臟的發展而形成lesser omentum，連接肝臟與胃的部分。
 
 結論：根據以上分析，正確答案為(D) 腹側繫膜。"
-18,下列那個構造非中腸頭端(cranial limb of midgut)發育而成？,遠端十二指腸 (distal duodenum),遠端空腸(distal jejunm),遠端迴腸(distal ileum),近端迴腸(proximal ileum),C,,消化系統胚胎學 陳永佳,"📖 chatGPT 學長背景知識  
+18,下列那個構造非中腸頭端(cranial limb of midgut)發育而成？,遠端十二指腸 (distal duodenum),遠端空腸(distal jejunm),遠端迴腸(distal ileum),近端迴腸(proximal ileum),C,,消化系統胚胎學,陳永佳,"📖 chatGPT 學長背景知識  
 - 中腸（midgut）是胚胎發育過程中的一部分，主要負責形成小腸及部分大腸的結構。  
 - 中腸的發育分為『頭端』和『尾端』，其中『頭端』指的是中腸的前半部分。  
 - 中腸的『頭端』主要發育成遠端十二指腸、遠端空腸及遠端迴腸。  
@@ -362,7 +362,7 @@
 
 結論：  
 根據上述分析，選項 (C) 遠端迴腸（distal ileum）並非由中腸的『頭端』發育而成，而是屬於『尾端』的結構。因此，正確答案為 (C)。"
-19,肝臟(liver)的造血功能(hematopoiesis)最早開始於胚胎的哪個時期？,第六週(6th week),第十二週(12th week),第十六週(16th week),出生後,A,,消化系統胚胎學 陳永佳,"📖 chatGPT 學長背景知識  
+19,肝臟(liver)的造血功能(hematopoiesis)最早開始於胚胎的哪個時期？,第六週(6th week),第十二週(12th week),第十六週(16th week),出生後,A,,消化系統胚胎學,陳永佳,"📖 chatGPT 學長背景知識  
 肝臟在胚胎發育過程中扮演著重要的角色，特別是在造血功能的發展上。了解肝臟的造血功能開始的時期對於掌握胚胎學及血液學的基礎知識至關重要。
 
 核心觀念：  
@@ -377,7 +377,7 @@
 4. 第16週時，肝臟的造血功能達到高峰，並且在出生後，造血功能會逐漸轉移到『骨髓』。  
 
 結論：根據上述分析，肝臟的造血功能最早開始於胚胎的第六週，因此正確答案為 (A) 第六週。"
-20,肛管(anal canal)的形成涉及哪兩個結構的融合？,泌尿生殖膜(urogenital membrane) 和肛膜(anal membrane),肛膜(anal membrane)和後腸,泌尿生殖膜(urogenital membrane)和泄殖腔膜(cloaca membrane),後腸(hindgut)和外胚層(ectoderm)/原肛(proctodeum),D,,消化系統胚胎學 陳永佳,"📖 chatGPT 學長背景知識  
+20,肛管(anal canal)的形成涉及哪兩個結構的融合？,泌尿生殖膜(urogenital membrane) 和肛膜(anal membrane),肛膜(anal membrane)和後腸,泌尿生殖膜(urogenital membrane)和泄殖腔膜(cloaca membrane),後腸(hindgut)和外胚層(ectoderm)/原肛(proctodeum),D,,消化系統胚胎學,陳永佳,"📖 chatGPT 學長背景知識  
 肛管的形成是胚胎發育中的一個重要過程，涉及多個結構的相互作用。肛管的發育主要源自於後腸和外胚層的融合，這一過程對於正常的消化和排泄功能至關重要。
 
 核心觀念：  
@@ -400,7 +400,7 @@
 - 此選項正確，因為後腸和外胚層的融合形成了肛管的結構。  
 
 結論：正確答案為(D) 後腸(hindgut)和外胚層(ectoderm)/原肛(proctodeum)。"
-21,關於功能性便秘的定義(ROME IV)，一週排便需小於幾次？,1,2,3,4,c,,消化系統簡介 王耀廣,"📖 chatGPT 學長背景知識  
+21,關於功能性便秘的定義(ROME IV)，一週排便需小於幾次？,1,2,3,4,c,,消化系統簡介,王耀廣,"📖 chatGPT 學長背景知識  
 功能性便秘是一種常見的消化系統疾病，其診斷依據主要來自於『ROME IV』標準。該標準提供了一系列的診斷準則，以幫助醫療專業人員準確識別和治療此類疾病。
 
 核心觀念：  
@@ -416,7 +416,7 @@
     5. 便秘時需使用手法協助排便  
 
 根據以上定義，正確答案為 (C) 3。"
-22,以下何者非便秘的警示症狀(alarm symptom)？,血便,體重減輕,貧血,吃軟便藥無效,D,,消化系統簡介 王耀廣,"📖 chatGPT 學長背景知識  
+22,以下何者非便秘的警示症狀(alarm symptom)？,血便,體重減輕,貧血,吃軟便藥無效,D,,消化系統簡介,王耀廣,"📖 chatGPT 學長背景知識  
 便秘是一種常見的消化系統問題，通常定義為排便頻率減少或排便困難。便秘的警示症狀（alarm symptoms）是指在評估便秘時，可能提示潛在嚴重疾病的症狀。了解這些症狀有助於及早發現可能的病理狀況。
 
 核心觀念：  
@@ -431,7 +431,7 @@
 
 結論：  
 正確答案為 (D) 吃軟便藥無效，因為這並非便秘的警示症狀。"
-23,Peutz-Jeghers syndrome 的表現最不可能有以下何者,黏膜皮膚色素堆積,骨肉瘤(Osteosarcoma),多發腸胃道息肉,大腸癌,B,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+23,Peutz-Jeghers syndrome 的表現最不可能有以下何者,黏膜皮膚色素堆積,骨肉瘤(Osteosarcoma),多發腸胃道息肉,大腸癌,B,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發性腸胃道『息肉』及『黏膜』和『皮膚』的色素沉著。此症候群與多種腫瘤風險增加有關，特別是『大腸癌』和其他腫瘤。
 
 核心觀念：  
@@ -451,7 +451,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據上述分析，Peutz-Jeghers syndrome的表現中，最不可能出現的選項為(B) 骨肉瘤(Osteosarcoma)。"
-24,"腸胃道基質瘤(gastrointestinal stromal tumor, GIST)最不常見的突變基因是：",PDGFRA,PDGFRB,SDH,c-KIT,B,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+24,"腸胃道基質瘤(gastrointestinal stromal tumor, GIST)最不常見的突變基因是：",PDGFRA,PDGFRB,SDH,c-KIT,B,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 腸胃道基質瘤（GIST）是一種起源於腸胃道的間葉組織腫瘤，主要由平滑肌細胞或間質細胞組成。GIST 的發生與特定基因突變有關，尤其是與『c-KIT』和『PDGFRA』基因的突變密切相關。這些突變會導致細胞增殖和生存的異常，進而促進腫瘤的發展。
 
 核心觀念：
@@ -465,7 +465,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 根據目前的研究，『PDGFRB』基因的突變在 GIST 中最不常見。
 
 結論：根據上述分析，腸胃道基質瘤中最不常見的突變基因是 (B) PDGFRB。"
-25,有關克隆氏病(Crohn disease)的敘述，下列何者最正確？,好發於小腸及右半結腸,常出現連續性病灶,病理特徵是表淺的潰瘍,腸壁纖維化不是常見的併發症,A,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+25,有關克隆氏病(Crohn disease)的敘述，下列何者最正確？,好發於小腸及右半結腸,常出現連續性病灶,病理特徵是表淺的潰瘍,腸壁纖維化不是常見的併發症,A,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 克隆氏病（Crohn disease）是一種慢性炎症性腸病，主要影響消化道的任何部分，最常見於小腸和結腸。其病理特徵及臨床表現具有多樣性，以下是對題目選項的詳細解析。
 
 核心觀念：  
@@ -489,7 +489,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 正確答案為 (A)。克隆氏病的特徵包括好發於小腸及右半結腸，並且病灶呈現不連續性，伴隨深層潰瘍及腸壁纖維化等併發症。"
-26,在大腸癌產生機轉中，adenoma-carcinoma sequence 與什麼基因異常較無關係？,KRAS,APC,SMAD,MLH1,D,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+26,在大腸癌產生機轉中，adenoma-carcinoma sequence 與什麼基因異常較無關係？,KRAS,APC,SMAD,MLH1,D,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 大腸癌的發展通常遵循『腺瘤-癌症序列』(adenoma-carcinoma sequence)，這是一個漸進式的過程，從良性的腺瘤轉變為惡性的癌症。這一過程涉及多種基因的突變和異常，主要包括腫瘤抑制基因和原癌基因的變化。
 
 核心觀念：  
@@ -507,7 +507,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 (D) MLH1：主要與遺傳性非息肉性大腸癌相關，與腺瘤-癌症序列的關聯性較低，故為正確答案。
 
 結論：在大腸癌的『腺瘤-癌症序列』中，與之較無關的基因異常是(D) MLH1。"
-27,何種淋巴癌與胃幽門螺旋桿菌感染最相關？,anaplastic large cell lymphoma,Burkitt lymphoma (伯基氏淋巴癌),marginal zone (邊緣區) lymphoma of mucosa-associated lymphoid tissue (黏膜淋巴組織),mantle cell (被套細胞) lymphoma,C,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+27,何種淋巴癌與胃幽門螺旋桿菌感染最相關？,anaplastic large cell lymphoma,Burkitt lymphoma (伯基氏淋巴癌),marginal zone (邊緣區) lymphoma of mucosa-associated lymphoid tissue (黏膜淋巴組織),mantle cell (被套細胞) lymphoma,C,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 淋巴癌是一類源自淋巴系統的惡性腫瘤，與多種感染、免疫狀態及環境因素有關。胃幽門螺旋桿菌（Helicobacter pylori, H. pylori）是一種與胃部疾病密切相關的細菌，研究顯示其與某些淋巴癌類型之間存在關聯。
 
 核心觀念：  
@@ -531,7 +531,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
    - 此外，早期診斷及治療H. pylori感染對於預防及治療相關淋巴癌具有重要意義。  
 
 總結來說，MALT淋巴瘤是與H. pylori感染最相關的淋巴癌類型，這一點在臨床上具有重要的診斷和治療意義。"
-28,在大腸癌產生機轉中，the mismatch repair pathway 與什麼基因異常較無關係？,MDM2,BRAF,BAX,TCF4,A,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+28,在大腸癌產生機轉中，the mismatch repair pathway 與什麼基因異常較無關係？,MDM2,BRAF,BAX,TCF4,A,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 在大腸癌的發展中，基因異常與『錯配修復途徑』(mismatch repair pathway) 的關聯性是重要的研究方向。錯配修復途徑主要負責修復DNA複製過程中產生的錯誤，當此途徑失效時，可能導致微衛星不穩定性(MSI)及腫瘤的形成。
 
 核心觀念：  
@@ -551,7 +551,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據以上分析，選擇『A) MDM2』作為與錯配修復途徑較無關的基因異常。"
-29,一位80歲男性因嘔吐來急診，醫師檢查嘔吐物時發現內含膽汁，則最可能是下列那種疾病？,大腸癌,胃癌,食道腫瘤,胰管癌,A,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+29,一位80歲男性因嘔吐來急診，醫師檢查嘔吐物時發現內含膽汁，則最可能是下列那種疾病？,大腸癌,胃癌,食道腫瘤,胰管癌,A,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 - 嘔吐物中出現『膽汁』通常表示腸道內容物逆流至胃部，這可能與腸道阻塞或腸道病變有關。  
 - 『膽汁』是由肝臟產生，儲存在膽囊中，主要功能是幫助消化脂肪。當腸道受到阻塞時，膽汁可能會回流至胃部並隨之嘔吐。  
 - 年長患者出現嘔吐，特別是伴隨膽汁，需考慮惡性腫瘤或其他消化道病變。  
@@ -570,7 +570,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 胰管癌可能導致膽道阻塞，進而引起膽汁回流至胃部，導致嘔吐物中出現膽汁。這是最符合題意的選項。  
 
 結論：根據上述分析，最可能的疾病為『胰管癌』(D)。"
-30,出生三週的男孩，餵食時常出現嘔吐，進而演變成不含膽汁的嘔吐，身體檢查發現腹部有一腫塊，最可能的診斷為何？,胃腸道基質細胞瘤(GIST),巨結腸(megacolon),幽門狹窄(pyloric stenosis),"壞死性小腸結腸炎(Necrotizing enterocolitis, NEC)",C,,消化道病理學 馬佑鈞,"📖 chatGPT 學長背景知識  
+30,出生三週的男孩，餵食時常出現嘔吐，進而演變成不含膽汁的嘔吐，身體檢查發現腹部有一腫塊，最可能的診斷為何？,胃腸道基質細胞瘤(GIST),巨結腸(megacolon),幽門狹窄(pyloric stenosis),"壞死性小腸結腸炎(Necrotizing enterocolitis, NEC)",C,,消化道病理學(I),馬佑鈞,"📖 chatGPT 學長背景知識  
 - 本題涉及新生兒的消化系統問題，特別是嘔吐的原因及其相關診斷。  
 - 新生兒期的嘔吐常見於多種病理狀況，需根據臨床表現及檢查結果進行鑑別診斷。  
 
@@ -594,7 +594,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據上述分析，最符合病史及臨床表現的診斷為『幽門狹窄(pyloric stenosis)』，因為其典型的嘔吐特徵及腹部腫塊的存在。正確答案為(C)。"
-31,下列何者在粘膜下層(submucosa)會有腺體(submucosal gland)？,胃(stomach),空腸(jejunum),食道(esophagus),直腸(rectum),C,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+31,下列何者在粘膜下層(submucosa)會有腺體(submucosal gland)？,胃(stomach),空腸(jejunum),食道(esophagus),直腸(rectum),C,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 - 粘膜下層（submucosa）是消化道結構的一部分，位於粘膜層（mucosa）與肌肉層（muscularis）之間。  
 - 粘膜下層通常包含血管、神經和腺體，這些腺體在不同的消化道部位有不同的功能。  
 - 腺體的存在與分泌功能有關，對於消化過程至關重要。  
@@ -615,7 +615,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 結論：  
 根據以上分析，選項中在粘膜下層有腺體的主要是胃（A），而空腸（B）和食道（C）則相對較少，直腸（D）雖然有腺體，但其功能與胃腺不同。因此，正確答案為：  
 (A) 胃（stomach）"
-32,下列敘述何者錯誤？,主細胞(chief cell)分泌 HCI,胃底腺(fundic/gastric glands)主細胞 (chief cell)最多,幽門腺(pyloric glands)的pit 跟gland 的深度比約2:1,壁細胞(parietal cell)分泌內在因子(intrinsic factor),A,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識
+32,下列敘述何者錯誤？,主細胞(chief cell)分泌 HCI,胃底腺(fundic/gastric glands)主細胞 (chief cell)最多,幽門腺(pyloric glands)的pit 跟gland 的深度比約2:1,壁細胞(parietal cell)分泌內在因子(intrinsic factor),A,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識
 
 - 胃的主要腺體包括『胃底腺』和『幽門腺』。
 - 『主細胞』主要負責分泌『胃蛋白酶原』，而非『HCl』。
@@ -637,7 +637,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 正確。壁細胞不僅分泌『HCl』，還分泌『內在因子』，這對於維生素B12的吸收至關重要。
 
 結論：根據以上解析，選項(A)是錯誤的敘述。"
-33,玻片標籤遺失，紅姐在顯微鏡下觀察到此玻片上皮不具有杯狀細胞(goblet cells)，請問此玻片最可能是下列何種器官？,直腸(rectum),小腸(small intestine),大腸(colon),胃(stomach),D,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+33,玻片標籤遺失，紅姐在顯微鏡下觀察到此玻片上皮不具有杯狀細胞(goblet cells)，請問此玻片最可能是下列何種器官？,直腸(rectum),小腸(small intestine),大腸(colon),胃(stomach),D,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 - 玻片標本的觀察是組織學的重要部分，能夠幫助我們理解不同器官的結構與功能。  
 - 『杯狀細胞』是分泌黏液的特殊細胞，通常存在於某些消化道器官中。  
 - 不同器官的上皮組織具有特定的細胞組成，這對於識別器官至關重要。
@@ -661,7 +661,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據以上分析，玻片上皮不具有『杯狀細胞』的特徵，最可能是『胃 (stomach)』。因此，正確答案為 (D) 胃。"
-34,下列何者不是用來增加表面積的構造？,絨毛(villi),小腸的環狀皺襞(plica circulares),胃的皺褶(rugae),微絨毛(microvilli),C,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+34,下列何者不是用來增加表面積的構造？,絨毛(villi),小腸的環狀皺襞(plica circulares),胃的皺褶(rugae),微絨毛(microvilli),C,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 - 人體消化系統中，『表面積』的增加對於『營養吸收』至關重要。  
 - 各種構造的存在旨在提高腸道的『吸收效率』。  
 
@@ -682,7 +682,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據以上分析，選項(C) 胃的皺褶(rugae)雖然有助於胃的功能，但其主要目的並非增加『表面積』以促進吸收。因此，答案為(C)。"
-35,下列有關牙齒的敘述何者正確？,牙釉質(enamel)是由成釉細胞(ameloblasts)所分泌形成,齒堊質(cementum)覆蓋牙冠(crown),Tomes' process 是牙本質細胞(odontoblasts)伸到牙本質(dentin)的突起,contour lines of Retzius 可以在牙本質(dentin)觀察到,A,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+35,下列有關牙齒的敘述何者正確？,牙釉質(enamel)是由成釉細胞(ameloblasts)所分泌形成,齒堊質(cementum)覆蓋牙冠(crown),Tomes' process 是牙本質細胞(odontoblasts)伸到牙本質(dentin)的突起,contour lines of Retzius 可以在牙本質(dentin)觀察到,A,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 在牙齒的結構中，牙釉質、牙本質和齒堊質是三種主要的組織，各自具有獨特的功能和形成過程。了解這些組織的特性及其來源對於牙科醫學的學習至關重要。
 
 核心觀念：  
@@ -705,7 +705,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 此選項錯誤。Retzius線是牙釉質中的特徵結構，並不在牙本質中可見。
 
 結論：正確的選項為(A)和(C)。"
-36,關於唾液腺(salivary glands)的敘述，下列何者錯誤？,腮腺 (parotid glands)為最大的唾液腺,閏管(intercalated duct)在腮腺(parotid glands)很發達,頜下腺(submandibular glands)是混合腺體(mixed gland),大部分的唾液腺腫瘤源自頜下腺(submandibular glands),D,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+36,關於唾液腺(salivary glands)的敘述，下列何者錯誤？,腮腺 (parotid glands)為最大的唾液腺,閏管(intercalated duct)在腮腺(parotid glands)很發達,頜下腺(submandibular glands)是混合腺體(mixed gland),大部分的唾液腺腫瘤源自頜下腺(submandibular glands),D,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 唾液腺是負責分泌唾液的腺體，主要分為三對主要腺體：腮腺、頜下腺和舌下腺。唾液腺的功能包括潤滑口腔、幫助消化及抗菌作用。了解各種唾液腺的解剖結構及其功能對於臨床醫學非常重要。
 
 核心觀念：  
@@ -721,7 +721,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 (D) 錯誤。大部分的唾液腺腫瘤源自『腮腺』，而非頜下腺。
 
 結論：根據以上解析，選項(B)為錯誤敘述。"
-37,關於味蕾(taste buds)的敘述何者正確？,絲狀乳頭(filiform papilla)沒有味蕾,蕈狀乳頭(fungiform papilla)的味蕾位於乳頭頂端,葉狀乳頭(foliate papilla)的味蕾位於乳頭側邊,支持細胞(supporting cells)是味蕾中數量最多的細胞,A,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+37,關於味蕾(taste buds)的敘述何者正確？,絲狀乳頭(filiform papilla)沒有味蕾,蕈狀乳頭(fungiform papilla)的味蕾位於乳頭頂端,葉狀乳頭(foliate papilla)的味蕾位於乳頭側邊,支持細胞(supporting cells)是味蕾中數量最多的細胞,A,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 味蕾是位於舌頭及口腔內的感覺器官，主要負責味覺的感知。味蕾的結構和分布與不同類型的乳頭有關，這些乳頭各自具有不同的功能和特徵。
 
 核心觀念：  
@@ -739,7 +739,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據上述解析，正確的選項為 (A)、(B) 和 (C)，而 (D) 是錯誤的。"
-38,下列何者位於腸道的粘膜下層(submucosa)？,歐巴氏神經叢(Auerbach's plexus),梅斯納氏神經叢 (Meissner's plexus),蒲金氏纖維 (Purkinje fiber),梅斯納氏小體(Meissner's corpuscle),B,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+38,下列何者位於腸道的粘膜下層(submucosa)？,歐巴氏神經叢(Auerbach's plexus),梅斯納氏神經叢 (Meissner's plexus),蒲金氏纖維 (Purkinje fiber),梅斯納氏小體(Meissner's corpuscle),B,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 - 腸道的結構分為四層：『粘膜』、『粘膜下層』、『肌層』和『外膜』。  
 - 『粘膜下層』是腸道結構中重要的支持層，包含血管、神經和結締組織。  
 - 腸道的神經叢主要分為兩種：『梅斯納氏神經叢』和『歐巴氏神經叢』。  
@@ -759,7 +759,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 根據以上分析，正確答案為 (B) 梅斯納氏神經叢 (Meissner's plexus)，因為它位於腸道的『粘膜下層』。"
-39,關於肝細胞的敘述何者錯誤？,細胞質呈嗜酸性染色(acidophilic),具有再生能力,會和相鄰的肝細胞形成膽小管(bile canaliculus),過氧化小體(peroxisome)負責分解細胞內老化受損的胞器,D,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+39,關於肝細胞的敘述何者錯誤？,細胞質呈嗜酸性染色(acidophilic),具有再生能力,會和相鄰的肝細胞形成膽小管(bile canaliculus),過氧化小體(peroxisome)負責分解細胞內老化受損的胞器,D,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 肝細胞是肝臟的主要功能細胞，具有多種生理功能，包括代謝、解毒和合成蛋白質。了解肝細胞的特性對於臨床醫學及病理學的研究至關重要。
 
 核心觀念：  
@@ -775,7 +775,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 (D) 錯誤。過氧化小體的主要功能是分解脂肪酸及氨基酸，而不是專門負責分解細胞內老化受損的胞器，這一功能通常由『自噬體』來執行。
 
 結論：選項 (D) 是錯誤的敘述。"
-40,下列關於肝臟的敘述何者正確？,毛細膽管(canal of Hering)管壁皆由膽管上皮細胞(cholangiocytes)構成,伊東細胞位於莫氏空間(space of Mall),庫氏細胞(Kupffer cells)位於迪氏空間(space of Disse),肝臟缺血時最先受到傷害的是肝腺泡(hepatic acinus)的第三區(zone 3),D,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識
+40,下列關於肝臟的敘述何者正確？,毛細膽管(canal of Hering)管壁皆由膽管上皮細胞(cholangiocytes)構成,伊東細胞位於莫氏空間(space of Mall),庫氏細胞(Kupffer cells)位於迪氏空間(space of Disse),肝臟缺血時最先受到傷害的是肝腺泡(hepatic acinus)的第三區(zone 3),D,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識
 
 - 肝臟是人體最大的內臟器官，具有多種功能，包括代謝、解毒和合成蛋白質。
 - 肝臟的結構包括肝小葉、肝腺泡及其周圍的空間，如『莫氏空間』和『迪氏空間』。
@@ -796,7 +796,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 正確。肝臟的『第三區』位於肝腺泡的最外圍，因為這裡的血流最少，對缺氧和缺血的耐受性最低，因此在肝臟缺血時，最先受到傷害的區域就是第三區。
 
 結論：正確選項為 (B) 和 (D)。"
-41,關於膽囊壁的組織學構造敘述，下列何者正確？,具有粘膜下層(submucosa),肌外層(muscularis externa)的平滑肌走向為不規則排列,粘膜肌層(muscularis mucosa)很明顯,固有層(lamina propria)富含竇狀微血管(sinusoidal capillaries),B,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+41,關於膽囊壁的組織學構造敘述，下列何者正確？,具有粘膜下層(submucosa),肌外層(muscularis externa)的平滑肌走向為不規則排列,粘膜肌層(muscularis mucosa)很明顯,固有層(lamina propria)富含竇狀微血管(sinusoidal capillaries),B,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 膽囊是儲存和濃縮膽汁的器官，其組織學構造對於理解其功能至關重要。膽囊壁的主要組織層包括粘膜、肌層和外膜。以下是對題目選項的詳細解析：
 
 1. **(A) 具有粘膜下層(submucosa)**  
@@ -812,7 +812,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
    - 錯誤。膽囊的『固有層』主要由結締組織組成，並不富含『竇狀微血管』。膽囊的血供主要來自膽囊動脈，並不涉及這類微血管。
 
 總結：正確答案為 (B)，因為膽囊的肌外層平滑肌確實呈現不規則排列的特徵。"
-42,關於胰臟的敘述，下列何者錯誤？,泡心細胞(centroacinar cells)屬於胰臟的管道細胞,用電子顯微鏡觀察 cell的顆粒中間有結晶的構造,H&E 染色可以區分蘭氏小島中的內分泌細胞,外分泌部的腺泡(pancreatic acinus)組成細胞內部有許多嗜酸性的酶原顆粒(zymogen granules),C,,消化系統組織學 林含貞,"📖 chatGPT 學長背景知識  
+42,關於胰臟的敘述，下列何者錯誤？,泡心細胞(centroacinar cells)屬於胰臟的管道細胞,用電子顯微鏡觀察 cell的顆粒中間有結晶的構造,H&E 染色可以區分蘭氏小島中的內分泌細胞,外分泌部的腺泡(pancreatic acinus)組成細胞內部有許多嗜酸性的酶原顆粒(zymogen granules),C,,消化系統組織學,林含貞,"📖 chatGPT 學長背景知識  
 胰臟是一個具有外分泌和內分泌功能的腺體，主要負責消化酶的分泌及血糖的調節。了解胰臟的結構及功能對於臨床醫學及病理學的學習至關重要。
 
 核心觀念：
@@ -835,7 +835,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 正確。腺泡細胞內含有大量的嗜酸性『酶原顆粒』，這些顆粒儲存消化酶的前體。
 
 結論：根據上述解析，選項(B)為錯誤敘述。"
-43,下列有關腸桿菌(Enterobacterales)的敘述何者最不適當？,"可發酵葡萄糖，不具有氧化酶(oxidase)，可發酵乳糖者如 E. coli, Klebsiella，在 MacConkey agar 形成粉紅至紫色的菌落",大腸桿菌O157:H7 常引起出血性腹瀉，H7的H指的是細菌的脂多醣(lipopolysaccharide),Shigella dysenteriae 可產生 Shiga toxin，此毒素可抑制宿主細胞蛋白質的合成,傷寒病人發病第1週，血液培養通常可呈現陽性,B,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識  
+43,下列有關腸桿菌(Enterobacterales)的敘述何者最不適當？,"可發酵葡萄糖，不具有氧化酶(oxidase)，可發酵乳糖者如 E. coli, Klebsiella，在 MacConkey agar 形成粉紅至紫色的菌落",大腸桿菌O157:H7 常引起出血性腹瀉，H7的H指的是細菌的脂多醣(lipopolysaccharide),Shigella dysenteriae 可產生 Shiga toxin，此毒素可抑制宿主細胞蛋白質的合成,傷寒病人發病第1週，血液培養通常可呈現陽性,B,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 腸桿菌科（Enterobacterales）是一群重要的革蘭氏陰性細菌，廣泛存在於腸道及環境中，部分成員為病原菌。了解其特性及臨床意義對於醫學學習至關重要。
 
 核心觀念：  
@@ -852,7 +852,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 (D) 正確，血液培養在傷寒病人第1週通常呈陽性。
 
 結論：最不適當的敘述為 (B)。"
-44,引起腸胃炎的大腸桿菌(E. coli)與其致病機轉間的配對，何者最不適當？,Enterotoxigenic E. coli (ETEC):產生腸毒素，導致水分及電解質流失,"Enteropathogenic E. coli (EPEC): 細菌附著到小腸上皮後造成附著和抹殺(A/E, Attachment/Effacement)組織病理變化，破壞微絨毛",Shiga toxin-producing E. coli (STEC): 細菌在小腸上皮細胞上產生如堆疊磚塊般(stacked-brick)的聚集黏附，減少液體吸收,Enteroinvasive E. coli (EIEC):侵入並破壞大腸表皮，造成黏膜潰瘍發炎,C,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識  
+44,引起腸胃炎的大腸桿菌(E. coli)與其致病機轉間的配對，何者最不適當？,Enterotoxigenic E. coli (ETEC):產生腸毒素，導致水分及電解質流失,"Enteropathogenic E. coli (EPEC): 細菌附著到小腸上皮後造成附著和抹殺(A/E, Attachment/Effacement)組織病理變化，破壞微絨毛",Shiga toxin-producing E. coli (STEC): 細菌在小腸上皮細胞上產生如堆疊磚塊般(stacked-brick)的聚集黏附，減少液體吸收,Enteroinvasive E. coli (EIEC):侵入並破壞大腸表皮，造成黏膜潰瘍發炎,C,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 本題考察的是不同類型的大腸桿菌（E. coli）及其致病機轉的配對。大腸桿菌是一種常見的腸道細菌，其中某些變種能引起腸胃炎，了解其致病機轉對於臨床診斷與治療至關重要。
 
 核心觀念：  
@@ -878,7 +878,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 因此，選項 (C) 是最不適當的配對，因為其描述的致病機轉與 STEC 的實際機制不符。"
-45,下列可能引起食物中毒病原菌的敘述，何者最不適當？,金黃色葡萄球菌 (Staphylococcus aureus)的食物中毒是由不具耐熱性的腸毒素引起的,金黃色葡萄球菌(Staphylococcus aureus)的食物中毒通常症狀不會持續超過24小時且不需使用抗生素治療,"腸炎弧菌(Vibrio parahaemolyticus)會污染海鮮，並產生熱穩定溶血素(thermostable direct hemolysin, Kanagawa hemolysin)引起食物中毒",因食入受汙染的米飯而引起的食物中毒，最有可能是由蠟狀桿菌(Bacillus cereus)對熱穩定腸毒素(heat-stable enterotoxin)引起的,A,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識  
+45,下列可能引起食物中毒病原菌的敘述，何者最不適當？,金黃色葡萄球菌 (Staphylococcus aureus)的食物中毒是由不具耐熱性的腸毒素引起的,金黃色葡萄球菌(Staphylococcus aureus)的食物中毒通常症狀不會持續超過24小時且不需使用抗生素治療,"腸炎弧菌(Vibrio parahaemolyticus)會污染海鮮，並產生熱穩定溶血素(thermostable direct hemolysin, Kanagawa hemolysin)引起食物中毒",因食入受汙染的米飯而引起的食物中毒，最有可能是由蠟狀桿菌(Bacillus cereus)對熱穩定腸毒素(heat-stable enterotoxin)引起的,A,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 本題考察食物中毒的病原菌及其特性，特別是金黃色葡萄球菌、腸炎弧菌及蠟狀桿菌的相關知識。以下是各選項的詳細解析：
 
 - (A) 金黃色葡萄球菌 (Staphylococcus aureus)的食物中毒是由不具耐熱性的『腸毒素』引起的  
@@ -894,7 +894,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
   - 解析：蠟狀桿菌的食物中毒主要是由『熱不穩定腸毒素』(heat-labile enterotoxin)引起，尤其是在米飯等澱粉類食物中，這個毒素在加熱後會被破壞。因此，這個敘述是錯誤的。
 
 結論：最不適當的選項是(D)，因為蠟狀桿菌引起的食物中毒主要是由熱不穩定腸毒素引起，而非熱穩定腸毒素。"
-46,下列有關幽門螺旋桿菌(Helicobacter pylori)的敘述，何者最不適當？,可在大氣環境(含約20%氧氣)和一般細菌培養基上培養,cagA (cytotoxin-associated gene)陽性菌株及IL-1高度產生與導致胃癌高風險有關,可能會導致胃潰瘍(gastric ulcer)或十二指腸潰瘍 (duodenal ulcer),針對此菌的呼氣測試是檢測此菌的尿素酶(urease)活性，偵測的氣體為二氧化碳(CO2)，是一種非侵入性的檢驗方法，有不錯的敏感度及專一性,A,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識  
+46,下列有關幽門螺旋桿菌(Helicobacter pylori)的敘述，何者最不適當？,可在大氣環境(含約20%氧氣)和一般細菌培養基上培養,cagA (cytotoxin-associated gene)陽性菌株及IL-1高度產生與導致胃癌高風險有關,可能會導致胃潰瘍(gastric ulcer)或十二指腸潰瘍 (duodenal ulcer),針對此菌的呼氣測試是檢測此菌的尿素酶(urease)活性，偵測的氣體為二氧化碳(CO2)，是一種非侵入性的檢驗方法，有不錯的敏感度及專一性,A,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 幽門螺旋桿菌（Helicobacter pylori）是一種革蘭氏陰性、螺旋形的細菌，主要寄生於胃黏膜，與多種胃腸道疾病有關，包括胃潰瘍、十二指腸潰瘍及胃癌等。以下是對題目選項的詳細解析：
 
 1. **選項(A)**：可在大氣環境(含約20%氧氣)和一般細菌培養基上培養  
@@ -910,7 +910,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
    - 此選項的敘述部分正確，但有誤導性。呼氣測試確實是檢測尿素酶活性的方法，並且偵測的氣體主要是『氨』和『二氧化碳』，而非僅僅是二氧化碳。因此，這個選項的描述不夠精確。
 
 綜合以上分析，最不適當的選項為(A)，因為幽門螺旋桿菌的培養環境並不適合在一般細菌培養基上進行。"
-47,下列敘述何者最不適當？,霍亂毒素(cholera toxin)為A-B毒素(A-B toxin)，能活化 adenylate cyclase，增加 cyclic AMP濃度，造成腹瀉症狀,霍亂病人可能出現嚴重水瀉、脫水、酸中毒和低血鉀等症候，需先補充液體和電解質，再以抗生素 azithromycin 治療,無症狀的傷寒沙門氏桿菌(Salmonella Typhi) 帶原者如傷寒瑪莉(Typhoid Mary)，通常細菌最常躲在帶原者的肝臟中,空腸曲狀桿菌(Campylobacter jejuni)需在微需氧(microaerophilic)環境下生長，感染會引起腸胃炎(gastroenteritis)，可能引起 Guillain-Barré syndrome,C,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識
+47,下列敘述何者最不適當？,霍亂毒素(cholera toxin)為A-B毒素(A-B toxin)，能活化 adenylate cyclase，增加 cyclic AMP濃度，造成腹瀉症狀,霍亂病人可能出現嚴重水瀉、脫水、酸中毒和低血鉀等症候，需先補充液體和電解質，再以抗生素 azithromycin 治療,無症狀的傷寒沙門氏桿菌(Salmonella Typhi) 帶原者如傷寒瑪莉(Typhoid Mary)，通常細菌最常躲在帶原者的肝臟中,空腸曲狀桿菌(Campylobacter jejuni)需在微需氧(microaerophilic)環境下生長，感染會引起腸胃炎(gastroenteritis)，可能引起 Guillain-Barré syndrome,C,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識
 
 - 霍亂毒素為『A-B毒素』，可活化『adenylate cyclase』，導致『cyclic AMP』濃度增加，進而引發腹瀉。
 - 霍亂病人可能出現『水瀉』、『脫水』、『酸中毒』及『低血鉀』等症狀，治療上需優先補充『液體』和『電解質』，再使用『抗生素』如『azithromycin』。
@@ -928,7 +928,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 選項 (D) 的敘述正確，空腸曲狀桿菌確實需要微需氧環境生長，並且感染後可能引起腸胃炎及Guillain-Barré syndrome。
 
 因此，最不適當的敘述為選項 (C)。"
-48,下列敘述何者最不適當？,吃漢堡及生菜沙拉後，出現出血性腹瀉症狀，且可能併發溶血性尿毒症(hemolytic uremic syndrome)的病原菌，最有可能是產志賀氏毒素大腸桿菌 STEC (Shiga toxin-producing E. coli),肝硬化病史的病人，因傷口接觸海水後感染，出現紅腫與水泡(bullae)，且引起組織壞死(tissue necrosis)甚至敗血症，最可能的病原是創傷弧菌(Vibrio vulnificus),蠟狀桿菌(Bacillus cereus) 普遍存在於環境土壤中，可能造成眼球感染，例如桿菌型全眼球炎(Bacillus panophthalmitis),志賀氏桿菌(Shigella)主要由帶菌的家禽或家畜直接傳染給人，且感染需要超過100000000的菌量,D,,消化系統之細菌感染 張仲羽,"📖 chatGPT 學長背景知識  
+48,下列敘述何者最不適當？,吃漢堡及生菜沙拉後，出現出血性腹瀉症狀，且可能併發溶血性尿毒症(hemolytic uremic syndrome)的病原菌，最有可能是產志賀氏毒素大腸桿菌 STEC (Shiga toxin-producing E. coli),肝硬化病史的病人，因傷口接觸海水後感染，出現紅腫與水泡(bullae)，且引起組織壞死(tissue necrosis)甚至敗血症，最可能的病原是創傷弧菌(Vibrio vulnificus),蠟狀桿菌(Bacillus cereus) 普遍存在於環境土壤中，可能造成眼球感染，例如桿菌型全眼球炎(Bacillus panophthalmitis),志賀氏桿菌(Shigella)主要由帶菌的家禽或家畜直接傳染給人，且感染需要超過100000000的菌量,D,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 在臨床醫學中，了解病原菌的特性及其引起的疾病是診斷與治療的基礎。以下是對考古題中各選項的詳細解析。
 
 (A) 吃漢堡及生菜沙拉後，出現出血性腹瀉症狀，且可能併發『溶血性尿毒症』(hemolytic uremic syndrome)的病原菌，最有可能是『產志賀氏毒素大腸桿菌』(STEC)  
@@ -952,7 +952,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 此選項描述不正確，故為最不適當的選項。
 
 總結：選項 (D) 為最不適當的敘述，因為其對志賀氏桿菌的傳播途徑及感染劑量的描述均不正確。"
-49,關於艱難梭狀芽胞桿菌(Clostridium difficile)的敘述，下列何者最不適當？,疾病經常是因長期使用抗生素，造成腸道菌群改變所引起,偽膜性腸炎(pseudomembranous colitis)的致病菌,可用甲硝達唑(Metronidazole)或萬古黴素(Vancomycin)治療,糞便移植(fecal transplantation)通常不具療效,D,,消化系統之細菌感染(II) 張仲羽,"📖 chatGPT 學長背景知識  
+49,關於艱難梭狀芽胞桿菌(Clostridium difficile)的敘述，下列何者最不適當？,疾病經常是因長期使用抗生素，造成腸道菌群改變所引起,偽膜性腸炎(pseudomembranous colitis)的致病菌,可用甲硝達唑(Metronidazole)或萬古黴素(Vancomycin)治療,糞便移植(fecal transplantation)通常不具療效,D,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 艱難梭狀芽胞桿菌（Clostridium difficile）是一種常見的腸道病原菌，主要引起抗生素相關的腸道感染。其感染通常與腸道菌群的失衡有關，特別是在長期使用抗生素的患者中。以下是對題目的詳細解析：
 
 1. **選項分析**  
@@ -970,7 +970,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 2. **結論**  
 根據上述分析，選項 (D) 是最不適當的敘述，因為糞便移植在臨床上已被證實對艱難梭狀芽胞桿菌感染具有療效。"
-50,下列敘述何者最不適當？,產氣莢膜梭菌(Clostridium perfringens) 食物中毒多是由A型菌株分泌腸毒素(enterotoxin)所導致,產氣莢膜梭菌(Clostridium perfringens)引起壞死性腸炎(necrotizing enteritis)，最可能是由B型菌株分泌毒素所導致,鬆脆類桿菌(Bacteroides fragilis)可產生不耐熱(heat-labile)的鋅金屬蛋白酶(zinc metalloprotease)毒素造成腹瀉,鬆脆類桿菌(Bacteroides fragilis)具有多醣莢膜(polysaccharide capsule)，是主要的毒力因子(virulence factor),B,,消化系統之細菌感染(II) 張仲羽,"📖 chatGPT 學長背景知識  
+50,下列敘述何者最不適當？,產氣莢膜梭菌(Clostridium perfringens) 食物中毒多是由A型菌株分泌腸毒素(enterotoxin)所導致,產氣莢膜梭菌(Clostridium perfringens)引起壞死性腸炎(necrotizing enteritis)，最可能是由B型菌株分泌毒素所導致,鬆脆類桿菌(Bacteroides fragilis)可產生不耐熱(heat-labile)的鋅金屬蛋白酶(zinc metalloprotease)毒素造成腹瀉,鬆脆類桿菌(Bacteroides fragilis)具有多醣莢膜(polysaccharide capsule)，是主要的毒力因子(virulence factor),B,,消化系統之細菌感染,張仲羽,"📖 chatGPT 學長背景知識  
 在這道考古題中，我們需要針對四個選項進行分析，找出最不適當的敘述。題目涉及的細菌包括『產氣莢膜梭菌』和『鬆脆類桿菌』，這兩種細菌在臨床上具有重要的意義，尤其是在食物中毒和腸道感染方面。
 
 核心觀念：  
@@ -984,7 +984,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 選項 (C) 是最不適當的敘述，因為鬆脆類桿菌所產生的毒素並非不耐熱的鋅金屬蛋白酶，而是耐熱的。這使得選項 (C) 成為正確答案。"
-51,下列何者說法是錯的？,呼吸道感染和病毒性胃腸炎是最常見的人類感染症,大多數急性傳染性胃腸炎是細菌性的。,病毒性胃腸炎的主要途徑是糞口傳播，而不是經呼吸道傳染。,病毒性胃腸炎的糞便，通常不存在肉眼可見的血液、黏液和白血球,B,,消化系統之病毒感染 張榮叁,"📖 chatGPT 學長背景知識  
+51,下列何者說法是錯的？,呼吸道感染和病毒性胃腸炎是最常見的人類感染症,大多數急性傳染性胃腸炎是細菌性的。,病毒性胃腸炎的主要途徑是糞口傳播，而不是經呼吸道傳染。,病毒性胃腸炎的糞便，通常不存在肉眼可見的血液、黏液和白血球,B,,消化系統之病毒感染,張榮叁,"📖 chatGPT 學長背景知識  
 本題主要探討『呼吸道感染』與『病毒性胃腸炎』的相關知識，特別是其病因、傳播途徑及臨床表現。以下是對各選項的詳細解析：
 
 1. (A) 呼吸道感染和病毒性胃腸炎是最常見的人類感染症  
@@ -1000,7 +1000,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
    - 正確。『病毒性胃腸炎』的糞便通常不會出現『肉眼可見的血液』或『黏液』，而且白血球的數量也通常較少，這與細菌性胃腸炎的情況不同。
 
 結論：根據上述分析，選項(B)是錯誤的，因為大多數急性傳染性胃腸炎是由病毒引起的，而非細菌。"
-52,"可透過其他途徑傳播病毒性胃腸炎的病毒，包括下列何者？1.輪狀病毒(Rotavirus), 2. 星狀病毒(Astrovirus), 3. 杯狀病毒(Calicivirus)","1, 2","1, 3","2, 3","1, 2, 3",B,,消化系統之病毒感染 張榮叁,"📖 chatGPT 學長背景知識  
+52,"可透過其他途徑傳播病毒性胃腸炎的病毒，包括下列何者？1.輪狀病毒(Rotavirus), 2. 星狀病毒(Astrovirus), 3. 杯狀病毒(Calicivirus)","1, 2","1, 3","2, 3","1, 2, 3",B,,消化系統之病毒感染,張榮叁,"📖 chatGPT 學長背景知識  
 本題涉及『病毒性胃腸炎』的病因及其傳播途徑，主要由多種病毒引起，常見的有『輪狀病毒』、『星狀病毒』和『杯狀病毒』。這些病毒的傳播途徑各有不同，了解其特性對於正確回答問題至關重要。
 
 核心觀念：
@@ -1015,7 +1015,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 - 選項 (D) 1, 2, 3：包含所有三種病毒，正確反映它們的傳播途徑。
 
 結論：由於所有三種病毒都可以透過『糞口途徑』傳播，且杯狀病毒還可以透過其他途徑（如食物或水源）傳播，因此正確答案為 (D) 1, 2, 3。"
-53,請問右圖切片取自何種器官？,Colon,Duodenum,Jejunum,"Stomach, fundus region",B,,消化系統組織學實驗(I) 張瀛双,"📖 chatGPT 學長背景知識  
+53,請問右圖切片取自何種器官？,Colon,Duodenum,Jejunum,"Stomach, fundus region",B,,消化系統組織學實驗(I),張瀛双,"📖 chatGPT 學長背景知識  
 本題考察的是對於消化系統器官切片的識別能力，特別是腸道及胃部的組織學特徵。
 
 核心觀念：  
@@ -1041,7 +1041,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 解析：  
 要判斷切片來源，需觀察組織特徵。若切片中可見『絨毛』，則可能是『十二指腸』或『空腸』；若切片中有『胃腺』且無『絨毛』，則可能是『胃』的切片；若切片中有『腺體』但無『絨毛』，則可能是『結腸』。根據這些特徵，選擇正確的答案。"
-54,請問右圖切片取自何種器官？,Pancreas,Jejunum,Gallbladder,Liver,C,,消化系統組織學實驗(II) 林含貞、張瀛双,"📖 chatGPT 學長背景知識  
+54,請問右圖切片取自何種器官？,Pancreas,Jejunum,Gallbladder,Liver,C,,消化系統組織學實驗(II),林含貞、張瀛双,"📖 chatGPT 學長背景知識  
 本題旨在考察對於不同器官組織切片的識別能力，特別是其組織學特徵。以下是對選項的分析：
 
 1. **胰臟 (Pancreas)**  
@@ -1063,7 +1063,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 結論：根據上述組織特徵的比較，若切片中可見『肝小葉』結構及『中央靜脈』，則該切片取自肝臟。若切片中有『腺泡』，則為胰臟；若有『絨毛』，則為空腸；若有『皺摺』且無腺體，則為膽囊。
 
 因此，根據切片的特徵，正確答案為 (D) Liver。"
-55,請問右圖箭頭所指為何種細胞？,Parietal cells,Chief cells,Kupffer cells,Centroacinar cells,A,,消化系統組織學實驗(I) 張瀛双,"📖 chatGPT 學長背景知識  
+55,請問右圖箭頭所指為何種細胞？,Parietal cells,Chief cells,Kupffer cells,Centroacinar cells,A,,消化系統組織學實驗(I),張瀛双,"📖 chatGPT 學長背景知識  
 本題涉及細胞的識別，特別是消化系統中的細胞類型。了解各種細胞的功能及其在組織中的位置對於正確回答問題至關重要。
 
 核心觀念：
@@ -1077,7 +1077,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：
 若圖中細胞的特徵符合胃內壁細胞，則選擇『Parietal cells』或『Chief cells』；若為肝臟細胞，則選擇『Kupffer cells』；若為胰腺細胞，則選擇『Centroacinar cells』。根據細胞的具體位置和功能，選擇正確的答案。"
-56,請問右圖切片取自何種器官？,Pancreas,Jejunum,Gallbladder,Liver,D,,消化系統組織學實驗(I) 張瀛双,"📖 chatGPT 學長背景知識  
+56,請問右圖切片取自何種器官？,Pancreas,Jejunum,Gallbladder,Liver,D,,消化系統組織學實驗(I),張瀛双,"📖 chatGPT 學長背景知識  
 本題考察的是對於組織切片的識別能力，特別是針對消化系統器官的結構特徵。了解各器官的組織學特徵對於臨床診斷及病理學研究至關重要。
 
 核心觀念：  
@@ -1101,7 +1101,7 @@ Peutz-Jeghers syndrome（PJS）是一種遺傳性疾病，主要特徵為多發�
 
 結論：  
 若切片中主要特徵為『腺體』結構且無『絨毛』，則最有可能是『胰臟』。若有『肝小葉』結構則為『肝臟』。根據選項，需根據具體切片特徵進行判斷。"
-57,關於 H. pylori，下列何者為非：,世界衛生組織 WHO 將 H. pylori列為人類胃癌第一級致癌物是根據動物實驗直接證據。,目前唯一的自然宿主只有人類。,革蘭氏陰性螺旋狀細菌。,微需氧菌，可產生尿素酶。,A,,消化性潰瘍及幽門螺旋桿菌 吳政毅,"📖 chatGPT 學長背景知識  
+57,關於 H. pylori，下列何者為非：,世界衛生組織 WHO 將 H. pylori列為人類胃癌第一級致癌物是根據動物實驗直接證據。,目前唯一的自然宿主只有人類。,革蘭氏陰性螺旋狀細菌。,微需氧菌，可產生尿素酶。,A,,消化性潰瘍及幽門螺旋桿菌,吳政毅,"📖 chatGPT 學長背景知識  
 H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌，包括胃炎、胃潰瘍及胃癌。了解其特性及致病機制對於臨床診斷與治療至關重要。
 
 核心觀念：
@@ -1120,7 +1120,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
 (D) 正確。H. pylori 是『微需氧菌』，並且能夠產生『尿素酶』，這使其能夠中和胃酸，適應胃內環境。
 
 結論：根據以上分析，選項 (A) 為非，因為其描述不正確。"
-58,關於幽門螺旋桿菌的檢查，下列何者為非,對於治療幽門螺旋桿菌後的追蹤可以用糞便抗原檢測。,治療幽門螺旋桿菌後，如使用碳13尿素呼氣法追蹤治療效果，仍可持續使用氫離子阻斷劑。,碳13尿素呼氣法可用於監測治療成功與否,快速尿素酶試驗變成紅色代表陽性，乃因為酸鹼度變化。,B,,消化性潰瘍及幽門螺旋桿菌 吳政毅,"📖 chatGPT 學長背景知識  
+58,關於幽門螺旋桿菌的檢查，下列何者為非,對於治療幽門螺旋桿菌後的追蹤可以用糞便抗原檢測。,治療幽門螺旋桿菌後，如使用碳13尿素呼氣法追蹤治療效果，仍可持續使用氫離子阻斷劑。,碳13尿素呼氣法可用於監測治療成功與否,快速尿素酶試驗變成紅色代表陽性，乃因為酸鹼度變化。,B,,消化性潰瘍及幽門螺旋桿菌,吳政毅,"📖 chatGPT 學長背景知識  
 幽門螺旋桿菌（Helicobacter pylori）是一種與多種胃部疾病相關的細菌，包括胃炎、胃潰瘍及胃癌。檢測及追蹤其治療效果的方法多樣，主要包括糞便抗原檢測、尿素呼氣法及內視鏡檢查等。
 
 核心觀念：  
@@ -1137,7 +1137,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
 
 結論：  
 正確答案為(B)，因為在使用碳13尿素呼氣法追蹤治療效果時，應避免使用氫離子阻斷劑，以確保檢測的準確性。"
-59,交感神經系統對消化道平滑肌的作用是：,促進收縮,抑制收縮,沒有明顯影響,使反應變慢,B,,消化系統生理學實驗 鄭琮霖,"📖 chatGPT 學長背景知識  
+59,交感神經系統對消化道平滑肌的作用是：,促進收縮,抑制收縮,沒有明顯影響,使反應變慢,B,,消化系統生理學實驗(與臨床結合),鄭琮霖,"📖 chatGPT 學長背景知識  
 交感神經系統是自律神經系統的一部分，主要負責在壓力或危急情況下的「戰鬥或逃跑」反應。其作用通常是抑制非必要的生理功能，包括消化系統的活動。
 
 核心觀念：  
@@ -1153,7 +1153,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
 (D) 使反應變慢：部分正確，但不如選項(B)直接，因為主要作用是抑制收縮。  
 
 結論：交感神經系統對消化道平滑肌的作用是『抑制收縮』，因此正確答案為(B)。"
-60,在離體消化道平滑肌實驗中，使用阿托品(Atropine)作為藥物阻斷劑，主要會影響哪種神經傳導物質的作用？,去甲腎上腺素(Norepinephrine),組織胺(Histamine),血清素(Serotonin),乙醯膽鹼(Acetylcholine),D,,消化系統生理學實驗 鄭琮霖,"📖 chatGPT 學長背景知識  
+60,在離體消化道平滑肌實驗中，使用阿托品(Atropine)作為藥物阻斷劑，主要會影響哪種神經傳導物質的作用？,去甲腎上腺素(Norepinephrine),組織胺(Histamine),血清素(Serotonin),乙醯膽鹼(Acetylcholine),D,,消化系統生理學實驗(與臨床結合),鄭琮霖,"📖 chatGPT 學長背景知識  
 阿托品是一種抗膽鹼藥物，主要用於阻斷副交感神經系統的作用。它的機制是通過競爭性抑制『乙醯膽鹼』在膽鹼受體上的結合，從而減少平滑肌的收縮。
 
 核心觀念：  
@@ -1170,7 +1170,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
 
 結論：  
 在離體消化道平滑肌實驗中，使用阿托品作為藥物阻斷劑，主要會影響的神經傳導物質是『乙醯膽鹼』。因此，正確答案為(D)。"
-61,關於胃癌的描述下列何者為非？(1)早期胃癌如果發現有區域淋巴轉移，依然可以優先考慮內視鏡切除。(2)Linitis plastica (皮革胃)通常治療預後極佳。(3)不管胃腫瘤位置在何處，位於左胃動脈的淋巴結都是屬於第二群(group2)的淋巴結。(4)Roux-en-Y 重建方式需要做兩個位置的吻合，而Billroth II 重建方式則需要做一個位置的吻合。,1 + 2,1 + 2 + 4,2 + 3,3 + 4,A,,胃腫瘤及消化性潰瘍之外科治療 張琮琨,"📖 chatGPT 學長背景知識
+61,關於胃癌的描述下列何者為非？(1)早期胃癌如果發現有區域淋巴轉移，依然可以優先考慮內視鏡切除。(2)Linitis plastica (皮革胃)通常治療預後極佳。(3)不管胃腫瘤位置在何處，位於左胃動脈的淋巴結都是屬於第二群(group2)的淋巴結。(4)Roux-en-Y 重建方式需要做兩個位置的吻合，而Billroth II 重建方式則需要做一個位置的吻合。,1 + 2,1 + 2 + 4,2 + 3,3 + 4,A,,胃腫瘤及消化性潰瘍之外科治療,張琮琨,"📖 chatGPT 學長背景知識
 
 - 胃癌是全球常見的惡性腫瘤之一，早期診斷與治療對預後至關重要。
 - 內視鏡切除是早期胃癌的一種治療選擇，但淋巴轉移的存在會影響治療策略。
@@ -1193,7 +1193,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
    - 這個描述是『正確』的。Roux-en-Y 重建涉及到胃與小腸的兩個吻合，而 Billroth II 則只需要一個吻合。
 
 綜合以上分析，正確答案為 (B) 1 + 2，因為選項 1 和 2 均為錯誤描述。"
-62,關於消化性潰瘍手術的描述，下列何者為非？(1)所有消化性潰瘍穿孔皆須接受手術治療(2)接受選擇性迷走神經切斷手術(selective vagotomy)後，潰瘍依舊復發可能是因為沒有保留 criminal nerve of Grassi(3)胃引流手術(gastric drainage surgery)中，以胃幽門整形手術(pyloroplasty)的長期併發症較少。(4)輸入環症候群(Afferent loop syndrome)可以接受保守性治療，不需要積極手術處理。,1 + 2,1 + 2 + 4,2 + 3,3 + 4,B,,胃腫瘤及消化性潰瘍之外科治療 張琮琨,"📖 chatGPT 學長背景知識  
+62,關於消化性潰瘍手術的描述，下列何者為非？(1)所有消化性潰瘍穿孔皆須接受手術治療(2)接受選擇性迷走神經切斷手術(selective vagotomy)後，潰瘍依舊復發可能是因為沒有保留 criminal nerve of Grassi(3)胃引流手術(gastric drainage surgery)中，以胃幽門整形手術(pyloroplasty)的長期併發症較少。(4)輸入環症候群(Afferent loop syndrome)可以接受保守性治療，不需要積極手術處理。,1 + 2,1 + 2 + 4,2 + 3,3 + 4,B,,胃腫瘤及消化性潰瘍之外科治療,張琮琨,"📖 chatGPT 學長背景知識  
 消化性潰瘍是指胃或十二指腸的黏膜因為胃酸及消化酶的侵蝕而形成的潰瘍。手術治療通常在潰瘍併發症（如穿孔、出血）或藥物治療無效時考慮。以下是對題目選項的詳細解析。
 
 1. **選項分析**  
@@ -1214,7 +1214,7 @@ H. pylori（幽門螺旋桿菌）是一種與多種胃部疾病相關的細菌�
 
 3. **正確答案**  
    (A) 1 + 2"
-63,下列之敘述何者正確？a. Type B 慢性胃炎大多與基因或自體免疫相關 b. 巴瑞特氏食道(Barrett's esophagus)是逆流性食道炎(GERD)之併發症，男性有較高風險 c. 幽門桿菌(H. pylori)可導致黏膜腺體萎縮與胃癌風險上升 d. 胃內 pH 值大於4以上之時間比例越久，逆流性食道炎(GERD)癒合比例越高,a + b + c,b + c + d,a + b + d,a + c + d,B,,胃食道逆流性疾病及胃炎 郭昭宏,"📖 chatGPT 學長背景知識
+63,下列之敘述何者正確？a. Type B 慢性胃炎大多與基因或自體免疫相關 b. 巴瑞特氏食道(Barrett's esophagus)是逆流性食道炎(GERD)之併發症，男性有較高風險 c. 幽門桿菌(H. pylori)可導致黏膜腺體萎縮與胃癌風險上升 d. 胃內 pH 值大於4以上之時間比例越久，逆流性食道炎(GERD)癒合比例越高,a + b + c,b + c + d,a + b + d,a + c + d,B,,胃食道逆流性疾病及胃炎,郭昭宏,"📖 chatGPT 學長背景知識
 
 - 本題涉及『慢性胃炎』、『巴瑞特氏食道』、『幽門桿菌』及『逆流性食道炎』等相關醫學知識。
 - 需針對每個選項進行分析，以確定正確的敘述。
@@ -1233,7 +1233,7 @@ d. 胃內 pH 值大於4的時間比例越久，並不一定會提高『逆流性
 - 正確的敘述為 b 和 c。
 
 因此，正確答案為 (B) b + c + d。"
-64,下列藥物有幾項會加重逆流性食道炎之發生？(a) Anticholinergics (b) Beta-adrenergic antagonists (c) Dihydropyridine calcium channel blockers (d) Benzodiazepines,1項,2項,3項,4項,C,,胃食道逆流性疾病及胃炎 郭昭宏,"📖 chatGPT 學長背景知識  
+64,下列藥物有幾項會加重逆流性食道炎之發生？(a) Anticholinergics (b) Beta-adrenergic antagonists (c) Dihydropyridine calcium channel blockers (d) Benzodiazepines,1項,2項,3項,4項,C,,胃食道逆流性疾病及胃炎,郭昭宏,"📖 chatGPT 學長背景知識  
 逆流性食道炎（GERD）是由於胃酸逆流至食道引起的病症，常見症狀包括胸痛、吞嚥困難及喉嚨不適。某些藥物可能會影響食道下括約肌的功能或胃酸的分泌，從而加重此病症。
 
 核心觀念：  
@@ -1243,7 +1243,7 @@ d. 胃內 pH 值大於4的時間比例越久，並不一定會提高『逆流性
 - 『Benzodiazepines』：這類藥物可能會影響中樞神經系統，導致食道運動功能減弱，增加逆流的風險。
 
 綜合以上分析，所有四種藥物均可能加重逆流性食道炎的發生。因此，正確答案為 (D) 4項。"
-65,潰瘍性大腸炎(Ulcerative colitis) 和克隆氏症(Crohn disease) 的鑑別診斷下列何者為錯？,Ulcerative colitis: superficial lesion; Crohn disease: transmural lesion,Ulcerative colitis: continuous lesion; Crohn disease: skip lesion,Ulcerative colitis: rare rectal sparing; Crohn disease: rectal sparing,Ulcerative colitis: backwash ileitis; Crohn disease: skip lesion of cecal patch,D,,發炎性腸病 盧建宇,"📖 chatGPT 學長背景知識  
+65,潰瘍性大腸炎(Ulcerative colitis) 和克隆氏症(Crohn disease) 的鑑別診斷下列何者為錯？,Ulcerative colitis: superficial lesion; Crohn disease: transmural lesion,Ulcerative colitis: continuous lesion; Crohn disease: skip lesion,Ulcerative colitis: rare rectal sparing; Crohn disease: rectal sparing,Ulcerative colitis: backwash ileitis; Crohn disease: skip lesion of cecal patch,D,,發炎性腸病,盧建宇,"📖 chatGPT 學長背景知識  
 潰瘍性大腸炎（Ulcerative colitis, UC）和克隆氏症（Crohn disease, CD）是兩種主要的炎症性腸病（Inflammatory Bowel Disease, IBD），其病理特徵、臨床表現及影響範圍各有不同。以下是對於題目中各選項的解析。
 
 核心觀念：  
@@ -1271,7 +1271,7 @@ d. 胃內 pH 值大於4的時間比例越久，並不一定會提高『逆流性
 
 結論：  
 根據上述解析，選項(C)是錯誤的，因為潰瘍性大腸炎通常不會保留直腸，而克隆氏症則可能會。"
-66,"下列有關炎性腸病(Inflammatory bowel disease, IBD)的治療，何者為錯？",Anti-TNFa(tumor necrosis factor-a)是最早發展應用於IBD的生物製劑。,Anti-integrin 生物製劑比較少全身性副作用。,抗生素使用對於IBD的緩解不可或缺。,使用JAK(Janus kinase) inhibitor 生物製劑要特別注意 herpes zoster and thromboembolism 副作用。,C,,發炎性腸病 盧建宇,"📖 chatGPT 學長背景知識  
+66,"下列有關炎性腸病(Inflammatory bowel disease, IBD)的治療，何者為錯？",Anti-TNFa(tumor necrosis factor-a)是最早發展應用於IBD的生物製劑。,Anti-integrin 生物製劑比較少全身性副作用。,抗生素使用對於IBD的緩解不可或缺。,使用JAK(Janus kinase) inhibitor 生物製劑要特別注意 herpes zoster and thromboembolism 副作用。,C,,發炎性腸病,盧建宇,"📖 chatGPT 學長背景知識  
 炎性腸病（Inflammatory bowel disease, IBD）主要包括克隆病（Crohn's disease）和潰瘍性結腸炎（Ulcerative colitis）。治療方法多樣，通常包括藥物治療、營養支持及手術等。以下是對於題目中各選項的詳細解析。
 
 核心觀念：  
