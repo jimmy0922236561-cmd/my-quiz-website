@@ -163,6 +163,7 @@
     <div id="lobby-view">
         <h1 style="color: var(--primary-color); margin-bottom: 5px;">🎓 醫學系 Block / 國考 考古題庫</h1>
         <p style="color: #666; margin-bottom: 30px; text-align: center;">請選擇你想複習的 Block 或 國考科目：</p>
+        
         <div id="announcement-board" style="background: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
                 <span style="font-size: 1.3rem;">📢</span>
@@ -173,9 +174,10 @@
             <ul style="margin: 0; padding-left: 20px; color: #533f03; line-height: 1.6; font-size: 0.95rem;">
                 <li><strong>【260817】</strong> 恭喜大家考完block7期中考，本網站將持續更新題庫，並優化功能</li>
                 <li><strong>【Block 7 期中考】</strong> 新增M112期中考題，另外AI詳解有些怪怪的，暫時僅供參考</li>
-                
             </ul>
         </div>
+
+        <!-- Block 選擇列 -->
         <div style="display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap;">
             <button class="block-select-btn" data-block="Block7" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
                 <span style="font-size: 1.2rem; display: block;">Block 7</span>
@@ -203,8 +205,23 @@
             </button>
         </div>
 
+        <!-- 模式選擇切換區 (新增) -->
+        <div id="mode-selection-zone" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; margin-bottom: 20px;">
+            <h3 id="selected-block-hint" style="margin-top: 0; color: var(--primary-color);">已選擇：Block</h3>
+            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 15px;">請選擇你想進行的刷題方式：</p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <button id="btn-mode-by-year" style="flex: 1; min-width: 200px; padding: 14px 10px; border-radius: 10px; border: 2px solid #2b5876; background: #f0f7ff; color: #2b5876; font-weight: bold; cursor: pointer;">
+                    📅 按單一考卷刷題<br><span style="font-size: 0.8rem; font-weight: normal; color: #555;">(選擇特定年份考卷)</span>
+                </button>
+                <button id="btn-mode-cross-year" style="flex: 1; min-width: 200px; padding: 14px 10px; border-radius: 10px; border: 2px solid #16a34a; background: #f0fdf4; color: #16a34a; font-weight: bold; cursor: pointer;">
+                    🎯 跨年度科目專題特訓<br><span style="font-size: 0.8rem; font-weight: normal; color: #555;">(彙整各年度所有同科目題目)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 年份選擇區塊 1 (Block) -->
         <div id="year-selection-zone-1" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
-            <h3 id="selected-block-hint-1" style="margin-top: 0;">已選擇：Block</h3>
+            <h3 style="margin-top: 0; font-size: 1.05rem; color: #475569;">請選擇考試年份：</h3>
             <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
                 <button class="year-btn" data-year="113_Mid">113年 期中考</button>
                 <button class="year-btn" data-year="113_Final">113年 期末考</button>
@@ -213,14 +230,14 @@
                 <button class="year-btn" data-year="111_Mid">111年 期中考</button>
                 <button class="year-btn" data-year="111_Final">111年 期末考</button>
                 <button class="year-btn" data-year="114_Mid">114年 期中考 考訓整理</button>
-                <button class="year-btn" data-year="114M_Mid">M112 期中考 </button>
-                <button class="year-btn" data-year="114M_Final">M112 期末考 </button>
-                
+                <button class="year-btn" data-year="114M_Mid">M112 期中考</button>
+                <button class="year-btn" data-year="114M_Final">M112 期末考</button>
             </div>
         </div>
 
+        <!-- 年份選擇區塊 2 (國考 MED1) -->
         <div id="year-selection-zone-2" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
-            <h3 id="selected-block-hint-2" style="margin-top: 0;">已選擇：MED1 歷屆國考</h3>
+            <h3 style="margin-top: 0; font-size: 1.05rem; color: #475569;">請選擇國考梯次：</h3>
             <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
                 <button class="year-btn" data-year="115_Fir">115年 第一次</button>
                 <button class="year-btn" data-year="114_Sec">114年 第二次</button>
@@ -300,6 +317,8 @@ let isSubmitted = false;   // 是否已經交卷
 
 // DOM 節點
 const lobbyView = document.getElementById("lobby-view");
+const modeSelectionZone = document.getElementById("mode-selection-zone");
+const selectedBlockHint = document.getElementById("selected-block-hint");
 const yearZone1 = document.getElementById("year-selection-zone-1");
 const yearZone2 = document.getElementById("year-selection-zone-2");
 const categoryView = document.getElementById("category-view");
@@ -314,8 +333,7 @@ const btnSubmitAll = document.getElementById("btn-submit-all");
 const resultSummaryCard = document.getElementById("result-summary-card");
 const filterZone = document.getElementById("filter-zone");
 
-// 🎯 新增：自動偵測文字裡的圖片網址，回傳「去掉網址後的純文字」與「圖片網址」
-// 支援題目或選項句子中直接貼上圖片連結，不需要額外的欄位
+// 🎯 自動偵測文字裡的圖片網址
 function extractImageFromText(text) {
     if (!text) return { cleanText: "", imageUrl: "" };
     const imgUrlRegex = /(https?:\/\/\S+\.(?:png|jpg|jpeg|gif|webp))/i;
@@ -335,19 +353,65 @@ document.querySelectorAll(".block-select-btn").forEach(btn => {
         this.style.opacity = "1";
         currentBlockName = this.getAttribute("data-block");
 
-        if (currentBlockName === "MED1") {
-            yearZone1.classList.add("hidden");
-            yearZone2.classList.remove("hidden");
-            document.getElementById("selected-block-hint-2").innerText = `已選擇：${this.innerText.trim()}`;
-        } else {
-            yearZone2.classList.add("hidden");
-            yearZone1.classList.remove("hidden");
-            document.getElementById("selected-block-hint-1").innerText = `已選擇：${this.innerText.trim()}`;
-        }
+        selectedBlockHint.innerText = `已選擇：${this.innerText.replace("\n", " ").trim()}`;
+        modeSelectionZone.classList.remove("hidden");
+        yearZone1.classList.add("hidden");
+        yearZone2.classList.add("hidden");
     });
 });
 
-// 2. 選擇年份
+// 模式 A：點擊「按單一考卷刷題」
+document.getElementById("btn-mode-by-year").addEventListener("click", () => {
+    if (currentBlockName === "MED1") {
+        yearZone1.classList.add("hidden");
+        yearZone2.classList.remove("hidden");
+    } else {
+        yearZone2.classList.add("hidden");
+        yearZone1.classList.remove("hidden");
+    }
+});
+
+// 模式 B：點擊「跨年度科目專題特訓」
+document.getElementById("btn-mode-cross-year").addEventListener("click", async () => {
+    try {
+        categoryQuizTitle.innerText = `${currentBlockName} 跨年度歷屆科目特訓`;
+        categoryList.innerHTML = "<p style='text-align:center;'>正在匯總各年度科目清單...</p>";
+        
+        lobbyView.classList.add("hidden");
+        categoryView.classList.remove("hidden");
+        quizView.classList.add("hidden");
+
+        const response = await fetch(`${API_BASE_URL}/api/block_categories/${currentBlockName}`);
+        if (!response.ok) throw new Error("無法取得科目分類");
+        const categories = await response.json();
+
+        categoryList.innerHTML = "";
+
+        // 全年度所有題目大特訓按鈕
+        const allBtn = document.createElement("button");
+        allBtn.innerText = `🔥 挑戰 ${currentBlockName} 全年度所有題目`;
+        allBtn.className = "lobby-btn";
+        allBtn.style.padding = "18px";
+        allBtn.onclick = () => startCrossYearQuiz(currentBlockName, "全年度所有歷屆試題", "");
+        categoryList.appendChild(allBtn);
+
+        // 各科目按鈕
+        categories.forEach(cat => {
+            if (!cat) return;
+            const btn = document.createElement("button");
+            btn.innerText = `🎯 歷屆【${cat}】專題`;
+            btn.style.cssText = "background-color: #ffffff; color: #166534; border: 2px solid #86efac; padding: 15px; font-size: 1.05rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left;";
+            btn.onclick = () => startCrossYearQuiz(currentBlockName, `歷屆【${cat}】專題`, cat);
+            categoryList.appendChild(btn);
+        });
+
+    } catch (error) {
+        alert("載入失敗: " + error.message);
+        goBackToLobby();
+    }
+});
+
+// 2. 選擇單一年份
 document.querySelectorAll(".year-btn").forEach(btn => {
     btn.addEventListener("click", function() {
         const selectedYear = this.getAttribute("data-year");
@@ -357,7 +421,7 @@ document.querySelectorAll(".year-btn").forEach(btn => {
     });
 });
 
-// 3. 載入科目分類
+// 3. 載入單一考卷的科目分類
 async function openCategorySelection(quizName, displayName) {
     try {
         categoryQuizTitle.innerText = displayName;
@@ -397,7 +461,7 @@ async function openCategorySelection(quizName, displayName) {
     }
 }
 
-// 4. 開始全卷測驗模式
+// 4. 開始單一考卷測驗
 async function startFullQuiz(quizName, displayName, category) {
     try {
         quizTitle.innerText = displayName;
@@ -415,7 +479,6 @@ async function startFullQuiz(quizName, displayName, category) {
         userAnswers = {};
         isSubmitted = false;
 
-        // 重設結算與篩選狀態
         resultSummaryCard.classList.add("hidden");
         filterZone.classList.add("hidden");
         btnSubmitAll.style.display = "inline-block";
@@ -430,7 +493,39 @@ async function startFullQuiz(quizName, displayName, category) {
     }
 }
 
-// 🎯 新增：產生單一選項的 HTML（文字 + 若偵測到圖片網址則附上圖片）
+// 4-2. 開始跨年度專題測驗
+async function startCrossYearQuiz(blockName, displayName, category) {
+    try {
+        quizTitle.innerText = `${blockName} - ${displayName}`;
+        categoryView.classList.add("hidden");
+        quizView.classList.remove("hidden");
+        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px;'>正在打包跨年度題目，請稍候...</p>";
+
+        let url = `${API_BASE_URL}/api/block_questions/${blockName}`;
+        if (category) url += `?category=${encodeURIComponent(category)}`;
+
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("題庫讀取失敗");
+        
+        currentQuestions = await response.json();
+        userAnswers = {};
+        isSubmitted = false;
+
+        resultSummaryCard.classList.add("hidden");
+        filterZone.classList.add("hidden");
+        btnSubmitAll.style.display = "inline-block";
+        btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
+        btnSubmitAll.disabled = false;
+
+        renderAllQuestions();
+        updateProgress();
+    } catch (err) {
+        alert("讀取失敗: " + err.message);
+        goBackToCategory();
+    }
+}
+
+// 產生選項 HTML
 function renderOption(q, optLetter, optText) {
     const parsed = extractImageFromText(optText);
     const imgHtml = parsed.imageUrl
@@ -446,7 +541,7 @@ function renderOption(q, optLetter, optText) {
     `;
 }
 
-// 5. 渲染整份考卷的所有題目卡片
+// 5. 渲染整份考卷題目卡片
 function renderAllQuestions() {
     questionsContainer.innerHTML = "";
 
@@ -455,21 +550,32 @@ function renderAllQuestions() {
         qCard.className = "question-card";
         qCard.id = `q-card-${q.id}`;
 
-        // 🎯 從題目文字裡自動偵測圖片網址
+        // 偵測題目文字中的圖片
         const questionParsed = extractImageFromText(q.question);
         let imgHtml = "";
-        if (questionParsed.imageUrl) {
+        const finalImgUrl = (q.image_url && q.image_url.trim() !== "") ? q.image_url.trim() : questionParsed.imageUrl;
+        
+        if (finalImgUrl) {
             imgHtml = `
                 <div style="text-align: center; margin: 15px 0;">
-                    <img src="${questionParsed.imageUrl}" alt="題目圖" style="max-width: 100%; max-height: 350px; border-radius: 8px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+                    <img src="${finalImgUrl}" alt="題目圖" style="max-width: 100%; max-height: 350px; border-radius: 8px; cursor: pointer;" onclick="window.open(this.src, '_blank')">
                 </div>
             `;
         }
 
+        // 標籤組裝（年份、科目、教師）
+        const yearTag = q.year_label ? `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>` : "";
+        const catTag = `<span style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📖 ${q.category || "未分類"}</span>`;
+        const teacherTag = q.teacher ? `<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-weight: 500;">👨‍🏫 ${q.teacher}</span>` : "";
+
         qCard.innerHTML = `
-            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #64748b; margin-bottom: 8px;">
-                <span><strong>第 ${idx + 1} 題</strong> ｜ 題號：${q.id}</span>
-                <span style="background: #e2e8f0; padding: 2px 8px; border-radius: 4px;">${q.category || "未分類"}</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <span style="color: #64748b; font-weight: bold;">第 ${idx + 1} 題 ｜ 題號：${q.id}</span>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                    ${yearTag}
+                    ${catTag}
+                    ${teacherTag}
+                </div>
             </div>
             <div style="font-size: 1.05rem; font-weight: 500; line-height: 1.6; margin-bottom: 12px;">${questionParsed.cleanText}</div>
             ${imgHtml}
@@ -491,9 +597,9 @@ function renderAllQuestions() {
                     <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
                     ${q.ai_explanation ? `
                         <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
-    <strong style="color: #166534;">✨ AI 臨床解析：</strong>
-    <div style="white-space: pre-wrap; margin-top: 4px;">${q.ai_explanation}</div>
-</div>
+                            <strong style="color: #166534;">✨ AI 臨床解析：</strong>
+                            <div style="white-space: pre-wrap; margin-top: 4px;">${q.ai_explanation}</div>
+                        </div>
                     ` : ''}
                 </div>
             </details>
@@ -505,7 +611,6 @@ function renderAllQuestions() {
                 if (isSubmitted) return;
                 userAnswers[q.id] = e.target.value;
                 
-                // 更新該題的選取高亮樣式
                 qCard.querySelectorAll(".option-label").forEach(lbl => lbl.classList.remove("selected"));
                 e.target.closest(".option-label").classList.add("selected");
                 
@@ -517,14 +622,14 @@ function renderAllQuestions() {
     });
 }
 
-// 6. 更新頂部作答題數進度
+// 6. 更新進度
 function updateProgress() {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
     quizProgressText.innerText = `作答進度：${answeredCount} / ${totalCount} 題`;
 }
 
-// 7. 一鍵交卷並批改全部題目
+// 7. 一鍵交卷並批改
 btnSubmitAll.addEventListener("click", () => {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
@@ -538,15 +643,14 @@ btnSubmitAll.addEventListener("click", () => {
     let correctCount = 0;
 
     currentQuestions.forEach(q => {
-        const userChoice = userAnswers[q.id];
+        const userChoice = (userAnswers[q.id] || "").trim().toUpperCase();
         const correctAns = (q.correct_answer || "").trim().toUpperCase();
-        const isCorrect = userChoice === correctAns;
+        const isCorrect = (userChoice !== "" && userChoice === correctAns) || correctAns === "送分" || correctAns === "ALL";
         
         const qCard = document.getElementById(`q-card-${q.id}`);
         const expBox = document.getElementById(`exp-box-${q.id}`);
         const expStatus = document.getElementById(`exp-status-${q.id}`);
 
-        // 標記該卡片是正確還是錯誤
         if (isCorrect) {
             correctCount++;
             qCard.classList.add("is-correct");
@@ -556,7 +660,7 @@ btnSubmitAll.addEventListener("click", () => {
             expStatus.innerHTML = `<span style="color: #b91c1c;">❌ 答錯了！你的選擇：[ ${userChoice || "未作答"} ] ｜ 正確答案：[ ${correctAns} ]</span>`;
         }
 
-        // 幫選項上色
+        // 選項上色
         qCard.querySelectorAll(".option-label").forEach(label => {
             const optVal = label.getAttribute("data-opt");
             const radio = label.querySelector("input");
@@ -569,13 +673,12 @@ btnSubmitAll.addEventListener("click", () => {
             }
         });
 
-        // 顯示該題的詳解盒子
         expBox.classList.remove("hidden");
     });
 
     // 結算成績板
     const wrongCount = totalCount - correctCount;
-    const rate = Math.round((correctCount / totalCount) * 100);
+    const rate = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
 
     document.getElementById("summary-total").innerText = totalCount;
     document.getElementById("summary-correct").innerText = correctCount;
@@ -586,11 +689,10 @@ btnSubmitAll.addEventListener("click", () => {
     filterZone.classList.remove("hidden");
     btnSubmitAll.style.display = "none";
 
-    // 自動捲動到最頂部看成績
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// 8. 錯題快速過濾器
+// 8. 錯題過濾器
 document.getElementById("btn-show-wrong-only").addEventListener("click", () => {
     currentQuestions.forEach(q => {
         const qCard = document.getElementById(`q-card-${q.id}`);
@@ -609,7 +711,7 @@ document.getElementById("btn-show-all").addEventListener("click", () => {
     });
 });
 
-// 導航返回控制
+// 導航控制
 function goBackToLobby() {
     quizView.classList.add("hidden");
     categoryView.classList.add("hidden");
