@@ -1,5 +1,5 @@
 ﻿id,question,option_a,option_b,option_c,option_d,correct_answer,explanation,category,teacher,ai_explanation
-1,"關於小腸出血的影像檢查,下列何者具有立即止血的優勢?",(A)Computed tomography angiography。,(B)Technetium-99m-labeled red blood cell scan。,(C)Meckel' s diverticulum scintigraphy。,(D)Deep enteroscopy。,D,"(A)(B)(C)選項可以判斷出血位置,但無法立即止血。而(D)選項屬於侵入式檢查可以抵達出血點,並可以立即透過內視鏡來止血。",小腸疾病的診斷與治療,,"📖 chatGPT 學長背景知識  
+1,"關於小腸出血的影像檢查,下列何者具有立即止血的優勢?",(A)Computed tomography angiography。,(B)Technetium-99m-labeled red blood cell scan。,(C)Meckel' s diverticulum scintigraphy。,(D)Deep enteroscopy。,D,"(A)(B)(C)選項可以判斷出血位置,但無法立即止血。而(D)選項屬於侵入式檢查可以抵達出血點,並可以立即透過內視鏡來止血。",小腸疾病的診斷與治療,王耀廣,"📖 chatGPT 學長背景知識  
 小腸出血的影像檢查主要用於定位出血源，以便進行適當的治療。不同的檢查方法具有不同的優勢和適應症。
 
 - 『Computed tomography angiography (CTA)』：能夠快速提供血管的影像，對於急性出血的定位有幫助，但不具備立即止血的能力。
@@ -8,13 +8,13 @@
 - 『Deep enteroscopy』：這是一種內視鏡檢查，能夠直接觀察小腸內部，並在檢查過程中進行止血措施，如電燒或夾閉出血血管，具有『立即止血』的優勢。
 
 綜合以上分析，選項D『Deep enteroscopy』是小腸出血影像檢查中，具備立即止血能力的最佳選擇。"
-2,"關於小腸出血的處置,下列敘述何者為非?","(A)急性大量出血時,深部小腸鏡是第一優先的檢查方式。","(B)如果出血位置不明,建議從口側進行深部小腸鏡檢查。","(C)年輕人的小腸出血,應考量執行 Meckel's scan。","(D)針對電腦斷層血管攝影有發現出血的病人,可使用血管攝影的方式進行栓塞止血。",A,"急性大量出血(hemodynamically unstable 或持續性出血)的第一線應為「緊急影像檢查(CTA, CT angiography)或血管攝影」。",小腸疾病的診斷與治療,,"📖 chatGPT 學長背景知識  
+2,"關於小腸出血的處置,下列敘述何者為非?","(A)急性大量出血時,深部小腸鏡是第一優先的檢查方式。","(B)如果出血位置不明,建議從口側進行深部小腸鏡檢查。","(C)年輕人的小腸出血,應考量執行 Meckel's scan。","(D)針對電腦斷層血管攝影有發現出血的病人,可使用血管攝影的方式進行栓塞止血。",A,"急性大量出血(hemodynamically unstable 或持續性出血)的第一線應為「緊急影像檢查(CTA, CT angiography)或血管攝影」。",小腸疾病的診斷與治療,王耀廣,"📖 chatGPT 學長背景知識  
 小腸出血的處置涉及多種檢查與治療方法，了解各種檢查的適應症與優先順序至關重要。
 
 在急性大量出血的情況下，『深部小腸鏡』並非第一優先的檢查方式。通常，應首先進行『內視鏡檢查』或『影像學檢查』，如『電腦斷層掃描』，以快速評估出血來源。若出血位置不明，從口側進行深部小腸鏡檢查是合理的選擇，因為這樣可以更全面地檢查小腸的狀況。年輕患者的小腸出血，應考慮『Meckel's scan』，因為這是一種常見的先天性異常，可能導致出血。對於在『電腦斷層血管攝影』中發現出血的病人，進行『血管攝影』以進行栓塞止血是有效的治療方法。
 
 綜合以上分析，選項(A)的敘述為非，因為急性大量出血時，深部小腸鏡並非首選檢查方式。"
-3,下列敘述何者正確?,(A)Bile 中的 bilirubin 主要是人體內heme 代謝後的產物,(B)人體內的膽汁(bile juice)是由膽囊(Gallbladder)製造產生,(C)cholesterol gallstone 的形成主要是和膽道系統發生細菌感染有關,"(D)pregnancy 是膽石症相關的 risk factor,主要是因為懷孕過程中 progesterone 會增加 bile acid 的分泌以及膽囊收縮排空的能力",A,(A)正確。(B)膽汁由肝臟製造。(C) Brown pigment gallstone 形成主要是和細菌感染有關。(D) 懷孕中 progesterone 會減少膽囊收縮排空的能力造成膽汁鬱積。,膽結石及先天性膽道疾病,,"📖 chatGPT 學長背景知識
+3,下列敘述何者正確?,(A)Bile 中的 bilirubin 主要是人體內heme 代謝後的產物,(B)人體內的膽汁(bile juice)是由膽囊(Gallbladder)製造產生,(C)cholesterol gallstone 的形成主要是和膽道系統發生細菌感染有關,"(D)pregnancy 是膽石症相關的 risk factor,主要是因為懷孕過程中 progesterone 會增加 bile acid 的分泌以及膽囊收縮排空的能力",A,(A)正確。(B)膽汁由肝臟製造。(C) Brown pigment gallstone 形成主要是和細菌感染有關。(D) 懷孕中 progesterone 會減少膽囊收縮排空的能力造成膽汁鬱積。,膽結石及先天性膽道疾病,王森稔,"📖 chatGPT 學長背景知識
 
 在本題中，我們需要分析四個選項，並找出正確的敘述。以下是各選項的核心觀念：
 
@@ -24,7 +24,7 @@
 - (D)雖然『懷孕』確實是膽石症的風險因子，但主要原因是『孕酮』影響膽囊的收縮能力，導致膽汁排空不完全，而非增加『膽酸』的分泌。
 
 綜合以上分析，選項(A)是正確的，因為『膽紅素』確實是『血紅素』代謝後的產物，並且是膽汁的重要成分。其他選項均存在錯誤或不完整的描述，故不符合正確性。"
-4,下列敘述何者正確?,"(A)Gallstone 所引起的 biliary colic 是指病人的上腹疼痛通常和進食有關,且常合併有後背痛或右肩疼痛的情形","(B)Charcot' s triad 描述 acute cholangitis 病人的常見症狀,包括:腹瀉、發燒及黃疸","(C)Gallstone ileus 常發生在老人家,其cholecystoenteric fistula 最常發生在 stomach","(D)Todani classification 描述 Choledochal cyst 的不同型態,其中type2臨床上最常見",A,(A)正確。(B)Charcot's triad症狀為：發燒、黃疸、腹痛(無腹瀉)。(C)fistula最常發生在duodenum。(D)以type Ia最為常見。,膽結石及先天性膽道疾病,,"📖 chatGPT 學長背景知識  
+4,下列敘述何者正確?,"(A)Gallstone 所引起的 biliary colic 是指病人的上腹疼痛通常和進食有關,且常合併有後背痛或右肩疼痛的情形","(B)Charcot' s triad 描述 acute cholangitis 病人的常見症狀,包括:腹瀉、發燒及黃疸","(C)Gallstone ileus 常發生在老人家,其cholecystoenteric fistula 最常發生在 stomach","(D)Todani classification 描述 Choledochal cyst 的不同型態,其中type2臨床上最常見",A,(A)正確。(B)Charcot's triad症狀為：發燒、黃疸、腹痛(無腹瀉)。(C)fistula最常發生在duodenum。(D)以type Ia最為常見。,膽結石及先天性膽道疾病,王森稔,"📖 chatGPT 學長背景知識  
 在消化系統疾病中，膽石症及其併發症是常見的臨床問題。了解相關症狀及分類對於診斷和治療至關重要。
 
 - 『膽石症』引起的『膽絞痛』通常與進食有關，因為進食後膽囊收縮，可能導致膽石堵塞膽道，引發疼痛，並常伴隨『後背痛』或『右肩痛』。
@@ -33,7 +33,7 @@
 - 『Todani分類』用於描述『膽囊囊腫』的不同類型，其中『type I』是最常見的型態，而非type II。
 
 綜合以上資訊，正確的選項為(A)，因為它準確描述了膽石症引起的膽絞痛的特徵及相關症狀。"
-5,"下列那一種胰臟腫瘤,初診斷時建議可先觀察不用考慮評估接受手術切除治療?",(A)Pancreatic neuroendocrine tumor,(B)Solid pseudopapillary neoplasms,(C)Main-duct Intraductal papillary mucinous neoplasms (IPMNs),(D)Serous cystadenomas,D,Serous cystadenomas 幾乎都是良性(almost always benign)，除非長得太大或造成症狀，否則通常建議影像追蹤觀察即可。,胰臟腫瘤及傷害,,"📖 chatGPT 學長背景知識
+5,"下列那一種胰臟腫瘤,初診斷時建議可先觀察不用考慮評估接受手術切除治療?",(A)Pancreatic neuroendocrine tumor,(B)Solid pseudopapillary neoplasms,(C)Main-duct Intraductal papillary mucinous neoplasms (IPMNs),(D)Serous cystadenomas,D,Serous cystadenomas 幾乎都是良性(almost always benign)，除非長得太大或造成症狀，否則通常建議影像追蹤觀察即可。,胰臟腫瘤及傷害,王森稔,"📖 chatGPT 學長背景知識
 
 在胰臟腫瘤的診斷與治療中，不同類型的腫瘤有不同的管理策略。以下是幾種胰臟腫瘤的特點：
 
@@ -43,7 +43,7 @@
 - 『漿液性囊腫腫瘤』(Serous cystadenomas) 通常為良性，且生長緩慢，初診斷時可選擇觀察，因其惡性轉化的風險極低。
 
 綜合以上資訊，選擇(D)『漿液性囊腫腫瘤』為正確答案，因為其良性特性使得在初診斷時可不急於手術切除，而是可進行定期觀察。這種腫瘤的臨床管理通常不需要立即介入，除非出現症狀或其他併發症。"
-6,有關胰漏(Postoperative pancreatic fistula; POPF)下列敘述何者錯誤?,(A)常發生在胰臟手術之後,"(B)Whipple procedure 後若發生POPF,其衍生出的出血常是因為 gastro-duodenal artery(GDA)發生 pseudoaneurysm 破裂所致,死亡率極高",(C)相關的危險因子包括胰臟組織過軟以及胰管過細等,(D)發生胰漏的病人建議立即接受手術處理,D,發生胰漏合併感染性積液(infected fluid collection)時，診斷後通常首選影像引導的經皮導管引流術(percutaneous drainage)來處理，而非立即手術。,胰臟腫瘤及傷害,,"📖 chatGPT 學長背景知識  
+6,有關胰漏(Postoperative pancreatic fistula; POPF)下列敘述何者錯誤?,(A)常發生在胰臟手術之後,"(B)Whipple procedure 後若發生POPF,其衍生出的出血常是因為 gastro-duodenal artery(GDA)發生 pseudoaneurysm 破裂所致,死亡率極高",(C)相關的危險因子包括胰臟組織過軟以及胰管過細等,(D)發生胰漏的病人建議立即接受手術處理,D,發生胰漏合併感染性積液(infected fluid collection)時，診斷後通常首選影像引導的經皮導管引流術(percutaneous drainage)來處理，而非立即手術。,胰臟腫瘤及傷害,王森稔,"📖 chatGPT 學長背景知識  
 胰漏（Postoperative pancreatic fistula; POPF）是胰臟手術後常見的併發症，主要由於胰臟組織的『軟』或『細』導致的縫合不良。其發生率與手術類型、病人基礎狀況及術後管理密切相關。
 
 - POPF 通常發生在胰臟手術後，特別是『Whipple procedure』等高風險手術。
@@ -51,7 +51,7 @@
 - 相關危險因子包括『胰臟組織過軟』、胰管『過細』、術前營養狀況不佳等。
 
 對於發生胰漏的病人，雖然有時需要手術處理，但大多數情況下，初期應以『保守治療』為主，包括引流、營養支持及觀察，避免立即手術。因此，選項 D 的建議並不正確，因為並非所有胰漏病人都需立即手術處理。"
-7,"一位56歲女性,無特殊病史或手術史,僅有長期便秘使用藥物,但昨天無排便。昨晚因腹漲,上腹悶痛及噁心至急診就診,經藥物治療後返家,但半夜開始有發燒的情形,中午再度來到急診,且疼痛位置變成了右下腹部。急診醫師請你協助執行腹部理學檢查,並說了一句她疼痛位置的改變很像是 Aaron's sign。請問你執行腹部理學檢查時,下列哪些是與急診醫師推測的診斷是相關的? 1.檢查 McBurney's point 2.Murphy's sign 3.Psoas sign 4.Rovsing's sign 5.Right side flank knocking pain.",(A) 123,(B) 134,(C) 245,(D) 1234,B,急診醫師懷疑為急性闌尾炎。McBurney's point、Psoas sign、Rovsing's sign及Aaron's sign皆為闌尾炎徵象。Murphy's sign為膽囊炎徵象，Flank knocking pain為腎盂腎炎徵象。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,,"📖 chatGPT 學長背景知識  
+7,"一位56歲女性,無特殊病史或手術史,僅有長期便秘使用藥物,但昨天無排便。昨晚因腹漲,上腹悶痛及噁心至急診就診,經藥物治療後返家,但半夜開始有發燒的情形,中午再度來到急診,且疼痛位置變成了右下腹部。急診醫師請你協助執行腹部理學檢查,並說了一句她疼痛位置的改變很像是 Aaron's sign。請問你執行腹部理學檢查時,下列哪些是與急診醫師推測的診斷是相關的? 1.檢查 McBurney's point 2.Murphy's sign 3.Psoas sign 4.Rovsing's sign 5.Right side flank knocking pain.",(A) 123,(B) 134,(C) 245,(D) 1234,B,急診醫師懷疑為急性闌尾炎。McBurney's point、Psoas sign、Rovsing's sign及Aaron's sign皆為闌尾炎徵象。Murphy's sign為膽囊炎徵象，Flank knocking pain為腎盂腎炎徵象。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,胡晃鳴,"📖 chatGPT 學長背景知識  
 本題涉及急性闌尾炎的診斷，特別是患者的症狀與腹部檢查的相關性。
 
 核心觀念：  
@@ -62,7 +62,7 @@
 - 『Psoas sign』可檢查闌尾炎合併的腸道刺激。  
 
 選項中，『Murphy's sign』主要用於膽囊炎，『Right side flank knocking pain』則不特異於闌尾炎。因此，與急診醫師推測的診斷相關的檢查為『McBurney's point』、 『Psoas sign』及『Rovsing's sign』，故正確答案為(B) 134。"
-8,"一位75歲有中風病史的男性因腹痛,腹漲及噁心,在媳婦陪伴下就診,當徵得病患同意進行腹部 理學檢查時,以下的敘述哪些較不適當? 1.請患者平躺,掀開衣服以露出腹部,雙手置於胸前,雙膝彎曲踩在床上 2.理學檢查的步驟以視(inspection)聽(auscultation),叩(percussion )觸(palpation)依序進行。3.進行觸診時,從最疼痛的地方開始 4.為避免醫療糾紛,請女性護理師不要陪同。",(A) 12,(B) 34,(C) 13,(D) 4,B,3.觸診必須由「最不痛」的地方開始。4.進行身體檢查時需有女性護理人員陪同。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,,"📖 chatGPT 學長背景知識
+8,"一位75歲有中風病史的男性因腹痛,腹漲及噁心,在媳婦陪伴下就診,當徵得病患同意進行腹部 理學檢查時,以下的敘述哪些較不適當? 1.請患者平躺,掀開衣服以露出腹部,雙手置於胸前,雙膝彎曲踩在床上 2.理學檢查的步驟以視(inspection)聽(auscultation),叩(percussion )觸(palpation)依序進行。3.進行觸診時,從最疼痛的地方開始 4.為避免醫療糾紛,請女性護理師不要陪同。",(A) 12,(B) 34,(C) 13,(D) 4,B,3.觸診必須由「最不痛」的地方開始。4.進行身體檢查時需有女性護理人員陪同。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,胡晃鳴,"📖 chatGPT 學長背景知識
 
 在進行腹部理學檢查時，需遵循一定的步驟與原則，以確保檢查的準確性與病人的舒適度。以下是對題目中各選項的分析：
 
@@ -75,7 +75,7 @@
 4. **陪伴人員**：選項4中，要求女性護理師不要陪同的做法不僅不必要，還可能違反病人的權益與尊嚴，且無法有效避免醫療糾紛。
 
 綜合以上分析，選項1和選項3的做法不當，選項4的要求也不合理，因此正確答案為(B) 34。"
-9,"續上題,當衣服掀開時,主治醫師懷疑有肝硬化的可能性,請問,主治醫師發現了什麼? 1.肚臍有結節(Sister Mary Joseph's nodule) 2.胸部皮膚有數個蜘蛛痣(Spider angioma) 3.肚臍出現腫脹的血管,像蛇女頭(Caput medusae) 4.兩側腰部瘀青(Grey-Turner's sign)",(A) 1234,(B) 123,(C) 14,(D) 23,D,蜘蛛痣(>3個)與蛇女頭肚臍靜脈曲張為肝硬化/門脈高壓典型外觀。Sister Mary Joseph's nodule代表腹內癌症轉移(如胰臟癌)；Grey-Turner's sign代表後腹腔出血。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,,"📖 chatGPT 學長背景知識  
+9,"續上題,當衣服掀開時,主治醫師懷疑有肝硬化的可能性,請問,主治醫師發現了什麼? 1.肚臍有結節(Sister Mary Joseph's nodule) 2.胸部皮膚有數個蜘蛛痣(Spider angioma) 3.肚臍出現腫脹的血管,像蛇女頭(Caput medusae) 4.兩側腰部瘀青(Grey-Turner's sign)",(A) 1234,(B) 123,(C) 14,(D) 23,D,蜘蛛痣(>3個)與蛇女頭肚臍靜脈曲張為肝硬化/門脈高壓典型外觀。Sister Mary Joseph's nodule代表腹內癌症轉移(如胰臟癌)；Grey-Turner's sign代表後腹腔出血。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,胡晃鳴,"📖 chatGPT 學長背景知識  
 肝硬化是一種由多種原因引起的肝臟慢性損傷，導致肝組織纖維化及功能喪失。臨床上，肝硬化的體徵可包括多種皮膚變化和腹部血管異常。
 
 - 『蜘蛛痣』(Spider angioma)：常見於肝硬化患者，因為肝臟無法有效代謝雌激素，導致皮膚血管擴張。
@@ -84,7 +84,7 @@
 - 『Grey-Turner's sign』：指腰部出現瘀青，通常與急性胰腺炎或腹部出血相關，並不特異於肝硬化。
 
 綜合以上，肝硬化的典型體徵包括『蜘蛛痣』和『Caput medusae』，因此正確答案為選項 (D) 23。"
-10,"在腹部理學檢查過程中,病患有嘔吐情形,主治醫師請你協助放置鼻胃管以避免病患持續嘔吐而嗆到。放置鼻胃管相關細節,下列何者錯誤?",(A)將床頭抬高30~60度。,"(B)測量鼻孔到耳根的距離加上耳根到劍突末端的距離,作為鼻胃管放入長度的參考。","(C)鼻胃管前端朝下,管子的彎度順著鼻孔的底部慢慢插入,到達鼻咽時可請病人同時做吞嚥動作。","(D)確定鼻胃管位置是否正確時,用灌食空針打入白開水,評估是否有阻力或病人是否有咳嗽情形。",D,確認鼻胃管位置正確的方法應為回抽看是否有胃內容物，或打入少量空氣同時用聽診器在胃部聽是否有氣泡音。絕對不能直接灌水。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,,"📖 chatGPT 學長背景知識  
+10,"在腹部理學檢查過程中,病患有嘔吐情形,主治醫師請你協助放置鼻胃管以避免病患持續嘔吐而嗆到。放置鼻胃管相關細節,下列何者錯誤?",(A)將床頭抬高30~60度。,"(B)測量鼻孔到耳根的距離加上耳根到劍突末端的距離,作為鼻胃管放入長度的參考。","(C)鼻胃管前端朝下,管子的彎度順著鼻孔的底部慢慢插入,到達鼻咽時可請病人同時做吞嚥動作。","(D)確定鼻胃管位置是否正確時,用灌食空針打入白開水,評估是否有阻力或病人是否有咳嗽情形。",D,確認鼻胃管位置正確的方法應為回抽看是否有胃內容物，或打入少量空氣同時用聽診器在胃部聽是否有氣泡音。絕對不能直接灌水。,病史詢問(消化系統)/腹部的檢查/糞便檢查結果判讀,胡晃鳴,"📖 chatGPT 學長背景知識  
 在放置鼻胃管的過程中，正確的操作步驟與技巧至關重要，以確保病人的安全與舒適。以下是相關的核心觀念：
 
 - **病人姿勢**：將床頭抬高『30~60度』有助於減少誤吸風險，並促進鼻胃管的順利放置。
@@ -93,7 +93,7 @@
 - **確認位置**：確認鼻胃管位置的正確性時，應使用『灌食空針』打入白開水，若有阻力或病人出現『咳嗽』情形，則可能表示管子位置不正確。
 
 綜合以上觀念，選項D的描述不正確，因為確認鼻胃管位置的標準方法應包括抽取胃內容物或使用X光檢查，而不僅僅是灌食空針。這樣的做法可能會導致誤判或危險情況的發生。"
-11,"小腸阻塞(Small-bowel obstruction),最常見的原因是:",(A)克隆氏症(Crohn's disease),(B)沾黏(Adhesions),(C)腫瘤(Neoplasms),(D)疝氣(Hernias),B,小腸阻塞最常見的原因是手術後沾黏(Adhesions)，約佔 60%。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,,"📖 chatGPT 學長背景知識  
+11,"小腸阻塞(Small-bowel obstruction),最常見的原因是:",(A)克隆氏症(Crohn's disease),(B)沾黏(Adhesions),(C)腫瘤(Neoplasms),(D)疝氣(Hernias),B,小腸阻塞最常見的原因是手術後沾黏(Adhesions)，約佔 60%。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,蔡祥麟,"📖 chatGPT 學長背景知識  
 小腸阻塞是臨床常見的急腹症之一，其病因多樣，了解其最常見原因對於診斷與治療至關重要。
 
 - 小腸阻塞的『最常見原因』為『沾黏』，特別是在接受過腹部手術的患者中。
@@ -103,12 +103,12 @@
 - 『腫瘤』和『克隆氏症』雖然也可引起小腸阻塞，但通常是慢性或進展性問題，並不如沾黏常見。
 
 總結來說，沾黏是小腸阻塞的主要原因，特別是在有過腹部手術史的患者中，這一點在臨床實踐中需特別注意。"
-12,"有關梅克爾憩室 (Meckel's diverticulum)的敘述,錯誤者:",(A)發生率男女比為2:1。,"(B)常見的位置是在離迴盲瓣(ileocecal value) 60公分內,大小長度約2英吋","(C)是胃腸道最常見的先天性異常(congenital anomaly),是屬於假性憩室。",(D)臨床上成年人通常不會有症狀。,C,梅克爾憩室包含完整的腸壁結構(黏膜、黏膜下層、肌肉層、漿膜層)，因此屬於「真性憩室(true diverticulum)」，而非假性憩室。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,,"📖 chatGPT 學長背景知識
+12,"有關梅克爾憩室 (Meckel's diverticulum)的敘述,錯誤者:",(A)發生率男女比為2:1。,"(B)常見的位置是在離迴盲瓣(ileocecal value) 60公分內,大小長度約2英吋","(C)是胃腸道最常見的先天性異常(congenital anomaly),是屬於假性憩室。",(D)臨床上成年人通常不會有症狀。,C,梅克爾憩室包含完整的腸壁結構(黏膜、黏膜下層、肌肉層、漿膜層)，因此屬於「真性憩室(true diverticulum)」，而非假性憩室。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,蔡祥麟,"📖 chatGPT 學長背景知識
 
 梅克爾憩室是『胃腸道』最常見的『先天性異常』，其發生率約為2%至3%。該憩室通常位於『迴盲瓣』60公分內，長度約2英吋（5公分），且為『真性憩室』，因其包含所有腸道層次。雖然在大多數情況下，梅克爾憩室在『成年人』中通常無症狀，但在某些情況下可能會引發併發症，如『腸梗阻』或『憩室炎』。
 
 選項A的性別比為2:1，這一說法是正確的；選項B關於位置和大小的描述也正確；選項D提到成年人通常不會有症狀，這在大多數情況下是正確的，但並不排除有症狀的可能性。因此，選項C的描述為錯誤，因為梅克爾憩室屬於『真性憩室』而非『假性憩室』。這使得選項C成為本題的正確答案。"
-13,"胃腸道間質瘤(Gastrointestinal stromal tumors, GISTs)最常見的基因突變點位於:",(A)KIT gene exon 11,(B)KIT gene exon 9,(C)PDGFRA gene exon 18,(D)PDGFRA exon 12,A,GISTs最常見的基因突變位於 KIT gene exon 11 (約佔 67%)。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,,"📖 chatGPT 學長背景知識  
+13,"胃腸道間質瘤(Gastrointestinal stromal tumors, GISTs)最常見的基因突變點位於:",(A)KIT gene exon 11,(B)KIT gene exon 9,(C)PDGFRA gene exon 18,(D)PDGFRA exon 12,A,GISTs最常見的基因突變位於 KIT gene exon 11 (約佔 67%)。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,蔡祥麟,"📖 chatGPT 學長背景知識  
 胃腸道間質瘤（GISTs）是一種起源於胃腸道的腫瘤，主要由間質細胞（如平滑肌細胞和神經膠質細胞）組成。這些腫瘤通常與特定的基因突變有關，最常見的突變涉及『KIT』基因。
 
 核心觀念：  
@@ -119,7 +119,7 @@
 - 了解這些突變有助於選擇適當的靶向治療，如伊馬替尼（Imatinib）。
 
 因此，根據目前的醫學知識，胃腸道間質瘤最常見的基因突變點位於『KIT gene exon 11』，選擇 (A) 是正確的。"
-14,"有關 HNPCC (Hereditary nonpolyposis colon cancer)也稱為Lynch syndrome 的 revised Amsterdam criteria的敘述,何者錯誤?",(A)至少連續兩個世代都受到影響。,(B)兩世代中至少有兩位被診斷為結直腸癌時年齡小於50歲。,"(C)至少三個親屬是結直腸癌,其中一位是另外二位的一等親。",(D)屬於 autosomal dominant 的 inherited colorectal cancer syndrome。,B,阿姆斯特丹標準 II 的「3-2-1 規則」中，正確條件是至少有「一個」人被診斷時年齡小於 50 歲，而非兩位。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,,"📖 chatGPT 學長背景知識  
+14,"有關 HNPCC (Hereditary nonpolyposis colon cancer)也稱為Lynch syndrome 的 revised Amsterdam criteria的敘述,何者錯誤?",(A)至少連續兩個世代都受到影響。,(B)兩世代中至少有兩位被診斷為結直腸癌時年齡小於50歲。,"(C)至少三個親屬是結直腸癌,其中一位是另外二位的一等親。",(D)屬於 autosomal dominant 的 inherited colorectal cancer syndrome。,B,阿姆斯特丹標準 II 的「3-2-1 規則」中，正確條件是至少有「一個」人被診斷時年齡小於 50 歲，而非兩位。,腸腫瘤，阻塞，直腸肛門疾病及外科治療,蔡祥麟,"📖 chatGPT 學長背景知識  
 HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種遺傳性結直腸癌綜合症，主要由於DNA修復基因的突變所引起。其診斷標準為修訂版的Amsterdam criteria，主要包括以下幾個要點：
 
 - 至少『連續兩個世代』受到影響，顯示其『遺傳性』特徵。
@@ -128,7 +128,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 此病症屬於『自體顯性』（autosomal dominant）的遺傳模式，意味著只需一個突變基因即可引發疾病。
 
 根據以上標準，選項B的敘述是錯誤的，因為在修訂版的Amsterdam criteria中，並不要求兩位患者的年齡必須小於50歲，這一點並非必要條件。因此，正確答案為B。"
-15,早期門脈高壓(portal hypertension)的機轉不包含下列哪些?,(A)週邊血管收縮,(B)心臟輸出增加,(C)nitric oxide (NO)合成增加,(D)renin-angiotensin 系統活化,A,門脈高壓會造成內源性一氧化氮(NO)大量釋放，進而導致內臟與「周邊血管擴張(Vasodilation)」，而非收縮。,門脈高壓、肝硬化與衰竭,,"📖 chatGPT 學長背景知識
+15,早期門脈高壓(portal hypertension)的機轉不包含下列哪些?,(A)週邊血管收縮,(B)心臟輸出增加,(C)nitric oxide (NO)合成增加,(D)renin-angiotensin 系統活化,A,門脈高壓會造成內源性一氧化氮(NO)大量釋放，進而導致內臟與「周邊血管擴張(Vasodilation)」，而非收縮。,門脈高壓、肝硬化與衰竭,黃釧峰,"📖 chatGPT 學長背景知識
 
 早期『門脈高壓』是由於門脈系統內壓力增加，通常與肝臟疾病如肝硬化或肝炎有關。其機轉主要涉及以下幾個方面：
 
@@ -138,13 +138,13 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『腎素-血管緊張素系統(RAS)活化』：此系統在低血容量或低血壓時被激活，進一步促進水鈉潴留，增加血容量，可能加劇門脈高壓。
 
 綜合以上分析，選項(B)『心臟輸出增加』並不符合早期門脈高壓的機轉，因此是正確答案。"
-16,評估肝硬化Child-Pugh score時何者非考量因素,(A)aPTT (activated partial thromboplastin time)值,(B)腹水,(C)肝昏迷,(D)albumin值,A,Child-Pugh分級考量的五大因素為：Bilirubin、Albumin、Prothrombin time (PT或INR)、Ascites、Encephalopathy。不包含aPTT。,門脈高壓、肝硬化與衰竭,,"📖 chatGPT 學長背景知識  
+16,評估肝硬化Child-Pugh score時何者非考量因素,(A)aPTT (activated partial thromboplastin time)值,(B)腹水,(C)肝昏迷,(D)albumin值,A,Child-Pugh分級考量的五大因素為：Bilirubin、Albumin、Prothrombin time (PT或INR)、Ascites、Encephalopathy。不包含aPTT。,門脈高壓、肝硬化與衰竭,黃釧峰,"📖 chatGPT 學長背景知識  
 肝硬化的評估常用的指標之一是Child-Pugh score，這是一種用於評估肝功能及預測病人預後的工具。此評分系統主要考量五個因素：『腹水』、『肝昏迷』、『血清白蛋白』、『總膽紅素』及『凝血酶原時間』。
 
 在此題中，選項(A)的『aPTT』並不是Child-Pugh score的考量因素。Child-Pugh score使用的是『凝血酶原時間』，而非直接使用『aPTT』值。雖然aPTT可以反映凝血功能，但它並不是該評分系統的直接組成部分。
 
 因此，正確答案是(A) aPTT值，因為它不屬於Child-Pugh score的評估範疇。其他選項如腹水、肝昏迷及血清白蛋白均為評分所需的關鍵因素，直接影響肝硬化患者的預後評估。"
-17,肝臟由哪五種主要韌帶連接和固定?,(A)胃韌帶、脾韌帶、腎韌帶、胰韌帶、十二指腸韌帶,(B)鐮狀韌帶、冠狀韌帶、右三角韌帶、左三角韌帶、圓韌帶,(C)膽囊韌帶、肝門韌帶、闌尾韌帶、盲腸韌帶、直腸韌帶,(D)膈韌帶、腹膜韌帶、腸系膜韌帶、網膜韌帶、血管韌帶,B,肝臟的五大主要韌帶為：falciform (鐮狀)、coronary (冠狀)、right triangular (右三角)、left triangular (左三角) 與 round ligament (圓韌帶)。,肝腫瘤和創傷的手術治療,,"📖 chatGPT 學長背景知識  
+17,肝臟由哪五種主要韌帶連接和固定?,(A)胃韌帶、脾韌帶、腎韌帶、胰韌帶、十二指腸韌帶,(B)鐮狀韌帶、冠狀韌帶、右三角韌帶、左三角韌帶、圓韌帶,(C)膽囊韌帶、肝門韌帶、闌尾韌帶、盲腸韌帶、直腸韌帶,(D)膈韌帶、腹膜韌帶、腸系膜韌帶、網膜韌帶、血管韌帶,B,肝臟的五大主要韌帶為：falciform (鐮狀)、coronary (冠狀)、right triangular (右三角)、left triangular (左三角) 與 round ligament (圓韌帶)。,肝腫瘤和創傷的手術治療,莊世昌,"📖 chatGPT 學長背景知識  
 肝臟是人體最大的內臟器官，具有多種重要功能，包括代謝、解毒和合成蛋白質。肝臟的固定和支持主要依賴於其周圍的韌帶結構。
 
 - 肝臟由五種主要韌帶連接和固定，這些韌帶包括：
@@ -155,7 +155,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
   - 『圓韌帶』：是胎兒時期的臍靜脈的殘留物，位於鐮狀韌帶的前緣。
 
 這些韌帶不僅提供了肝臟的支持，還在肝臟的運動和功能中扮演重要角色。選項B正確地列出了這五種主要韌帶，並且是肝臟的主要固定結構。其他選項中的韌帶並不屬於肝臟的主要連接結構，因此不正確。"
-18,"在肝臟手術後,以下哪一種是可能發生的併發症?",(A)高血脂,(B)糖尿病,(C)膽汁滲漏,(D)高血壓,C,肝臟切除手術後常見與膽道相關的併發症為膽汁滲漏(Bile leak)或膽道狹窄。,肝腫瘤和創傷的手術治療,,"📖 chatGPT 學長背景知識
+18,"在肝臟手術後,以下哪一種是可能發生的併發症?",(A)高血脂,(B)糖尿病,(C)膽汁滲漏,(D)高血壓,C,肝臟切除手術後常見與膽道相關的併發症為膽汁滲漏(Bile leak)或膽道狹窄。,肝腫瘤和創傷的手術治療,莊世昌,"📖 chatGPT 學長背景知識
 
 在肝臟手術後，可能出現多種併發症，這些併發症通常與手術的性質及肝臟的功能有關。以下是一些關鍵觀念：
 
@@ -165,7 +165,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『肝功能不全』：手術後肝臟的功能可能受到影響，尤其是在已有肝病的患者中。
 
 在選項中，雖然高血脂、糖尿病和高血壓都可能與肝臟健康有關，但它們並不是肝臟手術後的直接併發症。相對而言，『膽汁滲漏』是手術後最具代表性的併發症，因其直接與手術操作及肝臟解剖結構相關。因此，正確答案為(C) 膽汁滲漏。"
-19,"在評估肝臟創傷時,腹部創傷快速評估 FAST (Focused assessment with sonography for trauma)檢查主要會檢查人體的哪四個區域以檢測游離液體?",(A)腦部、頸部、胸部、腹股溝,(B)肺部、腎臟、胰臟、膽囊,(C)肝臟周圍、脾臓周圍、骨盆、心包,(D)大腿、小腿、手臂、背部,C,FAST檢查的四個標準區域為：Perihepatic (肝周)、Perisplenic (脾周)、Pelvis (骨盆腔) 以及 Pericardium (心包膜)。,肝腫瘤和創傷的手術治療,,"📖 chatGPT 學長背景知識  
+19,"在評估肝臟創傷時,腹部創傷快速評估 FAST (Focused assessment with sonography for trauma)檢查主要會檢查人體的哪四個區域以檢測游離液體?",(A)腦部、頸部、胸部、腹股溝,(B)肺部、腎臟、胰臟、膽囊,(C)肝臟周圍、脾臓周圍、骨盆、心包,(D)大腿、小腿、手臂、背部,C,FAST檢查的四個標準區域為：Perihepatic (肝周)、Perisplenic (脾周)、Pelvis (骨盆腔) 以及 Pericardium (心包膜)。,肝腫瘤和創傷的手術治療,莊世昌,"📖 chatGPT 學長背景知識  
 在評估肝臟創傷時，腹部創傷快速評估（FAST）檢查是一種重要的診斷工具，主要用於檢測腹腔內的『游離液體』，以判斷是否存在內臟損傷。FAST 檢查主要針對以下四個區域進行評估：
 
 1. 『肝臟周圍』：檢查肝臟下方的液體積聚，常見於肝臟創傷。
@@ -174,7 +174,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 4. 『心包』：雖然主要是針對腹部創傷，但心包腔的液體積聚也可能影響整體評估。
 
 因此，正確答案為選項 (C)，因為這四個區域是 FAST 檢查的重點，能有效評估內部出血的風險，並指導後續的治療決策。"
-20,以下哪一個組織是肝臟手術的現行指南機構(Current guidelines for liver surgery)之一?,(A)APASL (Asian Pacific Association for the Study of the Liver),(B)WHO (World Health Organization),(C)CDC (Centers for Disease Control and Prevention),(D)FDA (Food and Drug Administration),A,APASL (亞太肝臟研究學會) 指南是臨床引導肝臟手術與肝癌治療的重要現行規範之一。,肝腫瘤和創傷的手術治療,,"📖 chatGPT 學長背景知識
+20,以下哪一個組織是肝臟手術的現行指南機構(Current guidelines for liver surgery)之一?,(A)APASL (Asian Pacific Association for the Study of the Liver),(B)WHO (World Health Organization),(C)CDC (Centers for Disease Control and Prevention),(D)FDA (Food and Drug Administration),A,APASL (亞太肝臟研究學會) 指南是臨床引導肝臟手術與肝癌治療的重要現行規範之一。,肝腫瘤和創傷的手術治療,莊世昌,"📖 chatGPT 學長背景知識
 
 在肝臟手術的現行指南中，主要的指導機構是專注於肝臟疾病研究與治療的專業組織。以下是相關的核心觀念：
 
@@ -184,7 +184,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『FDA』：食品藥物管理局，負責藥物與醫療器械的監管，並不涉及手術指南的制定。
 
 因此，針對肝臟手術的現行指南，最具權威性與專業性的機構是『APASL』，它提供了針對肝臟疾病的最新研究成果與臨床實踐建議，對於醫療專業人員在手術決策中具有重要參考價值。選擇正確答案為 (A) APASL。"
-21,關於壺腹癌(Ampullary Carcinoma)以下敘述何者錯誤?,"(A)年輕人發生率高於老年人,男女性別無太大差異。",(B)Familial adenomatous polyposis (FAP) 和 Neurofibromatosis type 1 都是可能病因之一。,"(C)大部分壺腹癌組織型態是 adenocarcinomas,少部分是 neuroendocrine tumors.",(D)臨床表現常見阻塞性黃疸(obstructive jaundice)。,A,壺腹癌好發於老年人，發病高峰約在 70 歲左右(the seventh decade of life)，且男性比例稍微偏高。,膽道腫瘤,,"📖 chatGPT 學長背景知識  
+21,關於壺腹癌(Ampullary Carcinoma)以下敘述何者錯誤?,"(A)年輕人發生率高於老年人,男女性別無太大差異。",(B)Familial adenomatous polyposis (FAP) 和 Neurofibromatosis type 1 都是可能病因之一。,"(C)大部分壺腹癌組織型態是 adenocarcinomas,少部分是 neuroendocrine tumors.",(D)臨床表現常見阻塞性黃疸(obstructive jaundice)。,A,壺腹癌好發於老年人，發病高峰約在 70 歲左右(the seventh decade of life)，且男性比例稍微偏高。,膽道腫瘤,魏鈺儒,"📖 chatGPT 學長背景知識  
 壺腹癌（Ampullary Carcinoma）是一種罕見的腫瘤，通常發生在胰腺、膽道及十二指腸交界處。其臨床特徵及病因值得深入探討。
 
 - 壺腹癌的發病率在『年輕人』中並不高於『老年人』，相反，老年人更常見，且男性與女性的發病率差異不大，因此選項(A)為錯誤。
@@ -193,7 +193,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 壺腹癌的臨床表現中，『阻塞性黃疸（obstructive jaundice）』是常見的症狀之一，因腫瘤可能壓迫膽道，選項(D)正確。
 
 綜合以上分析，選項(A)的敘述為錯誤。"
-22,關於膽管癌(cholangiocarcinomas)以下敘述何者錯誤?,"(A)膽管癌的症狀包括腹痛、黄疸、疲勞、食慾不振、體重減輕等等,或是毫無症狀。",(B)肝外膽管癌(Extrahepatic cholangiocarcinomas)的發生率遠高於肝內膽管癌,(C)大部分膽管癌的組織型態為 adenocarcinoma.,(D)膽管癌是最常見的肝原發性惡性腫瘤。,D,最常見的肝臟原發性惡性腫瘤是「肝細胞癌(HCC)」，膽管癌是第二常見的原發惡性腫瘤。,肝臟腫瘤診斷與處理的原則,,"📖 chatGPT 學長背景知識
+22,關於膽管癌(cholangiocarcinomas)以下敘述何者錯誤?,"(A)膽管癌的症狀包括腹痛、黄疸、疲勞、食慾不振、體重減輕等等,或是毫無症狀。",(B)肝外膽管癌(Extrahepatic cholangiocarcinomas)的發生率遠高於肝內膽管癌,(C)大部分膽管癌的組織型態為 adenocarcinoma.,(D)膽管癌是最常見的肝原發性惡性腫瘤。,D,最常見的肝臟原發性惡性腫瘤是「肝細胞癌(HCC)」，膽管癌是第二常見的原發惡性腫瘤。,肝臟腫瘤診斷與處理的原則,魏鈺儒,"📖 chatGPT 學長背景知識
 
 膽管癌（cholangiocarcinomas）是一種源自膽管上皮的惡性腫瘤，主要分為肝內膽管癌和肝外膽管癌。以下是關於膽管癌的核心觀念：
 
@@ -203,41 +203,41 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 然而，膽管癌並不是『最常見的肝原發性惡性腫瘤』，肝細胞癌（hepatocellular carcinoma）才是最常見的類型。
 
 因此，選項 (D) 的敘述是錯誤的，因為膽管癌並非最常見的肝原發性惡性腫瘤，這一點在臨床醫學中是廣為認可的。"
-23,"一位92歲男性,B肝帶原,中風後長期臥床,生活無法自理,意識不清,由外傭全天照顧,因黃疸送醫,血液檢查顯示貧血、肝功能失代償,腹部超音波檢查發現多發性肝腫瘤,患者接受進一步肝臟電腦斷層檢查,無淋巴結以及遠端轉移,但是侵犯主要門靜脈,病理組織診斷為肝細胞癌,請問您會建議患者以下何種治療:",(A)手術切除(resection),(B)肝腫瘤消融(ablation),(C)支持性療法 (supportive care),(D)經動脈栓塞化療術(Transarterial Chemoembolization),C,"患者年事已高、生活無法自理、意識不清，且肝癌已侵犯主要門靜脈(屬於 Terminal stage D)，此時以支持性療法(Best supportive care, BSC)最能維護患者生活品質。",肝臟腫瘤診斷與處理的原則,,"📖 chatGPT 學長背景知識  
+23,"一位92歲男性,B肝帶原,中風後長期臥床,生活無法自理,意識不清,由外傭全天照顧,因黃疸送醫,血液檢查顯示貧血、肝功能失代償,腹部超音波檢查發現多發性肝腫瘤,患者接受進一步肝臟電腦斷層檢查,無淋巴結以及遠端轉移,但是侵犯主要門靜脈,病理組織診斷為肝細胞癌,請問您會建議患者以下何種治療:",(A)手術切除(resection),(B)肝腫瘤消融(ablation),(C)支持性療法 (supportive care),(D)經動脈栓塞化療術(Transarterial Chemoembolization),C,"患者年事已高、生活無法自理、意識不清，且肝癌已侵犯主要門靜脈(屬於 Terminal stage D)，此時以支持性療法(Best supportive care, BSC)最能維護患者生活品質。",肝臟腫瘤診斷與處理的原則,魏鈺儒,"📖 chatGPT 學長背景知識  
 - 患者為92歲男性，『B型肝炎』帶原者，長期臥床，意識不清，且有『肝功能失代償』及『貧血』。  
 - 腹部超音波顯示『多發性肝腫瘤』，經電腦斷層檢查確認『侵犯主要門靜脈』，病理診斷為『肝細胞癌』。  
 - 患者年齡及健康狀況使得手術風險增加，且無法進行有效的『手術切除』或『肝腫瘤消融』。  
 - 『經動脈栓塞化療術』雖可考慮，但因患者的整體狀況及肝功能不佳，可能無法承受此治療。  
 - 在這種情況下，『支持性療法』是最合適的選擇，旨在改善生活品質，減輕症狀，並提供必要的護理與舒適照顧。  
 - 總結來說，考量患者的年齡、病情及治療風險，選擇『支持性療法』是最符合患者需求的選擇。"
-24,關於肝臟血管瘤(hemangioma)以下敘述何者正確?,(A)最常見的良性肝臟腫瘤,(B)男性發生比例高於女性,(C)肝臟腫瘤切片比起電腦斷層更能夠幫助診斷,(D)大部分的血管瘤都需要儘快治療,A,(A)正確，血管瘤是肝臟最常見良性腫瘤。(B)女性發病比例遠高於男性(約4-6:1)。(C)切片出血風險極高且價值有限，CT即可確診。(D)絕大多數血管瘤無症狀，不需治療。,肝臟腫瘤診斷與處理的原則,,"📖 chatGPT 學長背景知識
+24,關於肝臟血管瘤(hemangioma)以下敘述何者正確?,(A)最常見的良性肝臟腫瘤,(B)男性發生比例高於女性,(C)肝臟腫瘤切片比起電腦斷層更能夠幫助診斷,(D)大部分的血管瘤都需要儘快治療,A,(A)正確，血管瘤是肝臟最常見良性腫瘤。(B)女性發病比例遠高於男性(約4-6:1)。(C)切片出血風險極高且價值有限，CT即可確診。(D)絕大多數血管瘤無症狀，不需治療。,肝臟腫瘤診斷與處理的原則,魏鈺儒,"📖 chatGPT 學長背景知識
 
 肝臟血管瘤是最常見的『良性肝臟腫瘤』，其發生率在一般人群中約為1-5%。這種腫瘤通常在女性中較為常見，男性的發生比例較低，因此選項(B)不正確。肝臟血管瘤通常是無症狀的，且大多數情況下不需要治療，只有在出現併發症或症狀時才需考慮手術，因此選項(D)也不正確。診斷上，『影像學檢查』如電腦斷層（CT）或磁共振成像（MRI）通常是首選，因為它們能夠提供清晰的腫瘤特徵，而切片檢查則不常用於診斷良性腫瘤，因此選項(C)也不正確。綜合以上分析，正確答案為(A)，肝臟血管瘤確實是最常見的良性肝臟腫瘤。"
-25,"膽道閉鎖 (biliary atresia)是嬰兒期重要的慢性肝膽疾病,也是兒童肝臟移植手術最常見的病因。關於此病的診斷與治療,下列敘述何者錯誤?","(A)肝外總膽管發生纖維化阻塞是其特徵,通常在發病幾個月內就會進展成肝硬化",(B)膽道閉鎖最主要的臨床表現是出生一週後快速上升且必須加強照光的間接型黃疸,"(C)由於缺乏膽汁進入十二指腸,罹病嬰兒大便顏色會變成淺黃或是灰白便","(D)葛西式手術 (Kasai operation)是膽道閉鎖的治療方式,診斷後應及早於出生60天內開刀",B,膽道閉鎖的臨床特徵是「稽延性黃疸(Prolonged jaundice > 2週)」以及「直接型高膽紅素血症(Direct type)」，與常見的母乳性或生理性間接型黃疸不同。,兒童消化疾病,,"📖 chatGPT 學長背景知識  
+25,"膽道閉鎖 (biliary atresia)是嬰兒期重要的慢性肝膽疾病,也是兒童肝臟移植手術最常見的病因。關於此病的診斷與治療,下列敘述何者錯誤?","(A)肝外總膽管發生纖維化阻塞是其特徵,通常在發病幾個月內就會進展成肝硬化",(B)膽道閉鎖最主要的臨床表現是出生一週後快速上升且必須加強照光的間接型黃疸,"(C)由於缺乏膽汁進入十二指腸,罹病嬰兒大便顏色會變成淺黃或是灰白便","(D)葛西式手術 (Kasai operation)是膽道閉鎖的治療方式,診斷後應及早於出生60天內開刀",B,膽道閉鎖的臨床特徵是「稽延性黃疸(Prolonged jaundice > 2週)」以及「直接型高膽紅素血症(Direct type)」，與常見的母乳性或生理性間接型黃疸不同。,兒童消化疾病,施相宏,"📖 chatGPT 學長背景知識  
 - 『膽道閉鎖』是嬰兒期常見的肝膽疾病，主要因『肝外總膽管』的『纖維化阻塞』導致膽汁無法排出。  
 - 此病通常在出生後數週內出現『黃疸』，且隨著病情惡化，可能在數月內進展至『肝硬化』。  
 - 罹病嬰兒的『大便顏色』會因缺乏膽汁而變為『淺黃』或『灰白便』，這是診斷的重要指標。  
 - 『葛西式手術』(Kasai operation)是治療膽道閉鎖的主要方法，應在診斷後的『60天內』進行，以提高成功率。  
 
 綜合以上知識，選項B的敘述是錯誤的。雖然『間接型黃疸』在出生後一週內上升，但其特徵並非『快速上升且必須加強照光』，而是持續存在且逐漸加重的黃疸。因此，正確的臨床表現應該是持續的黃疸，而非特定的加強照光需求。"
-26,"一位4週大的男嬰持續出現餵食後噴射狀吐奶(projectile vomiting),食慾正常且沒有發燒或腹瀉狀況,身體檢查在右上腹部區域可以觸摸到橄欖狀腫塊(olive mass),以下診斷何者最為正確?",(A)輪狀病毒引起的急性胃腸炎,"(B)正常之嬰兒溢奶現象,繼續觀察即可",(C)十二指腸閉鎖 (duodenal atresia),(D)嬰兒肥厚性幽門狹窄(infantile hypertrophic pyloric stenosis),D,四週大嬰兒、非膽汁性噴射狀吐奶(projectile vomiting)外加右上腹摸到橄欖狀腫塊(olive mass)，為肥厚性幽門狹窄的極經典教科書表現。,兒童消化疾病,,"📖 chatGPT 學長背景知識
+26,"一位4週大的男嬰持續出現餵食後噴射狀吐奶(projectile vomiting),食慾正常且沒有發燒或腹瀉狀況,身體檢查在右上腹部區域可以觸摸到橄欖狀腫塊(olive mass),以下診斷何者最為正確?",(A)輪狀病毒引起的急性胃腸炎,"(B)正常之嬰兒溢奶現象,繼續觀察即可",(C)十二指腸閉鎖 (duodenal atresia),(D)嬰兒肥厚性幽門狹窄(infantile hypertrophic pyloric stenosis),D,四週大嬰兒、非膽汁性噴射狀吐奶(projectile vomiting)外加右上腹摸到橄欖狀腫塊(olive mass)，為肥厚性幽門狹窄的極經典教科書表現。,兒童消化疾病,施相宏,"📖 chatGPT 學長背景知識
 
 在這道題目中，4週大的男嬰出現『噴射狀吐奶』及『橄欖狀腫塊』的症狀，這些特徵指向了嬰兒肥厚性幽門狹窄（infantile hypertrophic pyloric stenosis）。此病症通常在出生後3至12週內發生，主要因為幽門肌肉過度肥厚，導致食物無法順利通過胃部進入十二指腸，造成『持續性嘔吐』，且嘔吐物常為『噴射狀』。
 
 其他選項中，輪狀病毒引起的急性胃腸炎通常伴隨腹瀉和發燒，與本案例不符；正常嬰兒溢奶現象一般不會出現橄欖狀腫塊；而十二指腸閉鎖則會伴隨其他更明顯的症狀，如腹脹等。因此，根據臨床表現及檢查結果，最正確的診斷為嬰兒肥厚性幽門狹窄（選項D）。"
-27,"巨結腸症(Hirschsprung disease)是兒童下消化道阻塞的常見原因,其診斷特徵為直腸以上一段距離之大腸缺乏神經節細胞,下列敘述何者正確?","(A)若於新生兒時期發病,臨床表現包括超過48小時未解胎便並合併腹脹","(B)劑大腸攝影檢查(non-preparing megacolon series)可作為 Hirschsprung disease 的初步診斷工具,呈現異常擴張巨大結腸的部位,就是無神經節細胞的腸道,必須手術切除","(C)罹病幼兒會出現解便疼痛甚至出血,常見憋便(withholding)甚至發生遺便(fecal soiling)現象",(D)腹部超音波檢查出現典型的標靶病灶 (target lesion),A,(A)正確，新生兒發病通常在48小時內無法排出胎便。(B)大腸攝影檢查中，成窄縮狀(Transitional zone)的部位才是缺乏神經節細胞的地方，上游擴張部分反而有神經節。(C)為功能性便秘表現。(D)標靶病灶為腸套疊表徵。,兒童消化疾病,,"📖 chatGPT 學長背景知識  
+27,"巨結腸症(Hirschsprung disease)是兒童下消化道阻塞的常見原因,其診斷特徵為直腸以上一段距離之大腸缺乏神經節細胞,下列敘述何者正確?","(A)若於新生兒時期發病,臨床表現包括超過48小時未解胎便並合併腹脹","(B)劑大腸攝影檢查(non-preparing megacolon series)可作為 Hirschsprung disease 的初步診斷工具,呈現異常擴張巨大結腸的部位,就是無神經節細胞的腸道,必須手術切除","(C)罹病幼兒會出現解便疼痛甚至出血,常見憋便(withholding)甚至發生遺便(fecal soiling)現象",(D)腹部超音波檢查出現典型的標靶病灶 (target lesion),A,(A)正確，新生兒發病通常在48小時內無法排出胎便。(B)大腸攝影檢查中，成窄縮狀(Transitional zone)的部位才是缺乏神經節細胞的地方，上游擴張部分反而有神經節。(C)為功能性便秘表現。(D)標靶病灶為腸套疊表徵。,兒童消化疾病,施相宏,"📖 chatGPT 學長背景知識  
 巨結腸症（Hirschsprung disease）是一種由於『神經節細胞』缺乏而導致的先天性疾病，主要影響兒童的下消化道，造成『腸道阻塞』。此病通常在新生兒期被診斷，臨床表現包括『超過48小時未解胎便』及『腹脹』等症狀。
 
 在診斷方面，雖然大腸攝影檢查可以顯示腸道的擴張情況，但並非初步診斷的首選工具，因為確診通常需要『組織學檢查』來確認缺乏神經節細胞。罹病幼兒可能會出現『解便疼痛』、『憋便』及『遺便』等現象，這些都是由於腸道功能異常所引起的。
 
 腹部超音波檢查雖然可以提供一些資訊，但並不會顯示典型的『標靶病灶』，因此不具特異性。總結來說，選項A的描述最為正確，因為它符合巨結腸症的臨床表現及診斷特徵。"
-28,"二歲幼兒被帶來急診,母親主訴過去一兩天開始出現間隔約20分鐘的陣發性哭鬧(intermittent crying),最可能的診斷是下列何者?",(A)嬰兒腸絞痛 (infantile colic),(B)梅克爾憩室(Meckel diverticulum)合併潰瘍出血,(C)腸套疊(intussusception),(D)小腸扭轉(midgut volvulus),C,兩歲幼兒突發陣發性哭鬧(每10-20分鐘一次，為腸道間歇蠕動引起的絞痛表現)，臨床上高度懷疑小兒最常見的急性腹症之一：腸套疊(Intussusception)。後期常伴隨草莓果醬便(red currant jelly stool)。,兒童消化疾病,,"📖 chatGPT 學長背景知識  
+28,"二歲幼兒被帶來急診,母親主訴過去一兩天開始出現間隔約20分鐘的陣發性哭鬧(intermittent crying),最可能的診斷是下列何者?",(A)嬰兒腸絞痛 (infantile colic),(B)梅克爾憩室(Meckel diverticulum)合併潰瘍出血,(C)腸套疊(intussusception),(D)小腸扭轉(midgut volvulus),C,兩歲幼兒突發陣發性哭鬧(每10-20分鐘一次，為腸道間歇蠕動引起的絞痛表現)，臨床上高度懷疑小兒最常見的急性腹症之一：腸套疊(Intussusception)。後期常伴隨草莓果醬便(red currant jelly stool)。,兒童消化疾病,施相宏,"📖 chatGPT 學長背景知識  
 - 二歲幼兒出現『間隔性哭鬧』，通常與腹部不適有關。  
 - 常見的腹痛原因包括『腸絞痛』、腸道異常及『腸套疊』等。  
 - 『腸套疊』是指腸道的一部分滑入相鄰腸道，造成腸道阻塞，常見於幼兒。  
 
 在此案例中，幼兒的『陣發性哭鬧』持續約20分鐘，這種特徵性表現常見於『腸套疊』，因為疼痛通常是間歇性且劇烈，伴隨可能的嘔吐和腹部腫脹。相比之下，『嬰兒腸絞痛』通常在三個月以下的嬰兒中較為常見，且疼痛不會如此劇烈且持久。『梅克爾憩室』雖然可能導致出血，但其症狀通常不會以陣發性哭鬧表現。『小腸扭轉』雖然也會引起劇烈腹痛，但其發病機制和臨床表現與腸套疊有所不同。因此，根據症狀及年齡，最可能的診斷為『腸套疊』。"
-29,"以下關於急性膽囊炎的敘述,何者最不適當?","(A)約90%為急性結石性膽囊炎,因膽囊頸部或膽囊管阻塞造成",(B)急性非結石性膽囊炎主要的風險因子包括敗血症及喝酒。,(C)急性非結石性膽囊炎主要與缺血有關,(D)前列腺素(prostaglandin)的釋放與發炎有關。,B,急性非結石性膽囊炎(Acute acalculous cholecystitis)約佔10%，多由缺血(Ischemia)引發，風險因子包含嚴重創傷/燒傷、休克敗血症、多重器官衰竭、重度糖尿病。與酗酒無直接關聯。,肝膽胰病理學,,"📖 chatGPT 學長背景知識
+29,"以下關於急性膽囊炎的敘述,何者最不適當?","(A)約90%為急性結石性膽囊炎,因膽囊頸部或膽囊管阻塞造成",(B)急性非結石性膽囊炎主要的風險因子包括敗血症及喝酒。,(C)急性非結石性膽囊炎主要與缺血有關,(D)前列腺素(prostaglandin)的釋放與發炎有關。,B,急性非結石性膽囊炎(Acute acalculous cholecystitis)約佔10%，多由缺血(Ischemia)引發，風險因子包含嚴重創傷/燒傷、休克敗血症、多重器官衰竭、重度糖尿病。與酗酒無直接關聯。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識
 
 急性膽囊炎是膽囊的急性發炎，通常由膽結石引起，但也可能因其他因素導致。以下是急性膽囊炎的核心觀念：
 
@@ -246,13 +246,13 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 前列腺素的釋放在發炎過程中扮演重要角色，促進血流及炎症反應。
 
 綜合以上觀點，選項B提到的「急性非結石性膽囊炎主要的風險因子包括敗血症及喝酒」是不正確的。雖然敗血症確實是風險因子，但『喝酒』並不是急性非結石性膽囊炎的主要風險因子，這使得選項B最不適當。"
-30,"17歲女性,出現肝功能異常、腹水、脾臓腫大及手顫抖等現象,病人亦偶有精神症狀和行為異常。肝臟穿刺切片最可能出現下列何種變化?",(A)脂肪性肝炎(steatohepatitis)。,(B)periodic acid-Schiff (PAS)染色陽性的小球(globule)。,(C)銅離子沉積在肝細胞。,(D)非化膿性肝內膽管破壞(nonsuppurative destruction of intrahepatic bile duct),C,青少年發病、有慢性肝炎/肝硬化表現，並合併中樞運動控制受損(手顫抖)與行為異常，為典型的威爾遜氏症(Wilson Disease，ATP7B基因突變)。病理核心變化為過量銅離子沉積於多器官組織。,肝膽胰病理學,,"📖 chatGPT 學長背景知識  
+30,"17歲女性,出現肝功能異常、腹水、脾臓腫大及手顫抖等現象,病人亦偶有精神症狀和行為異常。肝臟穿刺切片最可能出現下列何種變化?",(A)脂肪性肝炎(steatohepatitis)。,(B)periodic acid-Schiff (PAS)染色陽性的小球(globule)。,(C)銅離子沉積在肝細胞。,(D)非化膿性肝內膽管破壞(nonsuppurative destruction of intrahepatic bile duct),C,青少年發病、有慢性肝炎/肝硬化表現，並合併中樞運動控制受損(手顫抖)與行為異常，為典型的威爾遜氏症(Wilson Disease，ATP7B基因突變)。病理核心變化為過量銅離子沉積於多器官組織。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識  
 本題描述的17歲女性患者出現的症狀包括『肝功能異常』、腹水、脾臓腫大及『手顫抖』，這些都可能與『威爾遜病』（Wilson's disease）有關。威爾遜病是一種遺傳性疾病，導致『銅』在體內過度積聚，特別是在肝臟和腦部，進而引發肝臟損傷及神經精神症狀。
 
 患者的『精神症狀』和『行為異常』也支持這一診斷，因為銅的沉積可影響中樞神經系統。肝臟穿刺切片中最可能觀察到的變化是『銅離子沉積在肝細胞』，這是威爾遜病的特徵性病理變化。其他選項如脂肪性肝炎、PAS染色陽性的小球及非化膿性肝內膽管破壞，雖然可能與其他肝病相關，但不符合本病例的臨床表現。
 
 因此，根據上述分析，正確答案為(C) 銅離子沉積在肝細胞。"
-31,"下列疾病與檢驗配對之敘述,何者最不適當?",(A)primary biliary cirrhosis 病人90%以上的病人有 anti-mitochondrial 抗體。,(B)antinuclear antibody (ANA)及 anti-smooth muscle antibody 為第一型自體免疫性肝炎的血清指標。,(C)第二型自體免疫性肝炎的血清指標為 anti-liver kidney microsomal antibodies(anti-LKM1)。,(D)約在65%的 primary sclerosing cholangititis 病人可檢測出 cytoplasmic antineutrophil cytoplasmic antibodies (CANCA)。,"A,D",本題申覆後送分修改答案為AD。(A)Primary biliary cirrhosis目前已更名為 Primary biliary cholangitis。(D)PSC(原發性硬化性膽管炎)的特異性循環抗體指標應為 pANCA (perinuclear ANCA)，而非 cANCA。,肝膽胰病理學,,"📖 chatGPT 學長背景知識  
+31,"下列疾病與檢驗配對之敘述,何者最不適當?",(A)primary biliary cirrhosis 病人90%以上的病人有 anti-mitochondrial 抗體。,(B)antinuclear antibody (ANA)及 anti-smooth muscle antibody 為第一型自體免疫性肝炎的血清指標。,(C)第二型自體免疫性肝炎的血清指標為 anti-liver kidney microsomal antibodies(anti-LKM1)。,(D)約在65%的 primary sclerosing cholangititis 病人可檢測出 cytoplasmic antineutrophil cytoplasmic antibodies (CANCA)。,"A,D",本題申覆後送分修改答案為AD。(A)Primary biliary cirrhosis目前已更名為 Primary biliary cholangitis。(D)PSC(原發性硬化性膽管炎)的特異性循環抗體指標應為 pANCA (perinuclear ANCA)，而非 cANCA。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識  
 在自體免疫性肝病中，正確的抗體檢測對於診斷及治療至關重要。以下是各選項的核心觀念：
 
 - 『primary biliary cirrhosis』(PBC) 的病人中，超過90%會檢測到『anti-mitochondrial antibody』，這是其特徵性標誌。
@@ -261,7 +261,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 然而，『primary sclerosing cholangitis』(PSC) 的病人中，約65%可檢測到的抗體是『perinuclear antineutrophil cytoplasmic antibodies (p-ANCA)』，而非『cytoplasmic antineutrophil cytoplasmic antibodies (c-ANCA)』。因此，選項D的描述不正確。
 
 綜合以上，最不適當的選項為D。"
-32,"下列有關""胰腺癌(pancreatic carcinoma)”的敘述,何者最不適當?",(A)病人可能會以疼痛或黄疸的症狀來表現。,(B)pancreatic cystic neoplasm 可能為其前驅病兆(precursor lesion),(C)BRCA2 mutations 與 familial pancreatic cancer 有關。,"(D)目前認為由 normal pancreas duct 到 pancreas invasive carcinoma 的 model,最早的變化是 -catenin gene mutation。",D,胰臟腺癌最早期的多步癌變模型變化是端粒縮短(Telomere shortening)與 KRAS 基因突變。-catenin 突變與肝細胞腺瘤(hepatocellular adenoma)發病相關。,肝膽胰病理學,,"📖 chatGPT 學長背景知識  
+32,"下列有關""胰腺癌(pancreatic carcinoma)”的敘述,何者最不適當?",(A)病人可能會以疼痛或黄疸的症狀來表現。,(B)pancreatic cystic neoplasm 可能為其前驅病兆(precursor lesion),(C)BRCA2 mutations 與 familial pancreatic cancer 有關。,"(D)目前認為由 normal pancreas duct 到 pancreas invasive carcinoma 的 model,最早的變化是 -catenin gene mutation。",D,胰臟腺癌最早期的多步癌變模型變化是端粒縮短(Telomere shortening)與 KRAS 基因突變。-catenin 突變與肝細胞腺瘤(hepatocellular adenoma)發病相關。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識  
 胰腺癌是一種高度惡性的腫瘤，通常在診斷時已經進展到晚期，且其病因與多種遺傳及環境因素有關。
 
 - 胰腺癌的常見症狀包括『疼痛』和『黃疸』，這是因為腫瘤可能壓迫膽管或引起周圍組織的炎症。
@@ -269,7 +269,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - BRCA2基因突變與『家族性胰腺癌』有關，這表明遺傳因素在某些患者中扮演重要角色。
 
 然而，選項D提到的從『正常胰腺導管』到『胰腺侵襲性癌』的模型，最早的變化是『β-catenin基因突變』，這一說法並不正確。胰腺癌的發展通常涉及多個基因的突變，包括KRAS、TP53等，而β-catenin突變在胰腺癌中的角色並不如在其他癌症（如結腸癌）中明顯。因此，選項D的描述最不適當。"
-33,"以下關於”病毒性肝炎”的敘述,何者最不適當?","(A)當 B 型肝炎病患出現 Anti-HBe antibody 時,通常代表 active viral replication。","(B)C 型肝炎病患常以慢性肝炎表現,慢性 C 型肝炎病患血中之 HCV RNA 通常會持續出現。","(C)A 型肝炎大部分是 self-limited disease,很少造成 fulminant hepatitis。","(D)E 型肝炎病毒常是造成旅行者肝炎(traveler hepatitis)的元凶,並且懷孕婦女感染有將近 20% 的 死亡率。",A,在 B 肝血清標記中，代表病毒高量主動複製/具高傳染性的指標是 HBeAg、HBV DNA。而 Anti-HBe 抗體的出現，代表急性發炎期已過、複製活躍度正在減弱衰退(on the wane)。,肝膽胰病理學,,"📖 chatGPT 學長背景知識
+33,"以下關於”病毒性肝炎”的敘述,何者最不適當?","(A)當 B 型肝炎病患出現 Anti-HBe antibody 時,通常代表 active viral replication。","(B)C 型肝炎病患常以慢性肝炎表現,慢性 C 型肝炎病患血中之 HCV RNA 通常會持續出現。","(C)A 型肝炎大部分是 self-limited disease,很少造成 fulminant hepatitis。","(D)E 型肝炎病毒常是造成旅行者肝炎(traveler hepatitis)的元凶,並且懷孕婦女感染有將近 20% 的 死亡率。",A,在 B 肝血清標記中，代表病毒高量主動複製/具高傳染性的指標是 HBeAg、HBV DNA。而 Anti-HBe 抗體的出現，代表急性發炎期已過、複製活躍度正在減弱衰退(on the wane)。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識
 
 病毒性肝炎是由不同病毒引起的肝臟炎症，主要包括 A、B、C、D、E 型肝炎。每種肝炎的臨床表現、傳播途徑及預後均有所不同。
 
@@ -279,7 +279,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - E 型肝炎：常見於旅行者，特別是在衛生條件不佳的地區，對孕婦的影響確實嚴重，死亡率可達 20%。
 
 綜合以上分析，選項 (A) 是最不適當的敘述，因為它誤解了『Anti-HBe antibody』的意義，應該是指示病毒複製減少，而非活躍。"
-34,"以下關於""Circulatory disorder of liver”的敘述,何者最不適當?","(A)Nutmeg liver 與 systemic circulatory compromise 有關,其病理特徵是 centrilobular hemorrhagic necrosis。","(B)Hepatic artery compromise 會造成 Budd-Chiari syndrome,臨床症狀通常與 increased hepatic blood pressure 有關。","(C)Sinusoidal obstruction syndrome 可見到 sinusoidal endothelium injury,並可能發生 necrosis of perivenular hepatocytes。",(D)Impaired blood flow through the liver 最常見之原因是 liver cirrhosis.,B,Budd-Chiari syndrome 是指「肝靜脈(Hepatic vein)」或其出口下腔靜脈發生阻塞导致血液回流受阻，進而造成肝臟充血腫大、門脈高壓與腹水，與 Hepatic artery compromise 無關。,肝膽胰病理學,,"📖 chatGPT 學長背景知識  
+34,"以下關於""Circulatory disorder of liver”的敘述,何者最不適當?","(A)Nutmeg liver 與 systemic circulatory compromise 有關,其病理特徵是 centrilobular hemorrhagic necrosis。","(B)Hepatic artery compromise 會造成 Budd-Chiari syndrome,臨床症狀通常與 increased hepatic blood pressure 有關。","(C)Sinusoidal obstruction syndrome 可見到 sinusoidal endothelium injury,並可能發生 necrosis of perivenular hepatocytes。",(D)Impaired blood flow through the liver 最常見之原因是 liver cirrhosis.,B,Budd-Chiari syndrome 是指「肝靜脈(Hepatic vein)」或其出口下腔靜脈發生阻塞导致血液回流受阻，進而造成肝臟充血腫大、門脈高壓與腹水，與 Hepatic artery compromise 無關。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識  
 肝臟的循環障礙是多種病理狀況的結果，涉及血流的減少或阻塞，可能導致肝臟功能受損。以下是對選項的綜合性分析：
 
 - 『Nutmeg liver』是由於『全身性循環不良』所引起，特徵為『centrilobular hemorrhagic necrosis』，這是正確的描述。
@@ -288,7 +288,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『肝硬化』確實是造成肝臟血流受阻的常見原因，這一點也正確。
 
 因此，選項B是最不適當的敘述，因為它錯誤地將Budd-Chiari syndrome的病因歸因於肝動脈的問題，而實際上是靜脈的阻塞所致。"
-35,"下列關於”肝臟惡性腫瘤”的敘述,何者最不適當?","(A)肝細胞腺瘤(hepatocellular adenoma)為肝細胞癌(hepatocellular carcinoma)的 precursor lesion,尤其是有ẞ-catenin-activating mutation 的類型。","(B)遺傳性血鐵沉著症(hereditary hemochromatosis)與酒精性肝病變(alcoholic liver disease)的病人,死因可能是肝細胞癌。","(C)肝細胞癌的病人血清會有甲型胎兒球蛋白(a-fetoprotein)升高之表現,因此很適合用來當成篩檢 肝癌的工具。",(D)最常發生於肝臟之腫瘤是轉移性惡性腫瘤(metastasis)。,C,甲型胎兒球蛋白(AFP)在早期小肝癌中敏感度差，多於進展期(advanced disease)明顯升高，故臨床上不適合作為單一、獨立的早期篩檢工具。,肝膽胰病理學,,"📖 chatGPT 學長背景知識
+35,"下列關於”肝臟惡性腫瘤”的敘述,何者最不適當?","(A)肝細胞腺瘤(hepatocellular adenoma)為肝細胞癌(hepatocellular carcinoma)的 precursor lesion,尤其是有ẞ-catenin-activating mutation 的類型。","(B)遺傳性血鐵沉著症(hereditary hemochromatosis)與酒精性肝病變(alcoholic liver disease)的病人,死因可能是肝細胞癌。","(C)肝細胞癌的病人血清會有甲型胎兒球蛋白(a-fetoprotein)升高之表現,因此很適合用來當成篩檢 肝癌的工具。",(D)最常發生於肝臟之腫瘤是轉移性惡性腫瘤(metastasis)。,C,甲型胎兒球蛋白(AFP)在早期小肝癌中敏感度差，多於進展期(advanced disease)明顯升高，故臨床上不適合作為單一、獨立的早期篩檢工具。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識
 
 肝臟惡性腫瘤的相關知識包括肝細胞癌的病因、病理及其臨床表現。以下是對題目中選項的綜合性詳解：
 
@@ -298,7 +298,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『轉移性惡性腫瘤』是肝臟最常見的腫瘤類型，這一點在臨床上得到廣泛認可。
 
 綜合以上分析，選項C的敘述最不適當，因為雖然AFP升高與肝細胞癌相關，但其作為篩檢工具的有效性受到質疑。"
-36,"下列關於”膽汁淤積肝病(cholestatic liver disease)”的敘述,何者最不適當?","(A)成人最常見的 large bile duct obstruction 的原因是結石,長期下來可能會引起肝硬化(cirrhosis)。","(B)膽道阻塞所引起的新生兒病理性黄疸,以肝外膽道閉鎖(extrahepatic biliary atresia)為主,病人可能因此必須接受肝臟移植。","(C)肝硬化與膽道阻塞所引起的膽汁淤積肝病或黃疸,是以非結合性高膽紅素血症( Unconjugated hyperbilirubinemia)表現為主。","(D)敗血症的病人,其肝臟切片可見 portal-parenchymal interface 有 bile plugs 伴隨輕微的發炎。",C,肝硬化、膽道發炎阻塞所引起的膽汁淤積黃疸，是以「結合性高膽紅素血症(Conjugated / Direct hyperbilirubinemia)」表現為主。非結合性通常是溶血或先天轉移障礙(如Gilbert症)引起。,肝膽胰病理學,,"📖 chatGPT 學長背景知識  
+36,"下列關於”膽汁淤積肝病(cholestatic liver disease)”的敘述,何者最不適當?","(A)成人最常見的 large bile duct obstruction 的原因是結石,長期下來可能會引起肝硬化(cirrhosis)。","(B)膽道阻塞所引起的新生兒病理性黄疸,以肝外膽道閉鎖(extrahepatic biliary atresia)為主,病人可能因此必須接受肝臟移植。","(C)肝硬化與膽道阻塞所引起的膽汁淤積肝病或黃疸,是以非結合性高膽紅素血症( Unconjugated hyperbilirubinemia)表現為主。","(D)敗血症的病人,其肝臟切片可見 portal-parenchymal interface 有 bile plugs 伴隨輕微的發炎。",C,肝硬化、膽道發炎阻塞所引起的膽汁淤積黃疸，是以「結合性高膽紅素血症(Conjugated / Direct hyperbilirubinemia)」表現為主。非結合性通常是溶血或先天轉移障礙(如Gilbert症)引起。,肝膽胰病理學,韋又菁,"📖 chatGPT 學長背景知識  
 膽汁淤積肝病是由於膽汁流動受阻，導致膽紅素及其他膽汁成分在肝臟及血液中積聚。以下是與題目相關的核心觀念：
 
 - 『膽道阻塞』可由多種原因引起，包括結石、腫瘤或先天性異常。
@@ -308,7 +308,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 在敗血症患者中，肝臟切片可見『膽栓』(bile plugs)及輕微發炎，這是膽汁淤積的表現之一。
 
 綜合以上觀念，選項C的描述不正確，因為膽道阻塞所引起的膽汁淤積肝病主要表現為『結合性高膽紅素血症』，而非『非結合性高膽紅素血症』。因此，選項C是最不適當的敘述。"
-37,"圖是一個慢性膽囊炎的病理切片,請問箭頭所指的病理特徵為何?",(A)Perineural invasion。,(B)Rokitansky-Aschoff sinuses。,(C)Cholesterolosis.,(D)Mallory hyaline。,C,(本題原考點對應顯微鏡下的 Cholesterolosis，即吞噬了大量膽固醇的巨噬細胞聚集在 lamina propria，呈現典型的泡沫狀/泡泡狀細胞型態組合群)。,病理學實驗：肝膽胰病理,,"📖 chatGPT 學長背景知識  
+37,"圖是一個慢性膽囊炎的病理切片,請問箭頭所指的病理特徵為何?",(A)Perineural invasion。,(B)Rokitansky-Aschoff sinuses。,(C)Cholesterolosis.,(D)Mallory hyaline。,C,(本題原考點對應顯微鏡下的 Cholesterolosis，即吞噬了大量膽固醇的巨噬細胞聚集在 lamina propria，呈現典型的泡沫狀/泡泡狀細胞型態組合群)。,病理學實驗：肝膽胰病理,韋又菁,"📖 chatGPT 學長背景知識  
 慢性膽囊炎是一種常見的膽囊疾病，通常由膽結石引起，導致膽囊壁的慢性炎症。病理切片中可見多種特徵，以下是相關的核心觀念：
 
 - 『Rokitansky-Aschoff sinuses』：這是慢性膽囊炎的特徵性病理變化，指膽囊壁的腺體向內突入形成的囊腫，通常與膽囊的慢性炎症有關。
@@ -317,7 +317,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『Mallory hyaline』：這是肝細胞內的病理變化，通常見於肝臟疾病，與膽囊炎無直接關聯。
 
 根據上述分析，箭頭所指的病理特徵最可能是『Rokitansky-Aschoff sinuses』，因為這是慢性膽囊炎的典型病理表現，與其他選項相比，最能反映該病的病理特徵。"
-38,"圖是 hepatocellular carcinoma 的病理切片,""箭號""所指的病理特徵通常代表預後不佳,請問此病理特徵為何?",(A)Nuclear pleomorphism,(B)Pseudoglanular formation,(C)Increased N/C ratio,(D)Vascular invasion。,D,切片中可見惡性腫瘤細胞成團直接侵犯侵入大血管壁空間內，此病理變化為「血管侵犯(Vascular invasion/Portal vein invasion)」，臨床上與血行轉移高度相關，代表預後差。,病理學實驗：肝膽胰病理,,"📖 chatGPT 學長背景知識
+38,"圖是 hepatocellular carcinoma 的病理切片,""箭號""所指的病理特徵通常代表預後不佳,請問此病理特徵為何?",(A)Nuclear pleomorphism,(B)Pseudoglanular formation,(C)Increased N/C ratio,(D)Vascular invasion。,D,切片中可見惡性腫瘤細胞成團直接侵犯侵入大血管壁空間內，此病理變化為「血管侵犯(Vascular invasion/Portal vein invasion)」，臨床上與血行轉移高度相關，代表預後差。,病理學實驗：肝膽胰病理,韋又菁,"📖 chatGPT 學長背景知識
 
 肝細胞癌（hepatocellular carcinoma, HCC）是最常見的原發性肝癌，其病理特徵對預後有重要影響。以下是與題目相關的核心觀念：
 
@@ -327,7 +327,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『血管侵犯』(Vascular invasion)：腫瘤細胞侵入血管，這是HCC中最具預後意義的特徵之一，與腫瘤的轉移風險和生存率密切相關。
 
 綜合以上，血管侵犯是HCC中最重要的預後不良指標，因為它直接與腫瘤的擴散和轉移有關。因此，正確答案為(D) Vascular invasion。"
-39,"有一名72歲男性患有腹部腫瘤,並接受了腫瘤切除,圖是病理切片的結果(包括正常組織與腫瘤部分),請問你的診斷是什麼?",(A)cholangiocarcinoma。,(B)hepatocellular carcinoma.,(C)ductal adenocarcinoma。,(D)gastrointestinal stromal tumor,送分,本題因出題原稿遺漏了對照器官的正常組織切片圖片，致使考生難以百分之百與常見的轉移性/胰管腺癌區分，經學生集體申覆後，韋又菁老師同意本題一律給予「送分」處理。,病理學實驗：肝膽胰病理,,"📖 chatGPT 學長背景知識
+39,"有一名72歲男性患有腹部腫瘤,並接受了腫瘤切除,圖是病理切片的結果(包括正常組織與腫瘤部分),請問你的診斷是什麼?",(A)cholangiocarcinoma。,(B)hepatocellular carcinoma.,(C)ductal adenocarcinoma。,(D)gastrointestinal stromal tumor,送分,本題因出題原稿遺漏了對照器官的正常組織切片圖片，致使考生難以百分之百與常見的轉移性/胰管腺癌區分，經學生集體申覆後，韋又菁老師同意本題一律給予「送分」處理。,病理學實驗：肝膽胰病理,韋又菁,"📖 chatGPT 學長背景知識
 
 在診斷腹部腫瘤時，需考慮患者的年齡、腫瘤的組織學特徵及臨床表現。72歲男性患者的腫瘤切除病理切片結果可能涉及以下幾種腫瘤類型：
 
@@ -337,7 +337,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『腸道間質瘤』(gastrointestinal stromal tumor)：源自腸道間質細胞，通常表現為腸道腫瘤，病理特徵包括特定的免疫組織化學標記。
 
 根據患者年齡及腫瘤的常見性，『肝細胞癌』(B)是最可能的診斷，特別是在有肝病史的患者中。其他選項雖然可能，但在這個年齡層及臨床背景下，肝細胞癌的機率較高。"
-40,"45歲女性主訴進食油膩食物後出現右上腹痛,疼痛持續逾8小時,伴隨噁心與嘔吐。理學檢查發現右上腹壓痛與 Murphy's sign 陽性,體溫為 38.3℃,抽血顯示白血球升高。下列何者為此患者的診斷工具與治療時機的最佳組合?","(A)腹部電腦斷層評估,保守治療一週後再考慮手術治療","(B)腹部超音波診斷,48小時內安排膽囊切除手術","(C)上消化道內視鏡診斷,24小時內安排膽囊切除手術","(D)核醫膽囊攝影診斷,先給予抗生素評估發燒是否改善,之後再決定是否需要手術治療",B,病患症狀完全符合急性膽囊炎(Acute cholecystitis)表現。臨床首選影像診斷工具為「腹部超音波」；目前的標準治療指南建議應在發作早期(通常在48-72小時內)儘早安排早期膽囊切除手術治療。,腹部常見症狀(含急性腹痛),,"📖 chatGPT 學長背景知識  
+40,"45歲女性主訴進食油膩食物後出現右上腹痛,疼痛持續逾8小時,伴隨噁心與嘔吐。理學檢查發現右上腹壓痛與 Murphy's sign 陽性,體溫為 38.3℃,抽血顯示白血球升高。下列何者為此患者的診斷工具與治療時機的最佳組合?","(A)腹部電腦斷層評估,保守治療一週後再考慮手術治療","(B)腹部超音波診斷,48小時內安排膽囊切除手術","(C)上消化道內視鏡診斷,24小時內安排膽囊切除手術","(D)核醫膽囊攝影診斷,先給予抗生素評估發燒是否改善,之後再決定是否需要手術治療",B,病患症狀完全符合急性膽囊炎(Acute cholecystitis)表現。臨床首選影像診斷工具為「腹部超音波」；目前的標準治療指南建議應在發作早期(通常在48-72小時內)儘早安排早期膽囊切除手術治療。,腹部常見症狀(含急性腹痛),王俊偉,"📖 chatGPT 學長背景知識  
 本題描述的患者症狀符合『膽囊炎』的典型表現，特別是進食油膩食物後出現的『右上腹痛』、『噁心』、『嘔吐』及『Murphy's sign』陽性。這些症狀提示膽囊可能存在炎症或結石。
 
 在診斷工具方面，『腹部超音波』是評估膽囊問題的首選，因其無創、快速且能有效檢查膽結石及膽囊炎的情況。根據臨床指引，對於急性膽囊炎患者，應在確診後48小時內安排『膽囊切除手術』，以降低併發症風險並改善預後。
@@ -345,7 +345,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 其他選項如腹部電腦斷層雖可提供詳細影像，但通常不作為初步診斷工具；上消化道內視鏡不適用於膽囊問題；核醫膽囊攝影則較少用於急性情況，且需先給予抗生素的做法不符合急性膽囊炎的治療原則。
 
 因此，最佳的診斷工具與治療時機組合為選項(B)：腹部超音波診斷，48小時內安排膽囊切除手術。"
-41,"68歲男性因反覆嘔吐與腹脹就醫,近3天無排氣和排便。約10年前他曾經接受過腹部手術,腹部聽診有高頻金屬音,X-ray 顯示多個腸道內氣液平面(air-fluid levels)。若無併發症。下列何者為首選處置?",(A)立即手術切除腸段,(B)靜脈輸液、腸胃減壓與觀察,(C)低劑量止痛藥與口服瀉劑,(D)安排腹部磁振造影檢查以排除腹腔內器質性病變,B,病患表現為典型腸阻塞(Small bowel obstruction)，最可能由10年前手術沾黏引起。在「無腸道缺血、壞死、穿孔等嚴重併發症」的黃金原則前提下，首選一線處置為保守支持治療：Bowel rest (禁食)、積極靜脈輸液補水與放置鼻胃管進行胃腸減壓，並同步進行嚴密臨床觀察。,腹部常見症狀(含急性腹痛),,"📖 chatGPT 學長背景知識  
+41,"68歲男性因反覆嘔吐與腹脹就醫,近3天無排氣和排便。約10年前他曾經接受過腹部手術,腹部聽診有高頻金屬音,X-ray 顯示多個腸道內氣液平面(air-fluid levels)。若無併發症。下列何者為首選處置?",(A)立即手術切除腸段,(B)靜脈輸液、腸胃減壓與觀察,(C)低劑量止痛藥與口服瀉劑,(D)安排腹部磁振造影檢查以排除腹腔內器質性病變,B,病患表現為典型腸阻塞(Small bowel obstruction)，最可能由10年前手術沾黏引起。在「無腸道缺血、壞死、穿孔等嚴重併發症」的黃金原則前提下，首選一線處置為保守支持治療：Bowel rest (禁食)、積極靜脈輸液補水與放置鼻胃管進行胃腸減壓，並同步進行嚴密臨床觀察。,腹部常見症狀(含急性腹痛),王俊偉,"📖 chatGPT 學長背景知識  
 - 本題患者為68歲男性，主訴『反覆嘔吐』與『腹脹』，且近3天無『排氣』和『排便』，提示可能存在腸道梗阻。  
 - 腹部聽診發現『高頻金屬音』，這是腸道活動增加的表現，通常見於腸道梗阻。  
 - X-ray顯示『氣液平面』，進一步支持腸道梗阻的診斷。  
@@ -354,14 +354,14 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 低劑量止痛藥與口服瀉劑不適合，因為可能會延遲診斷或加重病情。  
 - 腹部磁振造影檢查雖可提供更多資訊，但在無併發症的情況下，並非首選處置。  
 因此，正確答案為(B)靜脈輸液、腸胃減壓與觀察。"
-42,"35 歲女性主訴右下腹疼痛已有6個月,無便秘、腹瀉或與進食關聯的症狀,咳嗽或起身時痛感會加劇。理學檢查發現局部有可觸痛點。最可能的診斷為何?",(A)急性盲腸炎(acute appendicitis),(B)大腸激躁症(irritable bowel syndrome),(C)急性大腸憩室炎(acute diverticulitis),(D)前腹部皮神經擠壓症(anterior cutaneous nerve entrapment),D,疼痛長達 6 個月，且與進食、排便等腸道蠕動功能完全無關，但局部有明顯壓痛點，並與動作、起身、咳嗽等造成腹壁張力增加的「身體運動」清晰連動相關，符合典型前腹部皮神經擠壓症(ACNES)的診斷。,腹部常見症狀(含急性腹痛),,"📖 chatGPT 學長背景知識  
+42,"35 歲女性主訴右下腹疼痛已有6個月,無便秘、腹瀉或與進食關聯的症狀,咳嗽或起身時痛感會加劇。理學檢查發現局部有可觸痛點。最可能的診斷為何?",(A)急性盲腸炎(acute appendicitis),(B)大腸激躁症(irritable bowel syndrome),(C)急性大腸憩室炎(acute diverticulitis),(D)前腹部皮神經擠壓症(anterior cutaneous nerve entrapment),D,疼痛長達 6 個月，且與進食、排便等腸道蠕動功能完全無關，但局部有明顯壓痛點，並與動作、起身、咳嗽等造成腹壁張力增加的「身體運動」清晰連動相關，符合典型前腹部皮神經擠壓症(ACNES)的診斷。,腹部常見症狀(含急性腹痛),王俊偉,"📖 chatGPT 學長背景知識  
 - 患者年齡：『35歲』女性  
 - 症狀：『右下腹疼痛』持續『6個月』，無『便秘』、『腹瀉』或與『進食』相關的症狀  
 - 疼痛特徵：『咳嗽』或『起身』時疼痛加劇  
 - 理學檢查：局部有『可觸痛點』  
 
 根據患者的症狀及檢查結果，最可能的診斷為『前腹部皮神經擠壓症』。此症狀通常與腹部的神經受壓有關，特別是在腹部活動或改變姿勢時，疼痛可能會加劇。相較於其他選項，急性盲腸炎及急性大腸憩室炎通常伴隨急性發作的症狀，且多數會有消化道症狀如發燒或食慾不振；而大腸激躁症則多為功能性疾病，症狀與排便有關，與本案例不符。綜合考量，患者的持續性疼痛及觸痛點更符合前腹部皮神經擠壓症的特徵。"
-43,"72歲男性有心房顫動(atrial fibrillation)病史,主訴突發性中上腹劇痛。但理學檢查僅有輕微壓痛,沒有反彈痛或腹部肌肉緊繃。抽血檢驗發現白血球以及乳酸(lactate)數值升高。下列何者為最適合的診斷工具?",(A)腹部X光,(B)腹部超音波,(C)腹部電腦斷層血管攝影(abdominal CT angiography),(D)腹部磁振造影,C,「突發中上腹劇痛，然而理學檢查壓痛卻微乎其微(Pain out of proportion to physical exam)」外加心房顫動病史(易甩出血栓)，抽血乳酸堆積上升，是急性急性腸繫膜缺血(Acute mesenteric ischemia)的超級魔王級死穴表現。必須立刻安排「腹部電腦斷層血管攝影(CTA)」尋找血栓栓塞位置以利緊急救命。,腹部常見症狀(含急性腹痛),,"📖 chatGPT 學長背景知識  
+43,"72歲男性有心房顫動(atrial fibrillation)病史,主訴突發性中上腹劇痛。但理學檢查僅有輕微壓痛,沒有反彈痛或腹部肌肉緊繃。抽血檢驗發現白血球以及乳酸(lactate)數值升高。下列何者為最適合的診斷工具?",(A)腹部X光,(B)腹部超音波,(C)腹部電腦斷層血管攝影(abdominal CT angiography),(D)腹部磁振造影,C,「突發中上腹劇痛，然而理學檢查壓痛卻微乎其微(Pain out of proportion to physical exam)」外加心房顫動病史(易甩出血栓)，抽血乳酸堆積上升，是急性急性腸繫膜缺血(Acute mesenteric ischemia)的超級魔王級死穴表現。必須立刻安排「腹部電腦斷層血管攝影(CTA)」尋找血栓栓塞位置以利緊急救命。,腹部常見症狀(含急性腹痛),王俊偉,"📖 chatGPT 學長背景知識  
 - 患者年齡：72歲男性  
 - 病史：『心房顫動』  
 - 主訴：『突發性中上腹劇痛』  
@@ -369,18 +369,18 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 血液檢查：『白血球』及『乳酸』數值升高  
 
 在此案例中，患者的劇痛及血液檢查結果提示可能存在『腹部缺血』或『腸道缺血』的情況，尤其考慮到其心房顫動病史，這可能導致『血栓形成』，進而引發腸道缺血。腹部電腦斷層血管攝影（CT angiography）是一種高敏感度的影像學檢查，能夠有效評估腹部血管的狀況，檢測是否有血栓或血流受阻的情況，並且能夠快速提供診斷信息。相比之下，腹部X光及超音波的診斷能力較為有限，而腹部磁振造影則不如CT在急性情況下的應用普遍。因此，對於此患者的情況，最適合的診斷工具為(C)腹部電腦斷層血管攝影。"
-44,"一位50歲女性因3個月來反覆出現餐後飽脹、噁心、體重輕微下降及間歇性嘔吐未消化食物而來門診就醫。她本身有第2型糖尿病病史已10年,近期血糖控制不佳(HbA1c: 9.2%),她否認服用鴉片類藥物或曾接受過腹部手術,腹部理學檢查無明顯異常,肝腎功能皆正常。請問下列哪一項檢查最有助於確立診斷?",(A)腹部超音波,(B)上消化道鋇劑攝影(UGI series),(C)胃排空閃爍攝影(Gastric emptying scintigraphy),(D)小腸內視鏡檢查,"B,C",本題經申覆後修改為BC均給分。(C) 糖尿病10年且血糖控制差、嘔吐未消化食物，高度懷疑功能性胃輕癱，胃排空閃爍攝影是確認胃排空速度變慢的國際標準黃金 test。然而，針對慢性嘔吐未消化食物且伴隨體重下降的患者，臨床第一步需要先安排(B)上消化道鋇劑攝影或胃鏡等排除結構性阻塞問題，王俊偉老師判定申覆合理，兩者均給分。,胃腸道蠕動異常疾病,,"📖 chatGPT 學長背景知識  
+44,"一位50歲女性因3個月來反覆出現餐後飽脹、噁心、體重輕微下降及間歇性嘔吐未消化食物而來門診就醫。她本身有第2型糖尿病病史已10年,近期血糖控制不佳(HbA1c: 9.2%),她否認服用鴉片類藥物或曾接受過腹部手術,腹部理學檢查無明顯異常,肝腎功能皆正常。請問下列哪一項檢查最有助於確立診斷?",(A)腹部超音波,(B)上消化道鋇劑攝影(UGI series),(C)胃排空閃爍攝影(Gastric emptying scintigraphy),(D)小腸內視鏡檢查,"B,C",本題經申覆後修改為BC均給分。(C) 糖尿病10年且血糖控制差、嘔吐未消化食物，高度懷疑功能性胃輕癱，胃排空閃爍攝影是確認胃排空速度變慢的國際標準黃金 test。然而，針對慢性嘔吐未消化食物且伴隨體重下降的患者，臨床第一步需要先安排(B)上消化道鋇劑攝影或胃鏡等排除結構性阻塞問題，王俊偉老師判定申覆合理，兩者均給分。,胃腸道蠕動異常疾病,王俊偉,"📖 chatGPT 學長背景知識  
 - 患者年齡：50歲女性  
 - 症狀：餐後『飽脹』、『噁心』、『體重下降』、『間歇性嘔吐』  
 - 既往病史：第2型『糖尿病』、血糖控制不佳  
 - 檢查結果：腹部理學檢查無異常，肝腎功能正常  
 
 根據患者的症狀，最可能的診斷是『胃排空延遲』，這在糖尿病患者中相對常見，稱為『糖尿病性胃輕癱』。此病症會導致食物在胃中停留過久，造成餐後不適及嘔吐。雖然腹部超音波和上消化道鋇劑攝影可以排除其他結構性病變，但無法有效評估胃排空情況。小腸內視鏡檢查則主要用於檢查小腸病變，對於胃排空問題的診斷幫助有限。因此，『胃排空閃爍攝影』是最合適的檢查，能夠直接評估胃的排空功能，確立診斷。選擇(C)胃排空閃爍攝影最能幫助確立診斷。"
-45,"32歲男性主訴過去6個月反覆出現腹痛與腹瀉,症狀通常在排便後緩解,他每日大便次數約4-5次,為糊狀,常合併腹脹感,但無夜間腹瀉、體重下降或血便,他表示最近工作壓力較大,並常喝含糖飲料與冰牛奶。理學檢查與抽血、糞便潛血檢查結果皆正常。請問下列何者為此病人最適當的初步處置?",(A)開立廣效型抗生素以排除感染性腸炎,(B)建議低FODMAP 飲食與壓力管理,(C)安排大腸鏡以排除器質性病變,(D)開始口服類固醇以抑制腸道發炎反應,B,患者症狀完全符合 Rome IV Irritable bowel syndrome (大腸激躁症，IBS) 的特徵：腹痛、便後緩解、無夜間腹瀉、無紅字警訊(體重下降或血便)，且工作壓力大。初步處置應選擇低侵入性且最安全有效的「低FODMAP飲食調整與壓力調適管理」。,胃腸道蠕動異常疾病,,"📖 chatGPT 學長背景知識  
+45,"32歲男性主訴過去6個月反覆出現腹痛與腹瀉,症狀通常在排便後緩解,他每日大便次數約4-5次,為糊狀,常合併腹脹感,但無夜間腹瀉、體重下降或血便,他表示最近工作壓力較大,並常喝含糖飲料與冰牛奶。理學檢查與抽血、糞便潛血檢查結果皆正常。請問下列何者為此病人最適當的初步處置?",(A)開立廣效型抗生素以排除感染性腸炎,(B)建議低FODMAP 飲食與壓力管理,(C)安排大腸鏡以排除器質性病變,(D)開始口服類固醇以抑制腸道發炎反應,B,患者症狀完全符合 Rome IV Irritable bowel syndrome (大腸激躁症，IBS) 的特徵：腹痛、便後緩解、無夜間腹瀉、無紅字警訊(體重下降或血便)，且工作壓力大。初步處置應選擇低侵入性且最安全有效的「低FODMAP飲食調整與壓力調適管理」。,胃腸道蠕動異常疾病,王俊偉,"📖 chatGPT 學長背景知識  
 本題患者為32歲男性，主訴反覆腹痛與腹瀉，症狀在排便後緩解，且伴隨腹脹感。重要的是，患者無夜間腹瀉、體重下降或血便，這些特徵提示非器質性病變的可能性較高。考慮到患者的生活壓力增加及飲食習慣（如常喝含糖飲料與冰牛奶），這可能導致『腸道功能失調』或『食物不耐受』，尤其是乳糖不耐受或FODMAP（發酵性寡糖、雙糖、單糖及多元醇）引起的症狀。
 
 在此情況下，初步處置應以『飲食調整』及『壓力管理』為主，這不僅能改善症狀，還能避免不必要的藥物使用或侵入性檢查。選項B建議的低FODMAP飲食能有效減少腸道不適，並且壓力管理有助於改善腸道功能。因此，選擇B作為最適當的初步處置。"
-46,"有關代謝減重手術(metabolic-bariatric surgery)的描述,下列何者為非?","(A)是治療重度肥胖(severe obesity)最有效率的方式,其兩年的總體重減輕(total weight loss)普遍可達20-25%以上","(B)Whipple procedure 後若發生POPF,其衍生出的出血常是因為 gastro-duodenal artery(GDA)發生 pseudoaneurysm 破裂所致,死亡率極高",(C)相關的危險因子包括胰臟組織過軟以及胰管過細等,(D)發生胰漏的病人建議立即接受手術處理,D,減重手術目前核准並證實主要能用來緩解/治療第二型糖尿病（Type 2 DM），而非第一型糖尿病。其餘選項皆符合現行肥胖與減重外科指南。,微創手術之最新進展(含胃減重手術),,"📖 chatGPT 學長背景知識  
+46,"有關代謝減重手術(metabolic-bariatric surgery)的描述,下列何者為非?","(A)是治療重度肥胖(severe obesity)最有效率的方式,其兩年的總體重減輕(total weight loss)普遍可達20-25%以上","(B)Whipple procedure 後若發生POPF,其衍生出的出血常是因為 gastro-duodenal artery(GDA)發生 pseudoaneurysm 破裂所致,死亡率極高",(C)相關的危險因子包括胰臟組織過軟以及胰管過細等,(D)發生胰漏的病人建議立即接受手術處理,D,減重手術目前核准並證實主要能用來緩解/治療第二型糖尿病（Type 2 DM），而非第一型糖尿病。其餘選項皆符合現行肥胖與減重外科指南。,微創手術之最新進展(含胃減重手術),張博智,"📖 chatGPT 學長背景知識  
 代謝減重手術是針對『重度肥胖』的有效治療方式，能顯著改善相關的代謝疾病。以下是對題目中選項的綜合解析：
 
 1. 代謝減重手術的『總體重減輕』效果通常在兩年內可達20-25%以上，這一點是正確的，故(A)選項描述正確。
@@ -389,7 +389,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 4. 對於發生胰漏的病人，雖然有時需要手術處理，但並非所有情況下都建議立即手術，應根據病情評估，故(D)選項為非。
 
 綜合以上分析，正確答案為(D)。"
-47,"有關腸缺乏神經節細胞(巨結腸症)之大腸敘述,下列何者正確?","(A)若於新生兒時期發病,臨床表現包括超過48小時未解胎便並合併腹脹","(B)鋇劑大腸攝影檢查可呈現異常擴張巨大結腸的部位,就是無神經節細胞的腸道,必須手術切除","(C)罹病幼兒會出現解便疼痛甚至出血,常見憋便(withholding)甚至發生遺便(fecal soiling)現象",(D)腹部超音波檢查出現典型的標靶病灶 (target lesion),A,(A)正確。(B)大腸攝影檢查中，窄縮成過渡帶（Transitional zone）的下游腸道才是缺乏神經節之病灶處；上游巨大擴張的部分是正常且努力想把糞便推過去的腸道。(C)此為功能性便秘表現。(D)標靶病灶為腸套疊表徵。,小腸疾病的診斷與治療,,"📖 chatGPT 學長背景知識  
+47,"有關腸缺乏神經節細胞(巨結腸症)之大腸敘述,下列何者正確?","(A)若於新生兒時期發病,臨床表現包括超過48小時未解胎便並合併腹脹","(B)鋇劑大腸攝影檢查可呈現異常擴張巨大結腸的部位,就是無神經節細胞的腸道,必須手術切除","(C)罹病幼兒會出現解便疼痛甚至出血,常見憋便(withholding)甚至發生遺便(fecal soiling)現象",(D)腹部超音波檢查出現典型的標靶病灶 (target lesion),A,(A)正確。(B)大腸攝影檢查中，窄縮成過渡帶（Transitional zone）的下游腸道才是缺乏神經節之病灶處；上游巨大擴張的部分是正常且努力想把糞便推過去的腸道。(C)此為功能性便秘表現。(D)標靶病灶為腸套疊表徵。,微創手術之最新進展(含胃減重手術),張博智,"📖 chatGPT 學長背景知識  
 腸缺乏神經節細胞（巨結腸症）是一種先天性疾病，主要因為『神經節細胞』在腸道的缺乏，導致腸道運動功能障礙。以下是關於此病的核心觀念：
 
 - **臨床表現**：新生兒若於出生後『超過48小時未解胎便』，並伴隨『腹脹』，可能是巨結腸症的早期徵兆。
@@ -398,7 +398,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - **影像學檢查**：腹部超音波檢查並不會顯示典型的『標靶病灶』，這是其他疾病的特徵。
 
 綜合以上觀點，選項(A)是正確的，因為它準確描述了新生兒期巨結腸症的臨床表現。"
-48,"有關食道疾患與其相關評估檢查,下列的配對何者最不適當?","(A)若懷疑病患有食道狭窄(esophageal stenosis),可先安排食道攝影(esophagogram)檢查,但要注意相關 left main bronchus, upper esophagus-cricopharyngeal sphincter 和 diaphragm level 等解剖狹窄處","(B)可安排食道胃鏡來排除有無腫瘤順便採取檢體外,施作時應注意有無食道手術之病史以防穿孔","(C)若平常生活中有抽菸、喝酒和嚼食檳榔習慣,且又合併體重減輕與漸進式吞嚥困難,則大概可以先臆測食道鱗狀細胞癌之高度可能性","(D)食道壓力測定 (esophageal manometry)可以用來診斷偵測食道蠕動異常疾病(esophageal motility disorder), achalasia 常呈現 aperistalsis 和 incomplete lower esophageal sphincter relaxation 之情形",A,食道的 3 處正常生理與解剖狹窄（anatomic narrowings）分別為：1. Cervical constriction (環狀軟骨下緣/UES，約C6高度)；2. Thoracic constriction (由 Aortic arch 與 left main bronchus 壓迫造成，約T4-T5高度)；3. Diaphragmatic constriction (穿過橫膈膜裂孔/LES處，約T10高度)。選項敘述混淆了壓迫構造與位置配對。,食道疾病,,"📖 chatGPT 學長背景知識
+48,"有關食道疾患與其相關評估檢查,下列的配對何者最不適當?","(A)若懷疑病患有食道狭窄(esophageal stenosis),可先安排食道攝影(esophagogram)檢查,但要注意相關 left main bronchus, upper esophagus-cricopharyngeal sphincter 和 diaphragm level 等解剖狹窄處","(B)可安排食道胃鏡來排除有無腫瘤順便採取檢體外,施作時應注意有無食道手術之病史以防穿孔","(C)若平常生活中有抽菸、喝酒和嚼食檳榔習慣,且又合併體重減輕與漸進式吞嚥困難,則大概可以先臆測食道鱗狀細胞癌之高度可能性","(D)食道壓力測定 (esophageal manometry)可以用來診斷偵測食道蠕動異常疾病(esophageal motility disorder), achalasia 常呈現 aperistalsis 和 incomplete lower esophageal sphincter relaxation 之情形",A,食道的 3 處正常生理與解剖狹窄（anatomic narrowings）分別為：1. Cervical constriction (環狀軟骨下緣/UES，約C6高度)；2. Thoracic constriction (由 Aortic arch 與 left main bronchus 壓迫造成，約T4-T5高度)；3. Diaphragmatic constriction (穿過橫膈膜裂孔/LES處，約T10高度)。選項敘述混淆了壓迫構造與位置配對。,食道疾病,張博智,"📖 chatGPT 學長背景知識
 
 在評估食道疾患時，選擇適當的檢查方法至關重要。以下是各選項的核心觀念：
 
@@ -408,7 +408,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『食道壓力測定』可診斷食道蠕動異常，『achalasia』特徵為無蠕動及下食道括約肌放鬆不全。
 
 綜合以上觀點，選項(A)雖然提到食道攝影的注意事項，但對於解剖狹窄處的描述不夠精確，因為左主支氣管、上食道及橫膈膜的狹窄並非食道狹窄的主要考量。因此，選項(A)的配對最不適當，因為其解剖學描述可能會誤導臨床評估。"
-49,"有關食道疾患與其相關治療,下列的配對何者最不適當?",(A)refractory reflux esophagitis (藥物治療無效的已確診胃食道逆流)- laparoscopic Nissen fundoplication,(B)achalasia with megaesophagus - laparoscopic Heller myotomy + Dor fundoplication,(C)T3N2M0 cervical esophageal squamous cell carcinoma - direct Ivor-Lewis esophagectomy and reconstruction without following chemoradiotherapy,(D)epiphrenic diverticulum - laparoscopic diverticulectomy,C,依據 NCCN 指南，食道癌分期只要達到 T2 以上、或有區域淋巴結轉移（LN +，如本題 N2），標準首選一線處置必須先進行前導性同步化放療（Neoadjuvant CCRT），之後再評估手術，而非直接安排手術。,食道疾病,,"📖 chatGPT 學長背景知識  
+49,"有關食道疾患與其相關治療,下列的配對何者最不適當?",(A)refractory reflux esophagitis (藥物治療無效的已確診胃食道逆流)- laparoscopic Nissen fundoplication,(B)achalasia with megaesophagus - laparoscopic Heller myotomy + Dor fundoplication,(C)T3N2M0 cervical esophageal squamous cell carcinoma - direct Ivor-Lewis esophagectomy and reconstruction without following chemoradiotherapy,(D)epiphrenic diverticulum - laparoscopic diverticulectomy,C,依據 NCCN 指南，食道癌分期只要達到 T2 以上、或有區域淋巴結轉移（LN +，如本題 N2），標準首選一線處置必須先進行前導性同步化放療（Neoadjuvant CCRT），之後再評估手術，而非直接安排手術。,食道疾病,張博智,"📖 chatGPT 學長背景知識  
 在食道疾患的治療中，選擇適當的手術或藥物治療至關重要。以下是各選項的關鍵觀念：
 
 - 『refractory reflux esophagitis』通常指對藥物治療無效的胃食道逆流，適合進行『laparoscopic Nissen fundoplication』以改善症狀。
@@ -417,7 +417,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『epiphrenic diverticulum』的治療可選擇『laparoscopic diverticulectomy』，這是合適的手術選擇。
 
 綜合以上分析，選項C的配對最不適當，因為對於進行『Ivor-Lewis esophagectomy』的『T3N2M0』食道癌患者，缺乏適當的『chemoradiotherapy』會降低治療成功率，影響預後。"
-50,"以下哪些關於腹部影像的陳述,下列描述何者為誤?",(A)直腸(rectum)是腹膜外間隙(extraperitoneal space)的器官,(B)The middle hepatic vein 將肝臟分為左、右肝葉,(C)胰腺分裂(pancreas divisum)可以分為complete 和 incomplete,(D)在膽囊左側的肝臟是 segment 5,D,在解剖構造與影像分葉上，位於膽囊左側的肝臟微細分區構造屬於 Segment 4b，而非 Segment 5。,腹部影像解剖學,,"📖 chatGPT 學長背景知識  
+50,"以下哪些關於腹部影像的陳述,下列描述何者為誤?",(A)直腸(rectum)是腹膜外間隙(extraperitoneal space)的器官,(B)The middle hepatic vein 將肝臟分為左、右肝葉,(C)胰腺分裂(pancreas divisum)可以分為complete 和 incomplete,(D)在膽囊左側的肝臟是 segment 5,D,在解剖構造與影像分葉上，位於膽囊左側的肝臟微細分區構造屬於 Segment 4b，而非 Segment 5。,腹部影像解剖學,陳巧雲,"📖 chatGPT 學長背景知識  
 在腹部影像學中，了解各器官的解剖位置及其相互關係至關重要。以下是對題目中各選項的綜合解析：
 
 - (A) 直腸確實位於『腹膜外間隙』，這是正確的，因為直腸位於骨盆內，並不被腹膜覆蓋。
@@ -426,11 +426,11 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - (D) 在膽囊左側的肝臟是『segment 5』，這一描述是錯誤的。根據肝臟的分段解剖，膽囊位於肝臟的『右側』，而『segment 5』實際上位於肝臟的左側。
 
 綜合以上分析，選項(D)的描述為誤，因為膽囊位於右側，與segment 5的定位不符。"
-51,"與虛擬胃鏡檢查相比,關於常規胃鏡檢查的優點,下列描述何者為誤?",(A)Measure the size,(B)Adequate color change,(C)No radiation exposure,(D)Can obtain samples,A,虛擬胃鏡（利用CT/影像重組）的優點包含非侵入性、視野寬廣以及能夠較為精準地「測量病灶大小(Measure the size)」。而常規常規光學胃鏡的優點則是能即時觀察黏膜顏色變化（color change）、無輻射暴露、且能做切片病理採樣（obtain samples）。故常規胃鏡「不能」精準測量立體大小是其相較之下的限制。,腹部影像解剖學,,"📖 chatGPT 學長背景知識  
+51,"與虛擬胃鏡檢查相比,關於常規胃鏡檢查的優點,下列描述何者為誤?",(A)Measure the size,(B)Adequate color change,(C)No radiation exposure,(D)Can obtain samples,A,虛擬胃鏡（利用CT/影像重組）的優點包含非侵入性、視野寬廣以及能夠較為精準地「測量病灶大小(Measure the size)」。而常規常規光學胃鏡的優點則是能即時觀察黏膜顏色變化（color change）、無輻射暴露、且能做切片病理採樣（obtain samples）。故常規胃鏡「不能」精準測量立體大小是其相較之下的限制。,腹部影像解剖學,陳巧雲,"📖 chatGPT 學長背景知識  
 虛擬胃鏡檢查（如CT或MRI）與常規胃鏡檢查各有其特點。常規胃鏡檢查的優點包括能夠直接觀察『胃』內部結構、進行『組織取樣』以及『無輻射暴露』等。虛擬胃鏡雖然能提供影像，但無法進行實際的『生物檢查』或『取樣』，且可能無法提供足夠的『顏色變化』以判斷病變。
 
 在選項中，(A)提到的“Measure the size”是虛擬胃鏡的優勢，因為它能夠更精確地測量腫瘤或病變的大小，這是常規胃鏡所無法做到的。因此，這個選項是錯誤的描述，因為常規胃鏡並不具備這一優勢。其他選項如(B)的『Adequate color change』、 (C)的『No radiation exposure』和(D)的『Can obtain samples』均為常規胃鏡的優勢，故正確答案為(A)。"
-52,"關於胃潰瘍(gastric ulcer),下列描述何者為誤?",(A)Carman-Kirklin Complex 診斷為惡性潰瘍,(B)Hampton' s line 診斷為良性潰瘍,(C)Ulcer size 大於五公分診斷為惡性潰瘍,(D)Project line beyond the gastric wall 診斷為良性潰瘍,C,依據影像診斷鑑別診斷原則（HALPERT and GOODMAN），潰瘍的絕對大小（Ulcer size）並「不能」單獨拿來作為區分良性或惡性胃潰瘍的硬性依據。,消化系統影像學：胃腸系統疾病診斷,,"📖 chatGPT 學長背景知識
+52,"關於胃潰瘍(gastric ulcer),下列描述何者為誤?",(A)Carman-Kirklin Complex 診斷為惡性潰瘍,(B)Hampton' s line 診斷為良性潰瘍,(C)Ulcer size 大於五公分診斷為惡性潰瘍,(D)Project line beyond the gastric wall 診斷為良性潰瘍,C,依據影像診斷鑑別診斷原則（HALPERT and GOODMAN），潰瘍的絕對大小（Ulcer size）並「不能」單獨拿來作為區分良性或惡性胃潰瘍的硬性依據。,消化系統影像學：胃腸系統疾病診斷,陳巧雲,"📖 chatGPT 學長背景知識
 
 胃潰瘍的診斷與評估通常依賴影像學和病理學的檢查。以下是關於胃潰瘍的幾個重要觀念：
 
@@ -440,7 +440,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 『Project line beyond the gastric wall』：這一特徵通常提示潰瘍可能為『惡性』，而非良性。
 
 綜合以上觀點，選項 (C) 提到的潰瘍大小大於五公分診斷為惡性潰瘍是正確的，而選項 (D) 的描述則是錯誤的，因為潰瘍若有超過胃壁的投影，通常是惡性潰瘍的指標。因此，正確答案為 (C)。"
-53,"關於克隆氏症(Crohn's disease),下列描述何者為誤?",(A)It is a chronic granulomatous inflammatory disease with a tendency toward remission and relapse,(B)Rectum involved in all the cases,(C)Malignant change is uncommon,"(D)It can affect any part of the Gl tract, often involving multiple discontinuous sites",B,"克隆氏症（Crohn's disease）具有跳躍性病灶（Skip area）與非連續性慢性發炎特徵，可侵犯由口到肛門的任何消化道。相比之下，100% 必然會侵犯並直腸（Rectum involved in all cases）的疾病是潰瘍性結腸炎（Ulcerative colitis, UC）。",消化系統影像學：胃腸系統疾病診斷,,"📖 chatGPT 學長背景知識  
+53,"關於克隆氏症(Crohn's disease),下列描述何者為誤?",(A)It is a chronic granulomatous inflammatory disease with a tendency toward remission and relapse,(B)Rectum involved in all the cases,(C)Malignant change is uncommon,"(D)It can affect any part of the Gl tract, often involving multiple discontinuous sites",B,"克隆氏症（Crohn's disease）具有跳躍性病灶（Skip area）與非連續性慢性發炎特徵，可侵犯由口到肛門的任何消化道。相比之下，100% 必然會侵犯並直腸（Rectum involved in all cases）的疾病是潰瘍性結腸炎（Ulcerative colitis, UC）。",消化系統影像學：胃腸系統疾病診斷,陳巧雲,"📖 chatGPT 學長背景知識  
 克隆氏症（Crohn's disease）是一種慢性『肉芽腫性』炎症性腸病，主要影響消化道的任何部分，且常見於『不連續』的多個部位。以下是對題目選項的綜合解析：
 
 - 克隆氏症的特徵是『慢性』的炎症，並且有『緩解』與『復發』的趨勢，這使得選項(A)正確。
@@ -449,7 +449,7 @@ HNPCC（Hereditary nonpolyposis colon cancer）或稱Lynch syndrome，是一種�
 - 克隆氏症的影響範圍可遍及『消化道的任何部位』，且常見『多個不連續部位』的受累，這使得選項(D)正確。
 
 綜合以上分析，選項(B)的描述不正確，因為並非所有克隆氏症患者的直腸都會受到影響。"
-54,"下列針對不同基因型C型肝炎病毒感染,全口服藥物治療之選擇評估,何者為非?",(A)Glicaprevir / Pibrentasvir 針對第1~6型C型肝炎病毒都有效,(B)Glicaprevir / Pibrentasvir 只針對第1和3型C型肝炎病毒有效,(C)Sofosbuvir / Velpatasvir 針對第1~6型C型肝炎病毒都有效,(D)Sofosbuvir/ Velpatasvir/ Voxilaprevir 針對第1~6型C型肝炎病毒且曾接受含 NS5A 抑制劑治療失敗者有效,B,現行的主要一線C肝全口服藥物如 Glecaprevir/Pibrentasvir (Mavyret) 以及 Sofosbuvir/Velpatasvir (Epclusa) 均屬於「全基因型（Pangenotypic）」藥物，對於第 1 到第 6 型C肝病毒都完全有效。,病毒性肝炎(I),,"📖 chatGPT 學長背景知識
+54,"下列針對不同基因型C型肝炎病毒感染,全口服藥物治療之選擇評估,何者為非?",(A)Glicaprevir / Pibrentasvir 針對第1~6型C型肝炎病毒都有效,(B)Glicaprevir / Pibrentasvir 只針對第1和3型C型肝炎病毒有效,(C)Sofosbuvir / Velpatasvir 針對第1~6型C型肝炎病毒都有效,(D)Sofosbuvir/ Velpatasvir/ Voxilaprevir 針對第1~6型C型肝炎病毒且曾接受含 NS5A 抑制劑治療失敗者有效,B,現行的主要一線C肝全口服藥物如 Glecaprevir/Pibrentasvir (Mavyret) 以及 Sofosbuvir/Velpatasvir (Epclusa) 均屬於「全基因型（Pangenotypic）」藥物，對於第 1 到第 6 型C肝病毒都完全有效。,病毒性肝炎(I),張庭遠,"📖 chatGPT 學長背景知識
 
 C型肝炎病毒（HCV）感染的治療選擇依賴於病毒基因型及以往治療反應。以下是針對各選項的核心觀念：
 
@@ -458,7 +458,7 @@ C型肝炎病毒（HCV）感染的治療選擇依賴於病毒基因型及以往�
 - 『Sofosbuvir / Velpatasvir / Voxilaprevir』的組合則特別針對曾接受『NS5A抑制劑』治療失敗的患者，提供了有效的治療選擇。
 
 綜合以上資訊，選項(B)的說法不正確，因為Glicaprevir / Pibrentasvir實際上對所有基因型均有效，而不僅限於第1和第3型。因此，正確答案為(B)。"
-55,下列有關E型肝炎病毒感染的描述何者錯誤?,(A)經由血液傳染,(B)自限性疾病(self-limited),(C)孕婦有高嚴重肝病風險,(D)可能經由胎盤傳染給胎兒,A,E型肝炎（與A型肝炎相同）主要是透過粪口途徑、經口飲食傳染（Fecal-oral route），而非主由血液傳染。其對於孕婦具有極高的猛暴性肝衰竭與嚴重死亡風險（約20%）。,病毒性肝炎(I),,"📖 chatGPT 學長背景知識  
+55,下列有關E型肝炎病毒感染的描述何者錯誤?,(A)經由血液傳染,(B)自限性疾病(self-limited),(C)孕婦有高嚴重肝病風險,(D)可能經由胎盤傳染給胎兒,A,E型肝炎（與A型肝炎相同）主要是透過粪口途徑、經口飲食傳染（Fecal-oral route），而非主由血液傳染。其對於孕婦具有極高的猛暴性肝衰竭與嚴重死亡風險（約20%）。,病毒性肝炎(I),張庭遠,"📖 chatGPT 學長背景知識  
 E型肝炎病毒（HEV）是一種主要透過『糞口途徑』傳播的病毒，常見於不潔的水源或食物中。以下是有關E型肝炎的核心觀念：
 
 - E型肝炎通常不會透過『血液』傳播，因此選項(A)是錯誤的。
@@ -467,13 +467,13 @@ E型肝炎病毒（HEV）是一種主要透過『糞口途徑』傳播的病毒�
 - E型肝炎有可能『經由胎盤』傳染給胎兒，雖然這種情況較為少見，但仍需注意。
 
 綜合以上資訊，選項(A)的描述不正確，因為E型肝炎病毒並非透過血液傳播，而是主要透過糞口途徑感染。"
-56,"接受免疫抑制藥物或化學藥物治療患者,為預防B型肝炎病毒復發,初步應執行哪些檢測?",(A)表面抗原 HBsAg,(B)核心抗體 HBcAb IgG,(C)表面抗體 HBsAb,(D)以上皆是,D,要精確、全面地界定高風險患者在接受化療/免疫抑制劑時的 B 肝再活化（Reactivation）風險，必須同步檢測 HBsAg、HBsAb 以及 IgG anti-HBc 這三項指標。,病毒性肝炎(I),,"📖 chatGPT 學長背景知識  
+56,"接受免疫抑制藥物或化學藥物治療患者,為預防B型肝炎病毒復發,初步應執行哪些檢測?",(A)表面抗原 HBsAg,(B)核心抗體 HBcAb IgG,(C)表面抗體 HBsAb,(D)以上皆是,D,要精確、全面地界定高風險患者在接受化療/免疫抑制劑時的 B 肝再活化（Reactivation）風險，必須同步檢測 HBsAg、HBsAb 以及 IgG anti-HBc 這三項指標。,病毒性肝炎(I),張庭遠,"📖 chatGPT 學長背景知識  
 在接受『免疫抑制』或『化學治療』的患者中，B型肝炎病毒（HBV）復發的風險顯著增加，因此在治療前進行相關檢測至關重要。
 
 首先，『表面抗原 HBsAg』的檢測能夠確認患者是否仍然帶有HBV，這是評估病毒活動性的重要指標。其次，『核心抗體 HBcAb IgG』的檢測則有助於了解患者的過去感染歷史，因為這種抗體通常在感染後持續存在，顯示患者曾經接觸過病毒。最後，『表面抗體 HBsAb』的檢測則能評估患者是否具備免疫力，這在疫苗接種後或自然清除病毒後會出現。
 
 綜合以上，為了全面評估患者的HBV狀態及預防復發，初步應執行的檢測包括所有選項：HBsAg、HBcAb IgG及HBsAb。因此，正確答案為(D) 以上皆是。"
-57,"有關D型肝炎病毒感染,下列描述何者為錯誤?",(A)重複感染(superinfection)發生於B型肝炎病毒感染後,"(B)同時感染(coinfection)患者出現兩個丙胺酸轉胺酶(Alanine transaminase, ALT)高峰(peak),第二個高峰代表B肝病毒肝炎高峰",(C)重複感染(superinfection)患者較同時感染(coinfection)患者有肝硬化風險,(D)靜脈藥物毒癮者是感染高風險族群,B,在 HDV 與 HBV「同時感染（Coinfection）」的臨床表現中，常會觀察到 ALT 出現雙峰（Double peak）。其中，第一個高峰是由於 HBV 急性發炎引起，第二個高峰則是隨後 HDV 建立感染建立後引發的高峰。,病毒性肝炎(I),,"📖 chatGPT 學長背景知識  
+57,"有關D型肝炎病毒感染,下列描述何者為錯誤?",(A)重複感染(superinfection)發生於B型肝炎病毒感染後,"(B)同時感染(coinfection)患者出現兩個丙胺酸轉胺酶(Alanine transaminase, ALT)高峰(peak),第二個高峰代表B肝病毒肝炎高峰",(C)重複感染(superinfection)患者較同時感染(coinfection)患者有肝硬化風險,(D)靜脈藥物毒癮者是感染高風險族群,B,在 HDV 與 HBV「同時感染（Coinfection）」的臨床表現中，常會觀察到 ALT 出現雙峰（Double peak）。其中，第一個高峰是由於 HBV 急性發炎引起，第二個高峰則是隨後 HDV 建立感染建立後引發的高峰。,病毒性肝炎(I),張庭遠,"📖 chatGPT 學長背景知識  
 D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病毒，主要透過血液和體液傳播。HDV感染可分為兩種情況：『同時感染』（coinfection）和『重複感染』（superinfection）。同時感染是指在同一時間內同時感染HBV和HDV，而重複感染則是指在已經感染HBV的基礎上再感染HDV。
 
 - 在同時感染的情況下，患者可能會出現兩個『丙胺酸轉胺酶』（ALT）高峰，第二個高峰通常與HBV的活動性有關。
@@ -481,7 +481,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 靜脈藥物使用者因為共用針具等行為，確實屬於高風險族群。
 
 根據上述知識，選項B的描述為錯誤，因為同時感染的患者在ALT高峰的解釋上不應將第二個高峰單純歸因於B型肝炎病毒的活動性，這可能會導致誤解。"
-58,"理學檢查在外科診斷中占有極大的角色,對於這名患者羅戈佐夫的症狀（上腹悶痛轉移至右下腹）,你認為以下那項理學檢查可能為陰性?",(A)McBurney's point.,(B)Murphy's sign.,(C)Rovsing's sign.,(D)Obturator sign.,B,由「上腹痛伴隨噁心、後轉移至右下腹固定痛」可明確診斷這名極地醫生罹患的是急性闌尾炎。McBurney、Rovsing 及 Obturator 均為闌尾炎檢查特異徵象。而 Murphy's sign 為急性膽囊炎的特異性指標，在此個案中應為陰性。,急性闌尾炎、大腸傷害及腸系膜疾病,,"📖 chatGPT 學長背景知識
+58,"理學檢查在外科診斷中占有極大的角色,對於這名患者羅戈佐夫的症狀（上腹悶痛轉移至右下腹）,你認為以下那項理學檢查可能為陰性?",(A)McBurney's point.,(B)Murphy's sign.,(C)Rovsing's sign.,(D)Obturator sign.,B,由「上腹痛伴隨噁心、後轉移至右下腹固定痛」可明確診斷這名極地醫生罹患的是急性闌尾炎。McBurney、Rovsing 及 Obturator 均為闌尾炎檢查特異徵象。而 Murphy's sign 為急性膽囊炎的特異性指標，在此個案中應為陰性。,急性闌尾炎、大腸傷害及腸系膜疾病,陳彥成,"📖 chatGPT 學長背景知識
 
 - 患者羅戈佐夫的症狀為『上腹悶痛』轉移至『右下腹』，這是典型的『急性闌尾炎』表現。
 - 理學檢查在診斷急性闌尾炎中非常重要，常用的檢查包括：
@@ -491,7 +491,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
   - 『Obturator sign』：內收大腿時引起右下腹疼痛，亦可提示闌尾炎。
 
 在此情況下，『Murphy's sign』最可能為陰性，因為該檢查主要針對膽囊問題，而非闌尾炎。患者的症狀與膽囊無關，因此該檢查不會顯示陽性結果。其他檢查如『McBurney's point』、 『Rovsing's sign』及『Obturator sign』則更可能顯示陽性，因為它們直接與右下腹的病變相關。總結來說，選擇B作為答案是合理的，因為它不符合患者的臨床表現。"
-59,"對於羅戈佐夫（急性闌尾炎個案）的進一步處置,下列敘述何者不適當?","(A)若基地站有簡易生化分析設備,可抽血檢驗血球數值(Complete Blood Count)和發炎指數(C reactive protein),以協助診斷。","(B)基地站並無電腦斷層設備,但若有X光機或超音波設備,應可協助診斷。","(C)保守治療如抗生素或退燒藥物等,在此狀況下完全沒有效果,不可能單靠藥物治療緩解病症。","(D)應積極考慮手術介入治療,移除發炎感染病灶。",C,「保守治療完全沒有效果」這句話太過絕對。在極地極端環境下，抗生素及冰敷支持療法雖然無法根治闌尾發炎或避免後續穿孔，但能有限度地控制感染擴散、緩解部分全身性症狀，並不能判定為完全無效。標準根治處置仍首選闌尾切除術。,急性闌尾炎、大腸傷害及腸系膜疾病,,"📖 chatGPT 學長背景知識  
+59,"對於羅戈佐夫（急性闌尾炎個案）的進一步處置,下列敘述何者不適當?","(A)若基地站有簡易生化分析設備,可抽血檢驗血球數值(Complete Blood Count)和發炎指數(C reactive protein),以協助診斷。","(B)基地站並無電腦斷層設備,但若有X光機或超音波設備,應可協助診斷。","(C)保守治療如抗生素或退燒藥物等,在此狀況下完全沒有效果,不可能單靠藥物治療緩解病症。","(D)應積極考慮手術介入治療,移除發炎感染病灶。",C,「保守治療完全沒有效果」這句話太過絕對。在極地極端環境下，抗生素及冰敷支持療法雖然無法根治闌尾發炎或避免後續穿孔，但能有限度地控制感染擴散、緩解部分全身性症狀，並不能判定為完全無效。標準根治處置仍首選闌尾切除術。,急性闌尾炎、大腸傷害及腸系膜疾病,陳彥成,"📖 chatGPT 學長背景知識  
 急性闌尾炎是常見的外科急症，通常需要手術介入以移除發炎的闌尾。對於羅戈佐夫的個案，進一步處置的選擇需根據臨床情況進行評估。
 
 - 『診斷』：血液檢查（如『血球數值』和『C反應蛋白』）可協助確認發炎狀態，故選項(A)是適當的。
@@ -500,7 +500,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『手術介入』：對於確診的急性闌尾炎，『手術』是標準治療，故選項(D)是適當的。
 
 綜合以上分析，選項(C)的敘述不符合急性闌尾炎的治療原則，因為保守治療在此情況下是無效的。"
-60,"有關術前闌尾切除傳統開腹式手術的定位準備,下列敘述何者為非?","(A)若術前 McBurney's point 為陽性,在打開右下腹壁後,預期在傷口下翻找,可以發現病灶","(B)若術前 Obturator sign 為陽性,在打開右下腹壁後,要嘗試往骨盆腔方向翻找病灶。","(C)若術前 Psoas sign為陽性,在打開右下腹壁後,要嘗試往 Cecum 後側翻找病灶。","(D)在此極地特殊環境,雖為傳統手術,但要盡可能縮小傷口範圍,以利止血並降低傷口感染機率。",送分,本題經學生提出申覆後判定送分。在傳統開腹開放式手術中，過度盲目地縮小手術切口會嚴重壓縮手術視野（Surgical field）並大幅拉高觸覺盲操的複雜度與危險性，尤其是在無專業助手协助的自體手術環境下。,急性闌尾炎、大腸傷害及腸系膜疾病,,"📖 chatGPT 學長背景知識
+60,"有關術前闌尾切除傳統開腹式手術的定位準備,下列敘述何者為非?","(A)若術前 McBurney's point 為陽性,在打開右下腹壁後,預期在傷口下翻找,可以發現病灶","(B)若術前 Obturator sign 為陽性,在打開右下腹壁後,要嘗試往骨盆腔方向翻找病灶。","(C)若術前 Psoas sign為陽性,在打開右下腹壁後,要嘗試往 Cecum 後側翻找病灶。","(D)在此極地特殊環境,雖為傳統手術,但要盡可能縮小傷口範圍,以利止血並降低傷口感染機率。",送分,本題經學生提出申覆後判定送分。在傳統開腹開放式手術中，過度盲目地縮小手術切口會嚴重壓縮手術視野（Surgical field）並大幅拉高觸覺盲操的複雜度與危險性，尤其是在無專業助手协助的自體手術環境下。,急性闌尾炎、大腸傷害及腸系膜疾病,陳彥成,"📖 chatGPT 學長背景知識
 
 在術前評估闌尾切除手術時，醫師會根據不同的體徵來判斷病灶位置。以下是各選項的核心觀念：
 
@@ -510,7 +510,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 傷口範圍：在特殊環境下，儘管是傳統手術，仍需『縮小傷口範圍』以降低『感染』風險。
 
 綜合以上，選項 (A) 的敘述是正確的，因為在 McBurney's point 附近尋找病灶是合理的。而選項 (C) 的描述在術後尋找病灶的方向不夠精確，因為 Psoas sign 陽性時，應更著重於腎臟後側的病變，而非僅僅是 Cecum 後側。因此，選項 (C) 為非。"
-61,"極地醫生術中發現闌尾腫脹破裂,周邊合併些許骯髒膿水,雖然順利的移除了發炎病灶,關於術後照護處置,下列何者較不適當?","(A)泡製抗生素生理食鹽水,針對病灶周圍腹腔做灌洗。","(B)在腹腔內放置引流管,引流殘餘膿水避免形成膿瘍。","(C)關閉腹部傷口時,逐層縫合腹壁及皮下組織,並使用可吸收的線材搭配美容針法緊密閉合皮膚,減少張力避免傷口開裂,也維持美觀。","(D)以抗生素生理食鹽水灌洗傷口,並在皮下埋入引流管,引流傷口滲液,避免皮膚下膿瘍發生。",C,在闌尾已穿孔且腹腔嚴重污染（汙染性/骯髒傷口）的極端受限狀況下，外科照護核心原則是防範嚴重化膿性感染與殘留膿瘍。此時不應一線使用美容針法緊密縫合皮膚，以免將細菌鎖在皮下引發惡性蜂窩性組織炎或敗血症。,急性闌尾炎、大腸傷害及腸系膜疾病,,"📖 chatGPT 學長背景知識  
+61,"極地醫生術中發現闌尾腫脹破裂,周邊合併些許骯髒膿水,雖然順利的移除了發炎病灶,關於術後照護處置,下列何者較不適當?","(A)泡製抗生素生理食鹽水,針對病灶周圍腹腔做灌洗。","(B)在腹腔內放置引流管,引流殘餘膿水避免形成膿瘍。","(C)關閉腹部傷口時,逐層縫合腹壁及皮下組織,並使用可吸收的線材搭配美容針法緊密閉合皮膚,減少張力避免傷口開裂,也維持美觀。","(D)以抗生素生理食鹽水灌洗傷口,並在皮下埋入引流管,引流傷口滲液,避免皮膚下膿瘍發生。",C,在闌尾已穿孔且腹腔嚴重污染（汙染性/骯髒傷口）的極端受限狀況下，外科照護核心原則是防範嚴重化膿性感染與殘留膿瘍。此時不應一線使用美容針法緊密縫合皮膚，以免將細菌鎖在皮下引發惡性蜂窩性組織炎或敗血症。,急性闌尾炎、大腸傷害及腸系膜疾病,陳彥成,"📖 chatGPT 學長背景知識  
 在極地醫學中，對於術後照護的處置至關重要，尤其是在處理闌尾炎手術後的併發症時。以下是術後照護的核心觀念：
 
 - 『抗生素』使用：術後感染風險高，應適當使用抗生素以預防感染。
@@ -518,7 +518,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『傷口縫合』技術：逐層縫合可減少張力，降低傷口開裂風險，並維持美觀。
 
 在選項中，選擇(D)的做法不適當。雖然使用抗生素生理食鹽水灌洗傷口可以清潔，但在皮下埋入引流管的做法並不理想。引流管應放置於腹腔內以引流膿水，而非皮下，因為這樣可能導致皮膚下的滲液無法有效排出，增加膿瘍風險。因此，選擇(D)的處置方式在臨床上不符合最佳實踐。"
-62,"下列有關腹部超音波影像特徵的描述,何者為非?","(A)在超音波檢查中,肝囊泡(liver simple cyst)在影像上呈現為「黑色」(無回音區, anechoic)且伴隨後方增強(posterior enhancement)現象","(B)在腹部超音波檢查中,一位病人的肝臟病灶呈現「中央疤痕(central scar)」的影像特徵,病灶為實質性(solid),最可能的診斷為局灶性結節性增生(Focal nodular hyperplasia, FNH)","(C)一位患有右心衰竭無肝硬化的病人肝功能異常,接受腹部超音波檢查,發現下腔靜脈(IVC)及肝靜脈(HV)擴張,最支持鬱血性肝病(congestive liver)的診斷",(D)瀰漫型肝癌(Diffuse type hepatocellular carcinoma)在明顯肝硬化的背景下很容易診斷與區別,D,瀰漫型肝癌（Diffuse type HCC）其邊界模糊極不清晰，在原本就有粗糙、高回音且結節滿布的嚴重肝硬化背景下，影像上「非常困難」被直接界定與區分。,消化系超音波學,,"📖 chatGPT 學長背景知識
+62,"下列有關腹部超音波影像特徵的描述,何者為非?","(A)在超音波檢查中,肝囊泡(liver simple cyst)在影像上呈現為「黑色」(無回音區, anechoic)且伴隨後方增強(posterior enhancement)現象","(B)在腹部超音波檢查中,一位病人的肝臟病灶呈現「中央疤痕(central scar)」的影像特徵,病灶為實質性(solid),最可能的診斷為局灶性結節性增生(Focal nodular hyperplasia, FNH)","(C)一位患有右心衰竭無肝硬化的病人肝功能異常,接受腹部超音波檢查,發現下腔靜脈(IVC)及肝靜脈(HV)擴張,最支持鬱血性肝病(congestive liver)的診斷",(D)瀰漫型肝癌(Diffuse type hepatocellular carcinoma)在明顯肝硬化的背景下很容易診斷與區別,D,瀰漫型肝癌（Diffuse type HCC）其邊界模糊極不清晰，在原本就有粗糙、高回音且結節滿布的嚴重肝硬化背景下，影像上「非常困難」被直接界定與區分。,消化系超音波學,王志文,"📖 chatGPT 學長背景知識
 
 在腹部超音波檢查中，影像特徵的解讀對於診斷至關重要。以下是各選項的核心觀念：
 
@@ -528,7 +528,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 瀰漫型肝癌在『明顯肝硬化』的背景下，因為肝臟結構的改變，診斷上可能會變得困難，特別是與其他病變的區別。
 
 綜合上述，選項D的描述不正確，因為在明顯肝硬化的背景下，瀰漫型肝癌的診斷與區別實際上是具有挑戰性的，並非容易診斷。這使得選項D為本題的正確答案。"
-63,"下列有關超音波影像描述與診斷配對,何者正確?",(A)膽囊腺肌增生症(adenomyomatosis) 常見 comet tail sign 與 Rokitansky-Aschoff sinus 相關。Porcelain gallbladder 會呈現高回音弧形結構伴隨後方增強,"(B)Segment VII 是位於右葉後上方(Right posterior superior);在超音波檢查中,若發現病灶靠近膽囊,最有可能侵犯 Segment V。","(C)慢性胰臟炎在超音波上通常顯示胰臟腫大且呈低回音,急性胰臟炎的超音波影像總是顯示鈣化與主胰管擴張",(D)B-mode 是利用連續波(continuous wave)產生多普勒圖像的模式。混響假影(reverberation artifact) 空氣反覆反射聲波形成多重回音與髒亂陰影。,B,(B)正確，解剖學上靠近膽囊床（Gallbladder fossa）的肝臟微細分區為 Segment V。(A)瓷質膽囊（Porcelain GB）壁內佈滿鈣化，超音波下會阻擋聲波，後方會形成強烈的「聲影（Acoustic shadow）」，而非後方增強。(C)配對前後顛倒，急性胰臟炎多為瀰漫腫大與低回音；慢性胰臟炎才會看到鈣化點與胰管擴張。(D)B-mode (Brightness mode) 是亮度調變二維黑白實時顯像模式。,消化系超音波學,,"📖 chatGPT 學長背景知識  
+63,"下列有關超音波影像描述與診斷配對,何者正確?",(A)膽囊腺肌增生症(adenomyomatosis) 常見 comet tail sign 與 Rokitansky-Aschoff sinus 相關。Porcelain gallbladder 會呈現高回音弧形結構伴隨後方增強,"(B)Segment VII 是位於右葉後上方(Right posterior superior);在超音波檢查中,若發現病灶靠近膽囊,最有可能侵犯 Segment V。","(C)慢性胰臟炎在超音波上通常顯示胰臟腫大且呈低回音,急性胰臟炎的超音波影像總是顯示鈣化與主胰管擴張",(D)B-mode 是利用連續波(continuous wave)產生多普勒圖像的模式。混響假影(reverberation artifact) 空氣反覆反射聲波形成多重回音與髒亂陰影。,B,(B)正確，解剖學上靠近膽囊床（Gallbladder fossa）的肝臟微細分區為 Segment V。(A)瓷質膽囊（Porcelain GB）壁內佈滿鈣化，超音波下會阻擋聲波，後方會形成強烈的「聲影（Acoustic shadow）」，而非後方增強。(C)配對前後顛倒，急性胰臟炎多為瀰漫腫大與低回音；慢性胰臟炎才會看到鈣化點與胰管擴張。(D)B-mode (Brightness mode) 是亮度調變二維黑白實時顯像模式。,消化系超音波學,王志文,"📖 chatGPT 學長背景知識  
 在超音波影像學中，正確理解各種影像特徵及其臨床意義至關重要。以下是對題目中各選項的綜合解析：
 
 - 『膽囊腺肌增生症』常見的『comet tail sign』確實與『Rokitansky-Aschoff sinus』有關，但『Porcelain gallbladder』的描述不完全正確，因其影像特徵為高回音且伴隨後方增強。
@@ -537,7 +537,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『B-mode』是利用『反射波』生成靜態影像，而非『連續波』，且『混響假影』是由『空氣』反射聲波所造成的影像干擾。
 
 綜合以上分析，選項B是正確的，因為它準確描述了肝臟分段及其與膽囊的關係。"
-64,下列何項檢查提供了有關疾病「代謝(Metabolism)」與解剖構造的訊息?,(A)X光,(B)電腦斷層,(C)磁振造影,(D)氟-18去氧葡萄糖(FDG)正子射出斷層掃描,D,氟-18去氧葡萄糖（18F-FDG）正子射出斷層掃描（PET），能經由腫瘤對葡萄糖的高局部攝取率，同步提供人體病灶內精確的「細胞糖類代謝活躍度」與解剖學構造交疊資訊。,消化系統(肝膽胰)放射線學,,"📖 chatGPT 學長背景知識  
+64,下列何項檢查提供了有關疾病「代謝(Metabolism)」與解剖構造的訊息?,(A)X光,(B)電腦斷層,(C)磁振造影,(D)氟-18去氧葡萄糖(FDG)正子射出斷層掃描,D,氟-18去氧葡萄糖（18F-FDG）正子射出斷層掃描（PET），能經由腫瘤對葡萄糖的高局部攝取率，同步提供人體病灶內精確的「細胞糖類代謝活躍度」與解剖學構造交疊資訊。,消化系統(肝膽胰)放射線學,郭禹廷,"📖 chatGPT 學長背景知識  
 在醫學影像學中，不同的檢查技術提供了不同類型的資訊，特別是在評估『代謝』與『解剖構造』方面。
 
 - **X光**：主要用於檢查骨骼結構，對於軟組織或代謝活動的評估有限。
@@ -546,7 +546,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - **氟-18去氧葡萄糖(FDG)正子射出斷層掃描(PET)**：這是一種結合了代謝與解剖資訊的檢查。FDG是一種放射性標記的葡萄糖類似物，能夠被活躍的細胞吸收，特別是代謝活躍的腫瘤細胞。此技術不僅提供解剖結構的影像，還能顯示細胞的『代謝』活動，對於癌症診斷及其他代謝性疾病的評估尤為重要。
 
 因此，正確答案為(D)氟-18去氧葡萄糖(FDG)正子射出斷層掃描，因為它同時提供了有關『代謝』與『解剖構造』的訊息。"
-65,"門診懷疑肝膽系統疾病,最常使用的「第一項」影像檢查是下列何者?",(A)磁振造影,(B)電腦斷層,(C)超音波,(D)腹部X光,C,在肝膽胰外科與內科門診中，評估肝膽疾病的第一線首選最核心影像檢查永遠是「腹部超音波（Ultrasonography）」，其具備非侵入性、無輻射、高經濟效益且能清晰分辨水囊與實質腫瘤之特質。,消化系統(肝膽胰)放射線學,,"📖 chatGPT 學長背景知識  
+65,"門診懷疑肝膽系統疾病,最常使用的「第一項」影像檢查是下列何者?",(A)磁振造影,(B)電腦斷層,(C)超音波,(D)腹部X光,C,在肝膽胰外科與內科門診中，評估肝膽疾病的第一線首選最核心影像檢查永遠是「腹部超音波（Ultrasonography）」，其具備非侵入性、無輻射、高經濟效益且能清晰分辨水囊與實質腫瘤之特質。,消化系統(肝膽胰)放射線學,郭禹廷,"📖 chatGPT 學長背景知識  
 在門診中，對於懷疑的『肝膽系統疾病』，影像檢查是診斷的重要工具。以下是選擇影像檢查時的核心觀念：
 
 - 『超音波』檢查是非侵入性且無輻射的影像技術，能有效評估肝臟、膽囊及周圍結構的病變。
@@ -556,7 +556,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『腹部X光』對於肝膽系統的評估能力有限，主要用於排除其他病因。
 
 綜合以上因素，超音波檢查因其『安全性』、『有效性』及『便利性』，成為門診懷疑肝膽系統疾病時最常使用的第一項影像檢查。選擇C為正確答案。"
-66,"新生兒懷疑膽道閉鎖,「並不常」使用下列何項檢查?",(A)磁振造影,(B)超音波,(C)電腦斷層,(D)核醫膽道閃爍攝影,C,評估新生兒膽道閉鎖常用超音波（看三角徵）、核醫膽道閃爍攝影（HIDA scan 看核種是否能進腸道）及MRCP（磁振膽道造影）。而電腦斷層（CT）對於嬰兒膽道微細纖維化病變診斷價值極低，且伴隨不必要的輻射暴露，故常規上「不屬於」常用診斷工具。,消化系統(肝膽胰)放射線學,,"📖 chatGPT 學長背景知識  
+66,"新生兒懷疑膽道閉鎖,「並不常」使用下列何項檢查?",(A)磁振造影,(B)超音波,(C)電腦斷層,(D)核醫膽道閃爍攝影,C,評估新生兒膽道閉鎖常用超音波（看三角徵）、核醫膽道閃爍攝影（HIDA scan 看核種是否能進腸道）及MRCP（磁振膽道造影）。而電腦斷層（CT）對於嬰兒膽道微細纖維化病變診斷價值極低，且伴隨不必要的輻射暴露，故常規上「不屬於」常用診斷工具。,消化系統(肝膽胰)放射線學,郭禹廷,"📖 chatGPT 學長背景知識  
 新生兒膽道閉鎖是一種嚴重的肝膽系統疾病，早期診斷對於改善預後至關重要。常用的影像學檢查包括超音波、磁振造影（MRI）和核醫膽道閃爍攝影。這些檢查各有其優缺點，適用於不同的臨床情境。
 
 核心觀念：  
@@ -566,7 +566,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『電腦斷層』：雖然能提供詳細的解剖結構影像，但由於其輻射風險及對新生兒的影響，並不常用於膽道閉鎖的初步評估。
 
 綜合以上分析，選項(C)『電腦斷層』在新生兒膽道閉鎖的診斷中並不常使用，因為其輻射風險及不必要的侵入性使其不適合於這一人群。"
-67,下列何者並非肝臟血管瘤的典型表現?,(A)動態掃描呈現向心型顯影(centripetal enhancement),(B)MRI T2 高訊號強度,(C)超音波高回音病灶並伴隨後方聲波加強,(D)動脈相高顯影、門脈相比周圍肝臟低顯影,D,(D)「動脈期快速高顯影（Wash-in）、門脈期與延遲期迅速減退變黑且比周圍正常肝組織低回音（Wash-out）」是極經典的「肝細胞癌（HCC）」影像學大魔王死穴特徵。血管瘤在動態CT/MRI下的典型特徵是周邊結節狀向心型填充顯影（Centripetal filling）。,消化系統(肝膽胰)放射線學,,"📖 chatGPT 學長背景知識  
+67,下列何者並非肝臟血管瘤的典型表現?,(A)動態掃描呈現向心型顯影(centripetal enhancement),(B)MRI T2 高訊號強度,(C)超音波高回音病灶並伴隨後方聲波加強,(D)動脈相高顯影、門脈相比周圍肝臟低顯影,D,(D)「動脈期快速高顯影（Wash-in）、門脈期與延遲期迅速減退變黑且比周圍正常肝組織低回音（Wash-out）」是極經典的「肝細胞癌（HCC）」影像學大魔王死穴特徵。血管瘤在動態CT/MRI下的典型特徵是周邊結節狀向心型填充顯影（Centripetal filling）。,消化系統(肝膽胰)放射線學,郭禹廷,"📖 chatGPT 學長背景知識  
 肝臟血管瘤是最常見的良性肝臟腫瘤，通常在影像學檢查中呈現特徵性的表現。以下是肝臟血管瘤的典型影像學特徵：
 
 - 『動態掃描』：肝臟血管瘤在動態掃描中通常呈現『向心型顯影』(centripetal enhancement)，即在注射造影劑後，腫瘤中心逐漸增強。
@@ -574,14 +574,14 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『超音波高回音病灶』：超音波檢查中，肝臟血管瘤通常顯示為『高回音病灶』，並伴隨『後方聲波加強』，這是因為腫瘤內部的血流動態。
 
 然而，選項(D)提到的『動脈相高顯影、門脈相比周圍肝臟低顯影』並不是肝臟血管瘤的典型表現。肝臟血管瘤在動脈相應該是高顯影，但在門脈相時，通常不會顯示出明顯的低顯影。因此，選項(D)是正確答案，並非肝臟血管瘤的典型表現。"
-68,在消化系統血管/非血管介入性放射線學影像中，順著深度深入肝內並與十二指腸消化道相通的管道，此箭頭所指的構造是什麼管道?,(A)肝動脈 Hepatic artery,(B)肝門靜脈 Hepatic portal vein,(C)肝管 Hepatic duct,(D)肝靜脈 Hepatic vein,C,影像上顯影結構由肝內微細管道逐步匯聚，最終向下跨越並流入小腸/十二指腸管腔內，此生理防線解剖構造必然為負責引流膽汁的「肝管/膽管（Hepatic duct）」。,消化系統介入性放射線學,,"📖 chatGPT 學長背景知識
+68,在消化系統血管/非血管介入性放射線學影像中，順著深度深入肝內並與十二指腸消化道相通的管道，此箭頭所指的構造是什麼管道?,(A)肝動脈 Hepatic artery,(B)肝門靜脈 Hepatic portal vein,(C)肝管 Hepatic duct,(D)肝靜脈 Hepatic vein,C,影像上顯影結構由肝內微細管道逐步匯聚，最終向下跨越並流入小腸/十二指腸管腔內，此生理防線解剖構造必然為負責引流膽汁的「肝管/膽管（Hepatic duct）」。,消化系統介入性放射線學,石明誠,"📖 chatGPT 學長背景知識
 
 在消化系統的解剖中，肝臟與十二指腸之間的連結主要透過『肝管』進行。肝管是肝臟內部的膽汁排出通道，負責將肝臟合成的膽汁運送至膽囊及十二指腸，參與脂肪的消化與吸收。
 
 肝臟的血液供應主要來自『肝動脈』和『肝門靜脈』。肝動脈供應氧氣豐富的血液，而肝門靜脈則負責將來自腸道的營養血液帶入肝臟。相對而言，『肝靜脈』則是將肝臟的血液排出，並不與消化道直接相通。
 
 在影像學中，若箭頭指向的是一條深入肝內並與十二指腸相通的管道，這明確指向『肝管』，因為它是唯一一條與消化道直接相關的管道，負責膽汁的輸送。因此，正確答案為(C)肝管。"
-69,"在做影像導引切片（Imaging-guided biopsy）時,需要避開哪些組織或器官以防範嚴重併發症?",(A)血管 Vessels,(B)膽囊 Gallbladder,(C)胰臟 Pancreas,(D)以上構造均須避開 All of the above should be avoided.,D,執行穿刺切片路徑設計的最核心鐵律為「路徑最短、跨越最少關鍵危險構造」。戳到大血管會引發不可收拾的內出血；戳穿膽囊會引發膽汁性腹膜炎；穿透胰臟則會引發壞死性胰液滲漏胰臟炎。故以上構造均需嚴格避開。,消化系統介入性放射線學,,"📖 chatGPT 學長背景知識
+69,"在做影像導引切片（Imaging-guided biopsy）時,需要避開哪些組織或器官以防範嚴重併發症?",(A)血管 Vessels,(B)膽囊 Gallbladder,(C)胰臟 Pancreas,(D)以上構造均須避開 All of the above should be avoided.,D,執行穿刺切片路徑設計的最核心鐵律為「路徑最短、跨越最少關鍵危險構造」。戳到大血管會引發不可收拾的內出血；戳穿膽囊會引發膽汁性腹膜炎；穿透胰臟則會引發壞死性胰液滲漏胰臟炎。故以上構造均需嚴格避開。,消化系統介入性放射線學,石明誠,"📖 chatGPT 學長背景知識
 
 在進行『影像導引切片』時，選擇正確的切片位置至關重要，以避免潛在的併發症。以下是需要特別注意的幾個組織或器官：
 
@@ -590,13 +590,13 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『胰臟』：胰臟的損傷可能導致『胰腺炎』，這是一種潛在的危險狀況，可能需要住院治療。
 
 因此，在影像導引切片過程中，醫師必須仔細評估影像，確保避開上述所有結構，以降低併發症的風險。選擇正確的切片位置和技術對於患者的安全至關重要。因此，正確答案為(D)以上構造均須避開。"
-70,"下列有關肝臟移植術前的評估及術後的照顧,何者正確?","(A)成功的活體肝臟移植,在技術上有四大考量 adequate graft volume、sufficient inflow、good outflow secure bile duct anastomosis.","(B)對活體肝臟捐贈者而言,若有 steatohepatitis,但剩餘肝臟容積大於30% standard liver volume,仍建議其可捐贈右肝葉。","(C)肝臟移植術後,輸血血品必須 irradiation,主要是為了避免cytomegalovirus 的感染。","(D)在移植前評估時,意外發現病人有 renal cell carcinoma,則其應被排除在肝臟移植等候者名單。",A,(A)正確，此為 LDLT 技術成功的四大黃金支柱。(B)捐贈者一旦確認患有脂肪肝炎（Steatohepatitis），不論容積多大一律列為活體捐贈禁忌。(C)Irradiation（放射線照射血品）的核心目的是為了消滅非特異性免疫T細胞，防範發生致命的移植物抗宿主疾病（TA-GvHD）及預防 EBV 相關淋巴增生疾病。(D)Incidental renal cell carcinoma 經特定評估判定後，不影響肝移植資格。,肝臟移植,,"📖 chatGPT 學長背景知識  
+70,"下列有關肝臟移植術前的評估及術後的照顧,何者正確?","(A)成功的活體肝臟移植,在技術上有四大考量 adequate graft volume、sufficient inflow、good outflow secure bile duct anastomosis.","(B)對活體肝臟捐贈者而言,若有 steatohepatitis,但剩餘肝臟容積大於30% standard liver volume,仍建議其可捐贈右肝葉。","(C)肝臟移植術後,輸血血品必須 irradiation,主要是為了避免cytomegalovirus 的感染。","(D)在移植前評估時,意外發現病人有 renal cell carcinoma,則其應被排除在肝臟移植等候者名單。",A,(A)正確，此為 LDLT 技術成功的四大黃金支柱。(B)捐贈者一旦確認患有脂肪肝炎（Steatohepatitis），不論容積多大一律列為活體捐贈禁忌。(C)Irradiation（放射線照射血品）的核心目的是為了消滅非特異性免疫T細胞，防範發生致命的移植物抗宿主疾病（TA-GvHD）及預防 EBV 相關淋巴增生疾病。(D)Incidental renal cell carcinoma 經特定評估判定後，不影響肝移植資格。,肝臟移植,張文燦,"📖 chatGPT 學長背景知識  
 肝臟移植是一項複雜的手術，涉及多方面的評估與術後照顧。成功的移植需要考量多個技術要素。
 
 在活體肝臟移植中，『成功的移植』需確保『適當的移植物體積』、『充足的血流進入』、『良好的血流排出』及『安全的膽管吻合』。這些因素對於移植後的功能恢復至關重要。對於活體捐贈者，若存在『脂肪性肝炎』，但剩餘肝臟容積大於30%標準肝臟容積，仍需謹慎評估其捐贈的風險。術後，輸血血品的『輻射』處理主要是為了降低『巨細胞病毒』感染的風險，這是術後照顧的重要一環。至於腎細胞癌的發現，根據目前的標準，這樣的病人應被排除在移植名單之外，以避免潛在的腫瘤轉移風險。
 
 綜合以上，選項(A)所述的四大考量是正確的，並且是成功肝臟移植的關鍵要素。"
-71,"下列有關活體肝臟移植(LDLT)優先分配與適應症基準的敘述,何者正確?","(A)C型肝炎男性病人,有三顆大小分別為4.0cm, 2.0cm, 3.0cm的肝細胞癌,沒有血管侵犯與遠端轉移,則其可接受活體肝臟移植。","(B)52歲病人在接受肝臟移植後第三天發生 portal vein stenosis,則病人有資格列入 status 1 waiting list.","(C)因為 bile duct epithelium cell 沒有ABO血型的antigen,所以血型不相容的LDLT的膽道併發症發生率,較血型相容的LDLT為低。","(D)12歲(含)以下或18歲(含)以下且40公斤(含)以下之腦死捐贈者,優先分配給18歲(含)以下等候者",D,(D)正確，符合台灣器官移植等候與器官分配大原則之兒童/青少年相對因素優先權。(A)依據 UCSF 多發肝癌標準，總直徑和必須「小於或等於 8cm」；該患者總和為 4+2+3=9cm，已超出規範。(B)移植後14天內發生「肝動脈栓塞（HAT）」才符合 Status 1 等級資格。(C)膽管上皮細胞「富含」ABO血型抗原，因此血型不相容移植其後續膽道壞死狹窄併發症機率顯著增高。,肝臟移植,,"📖 chatGPT 學長背景知識  
+71,"下列有關活體肝臟移植(LDLT)優先分配與適應症基準的敘述,何者正確?","(A)C型肝炎男性病人,有三顆大小分別為4.0cm, 2.0cm, 3.0cm的肝細胞癌,沒有血管侵犯與遠端轉移,則其可接受活體肝臟移植。","(B)52歲病人在接受肝臟移植後第三天發生 portal vein stenosis,則病人有資格列入 status 1 waiting list.","(C)因為 bile duct epithelium cell 沒有ABO血型的antigen,所以血型不相容的LDLT的膽道併發症發生率,較血型相容的LDLT為低。","(D)12歲(含)以下或18歲(含)以下且40公斤(含)以下之腦死捐贈者,優先分配給18歲(含)以下等候者",D,(D)正確，符合台灣器官移植等候與器官分配大原則之兒童/青少年相對因素優先權。(A)依據 UCSF 多發肝癌標準，總直徑和必須「小於或等於 8cm」；該患者總和為 4+2+3=9cm，已超出規範。(B)移植後14天內發生「肝動脈栓塞（HAT）」才符合 Status 1 等級資格。(C)膽管上皮細胞「富含」ABO血型抗原，因此血型不相容移植其後續膽道壞死狹窄併發症機率顯著增高。,肝臟移植,張文燦,"📖 chatGPT 學長背景知識  
 活體肝臟移植（LDLT）是一種重要的肝臟移植方式，適應症及分配基準需遵循嚴格的醫療標準。以下是相關的核心觀念：
 
 - 『肝細胞癌』的適應症：根據『Milan criteria』，若病人符合無血管侵犯及遠端轉移的條件，則可考慮移植。
@@ -605,9 +605,9 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 『優先分配』：根據規定，12歲（含）以下或18歲（含）以下且40公斤（含）以下的腦死捐贈者，應優先分配給18歲（含）以下的等候者，以確保小兒患者的需求。
 
 綜合以上觀點，選項D的敘述正確，符合目前的臨床實踐與倫理考量。"
-72,"下列有關胰臟炎生理機制與處置的敘述,何者正確?",(A)膽道結石是慢性胰臟炎之常見主要致病因素之一,"(B)診斷慢性胰臟炎,病人血清脂解酶(lipase)和澱粉酶(amylase)數值要至少高於正常2倍以上","(C)secretin 負責刺激胰臟分泌富含電解質之胰液,cholecystokinin (CCK)負責刺激胰臟分泌富含消化酶之胰液",(D)膽道結石導致之胰臟炎均需及早接受經內視鏡逆行性膽管與胰管攝影術(ERCP)檢查,C,(C)正確，此為胃腸道生理學經典核心。(A)膽道結石是引發「急性胰臟炎」的元凶，慢性胰臟炎的主因是長期酗酒或基因突變。(B)慢性胰臟炎後期由於細胞大量萎縮纖維化，發作時酶類（Amylase/Lipase）往往在正常範圍或僅有輕微浮動。(D)只有在結石造成持續性總膽管阻塞、合併急性膽管炎敗血症時，才需在24小時內安排緊急ERCP。,胰臟炎,,"📖 chatGPT 學長背景知識  
+72,"下列有關胰臟炎生理機制與處置的敘述,何者正確?",(A)膽道結石是慢性胰臟炎之常見主要致病因素之一,"(B)診斷慢性胰臟炎,病人血清脂解酶(lipase)和澱粉酶(amylase)數值要至少高於正常2倍以上","(C)secretin 負責刺激胰臟分泌富含電解質之胰液,cholecystokinin (CCK)負責刺激胰臟分泌富含消化酶之胰液",(D)膽道結石導致之胰臟炎均需及早接受經內視鏡逆行性膽管與胰管攝影術(ERCP)檢查,C,(C)正確，此為胃腸道生理學經典核心。(A)膽道結石是引發「急性胰臟炎」的元凶，慢性胰臟炎的主因是長期酗酒或基因突變。(B)慢性胰臟炎後期由於細胞大量萎縮纖維化，發作時酶類（Amylase/Lipase）往往在正常範圍或僅有輕微浮動。(D)只有在結石造成持續性總膽管阻塞、合併急性膽管炎敗血症時，才需在24小時內安排緊急ERCP。,胰臟炎,林子堯,"📖 chatGPT 學長背景知識  
 胰臟炎是胰臟的炎症，分為急性與慢性兩種，常見的致病因素包括『膽道結石』、酗酒、藥物等。慢性胰臟炎的診斷通常不依賴於血清『脂解酶』或『澱粉酶』的數值，因為這些酶在慢性期可能不會顯著升高。『secretin』主要刺激胰臟分泌富含『電解質』的胰液，而『cholecystokinin (CCK)』則促進胰臟分泌富含『消化酶』的胰液，這一點在生理機制中非常重要。對於因『膽道結石』引起的胰臟炎，經內視鏡逆行性膽管與胰管攝影術（ERCP）是重要的診斷及治療手段，但並非所有病例都需及早進行此檢查。因此，正確的選項為(C)，因為它準確描述了胰臟分泌的生理機制。"
-73,"下列有關特殊胰臟疾患與實驗室數據指標的敘述,何者正確?","(A)第一型自體免疫性胰臟炎(AIP)之病人其抽血之IgG 4值在正常上限2倍以上,最常見之主要臨床表徵為腹痛,治療以類固醇為主","(B)慢性胰臟炎病人如出現脂肪痢(steatorrhea)代表其胰臟外分泌機能可能只剩下不到正常之10%,對已出現脂肪痢之病人,如需使用制酸劑來抑制胃酸時應選擇使用含鎂或鈣之制酸劑",(C)腎衰竭病人其血清澱粉酶(amylase)與脂解酶(lipase)之測定值即使在無急性胰臟炎時仍可能高於正常值範圍,(D)病人出現胰臟偽囊腫(pseudocyst)均須及早進行引流以避免感染或破裂,C,(C)正確，由於體內血清澱粉酶與脂解酶主要經由腎臟排泄清除，當發生嚴重腎衰竭尿毒症時，即使全無胰臟發炎，這兩項數值仍會因為清除率下降而出現基礎值假性升高的現象。(A)AIP最核心臨床表現為「無痛性阻塞性黃疸」，易與胰頭癌混淆。(B)出現脂肪痢應絕對避免使用含鎂或鈣之制酸劑，以免其與游離脂肪酸結合，干擾補充之胰脂酶（PERT）作用。,胰臟炎,,"📖 chatGPT 學長背景知識  
+73,"下列有關特殊胰臟疾患與實驗室數據指標的敘述,何者正確?","(A)第一型自體免疫性胰臟炎(AIP)之病人其抽血之IgG 4值在正常上限2倍以上,最常見之主要臨床表徵為腹痛,治療以類固醇為主","(B)慢性胰臟炎病人如出現脂肪痢(steatorrhea)代表其胰臟外分泌機能可能只剩下不到正常之10%,對已出現脂肪痢之病人,如需使用制酸劑來抑制胃酸時應選擇使用含鎂或鈣之制酸劑",(C)腎衰竭病人其血清澱粉酶(amylase)與脂解酶(lipase)之測定值即使在無急性胰臟炎時仍可能高於正常值範圍,(D)病人出現胰臟偽囊腫(pseudocyst)均須及早進行引流以避免感染或破裂,C,(C)正確，由於體內血清澱粉酶與脂解酶主要經由腎臟排泄清除，當發生嚴重腎衰竭尿毒症時，即使全無胰臟發炎，這兩項數值仍會因為清除率下降而出現基礎值假性升高的現象。(A)AIP最核心臨床表現為「無痛性阻塞性黃疸」，易與胰頭癌混淆。(B)出現脂肪痢應絕對避免使用含鎂或鈣之制酸劑，以免其與游離脂肪酸結合，干擾補充之胰脂酶（PERT）作用。,胰臟炎,林子堯,"📖 chatGPT 學長背景知識  
 特殊胰臟疾患的診斷與管理需依賴實驗室數據及臨床表徵。以下是各選項的核心觀念：
 
 - 第一型自體免疫性胰臟炎（AIP）患者的『IgG4』水平通常會顯著升高，且治療以『類固醇』為主，但腹痛並非唯一的主要臨床表徵。
@@ -616,7 +616,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 胰臟偽囊腫的管理需根據其大小及症狀，並非所有情況都需及早引流，過早引流可能導致不必要的併發症。
 
 綜合以上分析，選項C正確，因為腎衰竭患者的酶值可因腎功能不全而異常升高，與急性胰臟炎無關。"
-74,"病人因上腹痛及解黑便來急診疑有胃出血且吐出黑紅色的嘔吐物,以下病人狀況何者綜合評估後「不適合(具絕對/相對禁忌)」立即執行上道內視鏡檢查? a) 病人X光懷疑有胃穿孔併有 free air b) 病人血壓心跳稍高每分鐘100/min,血壓正常,神智正常 c) 病人很喘血氧SaO2低,要用高濃度氧氣,怕嘔吐時有吸入性肺炎 d) 病人血壓只有80/50mmHg,心跳>150下為休克狀況",(A) a+b,(B) a+c+d,(C) b+d,(D) a+b+c,B,上消化道胃鏡檢查的绝对禁忌症包含：消化道疑似或已證實穿孔（a）、心肺血流動力學極度不穩定/未經穩定建立復甦的休克狀態（d）。另外，嚴重低血氧呼吸窘迫（c）在未插管保護氣道前強行施作胃鏡，極易引發大量吸入性肺炎窒息，屬於高度相對禁忌。,消化系內視鏡學簡介,,"📖 chatGPT 學長背景知識
+74,"病人因上腹痛及解黑便來急診疑有胃出血且吐出黑紅色的嘔吐物,以下病人狀況何者綜合評估後「不適合(具絕對/相對禁忌)」立即執行上道內視鏡檢查? a) 病人X光懷疑有胃穿孔併有 free air b) 病人血壓心跳稍高每分鐘100/min,血壓正常,神智正常 c) 病人很喘血氧SaO2低,要用高濃度氧氣,怕嘔吐時有吸入性肺炎 d) 病人血壓只有80/50mmHg,心跳>150下為休克狀況",(A) a+b,(B) a+c+d,(C) b+d,(D) a+b+c,B,上消化道胃鏡檢查的绝对禁忌症包含：消化道疑似或已證實穿孔（a）、心肺血流動力學極度不穩定/未經穩定建立復甦的休克狀態（d）。另外，嚴重低血氧呼吸窘迫（c）在未插管保護氣道前強行施作胃鏡，極易引發大量吸入性肺炎窒息，屬於高度相對禁忌。,消化系內視鏡學簡介,余方榮,"📖 chatGPT 學長背景知識
 
 在急診中，對於懷疑有『胃出血』的病人，進行『上道內視鏡檢查』的時機需謹慎評估。以下是對各選項的綜合分析：
 
@@ -629,7 +629,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 4. **休克狀況**：若病人血壓低（80/50 mmHg）且心跳超過150下，這表示病人處於『休克』狀態，需優先處理循環不穩定的問題，內視鏡檢查可能延誤救治。
 
 綜合以上分析，選項B（a+c+d）包含了不適合立即執行內視鏡檢查的情況，因為胃穿孔、呼吸困難及休克均需優先處理。"
-75,"病人來急診腹痛住院,經腹部電腦斷層發現有小腸的異常出血及懷疑小腸腫瘤,請問下列何者組合為目前進一步探查小腸盲區最適當的診斷與治療工具? a) EMR b) ERCP c) Double balloon enteroscopy d) Capsular endoscopy",(A) a+b,(B) c+d,(C) b+c,(D) b+d,B,針對過去常規胃鏡與大腸鏡無法抵達的「小腸盲區（Deep/Small bowel bleeding）」，現代醫學核心首選診斷與治療黃金組合為：膠囊內視鏡（Capsule endoscopy，高敏感全段定位篩檢）搭配雙氣囊小腸鏡（Double balloon enteroscopy，可深入病灶處進行止血或切片治療）。,消化系內視鏡學簡介,,"📖 chatGPT 學長背景知識
+75,"病人來急診腹痛住院,經腹部電腦斷層發現有小腸的異常出血及懷疑小腸腫瘤,請問下列何者組合為目前進一步探查小腸盲區最適當的診斷與治療工具? a) EMR b) ERCP c) Double balloon enteroscopy d) Capsular endoscopy",(A) a+b,(B) c+d,(C) b+c,(D) b+d,B,針對過去常規胃鏡與大腸鏡無法抵達的「小腸盲區（Deep/Small bowel bleeding）」，現代醫學核心首選診斷與治療黃金組合為：膠囊內視鏡（Capsule endoscopy，高敏感全段定位篩檢）搭配雙氣囊小腸鏡（Double balloon enteroscopy，可深入病灶處進行止血或切片治療）。,消化系內視鏡學簡介,余方榮,"📖 chatGPT 學長背景知識
 
 在小腸的診斷與治療中，尤其是針對『盲區』的探查，選擇合適的工具至關重要。小腸的『盲區』指的是傳統內視鏡無法到達的部位，這裡的異常如腫瘤或出血需要特別的診斷方法。
 
@@ -637,13 +637,13 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 2. **Double balloon enteroscopy（雙氣球內視鏡）**：這是一種侵入性檢查，能夠深入小腸進行診斷及治療，適合於需要進一步介入的情況，如切除腫瘤或止血。
 
 綜合考量，選擇「c+d」的組合，即使用雙氣球內視鏡進行深入檢查及膠囊內視鏡進行初步篩查，能夠有效地探查小腸盲區的異常，並提供必要的治療選項。因此，正確答案為 (B) c+d。"
-76,"下列有關遺傳/自體免疫肝臟疾病的敘述,何者為錯誤?","(A)Wilson 氏症表現為肝實質銅含量增加和24小時尿銅排泄增加,血清攜銅蛋白降低,可能有Kayser-Fleischer環","(B)自體免疫肝炎“Autoimmune Hepatitis”發生在女性較多,目前治療的準則為使用皮質類固醇與免疫抑制劑","(C)青銅色糖尿病包括肝硬化,糖尿病和皮膚色素沉著的典型三聯徵是 Hemochromatosis 的特徵性表現",(D)a1 抗胰蛋白酶缺乏(Antitrypsin Deficiency)與M/S/Z等位基因 alleles(染色體 Chromosome 13)有關。,D,1-抗胰蛋白酶缺乏症（AATD）其編碼基因 SERPINA1 以及常見的 M/S/Z 變異等位基因，是位於人體第 14 號染色體（Chromosome 14）上，而非第 13 號染色體。,非病毒性肝炎,,"📖 chatGPT 學長背景知識  
+76,"下列有關遺傳/自體免疫肝臟疾病的敘述,何者為錯誤?","(A)Wilson 氏症表現為肝實質銅含量增加和24小時尿銅排泄增加,血清攜銅蛋白降低,可能有Kayser-Fleischer環","(B)自體免疫肝炎“Autoimmune Hepatitis”發生在女性較多,目前治療的準則為使用皮質類固醇與免疫抑制劑","(C)青銅色糖尿病包括肝硬化,糖尿病和皮膚色素沉著的典型三聯徵是 Hemochromatosis 的特徵性表現",(D)a1 抗胰蛋白酶缺乏(Antitrypsin Deficiency)與M/S/Z等位基因 alleles(染色體 Chromosome 13)有關。,D,1-抗胰蛋白酶缺乏症（AATD）其編碼基因 SERPINA1 以及常見的 M/S/Z 變異等位基因，是位於人體第 14 號染色體（Chromosome 14）上，而非第 13 號染色體。,非病毒性肝炎,戴嘉言,"📖 chatGPT 學長背景知識  
 遺傳性及自體免疫性肝臟疾病是臨床上常見的肝病類型，了解其特徵及診斷標準對於正確治療至關重要。
 
 在選項中，Wilson 氏症（A）確實表現為『肝實質銅含量增加』和『尿銅排泄增加』，並且可能出現『Kayser-Fleischer環』。自體免疫肝炎（B）主要影響女性，治療上常用『皮質類固醇』及『免疫抑制劑』，這些敘述均正確。青銅色糖尿病（C）是『Hemochromatosis』的典型表現，包含『肝硬化』、糖尿病及『皮膚色素沉著』，同樣無誤。
 
 然而，選項 (D) 提到的『α1 抗胰蛋白酶缺乏』與 M/S/Z 等位基因的關聯是正確的，但此疾病主要影響肺部及肝臟，並不直接與自體免疫肝病相關。因此，選項 (D) 的敘述在此題中是錯誤的，因為它未能正確反映其與自體免疫肝病的關聯性。"
-77,"下列關於新版脂肪肝疾病命名與臨床診斷敘述,何者為錯誤?","(A) 非酒精性脂肪肝“nonalcoholic fatty liver disease”與肥胖,糖尿病或高脂血症相關的特徵為特徵。","(B) 酒精性脂肪性與非酒精性脂肪肝肝臟組織學切片類似,較無法明確區分確診。","(C) 毎週飲酒量女性<140克/週,男性<210克/週之脂肪肝病嫌可診斷為 Metabolic (dysfunction)- associated steatotic liver disease (MASLD)。","(D) 脂肪性肝炎肝臟組織學可能顯示肝細胞氣球樣變性,輕度瀰漫性小葉混合急性和慢性炎症。",C,"(C)錯誤。最新的國際指南中，MASLD的診斷核心是「具有肝臟脂肪變性(steatosis)，加上具備至少一項心血管代謝風險因子(cardiometabolic risk factors)」，並非單純靠飲酒量來開立診斷。每週飲酒量超標(女>140g, 男>210g)但同時符合代謝異常者，應歸類在全新的中介分類——MetALD。",非病毒性肝炎,,"📖 chatGPT 學長背景知識
+77,"下列關於新版脂肪肝疾病命名與臨床診斷敘述,何者為錯誤?","(A) 非酒精性脂肪肝“nonalcoholic fatty liver disease”與肥胖,糖尿病或高脂血症相關的特徵為特徵。","(B) 酒精性脂肪性與非酒精性脂肪肝肝臟組織學切片類似,較無法明確區分確診。","(C) 毎週飲酒量女性<140克/週,男性<210克/週之脂肪肝病嫌可診斷為 Metabolic (dysfunction)- associated steatotic liver disease (MASLD)。","(D) 脂肪性肝炎肝臟組織學可能顯示肝細胞氣球樣變性,輕度瀰漫性小葉混合急性和慢性炎症。",C,"(C)錯誤。最新的國際指南中，MASLD的診斷核心是「具有肝臟脂肪變性(steatosis)，加上具備至少一項心血管代謝風險因子(cardiometabolic risk factors)」，並非單純靠飲酒量來開立診斷。每週飲酒量超標(女>140g, 男>210g)但同時符合代謝異常者，應歸類在全新的中介分類——MetALD。",非病毒性肝炎,戴嘉言,"📖 chatGPT 學長背景知識
 
 新版脂肪肝疾病的命名與診斷標準已經有所調整，特別是對於非酒精性脂肪肝（NAFLD）和酒精性脂肪肝（AFLD）的區分。以下是關鍵觀念：
 
@@ -653,7 +653,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 脂肪性肝炎的組織學特徵包括『肝細胞氣球樣變性』及『輕度瀰漫性小葉混合急性和慢性炎症』。
 
 綜合以上觀點，選項C的描述是正確的，因為它符合最新的診斷標準，而其他選項則未能準確反映這些標準。因此，選項C為正確選擇，且其他選項的敘述相對正確。"
-78,"關於消化道內視鏡的學術/臨床描述,下列何者為非?",(A)是消化道黏膜疾病診斷率最高的醫療技術,"(B)雖為微創診治技術,但仍有風險,需患者同意","(C)可於麻醉或非麻醉下進行,視患者意願與處置複雜度而定","(D)為避免交叉感染疑慮,內視鏡及醫材皆單次使用後即予拋棄",D,內視鏡主機與管身昂貴，臨床上是在每次使用後，依照嚴格的感控規範經過高規格、多道程序的「化學高階消毒與清洗（High-level disinfection）」後重複循環使用，並非單次拋棄式醫材。僅部分切片夾等細部耗材為單次使用。,進階消化系內視鏡,,"📖 chatGPT 學長背景知識
+78,"關於消化道內視鏡的學術/臨床描述,下列何者為非?",(A)是消化道黏膜疾病診斷率最高的醫療技術,"(B)雖為微創診治技術,但仍有風險,需患者同意","(C)可於麻醉或非麻醉下進行,視患者意願與處置複雜度而定","(D)為避免交叉感染疑慮,內視鏡及醫材皆單次使用後即予拋棄",D,內視鏡主機與管身昂貴，臨床上是在每次使用後，依照嚴格的感控規範經過高規格、多道程序的「化學高階消毒與清洗（High-level disinfection）」後重複循環使用，並非單次拋棄式醫材。僅部分切片夾等細部耗材為單次使用。,進階消化系內視鏡,許文鴻,"📖 chatGPT 學長背景知識
 
 消化道內視鏡是一種重要的診斷與治療工具，廣泛應用於消化系統疾病的檢查。以下是關於內視鏡的幾個核心觀念：
 
@@ -663,7 +663,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 關於內視鏡及醫材的使用，雖然有『交叉感染』的風險，但目前的標準是對內視鏡進行『消毒』而非單次使用後拋棄，因為內視鏡本身是可重複使用的醫療器械。
 
 綜合上述，選項D的描述不正確，因為內視鏡及醫材並非『單次使用後即予拋棄』，而是經過適當的消毒程序後可重複使用。"
-79,"關於影像強化內視鏡(Image Enhanced Endoscopy, IEE)之敘述,下列何者有誤?","(A)以化學或光學方法,凸顯消化道黏膜正常與異常組織間的差異",(B)可增加消化道黏膜疾病的偵測率,(C)輔助消化道黏膜早期癌邊界的判定、侵犯深度的評估,(D)可用於黏膜下腫瘤深度的判定,D,"影像強化內視鏡（如 NBI、藍光、化學染色等）的核心機制是強化「表面黏膜層（Mucosa）」的微細血管與腺體開口構造。而黏膜下腫瘤（Submucosal tumor, 如 GIST、平滑肌瘤）深埋在黏膜基底下方，IEE 完全無法穿透，必須仰賴超音波內視鏡（EUS）才能判定深度。",進階消化系內視鏡,,"📖 chatGPT 學長背景知識  
+79,"關於影像強化內視鏡(Image Enhanced Endoscopy, IEE)之敘述,下列何者有誤?","(A)以化學或光學方法,凸顯消化道黏膜正常與異常組織間的差異",(B)可增加消化道黏膜疾病的偵測率,(C)輔助消化道黏膜早期癌邊界的判定、侵犯深度的評估,(D)可用於黏膜下腫瘤深度的判定,D,"影像強化內視鏡（如 NBI、藍光、化學染色等）的核心機制是強化「表面黏膜層（Mucosa）」的微細血管與腺體開口構造。而黏膜下腫瘤（Submucosal tumor, 如 GIST、平滑肌瘤）深埋在黏膜基底下方，IEE 完全無法穿透，必須仰賴超音波內視鏡（EUS）才能判定深度。",進階消化系內視鏡,許文鴻,"📖 chatGPT 學長背景知識  
 影像強化內視鏡（Image Enhanced Endoscopy, IEE）是一種先進的內視鏡技術，透過化學或光學方法來增強消化道黏膜的影像，以便更清楚地辨識正常與異常組織之間的差異。
 
 核心觀念：  
@@ -672,9 +672,9 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 然而，IEE的主要應用是針對『表層』病變，對於『黏膜下腫瘤』的深度判定則存在限制，因為這類腫瘤的特徵不易透過表面影像來評估。
 
 因此，選項(D)「可用於黏膜下腫瘤深度的判定」是錯誤的，因為IEE不適合用來評估黏膜下腫瘤的深度，這是其應用上的一個限制。"
-80,"關於胃腺癌(adenocarcinoma)的臨床症狀和治療,下列何者不正確?","(A)免疫療法在轉移性胃癌的療效顯著,近年的研究已證實可作為一線治療",(B)台灣及日本等國胃癌的標準術式是胃切除併 D2淋巴結摘除,"(C)在左鎖骨上出現大淋巴結,即可判斷是晚期胃癌出現的Virchow's node",(D)胃癌起初的症狀和其他胃部疾病如潰瘍、消化不良等不易區分,C,雖然左鎖骨上淋巴結腫大（Virchow's node）是晚期胃癌轉移的經典特徵，但並非看到此處腫大就「即可判斷」必然是胃癌引起。肺癌、食道癌、胰臟癌、腎癌及淋巴瘤等多種惡性腫瘤，皆有同等機率轉移至左鎖骨上。臨床上必須靠切片確診。,胃腫瘤,,"📖 chatGPT 學長背景知識  
+80,"關於胃腺癌(adenocarcinoma)的臨床症狀和治療,下列何者不正確?","(A)免疫療法在轉移性胃癌的療效顯著,近年的研究已證實可作為一線治療",(B)台灣及日本等國胃癌的標準術式是胃切除併 D2淋巴結摘除,"(C)在左鎖骨上出現大淋巴結,即可判斷是晚期胃癌出現的Virchow's node",(D)胃癌起初的症狀和其他胃部疾病如潰瘍、消化不良等不易區分,C,雖然左鎖骨上淋巴結腫大（Virchow's node）是晚期胃癌轉移的經典特徵，但並非看到此處腫大就「即可判斷」必然是胃癌引起。肺癌、食道癌、胰臟癌、腎癌及淋巴瘤等多種惡性腫瘤，皆有同等機率轉移至左鎖骨上。臨床上必須靠切片確診。,胃腫瘤,吳宜珍,"📖 chatGPT 學長背景知識  
 胃腺癌（adenocarcinoma）是最常見的胃癌類型，臨床症狀常包括『上腹痛』、『食慾減退』、『體重減輕』及『消化不良』等，這些症狀與其他胃部疾病如潰瘍相似，常使早期診斷困難。治療方面，『手術切除』是早期胃癌的主要治療方式，通常包括『D2淋巴結摘除』，這在台灣及日本等地已成為標準術式。對於轉移性胃癌，『免疫療法』的研究顯示其療效逐漸受到重視，但目前仍未普遍認可為一線治療。至於『Virchow's node』，左鎖骨上淋巴結腫大確實是晚期胃癌的常見表現，提示可能存在腹部腫瘤的轉移。因此，選項C的描述是正確的，其他選項的陳述則存在不正確之處，特別是關於免疫療法的應用。"
-81,"關於惡性胃腫瘤分類與 Lauren 組織學分型的敘述,哪一項組合正確? (1)胃淋巴癌(lymphoma)是第二常見的惡性胃腫瘤。(2)胃間質瘤(GIST)屬於非上皮起源,內視鏡下常表現為黏膜下腫瘤。(3)diffuse type 胃腺癌與遺傳較無關。(4)intestinal type 胃腺癌好發在胃的近端,diffuse type 則多在遠端。",(A) (1)+(2),(B) (1)+(2)+(4),(C) (2)+(3)+(4),(D) (1)+(2)+(3)+(4),A,(1)(2)敘述完全正確。(3)相比之下，彌漫型胃癌（Diffuse type）多伴隨 E-cadherin (CDH1基因) 的表達缺失，與「家族性遺傳」關聯性顯著較高。(4)配對完全相反，Intestinal type 好發於胃竇等遠端位置；Diffuse type 則多好發於近端（近賁門處），且常進展成皮革胃（Linitis plastica），預後極差。,胃腫瘤,,"📖 chatGPT 學長背景知識
+81,"關於惡性胃腫瘤分類與 Lauren 組織學分型的敘述,哪一項組合正確? (1)胃淋巴癌(lymphoma)是第二常見的惡性胃腫瘤。(2)胃間質瘤(GIST)屬於非上皮起源,內視鏡下常表現為黏膜下腫瘤。(3)diffuse type 胃腺癌與遺傳較無關。(4)intestinal type 胃腺癌好發在胃的近端,diffuse type 則多在遠端。",(A) (1)+(2),(B) (1)+(2)+(4),(C) (2)+(3)+(4),(D) (1)+(2)+(3)+(4),A,(1)(2)敘述完全正確。(3)相比之下，彌漫型胃癌（Diffuse type）多伴隨 E-cadherin (CDH1基因) 的表達缺失，與「家族性遺傳」關聯性顯著較高。(4)配對完全相反，Intestinal type 好發於胃竇等遠端位置；Diffuse type 則多好發於近端（近賁門處），且常進展成皮革胃（Linitis plastica），預後極差。,胃腫瘤,吳宜珍,"📖 chatGPT 學長背景知識
 
 - 『惡性胃腫瘤』主要包括胃腺癌、胃淋巴癌及胃間質瘤(GIST)等。
 - 胃淋巴癌是『第二常見』的惡性胃腫瘤，僅次於胃腺癌。
@@ -683,7 +683,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - Intestinal type 胃腺癌通常好發於『胃的近端』，而diffuse type則多見於『遠端』。
 
 綜合以上觀點，選項(1)與(2)均為正確敘述，(3)關於diffuse type的遺傳性描述不正確，(4)則是對於腫瘤部位的描述有誤。因此，正確的組合為(A) (1)+(2)。"
-82,"關於制酸劑 proton-pump inhibitors (PPIs),下列敘述何者錯誤?",(A)該類藥物抑制 H+/K+-ATPase 活性,"(B)半衰期約為1~4小時,故口服藥物頻率建議一天四次(QID)",(C)建議空腹服藥,(D)能調整胃酸環境從pH<2至 pH>4,B,雖然 PPIs 在血中的生物半衰期（t1/2）大約只有 1 到 2 小時，但因為它們是與胃壁細胞上的質子幫浦進行「不可逆的共價結合（Irreversible inhibition）」，其藥效可持續 24 小時以上直到新的幫浦被製造。因此，常規臨床使用頻率為「一天一次（QD）」或一天兩次，絕非一天四次。,消化系統藥理學,,"📖 chatGPT 學長背景知識  
+82,"關於制酸劑 proton-pump inhibitors (PPIs),下列敘述何者錯誤?",(A)該類藥物抑制 H+/K+-ATPase 活性,"(B)半衰期約為1~4小時,故口服藥物頻率建議一天四次(QID)",(C)建議空腹服藥,(D)能調整胃酸環境從pH<2至 pH>4,B,雖然 PPIs 在血中的生物半衰期（t1/2）大約只有 1 到 2 小時，但因為它們是與胃壁細胞上的質子幫浦進行「不可逆的共價結合（Irreversible inhibition）」，其藥效可持續 24 小時以上直到新的幫浦被製造。因此，常規臨床使用頻率為「一天一次（QD）」或一天兩次，絕非一天四次。,消化系統藥理學,林凡立,"📖 chatGPT 學長背景知識  
 - 『制酸劑』是用於治療胃酸相關疾病的藥物，主要包括『質子泵抑制劑』(PPIs)。  
 - PPIs 主要透過抑制『H+/K+-ATPase』活性來減少胃酸分泌。  
 - 雖然 PPIs 的『半衰期』約為 1~4 小時，但其『藥效持續時間』可達 24 小時，因此不需一天四次服用。  
@@ -691,7 +691,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - PPIs 能有效調整胃酸環境，將 pH 值從『<2』調整至『>4』，這對於治療胃食道逆流及潰瘍等疾病非常重要。  
 
 綜合以上資訊，選項 B 的說法是錯誤的，因為雖然 PPIs 的半衰期短，但其長效性使得一天一次或兩次的服用頻率已足夠，無需達到一天四次的頻率。"
-83,自體免疫性胰臟炎（AIP）第二型與第一型相比，最核心的相異學術特徵為何?,(A)主要出現在老年男性，且伴隨全身多器官病變,(B)血清中 IgG4 數值通常會顯著暴增超過 2 倍以上,"(C)組織學上有著特異性的粒細胞上皮損傷（GEL, Granulocytic epithelial lesion）",(D)對於皮質類固醇（Corticosteroid）的治療完全沒有任何反應,C,第二型自體免疫性胰臟炎（Type 2 AIP）屬於局限於胰臟的特異疾病（無全身 IgG4 多器官累及），其血清 IgG4 數值通常完全正常。組織病理學上的黃金核心特徵是見到「粒細胞上皮損傷（GEL）」，且其與第一型相同，對於類固醇一線治療反應極佳。,胰臟炎,,"📖 chatGPT 學長背景知識  
+83,自體免疫性胰臟炎（AIP）第二型與第一型相比，最核心的相異學術特徵為何?,(A)主要出現在老年男性，且伴隨全身多器官病變,(B)血清中 IgG4 數值通常會顯著暴增超過 2 倍以上,"(C)組織學上有著特異性的粒細胞上皮損傷（GEL, Granulocytic epithelial lesion）",(D)對於皮質類固醇（Corticosteroid）的治療完全沒有任何反應,C,第二型自體免疫性胰臟炎（Type 2 AIP）屬於局限於胰臟的特異疾病（無全身 IgG4 多器官累及），其血清 IgG4 數值通常完全正常。組織病理學上的黃金核心特徵是見到「粒細胞上皮損傷（GEL）」，且其與第一型相同，對於類固醇一線治療反應極佳。,胰臟炎,林子堯,"📖 chatGPT 學長背景知識  
 自體免疫性胰臟炎（AIP）分為第一型和第二型，兩者在臨床特徵和病理學上有顯著差異。
 
 核心觀念：  
@@ -701,7 +701,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 對於治療，第二型AIP對『皮質類固醇』的反應通常不如第一型顯著，但並非完全無反應。
 
 綜合以上，第二型AIP的最核心特徵在於其組織學上出現的『粒細胞上皮損傷』，這一點與第一型的特徵明顯不同，因此選項C是正確的。"
-84,"Osmotic laxatives 滲透性瀉劑中,關於Lactulose 的敘述何者錯誤?","(A)作為瀉劑之機轉為加強水分進入腸道以軟化糞便,同時藥物代謝物能刺激腸胃蠕動","(B)代謝物包含 acetate 以及 lactate,其助於酸化腸道",(C)上述選項能促進 ammonia (NH3)轉換為ammonium (NH4+),(D)應留意副作用如惡化肝性腦病變,D,Lactulose（乳果糖）在結腸內會被細菌分解為有機酸（Lactate 與 Acetate），這會強烈酸化腸道環境，促使易被吸收的毒性游離氨（NH3）轉化為不被腸道吸收的銨離子（NH4+）並隨糞便排出。因此，它是臨床上用來「治療與緩解」肝性腦病變的首選第一線核心王牌藥物，而非其引發的副作用。,消化系統藥理學,,"📖 chatGPT 學長背景知識
+84,"Osmotic laxatives 滲透性瀉劑中,關於Lactulose 的敘述何者錯誤?","(A)作為瀉劑之機轉為加強水分進入腸道以軟化糞便,同時藥物代謝物能刺激腸胃蠕動","(B)代謝物包含 acetate 以及 lactate,其助於酸化腸道",(C)上述選項能促進 ammonia (NH3)轉換為ammonium (NH4+),(D)應留意副作用如惡化肝性腦病變,D,Lactulose（乳果糖）在結腸內會被細菌分解為有機酸（Lactate 與 Acetate），這會強烈酸化腸道環境，促使易被吸收的毒性游離氨（NH3）轉化為不被腸道吸收的銨離子（NH4+）並隨糞便排出。因此，它是臨床上用來「治療與緩解」肝性腦病變的首選第一線核心王牌藥物，而非其引發的副作用。,消化系統藥理學,林凡立,"📖 chatGPT 學長背景知識
 
 - 『Lactulose』是一種常用的『滲透性瀉劑』，主要用於治療便秘及肝性腦病變。
 - 其機轉為通過增加腸道內的『水分』來軟化糞便，並且其代謝物可刺激腸道蠕動。
@@ -709,7 +709,7 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 雖然Lactulose的使用對於改善肝性腦病變有益，但需注意其副作用，特別是對於已存在的肝性腦病變患者，可能會因為腸道內氨的變化而惡化病情。
 
 綜合以上觀點，選項D提到的副作用是正確的，因為在某些情況下，Lactulose的使用可能會導致肝性腦病變的惡化。因此，選項D的敘述是正確的，並不錯誤。"
-85,"關於治療大腸激躁症(IBS)的藥物 Alosetron,下列敘述何者錯誤?",(A)屬於5-HT3-receptor antagonist,(B)核准於治療女性 constipation-predominant IBS,"(C)可減少 5-HT3對EPAN的活化,減少腸胃傳遞不適感至中樞","(D)可減少5-HT3 對 myenteric IPAN的活化,降低腸道收縮","B,C",本題因原考卷在選項 B、C 出現了同義錯植，經集體申覆後送分。在學術藥理定義上，Alosetron 屬於 5-HT3 受體拮抗劑，其唯一的法定臨床適應症是核准用於治療「重度且對常規治療無效之女性『腹瀉型大腸激躁症(Diarrhea-predominant IBS)』」，而非便秘型。,消化系統藥理學,,"📖 chatGPT 學長背景知識
+85,"關於治療大腸激躁症(IBS)的藥物 Alosetron,下列敘述何者錯誤?",(A)屬於5-HT3-receptor antagonist,(B)核准於治療女性 constipation-predominant IBS,"(C)可減少 5-HT3對EPAN的活化,減少腸胃傳遞不適感至中樞","(D)可減少5-HT3 對 myenteric IPAN的活化,降低腸道收縮","B,C",本題因原考卷在選項 B、C 出現了同義錯植，經集體申覆後送分。在學術藥理定義上，Alosetron 屬於 5-HT3 受體拮抗劑，其唯一的法定臨床適應症是核准用於治療「重度且對常規治療無效之女性『腹瀉型大腸激躁症(Diarrhea-predominant IBS)』」，而非便秘型。,消化系統藥理學,林凡立,"📖 chatGPT 學長背景知識
 
 大腸激躁症（IBS）是一種常見的腸道功能性疾病，Alosetron 是一種專門用於治療女性便秘型 IBS 的藥物，其主要作用機制為『5-HT3 受體拮抗劑』。以下是對選項的綜合解析：
 
@@ -720,9 +720,9 @@ D型肝炎病毒（HDV）是一種依賴於B型肝炎病毒（HBV）存在的病
 - 選項 (D) 錯誤，因為 Alosetron 的作用主要是減少腸道的過度收縮，而不是降低 myenteric IPAN 的活化。
 
 因此，正確答案為選項 (D)，因為其描述不符合 Alosetron 的實際作用機制。"
-86,"關於止吐藥物 Aprepitant, Netupitant 及 Rolapitant 此類藥物,下列敘述何者錯誤?",(A)屬於 Neurokinin (NK) receptor agonists,(B)可併用 5-HT3-receptor antagonists 及 corticosteroids 以控制化療引起之遲發性噁心嘔吐(delayed chemotherapy-induced N/V),(C)主要作用於中樞之CTZ及 vomiting center,(D)屬於 NK receptor antagonists,A,字尾為 -pitant 的藥物（如 Aprepitant）其核心機轉為高度特異性穿透 BBB 的「Neurokinin-1 (NK1) 受體拮抗劑（Antagonists）」，藉由阻斷 Substance P 訊號來強力止吐，非活化劑（Agonists）。,消化系統藥理學,,"📖 chatGPT 學長背景知識  
+86,"關於止吐藥物 Aprepitant, Netupitant 及 Rolapitant 此類藥物,下列敘述何者錯誤?",(A)屬於 Neurokinin (NK) receptor agonists,(B)可併用 5-HT3-receptor antagonists 及 corticosteroids 以控制化療引起之遲發性噁心嘔吐(delayed chemotherapy-induced N/V),(C)主要作用於中樞之CTZ及 vomiting center,(D)屬於 NK receptor antagonists,A,字尾為 -pitant 的藥物（如 Aprepitant）其核心機轉為高度特異性穿透 BBB 的「Neurokinin-1 (NK1) 受體拮抗劑（Antagonists）」，藉由阻斷 Substance P 訊號來強力止吐，非活化劑（Agonists）。,消化系統藥理學,林凡立,"📖 chatGPT 學長背景知識  
 Aprepitant、Netupitant及Rolapitant屬於『神經激素』(Neurokinin) 受體拮抗劑，主要針對『NK-1受體』進行作用，並非『激動劑』(agonists)。這些藥物主要用於控制化療引起的『遲發性噁心嘔吐』(delayed chemotherapy-induced N/V)，並可與『5-HT3受體拮抗劑』及『皮質類固醇』合併使用以增強療效。它們的作用主要集中於中樞神經系統的『化學感受器觸發區』(CTZ)及『嘔吐中樞』(vomiting center)，有效減少噁心與嘔吐的發生。因此，選項(A)的描述為錯誤，因為這些藥物並不屬於『激動劑』，而是『拮抗劑』。"
-87,"治療消化道靜脈曲張甚至出血(variceal hemorrhage)之藥物敘述,下列何者錯誤?","(A)Somatostatin 透過減少 glucagon 分泌,進一步減少內臟血流而降低門靜脈壓","(B)Vasopressin可收縮內臟動脈,減少後端門靜脈血流輸出之壓力","(C)Octreotide 為 Somatostatin 類似物,可直接收縮腸胃道血管以減少肝門靜脈壓","(D)Terlipressin 為 Vasopressin之類似物,臨床上用於 variceal bleeding",C,Octreotide（奧曲肽）與天然體抑素相同，其降低門脈高壓的核心機制是「藉由強力抑制多種擴血管胃腸激素（如 Glucagon）的釋放」，進而間接造成內臟血管強烈收縮、減少流入靜脈的血流量。它並「不是」直接作用在平滑肌上引起直接收縮。,消化系統藥理學,,"📖 chatGPT 學長背景知識  
+87,"治療消化道靜脈曲張甚至出血(variceal hemorrhage)之藥物敘述,下列何者錯誤?","(A)Somatostatin 透過減少 glucagon 分泌,進一步減少內臟血流而降低門靜脈壓","(B)Vasopressin可收縮內臟動脈,減少後端門靜脈血流輸出之壓力","(C)Octreotide 為 Somatostatin 類似物,可直接收縮腸胃道血管以減少肝門靜脈壓","(D)Terlipressin 為 Vasopressin之類似物,臨床上用於 variceal bleeding",C,Octreotide（奧曲肽）與天然體抑素相同，其降低門脈高壓的核心機制是「藉由強力抑制多種擴血管胃腸激素（如 Glucagon）的釋放」，進而間接造成內臟血管強烈收縮、減少流入靜脈的血流量。它並「不是」直接作用在平滑肌上引起直接收縮。,消化系統藥理學,林凡立,"📖 chatGPT 學長背景知識  
 在治療消化道靜脈曲張及其出血的藥物中，主要目的是降低『門靜脈壓』，以減少出血風險。以下是各選項的核心觀念：
 
 - **Somatostatin**：透過減少『glucagon』分泌，降低內臟血流，進而降低門靜脈壓，這是正確的描述。
@@ -731,7 +731,7 @@ Aprepitant、Netupitant及Rolapitant屬於『神經激素』(Neurokinin) 受體�
 - **Terlipressin**：是Vasopressin的類似物，臨床上確實用於治療靜脈曲張出血，這是正確的。
 
 綜合以上分析，選項C的描述不夠準確，因此為錯誤選項。Octreotide的作用機制應強調其對內臟血流的調節，而非直接收縮血管。"
-88,下圖顯示三張連續的大腸黏膜微細病理切片。由左到右其正確的診斷排列順序分別為何?,"(A)Adenocarcinoma, tubular adenoma, normal mucosa","(B)Normal mucosa, adenocarcinoma, tubular adenoma","(C)Tubular adenoma, adenocarcinoma, normal mucosa","(D)Normal mucosa, adenocarcinoma, normal mucosa",B,左圖可見隱窩排列工整、細胞分化成熟且杯狀細胞極多，為正常大腸黏膜（Normal mucosa）；中圖腺體背靠背、嚴重浸潤間質且細胞具高度異型性，為大腸腺癌（Adenocarcinoma）；右圖可見細胞偽複層核深染但無明顯基底膜侵犯，為典型的管狀腺瘤（Tubular adenoma）。,病理學實驗：消化道系統,,"📖 chatGPT 學長背景知識
+88,下圖顯示三張連續的大腸黏膜微細病理切片。由左到右其正確的診斷排列順序分別為何?,"(A)Adenocarcinoma, tubular adenoma, normal mucosa","(B)Normal mucosa, adenocarcinoma, tubular adenoma","(C)Tubular adenoma, adenocarcinoma, normal mucosa","(D)Normal mucosa, adenocarcinoma, normal mucosa",B,左圖可見隱窩排列工整、細胞分化成熟且杯狀細胞極多，為正常大腸黏膜（Normal mucosa）；中圖腺體背靠背、嚴重浸潤間質且細胞具高度異型性，為大腸腺癌（Adenocarcinoma）；右圖可見細胞偽複層核深染但無明顯基底膜侵犯，為典型的管狀腺瘤（Tubular adenoma）。,病理學實驗：消化道系統,賴薇安,"📖 chatGPT 學長背景知識
 
 在大腸病理學中，『腺癌』、、『腺瘤』及『正常黏膜』的鑑別至關重要。大腸腺瘤是良性病變，可能進一步演變為『腺癌』，而正常黏膜則顯示健康的組織結構。
 
@@ -740,7 +740,7 @@ Aprepitant、Netupitant及Rolapitant屬於『神經激素』(Neurokinin) 受體�
 3. 『腺癌』：細胞異型性明顯，腺體結構破壞，細胞增生迅速，並可能侵入周圍組織。
 
 根據這些病理特徵，正確的診斷順序應該是從『正常黏膜』開始，接著是『腺癌』，最後是『腺瘤』，因為腺瘤通常在腺癌之前出現。因此，正確答案為選項B：『正常黏膜、腺癌、腺瘤』。"
-89,下圖顯示一食道腫瘤病理切片（含有豐富細胞質、可見明顯的角化珠 Keratin pearl 與 dyskeratotic cells，且排列凌亂高度侵犯間質）。關於此腫瘤的敘述何者錯誤？https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/quize_image/113-final-89.jpg,(A)此腫瘤為食道最常見的惡性腫瘤。,(B)此腫瘤的特色為細胞質豐富、可能觀察到 Keratin pearl 與 dyskeratotic cells。,(C)可發現排列凌亂之腫瘤細胞侵犯間質，所以此為一侵襲癌。,(D)此腫瘤位於消化道，屬於腺癌的一種。,D,病理顯微切片下只要見到極為特異的「角化珠（Keratin pearl）」及異常角化細胞（Dyskeratotic cells），即可 100% 斷定其起源為上皮分化而來的「鱗狀細胞癌（Squamous cell carcinoma）」，在分類上絕非屬於腺癌。,病理學實驗：消化道系統,,"📖 chatGPT 學長背景知識
+89,下圖顯示一食道腫瘤病理切片（含有豐富細胞質、可見明顯的角化珠 Keratin pearl 與 dyskeratotic cells，且排列凌亂高度侵犯間質）。關於此腫瘤的敘述何者錯誤？https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/quize_image/113-final-89.jpg,(A)此腫瘤為食道最常見的惡性腫瘤。,(B)此腫瘤的特色為細胞質豐富、可能觀察到 Keratin pearl 與 dyskeratotic cells。,(C)可發現排列凌亂之腫瘤細胞侵犯間質，所以此為一侵襲癌。,(D)此腫瘤位於消化道，屬於腺癌的一種。,D,病理顯微切片下只要見到極為特異的「角化珠（Keratin pearl）」及異常角化細胞（Dyskeratotic cells），即可 100% 斷定其起源為上皮分化而來的「鱗狀細胞癌（Squamous cell carcinoma）」，在分類上絕非屬於腺癌。,病理學實驗：消化道系統,賴薇安,"📖 chatGPT 學長背景知識
 
 - 食道最常見的惡性腫瘤為『鱗狀細胞癌』，而非腺癌。
 - 鱗狀細胞癌的病理特徵包括『豐富細胞質』、可見的『角化珠（Keratin pearl）』及『dyskeratotic cells』，這些都是典型的鱗狀細胞癌表現。
@@ -748,7 +748,7 @@ Aprepitant、Netupitant及Rolapitant屬於『神經激素』(Neurokinin) 受體�
 - 腺癌主要發生於食道下段，通常與『胃食道逆流』及『巴瑞特食道』有關，並不符合此題描述的特徵。
 
 綜合以上觀點，選項 (D) 的敘述為錯誤，因為該腫瘤並非腺癌，而是食道最常見的惡性腫瘤——鱗狀細胞癌。此腫瘤的病理特徵與描述完全吻合，故選擇 (D) 為正確答案。"
-90,關於偽膜性大腸炎(Pseudomembranous colitis)的敘述，何者正確？,(A)此疾病為感染性疾病。,(B)此疾病屬自體免疫疾病。,(C)偽膜指的是在腸道表面的一層膜狀構造，由高度增生的上皮細胞所構成。,(D)此疾病的發生與先前使用抗生素無關。,A,(A)正確，其是由難辨梭狀芽孢桿菌（Clostridium difficile）毒素引發的典型腸道「感染性疾病」。(B)非自體免疫疾病。(C)所謂偽膜，是由發炎壞死的上皮細胞碎屑、纖維素（Fibrin）及大量黏液中性粒細胞混合而成的斑塊狀滲出物，並非由活的上皮細胞增生構成。(D)此菌感染與「先前長期/過量暴露廣效抗生素（導致腸道正常菌叢死光）」具有高度因果相關。,病理學實驗：消化道系統,,"📖 chatGPT 學長背景知識  
+90,關於偽膜性大腸炎(Pseudomembranous colitis)的敘述，何者正確？,(A)此疾病為感染性疾病。,(B)此疾病屬自體免疫疾病。,(C)偽膜指的是在腸道表面的一層膜狀構造，由高度增生的上皮細胞所構成。,(D)此疾病的發生與先前使用抗生素無關。,A,(A)正確，其是由難辨梭狀芽孢桿菌（Clostridium difficile）毒素引發的典型腸道「感染性疾病」。(B)非自體免疫疾病。(C)所謂偽膜，是由發炎壞死的上皮細胞碎屑、纖維素（Fibrin）及大量黏液中性粒細胞混合而成的斑塊狀滲出物，並非由活的上皮細胞增生構成。(D)此菌感染與「先前長期/過量暴露廣效抗生素（導致腸道正常菌叢死光）」具有高度因果相關。,病理學實驗：消化道系統,賴薇安,"📖 chatGPT 學長背景知識  
 偽膜性大腸炎（Pseudomembranous colitis）是一種由『Clostridium difficile』感染引起的腸道疾病，通常與抗生素使用有關。以下是關於此疾病的核心觀念：
 
 - 此疾病為『感染性疾病』，主要由『C. difficile』毒素引起，導致腸道炎症。
