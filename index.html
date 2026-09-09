@@ -493,10 +493,9 @@ async function startFullQuiz(quizName, displayName, category) {
         btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
         btnSubmitAll.disabled = false;
 
-        await syncExplanationsFromSheet();
-
         renderAllQuestions();
         updateProgress();
+        syncExplanationsFromSheet();
     } catch (err) {
         alert("讀取失敗: " + err.message);
         goBackToCategory();
@@ -527,9 +526,10 @@ async function startCrossYearQuiz(blockName, displayName, category) {
         btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
         btnSubmitAll.disabled = false;
 
-        await syncExplanationsFromSheet();
         renderAllQuestions();
         updateProgress();
+
+        syncExplanationsFromSheet();
     } catch (err) {
         alert("讀取失敗: " + err.message);
         goBackToCategory();
@@ -838,19 +838,27 @@ async function saveExplanationToSheet(qId) {
     }
 }
 
-// D. 抓取 Google Sheets 最新解析並合併到題目中
+// D. 抓取 Google Sheets 最新解析並背景同步至畫面上
 async function syncExplanationsFromSheet() {
     try {
         const res = await fetch(GAS_EXPLANATION_API);
         if (!res.ok) return;
         const customExplanations = await res.json();
 
-        // 若試算表內有此題的解析紀錄，直接覆蓋顯示
+        // 遍歷所有題目，如果雲端試算表有修訂版，同步更新記憶體與已經渲染好的畫面
         currentQuestions.forEach(q => {
-            if (customExplanations[String(q.id)]) {
-                q.ai_explanation = customExplanations[String(q.id)];
+            const cloudExp = customExplanations[String(q.id)];
+            if (cloudExp) {
+                q.ai_explanation = cloudExp;
+
+                // 若此時畫面上已經渲染了該題的解析框，直接無感替換內容
+                const textView = document.getElementById(`exp-text-view-${q.id}`);
+                if (textView) {
+                    textView.innerHTML = cloudExp;
+                }
             }
         });
+        console.log("☁️ 雲端試算表最新詳解已於背景同步完成！");
     } catch (e) {
         console.warn("無法載入雲端試算表詳解，使用預設解析", e);
     }
