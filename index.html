@@ -614,10 +614,19 @@ function renderAllQuestions() {
             <!-- 檢視狀態 -->
             <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
 
-            <!-- 編輯狀態 (預設隱藏) -->
+            <!-- 編輯狀態 (預設隱藏，支援粗體/紅筆/螢光筆) -->
             <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
-                <textarea id="exp-input-${q.id}" rows="5" style="width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #86efac; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
-            </div>
+            <!-- 劃重點工具列 -->
+                <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
+                    <button type="button" onclick="formatDoc('${q.id}', 'bold')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-weight: bold; cursor: pointer;" title="粗體"><b>B 粗體</b></button>
+                    <button type="button" onclick="formatColor('${q.id}', '#ef4444')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; color: #ef4444; font-weight: bold; cursor: pointer;" title="紅字重點">🔴 紅筆</button>
+                    <button type="button" onclick="formatHighlight('${q.id}', '#fef08a')" style="background: #fef08a; border: 1px solid #fde047; border-radius: 4px; padding: 3px 8px; color: #854d0e; font-weight: bold; cursor: pointer;" title="黃色螢光筆">🖍️ 螢光筆</button>
+                    <button type="button" onclick="formatDoc('${q.id}', 'removeFormat')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; color: #64748b; cursor: pointer;" title="清除格式">🧹 清除格式</button>
+             </div>
+
+    <!-- 富文本編輯框 -->
+    <div id="exp-input-${q.id}" contenteditable="true" style="min-height: 120px; max-height: 350px; overflow-y: auto; background: white; border: 1.5px solid #86efac; border-radius: 6px; padding: 10px; font-size: 0.95rem; line-height: 1.6; outline: none;"></div>
+</div>
         </div>
     </div>
 </details>
@@ -744,12 +753,13 @@ function goBackToCategory() {
 document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
 document.getElementById("btn-back-to-category").addEventListener("click", goBackToCategory);
 
-// A. 切換至編輯模式
+// A. 切換至編輯模式（支援富文本 innerHTML）
 function toggleEditExplanation(qId) {
     const q = currentQuestions.find(item => String(item.id) === String(qId));
     const currentText = q ? (q.ai_explanation || "") : "";
 
-    document.getElementById(`exp-input-${qId}`).value = currentText;
+    // 🎯 改為 innerHTML，保留粗體、螢光筆標籤
+    document.getElementById(`exp-input-${qId}`).innerHTML = currentText;
     document.getElementById(`exp-text-view-${qId}`).classList.add("hidden");
     document.getElementById(`exp-edit-view-${qId}`).classList.remove("hidden");
 
@@ -768,16 +778,27 @@ function cancelEditExplanation(qId) {
     document.getElementById(`btn-cancel-${qId}`).classList.add("hidden");
 }
 
-// C. 儲存解析至 Google Sheets
+// C. 儲存解析至 Google Sheets（讀取 innerHTML 格式與編輯者）
 async function saveExplanationToSheet(qId) {
-    const newExplanation = document.getElementById(`exp-input-${qId}`).value.trim();
+    // 🎯 讀取包含 <b>, <span> 等標籤的格式內容
+    const newExplanation = document.getElementById(`exp-input-${qId}`).innerHTML.trim();
     const saveBtn = document.getElementById(`btn-save-${qId}`);
+
+    // 自動詢問並記住編輯者暱稱（僅第一次會問）
+    let editorName = localStorage.getItem("med_quiz_editor_name");
+    if (!editorName) {
+        editorName = prompt("請輸入您的姓名或暱稱（供共筆記錄，僅需輸入一次）：");
+        if (!editorName || editorName.trim() === "") {
+            editorName = "熱心同學";
+        } else {
+            localStorage.setItem("med_quiz_editor_name", editorName.trim());
+        }
+    }
 
     saveBtn.innerText = "儲存中...";
     saveBtn.disabled = true;
 
     try {
-        // 利用 text/plain 發送避免觸發 CORS 預檢限制
         await fetch(GAS_EXPLANATION_API, {
             method: "POST",
             mode: "no-cors",
@@ -786,22 +807,23 @@ async function saveExplanationToSheet(qId) {
             },
             body: JSON.stringify({
                 id: qId,
-                explanation: newExplanation
+                explanation: newExplanation,
+                editor: editorName
             })
         });
 
-        // 更新前端題目資料
+        // 更新前端快取資料
         const targetQ = currentQuestions.find(item => String(item.id) === String(qId));
         if (targetQ) targetQ.ai_explanation = newExplanation;
 
-        // 更新畫面呈現
+        // 更新畫面預覽（渲染粗體、螢光筆樣式）
         const textView = document.getElementById(`exp-text-view-${qId}`);
         textView.innerHTML = newExplanation !== ""
             ? newExplanation
             : '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>';
 
         cancelEditExplanation(qId);
-        alert("✅ 解析已成功同步儲存至 Google 試算表！");
+        alert(`✅ 解析已成功同步儲存！(編輯者：${editorName})`);
     } catch (err) {
         alert("儲存失敗: " + err.message);
     } finally {
@@ -827,7 +849,33 @@ async function syncExplanationsFromSheet() {
         console.warn("無法載入雲端試算表詳解，使用預設解析", e);
     }
 }
-</script>
 
+// ==========================================
+// 💡 第二步：劃重點格式控制函式（可直接貼在 script 最底部）
+// ==========================================
+function formatDoc(qId, cmd, val = null) {
+    const editor = document.getElementById(`exp-input-${qId}`);
+    if (!editor) return;
+    editor.focus();
+    document.execCommand(cmd, false, val);
+}
+
+function formatColor(qId, color) {
+    const editor = document.getElementById(`exp-input-${qId}`);
+    if (!editor) return;
+    editor.focus();
+    document.execCommand("foreColor", false, color);
+}
+
+function formatHighlight(qId, color) {
+    const editor = document.getElementById(`exp-input-${qId}`);
+    if (!editor) return;
+    editor.focus();
+    if (!document.execCommand("hiliteColor", false, color)) {
+        document.execCommand("backColor", false, color);
+    }
+}
+
+</script>
 </body>
 </html>
