@@ -308,7 +308,8 @@
 
 <script>
 const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com";
-
+// 在 script 最上方加入（替換為你剛剛複製的 GAS URL）：
+const GAS_EXPLANATION_API = "https://script.google.com/macros/s/AKfycbzzrNQZVsa9x5Lz5vOhS8pv60MkQZQafdy-Lzj1IIG_Ms7GJTW0bTUIe7kcHz28_qZE/exec";
 let currentBlockName = "";
 let currentQuizName = "";
 let currentQuestions = [];
@@ -460,6 +461,7 @@ async function openCategorySelection(quizName, displayName) {
         goBackToLobby();
     }
 }
+// 抓取雲端試算表上的最新修訂解析進行覆蓋
 
 // 4. 開始單一考卷測驗
 async function startFullQuiz(quizName, displayName, category) {
@@ -484,6 +486,8 @@ async function startFullQuiz(quizName, displayName, category) {
         btnSubmitAll.style.display = "inline-block";
         btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
         btnSubmitAll.disabled = false;
+
+        await syncExplanationsFromSheet();
 
         renderAllQuestions();
         updateProgress();
@@ -517,6 +521,7 @@ async function startCrossYearQuiz(blockName, displayName, category) {
         btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
         btnSubmitAll.disabled = false;
 
+        await syncExplanationsFromSheet();
         renderAllQuestions();
         updateProgress();
     } catch (err) {
@@ -587,22 +592,35 @@ function renderAllQuestions() {
                 ${renderOption(q, "D", q.option_d)}
             </div>
 
-            <!-- 交卷後才展開的詳解盒子 -->
-            <details id="exp-box-${q.id}" class="hidden" style="margin-top: 15px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
-                <summary style="cursor: pointer; padding: 10px 15px; background: #fdf2f8; color: #9d174d; font-weight: bold; display: flex; justify-content: space-between;">
-                    <span>💡 查看解析、筆記與 AI 詳解</span>
-                    <span class="arrow-icon">▼</span>
-                </summary>
-                <div style="padding: 15px; background: white;">
-                    <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
-                    ${q.ai_explanation ? `
-                        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
-                            <strong style="color: #166534;">✨ AI 臨床解析：</strong>
-                            <div style="white-space: pre-wrap; margin-top: 4px;">${q.ai_explanation}</div>
-                        </div>
-                    ` : ''}
+            <!-- 交卷後展開的詳解區塊（支援在線編輯） -->
+<details id="exp-box-${q.id}" class="hidden" style="margin-top: 15px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+    <summary style="cursor: pointer; padding: 10px 15px; background: #fdf2f8; color: #9d174d; font-weight: bold; display: flex; justify-content: space-between;">
+        <span>💡 查看解析、筆記與 AI 詳解</span>
+        <span class="arrow-icon">▼</span>
+    </summary>
+    <div style="padding: 15px; background: white;">
+        <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
+        
+        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <strong style="color: #166534;">✨ AI 臨床解析 / 共筆筆記：</strong>
+                <div>
+                    <button type="button" id="btn-edit-${q.id}" onclick="toggleEditExplanation('${q.id}')" style="background: #ffffff; border: 1px solid #86efac; color: #166534; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">✏️ 編輯解析</button>
+                    <button type="button" id="btn-save-${q.id}" class="hidden" onclick="saveExplanationToSheet('${q.id}')" style="background: #16a34a; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold;">💾 儲存</button>
+                    <button type="button" id="btn-cancel-${q.id}" class="hidden" onclick="cancelEditExplanation('${q.id}')" style="background: #94a3b8; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; margin-left: 4px;">取消</button>
                 </div>
-            </details>
+            </div>
+
+            <!-- 檢視狀態 -->
+            <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
+
+            <!-- 編輯狀態 (預設隱藏) -->
+            <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
+                <textarea id="exp-input-${q.id}" rows="5" style="width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #86efac; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+            </div>
+        </div>
+    </div>
+</details>
         `;
 
         // 綁定選項點擊事件
@@ -725,6 +743,90 @@ function goBackToCategory() {
 
 document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
 document.getElementById("btn-back-to-category").addEventListener("click", goBackToCategory);
+
+// A. 切換至編輯模式
+function toggleEditExplanation(qId) {
+    const q = currentQuestions.find(item => String(item.id) === String(qId));
+    const currentText = q ? (q.ai_explanation || "") : "";
+
+    document.getElementById(`exp-input-${qId}`).value = currentText;
+    document.getElementById(`exp-text-view-${qId}`).classList.add("hidden");
+    document.getElementById(`exp-edit-view-${qId}`).classList.remove("hidden");
+
+    document.getElementById(`btn-edit-${qId}`).classList.add("hidden");
+    document.getElementById(`btn-save-${qId}`).classList.remove("hidden");
+    document.getElementById(`btn-cancel-${qId}`).classList.remove("hidden");
+}
+
+// B. 取消編輯
+function cancelEditExplanation(qId) {
+    document.getElementById(`exp-edit-view-${qId}`).classList.add("hidden");
+    document.getElementById(`exp-text-view-${qId}`).classList.remove("hidden");
+
+    document.getElementById(`btn-edit-${qId}`).classList.remove("hidden");
+    document.getElementById(`btn-save-${qId}`).classList.add("hidden");
+    document.getElementById(`btn-cancel-${qId}`).classList.add("hidden");
+}
+
+// C. 儲存解析至 Google Sheets
+async function saveExplanationToSheet(qId) {
+    const newExplanation = document.getElementById(`exp-input-${qId}`).value.trim();
+    const saveBtn = document.getElementById(`btn-save-${qId}`);
+
+    saveBtn.innerText = "儲存中...";
+    saveBtn.disabled = true;
+
+    try {
+        // 利用 text/plain 發送避免觸發 CORS 預檢限制
+        await fetch(GAS_EXPLANATION_API, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8"
+            },
+            body: JSON.stringify({
+                id: qId,
+                explanation: newExplanation
+            })
+        });
+
+        // 更新前端題目資料
+        const targetQ = currentQuestions.find(item => String(item.id) === String(qId));
+        if (targetQ) targetQ.ai_explanation = newExplanation;
+
+        // 更新畫面呈現
+        const textView = document.getElementById(`exp-text-view-${qId}`);
+        textView.innerHTML = newExplanation !== ""
+            ? newExplanation
+            : '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>';
+
+        cancelEditExplanation(qId);
+        alert("✅ 解析已成功同步儲存至 Google 試算表！");
+    } catch (err) {
+        alert("儲存失敗: " + err.message);
+    } finally {
+        saveBtn.innerText = "💾 儲存";
+        saveBtn.disabled = false;
+    }
+}
+
+// D. 抓取 Google Sheets 最新解析並合併到題目中
+async function syncExplanationsFromSheet() {
+    try {
+        const res = await fetch(GAS_EXPLANATION_API);
+        if (!res.ok) return;
+        const customExplanations = await res.json();
+
+        // 若試算表內有此題的解析紀錄，直接覆蓋顯示
+        currentQuestions.forEach(q => {
+            if (customExplanations[String(q.id)]) {
+                q.ai_explanation = customExplanations[String(q.id)];
+            }
+        });
+    } catch (e) {
+        console.warn("無法載入雲端試算表詳解，使用預設解析", e);
+    }
+}
 </script>
 
 </body>
