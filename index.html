@@ -22,11 +22,11 @@
             margin: 0;
             padding: 20px;
             color: #333;
-            line-height: 1.7; /* 芫荽體搭配略寬的行高，看長臨床題幹非常有質感 */
+            line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
         button, input, textarea, select {
-        font-family: inherit; /* 直接跟著 body 的字體走，不再用預設字體 */
+            font-family: inherit;
         }
         .container {
             max-width: 850px;
@@ -131,7 +131,6 @@
             display: block;
             cursor: pointer;
         }
-        /* 交卷後的正解/錯解著色 */
         .option-label.ans-correct {
             background-color: var(--correct-bg) !important;
             border-color: var(--correct-border) !important;
@@ -143,7 +142,6 @@
             border-color: var(--wrong-border) !important;
             color: #b91c1c;
         }
-        /* 計分板樣式 */
         .score-board {
             background: linear-gradient(135deg, #1e293b, #334155);
             color: white;
@@ -158,6 +156,25 @@
         .score-item h4 { margin: 0 0 5px 0; font-size: 0.9rem; opacity: 0.8; }
         .score-item span { font-size: 1.8rem; font-weight: bold; }
         
+        /* 篩選標籤膠囊樣式 */
+        .filter-chip {
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            background: white;
+            color: #475569;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .filter-chip.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            font-weight: bold;
+        }
+
         details summary::-webkit-details-marker { display: none; }
         details[open] summary .arrow-icon { transform: rotate(180deg); }
     </style>
@@ -165,7 +182,6 @@
 <body>
 
 <div class="container">
-    <!-- 1. 首頁大廳視圖 -->
     <div id="lobby-view">
         <h1 style="color: var(--primary-color); margin-bottom: 5px;">🎓 醫學系 Block / 國考 考古題庫</h1>
         <p style="color: #666; margin-bottom: 30px; text-align: center;">請選擇你想複習的 Block 或 國考科目：</p>
@@ -174,16 +190,15 @@
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
                 <span style="font-size: 1.3rem;">📢</span>
                 <strong style="color: #856404; font-size: 1.1rem;">布告欄</strong>
-                <span style="margin-left: auto; font-size: 0.85rem; color: #856404; background: #ffeeba; padding: 2px 8px; border-radius: 20px; font-weight: bold;">最新更新：2026/08/13</span>
+                <span style="margin-left: auto; font-size: 0.85rem; color: #856404; background: #ffeeba; padding: 2px 8px; border-radius: 20px; font-weight: bold;">最新更新：2026/09/21</span>
             </div>
             
             <ul style="margin: 0; padding-left: 20px; color: #533f03; line-height: 1.6; font-size: 0.95rem;">
-                <li><strong>【260817】</strong> 恭喜大家考完block7期中考，本網站將持續更新題庫，並優化功能</li>
-                <li><strong>【Block 7 期中考】</strong> 新增M112期中考題，另外AI詳解有些怪怪的，暫時僅供參考</li>
+                <li><strong>【功能升級】</strong> 單科目練習支援自由挑選「出題老師」與「考試年份」自訂篩選刷題！</li>
+                <li><strong>【題庫維護】</strong> 持續更新各科詳解與圖片解析。</li>
             </ul>
         </div>
 
-        <!-- Block 選擇列 -->
         <div style="display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap;">
             <button class="block-select-btn" data-block="Block7" style="flex: 1; min-width: 120px; padding: 20px 10px; font-weight: bold; background: linear-gradient(135deg, #2b5876, #4e4376); color: white; border: none; border-radius: 12px; cursor: pointer;">
                 <span style="font-size: 1.2rem; display: block;">Block 7</span>
@@ -211,7 +226,6 @@
             </button>
         </div>
 
-        <!-- 模式選擇切換區 (新增) -->
         <div id="mode-selection-zone" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; margin-bottom: 20px;">
             <h3 id="selected-block-hint" style="margin-top: 0; color: var(--primary-color);">已選擇：Block</h3>
             <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 15px;">請選擇你想進行的刷題方式：</p>
@@ -225,7 +239,6 @@
             </div>
         </div>
 
-        <!-- 年份選擇區塊 1 (Block) -->
         <div id="year-selection-zone-1" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
             <h3 style="margin-top: 0; font-size: 1.05rem; color: #475569;">請選擇考試年份：</h3>
             <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
@@ -241,7 +254,6 @@
             </div>
         </div>
 
-        <!-- 年份選擇區塊 2 (國考 MED1) -->
         <div id="year-selection-zone-2" class="hidden" style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center;">
             <h3 style="margin-top: 0; font-size: 1.05rem; color: #475569;">請選擇國考梯次：</h3>
             <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
@@ -254,7 +266,6 @@
         </div>
     </div>
 
-    <!-- 2. 科目分類視圖 -->
     <div id="category-view" class="hidden">
         <div class="nav-bar">
             <button class="back-btn" id="btn-back-to-lobby">⬅ 返回大廳</button>
@@ -264,7 +275,6 @@
         <div id="category-list" style="display: flex; flex-direction: column; gap: 12px; margin-top: 15px;"></div>
     </div>
 
-    <!-- 3. 全卷整份答題模式視圖 -->
     <div id="quiz-view" class="hidden">
         <div class="nav-bar">
             <button class="back-btn" id="btn-back-to-category">⬅ 重選科目</button>
@@ -274,7 +284,23 @@
             </div>
         </div>
 
-        <!-- 交卷後的成績結算看板 -->
+        <div id="filter-selection-panel" class="hidden" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <strong style="color: var(--primary-color); font-size: 1rem;">⚙️ 自訂練習範圍篩選</strong>
+                <span id="filtered-count-badge" style="font-size: 0.85rem; background: #e0f2fe; color: #0284c7; padding: 2px 10px; border-radius: 12px; font-weight: bold;">符合 0 題</span>
+            </div>
+            
+            <div id="filter-year-group" style="margin-bottom: 12px;">
+                <div style="font-size: 0.85rem; color: #64748b; font-weight: bold; margin-bottom: 6px;">📅 考試年份：</div>
+                <div id="filter-year-chips" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+            </div>
+
+            <div id="filter-teacher-group">
+                <div style="font-size: 0.85rem; color: #64748b; font-weight: bold; margin-bottom: 6px;">👨‍🏫 出題老師：</div>
+                <div id="filter-teacher-chips" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+            </div>
+        </div>
+
         <div id="result-summary-card" class="score-board hidden">
             <div class="score-item">
                 <h4>總題數</h4>
@@ -294,16 +320,13 @@
             </div>
         </div>
 
-        <!-- 錯題快速過濾按鈕區 (交卷後出現) -->
         <div id="filter-zone" class="hidden" style="display: flex; gap: 10px; margin-bottom: 20px;">
             <button id="btn-show-all" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; cursor: pointer; font-weight: bold;">📋 顯示全部題目</button>
             <button id="btn-show-wrong-only" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ef4444; background: #fee2e2; color: #b91c1c; cursor: pointer; font-weight: bold;">❌ 僅顯示錯題</button>
         </div>
 
-        <!-- 所有題目卡片的動態注入容器 -->
         <div id="questions-container"></div>
 
-        <!-- 底部交卷控制列 -->
         <div id="submit-bar" style="text-align: center; margin: 40px 0 60px 0;">
             <button id="btn-submit-all" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 16px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 15px rgba(37,99,235,0.3);">
                 📝 寫完全部，交卷並批改
@@ -314,13 +337,18 @@
 
 <script>
 const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com";
-// 在 script 最上方加入（替換為你剛剛複製的 GAS URL）：
 const GAS_EXPLANATION_API = "https://script.google.com/macros/s/AKfycbzzrNQZVsa9x5Lz5vOhS8pv60MkQZQafdy-Lzj1IIG_Ms7GJTW0bTUIe7kcHz28_qZE/exec";
+
 let currentBlockName = "";
 let currentQuizName = "";
-let currentQuestions = [];
-let userAnswers = {};      // 記錄使用者的選擇 { "題目ID": "A" }
-let isSubmitted = false;   // 是否已經交卷
+let rawLoadedQuestions = [];   // 當前科目從後端撈下來的所有題目
+let currentQuestions = [];     // 經由老師、年份篩選後真正要作答的題目
+let userAnswers = {};          
+let isSubmitted = false;       
+
+// 篩選器選取狀態 (Set)
+let selectedYears = new Set();
+let selectedTeachers = new Set();
 
 // DOM 節點
 const lobbyView = document.getElementById("lobby-view");
@@ -340,9 +368,26 @@ const btnSubmitAll = document.getElementById("btn-submit-all");
 const resultSummaryCard = document.getElementById("result-summary-card");
 const filterZone = document.getElementById("filter-zone");
 
-// 🎯 自動偵測文字裡的圖片網址
+const filterSelectionPanel = document.getElementById("filter-selection-panel");
+const filterYearChips = document.getElementById("filter-year-chips");
+const filterTeacherChips = document.getElementById("filter-teacher-chips");
+const filteredCountBadge = document.getElementById("filtered-count-badge");
+
+// 🎯 自動偵測文字裡的圖片網址（同時相容 Markdown 格式與純網址）
 function extractImageFromText(text) {
     if (!text) return { cleanText: "", imageUrl: "" };
+
+    // 優先匹配 Markdown: ![alt](url)
+    const mdRegex = /!\[.*?\]\((https?:\/\/[^\s\)]+)\)/i;
+    const mdMatch = text.match(mdRegex);
+    if (mdMatch) {
+        return {
+            cleanText: text.replace(mdMatch[0], "").trim(),
+            imageUrl: mdMatch[1]
+        };
+    }
+
+    // 次之相容純圖片網址
     const imgUrlRegex = /(https?:\/\/\S+\.(?:png|jpg|jpeg|gif|webp))/i;
     const match = text.match(imgUrlRegex);
     if (match) {
@@ -350,6 +395,7 @@ function extractImageFromText(text) {
         const cleanText = text.replace(imageUrl, "").trim();
         return { cleanText, imageUrl };
     }
+
     return { cleanText: text, imageUrl: "" };
 }
 
@@ -367,7 +413,7 @@ document.querySelectorAll(".block-select-btn").forEach(btn => {
     });
 });
 
-// 模式 A：點擊「按單一考卷刷題」
+// 模式 A：單一考卷
 document.getElementById("btn-mode-by-year").addEventListener("click", () => {
     if (currentBlockName === "MED1") {
         yearZone1.classList.add("hidden");
@@ -378,7 +424,7 @@ document.getElementById("btn-mode-by-year").addEventListener("click", () => {
     }
 });
 
-// 模式 B：點擊「跨年度科目專題特訓」
+// 模式 B：跨年度專題特訓
 document.getElementById("btn-mode-cross-year").addEventListener("click", async () => {
     try {
         categoryQuizTitle.innerText = `${currentBlockName} 跨年度歷屆科目特訓`;
@@ -394,21 +440,19 @@ document.getElementById("btn-mode-cross-year").addEventListener("click", async (
 
         categoryList.innerHTML = "";
 
-        // 全年度所有題目大特訓按鈕
         const allBtn = document.createElement("button");
         allBtn.innerText = `🔥 挑戰 ${currentBlockName} 全年度所有題目`;
         allBtn.className = "lobby-btn";
         allBtn.style.padding = "18px";
-        allBtn.onclick = () => startCrossYearQuiz(currentBlockName, "全年度所有歷屆試題", "");
+        allBtn.onclick = () => startQuizSession(`${API_BASE_URL}/api/block_questions/${currentBlockName}`, `${currentBlockName} - 全年度試題`, true);
         categoryList.appendChild(allBtn);
 
-        // 各科目按鈕
         categories.forEach(cat => {
             if (!cat) return;
             const btn = document.createElement("button");
-            btn.innerText = `🎯 歷屆【${cat}】專題`;
+            btn.innerText = `🎯 歷屆【${cat}】專題 (可選老師/年份)`;
             btn.style.cssText = "background-color: #ffffff; color: #166534; border: 2px solid #86efac; padding: 15px; font-size: 1.05rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left;";
-            btn.onclick = () => startCrossYearQuiz(currentBlockName, `歷屆【${cat}】專題`, cat);
+            btn.onclick = () => startQuizSession(`${API_BASE_URL}/api/block_questions/${currentBlockName}?category=${encodeURIComponent(cat)}`, `${currentBlockName} - ${cat}`, true);
             categoryList.appendChild(btn);
         });
 
@@ -418,7 +462,7 @@ document.getElementById("btn-mode-cross-year").addEventListener("click", async (
     }
 });
 
-// 2. 選擇單一年份
+// 2. 選擇年份
 document.querySelectorAll(".year-btn").forEach(btn => {
     btn.addEventListener("click", function() {
         const selectedYear = this.getAttribute("data-year");
@@ -428,7 +472,7 @@ document.querySelectorAll(".year-btn").forEach(btn => {
     });
 });
 
-// 3. 載入單一考卷的科目分類
+// 3. 載入單一考卷科目
 async function openCategorySelection(quizName, displayName) {
     try {
         categoryQuizTitle.innerText = displayName;
@@ -444,21 +488,19 @@ async function openCategorySelection(quizName, displayName) {
 
         categoryList.innerHTML = "";
 
-        // 全科刷題按鈕
         const allBtn = document.createElement("button");
         allBtn.innerText = "📚 挑戰整份考卷 (所有題目一次寫)";
         allBtn.className = "lobby-btn";
         allBtn.style.padding = "18px";
-        allBtn.onclick = () => startFullQuiz(quizName, displayName, null);
+        allBtn.onclick = () => startQuizSession(`${API_BASE_URL}/api/questions/${quizName}`, displayName, false);
         categoryList.appendChild(allBtn);
 
-        // 個別科目按鈕
         categories.forEach(cat => {
             if (!cat) return;
             const btn = document.createElement("button");
-            btn.innerText = `📖 ${cat}`;
+            btn.innerText = `📖 ${cat} (可選老師練習)`;
             btn.style.cssText = "background-color: #ffffff; color: #2b5876; border: 2px solid #cbd5e1; padding: 15px; font-size: 1.05rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-align: left;";
-            btn.onclick = () => startFullQuiz(quizName, `${displayName} - ${cat}`, cat);
+            btn.onclick = () => startQuizSession(`${API_BASE_URL}/api/questions/${quizName}?category=${encodeURIComponent(cat)}`, `${displayName} - ${cat}`, true);
             categoryList.appendChild(btn);
         });
 
@@ -467,34 +509,29 @@ async function openCategorySelection(quizName, displayName) {
         goBackToLobby();
     }
 }
-// 抓取雲端試算表上的最新修訂解析進行覆蓋
 
-// 4. 開始單一考卷測驗
-async function startFullQuiz(quizName, displayName, category) {
+// 4. 統一發起測驗（抓取資料後初始化篩選面板）
+async function startQuizSession(fetchUrl, title, enableFilters) {
     try {
-        quizTitle.innerText = displayName;
+        quizTitle.innerText = title;
         categoryView.classList.add("hidden");
         quizView.classList.remove("hidden");
-        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px;'>正在準備整份題目，請稍候...</p>";
+        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px;'>正在準備題目，請稍候...</p>";
 
-        let url = `${API_BASE_URL}/api/questions/${quizName}`;
-        if (category) url += `?category=${encodeURIComponent(category)}`;
-
-        const response = await fetch(url);
+        const response = await fetch(fetchUrl);
         if (!response.ok) throw new Error("題庫讀取失敗");
         
-        currentQuestions = await response.json();
-        userAnswers = {};
-        isSubmitted = false;
+        rawLoadedQuestions = await response.json();
 
-        resultSummaryCard.classList.add("hidden");
-        filterZone.classList.add("hidden");
-        btnSubmitAll.style.display = "inline-block";
-        btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
-        btnSubmitAll.disabled = false;
+        if (enableFilters) {
+            setupFilterOptions();
+            filterSelectionPanel.classList.remove("hidden");
+        } else {
+            filterSelectionPanel.classList.add("hidden");
+            currentQuestions = [...rawLoadedQuestions];
+            applyFilteredQuestions();
+        }
 
-        renderAllQuestions();
-        updateProgress();
         syncExplanationsFromSheet();
     } catch (err) {
         alert("讀取失敗: " + err.message);
@@ -502,38 +539,111 @@ async function startFullQuiz(quizName, displayName, category) {
     }
 }
 
-// 4-2. 開始跨年度專題測驗
-async function startCrossYearQuiz(blockName, displayName, category) {
-    try {
-        quizTitle.innerText = `${blockName} - ${displayName}`;
-        categoryView.classList.add("hidden");
-        quizView.classList.remove("hidden");
-        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px;'>正在打包跨年度題目，請稍候...</p>";
+// 4-1. 建立老師與年份篩選按鈕
+function setupFilterOptions() {
+    selectedYears.clear();
+    selectedTeachers.clear();
 
-        let url = `${API_BASE_URL}/api/block_questions/${blockName}`;
-        if (category) url += `?category=${encodeURIComponent(category)}`;
+    const availableYears = new Set();
+    const availableTeachers = new Set();
 
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("題庫讀取失敗");
-        
-        currentQuestions = await response.json();
-        userAnswers = {};
-        isSubmitted = false;
+    rawLoadedQuestions.forEach(q => {
+        if (q.year_label && q.year_label.trim() !== "") availableYears.add(q.year_label.trim());
+        if (q.teacher && q.teacher.trim() !== "") availableTeachers.add(q.teacher.trim());
+    });
 
-        resultSummaryCard.classList.add("hidden");
-        filterZone.classList.add("hidden");
-        btnSubmitAll.style.display = "inline-block";
-        btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
-        btnSubmitAll.disabled = false;
+    // 預設全選
+    availableYears.forEach(y => selectedYears.add(y));
+    availableTeachers.forEach(t => selectedTeachers.add(t));
 
-        renderAllQuestions();
-        updateProgress();
-
-        syncExplanationsFromSheet();
-    } catch (err) {
-        alert("讀取失敗: " + err.message);
-        goBackToCategory();
+    // 年份 UI
+    const yearGroup = document.getElementById("filter-year-group");
+    if (availableYears.size <= 1) {
+        yearGroup.classList.add("hidden");
+    } else {
+        yearGroup.classList.remove("hidden");
+        renderFilterChips(filterYearChips, Array.from(availableYears), selectedYears);
     }
+
+    // 老師 UI
+    const teacherGroup = document.getElementById("filter-teacher-group");
+    if (availableTeachers.size === 0) {
+        teacherGroup.classList.add("hidden");
+    } else {
+        teacherGroup.classList.remove("hidden");
+        renderFilterChips(filterTeacherChips, Array.from(availableTeachers), selectedTeachers);
+    }
+
+    applyFilters();
+}
+
+function renderFilterChips(container, items, targetSet) {
+    container.innerHTML = "";
+
+    // 全部按鈕
+    const allBtn = document.createElement("span");
+    allBtn.className = "filter-chip active";
+    allBtn.innerText = "全選";
+    allBtn.onclick = () => {
+        items.forEach(i => targetSet.add(i));
+        container.querySelectorAll(".filter-chip").forEach(c => c.classList.add("active"));
+        applyFilters();
+    };
+    container.appendChild(allBtn);
+
+    // 各項目按鈕
+    items.forEach(item => {
+        const chip = document.createElement("span");
+        chip.className = "filter-chip active";
+        chip.innerText = item;
+        chip.onclick = () => {
+            if (targetSet.has(item)) {
+                if (targetSet.size === 1) {
+                    alert("至少需保留一個選項！");
+                    return;
+                }
+                targetSet.delete(item);
+                chip.classList.remove("active");
+                allBtn.classList.remove("active");
+            } else {
+                targetSet.add(item);
+                chip.classList.add("active");
+                if (targetSet.size === items.length) allBtn.classList.add("active");
+            }
+            applyFilters();
+        };
+        container.appendChild(chip);
+    });
+}
+
+// 4-2. 套用篩選過濾並刷新題目
+function applyFilters() {
+    currentQuestions = rawLoadedQuestions.filter(q => {
+        const qYear = (q.year_label || "").trim();
+        const qTeacher = (q.teacher || "").trim();
+
+        const yearPass = selectedYears.size === 0 || !qYear || selectedYears.has(qYear);
+        const teacherPass = selectedTeachers.size === 0 || !qTeacher || selectedTeachers.has(qTeacher);
+
+        return yearPass && teacherPass;
+    });
+
+    filteredCountBadge.innerText = `符合 ${currentQuestions.length} 題`;
+    applyFilteredQuestions();
+}
+
+function applyFilteredQuestions() {
+    userAnswers = {};
+    isSubmitted = false;
+
+    resultSummaryCard.classList.add("hidden");
+    filterZone.classList.add("hidden");
+    btnSubmitAll.style.display = "inline-block";
+    btnSubmitAll.innerText = "📝 寫完全部，交卷並批改";
+    btnSubmitAll.disabled = false;
+
+    renderAllQuestions();
+    updateProgress();
 }
 
 // 產生選項 HTML
@@ -552,16 +662,20 @@ function renderOption(q, optLetter, optText) {
     `;
 }
 
-// 5. 渲染整份考卷題目卡片
+// 5. 渲染題目卡片
 function renderAllQuestions() {
     questionsContainer.innerHTML = "";
+
+    if (currentQuestions.length === 0) {
+        questionsContainer.innerHTML = "<p style='text-align:center; padding: 40px; color: #94a3b8;'>⚠️ 目前篩選條件下沒有相符的題目，請重新調整篩選！</p>";
+        return;
+    }
 
     currentQuestions.forEach((q, idx) => {
         const qCard = document.createElement("div");
         qCard.className = "question-card";
         qCard.id = `q-card-${q.id}`;
 
-        // 偵測題目文字中的圖片
         const questionParsed = extractImageFromText(q.question);
         let imgHtml = "";
         const finalImgUrl = (q.image_url && q.image_url.trim() !== "") ? q.image_url.trim() : questionParsed.imageUrl;
@@ -574,7 +688,6 @@ function renderAllQuestions() {
             `;
         }
 
-        // 標籤組裝（年份、科目、教師）
         const yearTag = q.year_label ? `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>` : "";
         const catTag = `<span style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📖 ${q.category || "未分類"}</span>`;
         const teacherTag = q.teacher ? `<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-weight: 500;">👨‍🏫 ${q.teacher}</span>` : "";
@@ -598,47 +711,40 @@ function renderAllQuestions() {
                 ${renderOption(q, "D", q.option_d)}
             </div>
 
-            <!-- 交卷後展開的詳解區塊（支援在線編輯） -->
-<details id="exp-box-${q.id}" class="hidden" style="margin-top: 15px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
-    <summary style="cursor: pointer; padding: 10px 15px; background: #fdf2f8; color: #9d174d; font-weight: bold; display: flex; justify-content: space-between;">
-        <span>💡 查看解析、筆記與 AI 詳解</span>
-        <span class="arrow-icon">▼</span>
-    </summary>
-    <div style="padding: 15px; background: white;">
-        <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
-        
-        <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <strong style="color: #166534;">✨ AI 臨床解析 / 共筆筆記：</strong>
-                <div>
-                    <button type="button" id="btn-edit-${q.id}" onclick="toggleEditExplanation('${q.id}')" style="background: #ffffff; border: 1px solid #86efac; color: #166534; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">✏️ 編輯解析</button>
-                    <button type="button" id="btn-save-${q.id}" class="hidden" onclick="saveExplanationToSheet('${q.id}')" style="background: #16a34a; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold;">💾 儲存</button>
-                    <button type="button" id="btn-cancel-${q.id}" class="hidden" onclick="cancelEditExplanation('${q.id}')" style="background: #94a3b8; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; margin-left: 4px;">取消</button>
+            <details id="exp-box-${q.id}" class="hidden" style="margin-top: 15px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                <summary style="cursor: pointer; padding: 10px 15px; background: #fdf2f8; color: #9d174d; font-weight: bold; display: flex; justify-content: space-between;">
+                    <span>💡 查看解析、筆記與 AI 詳解</span>
+                    <span class="arrow-icon">▼</span>
+                </summary>
+                <div style="padding: 15px; background: white;">
+                    <div id="exp-status-${q.id}" style="font-weight: bold; margin-bottom: 10px;"></div>
+                    
+                    <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <strong style="color: #166534;">✨ AI 臨床解析 / 共筆筆記：</strong>
+                            <div>
+                                <button type="button" id="btn-edit-${q.id}" onclick="toggleEditExplanation('${q.id}')" style="background: #ffffff; border: 1px solid #86efac; color: #166534; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">✏️ 編輯解析</button>
+                                <button type="button" id="btn-save-${q.id}" class="hidden" onclick="saveExplanationToSheet('${q.id}')" style="background: #16a34a; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold;">💾 儲存</button>
+                                <button type="button" id="btn-cancel-${q.id}" class="hidden" onclick="cancelEditExplanation('${q.id}')" style="background: #94a3b8; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; margin-left: 4px;">取消</button>
+                            </div>
+                        </div>
+
+                        <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
+
+                        <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
+                            <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
+                                <button type="button" onclick="formatDoc('${q.id}', 'bold')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-weight: bold; cursor: pointer;"><b>B 粗體</b></button>
+                                <button type="button" onclick="formatColor('${q.id}', '#ef4444')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; color: #ef4444; font-weight: bold; cursor: pointer;">🔴 紅筆</button>
+                                <button type="button" onclick="formatHighlight('${q.id}', '#fef08a')" style="background: #fef08a; border: 1px solid #fde047; border-radius: 4px; padding: 3px 8px; color: #854d0e; font-weight: bold; cursor: pointer;">🖍️ 螢光筆</button>
+                                <button type="button" onclick="formatDoc('${q.id}', 'removeFormat')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; color: #64748b; cursor: pointer;">🧹 清除格式</button>
+                            </div>
+                            <div id="exp-input-${q.id}" contenteditable="true" style="min-height: 120px; max-height: 350px; overflow-y: auto; background: white; border: 1.5px solid #86efac; border-radius: 6px; padding: 10px; font-size: 0.95rem; line-height: 1.6; outline: none;"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- 檢視狀態 -->
-            <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
-
-            <!-- 編輯狀態 (預設隱藏，支援粗體/紅筆/螢光筆) -->
-            <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
-            <!-- 劃重點工具列 -->
-                <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
-                    <button type="button" onclick="formatDoc('${q.id}', 'bold')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-weight: bold; cursor: pointer;" title="粗體"><b>B 粗體</b></button>
-                    <button type="button" onclick="formatColor('${q.id}', '#ef4444')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; color: #ef4444; font-weight: bold; cursor: pointer;" title="紅字重點">🔴 紅筆</button>
-                    <button type="button" onclick="formatHighlight('${q.id}', '#fef08a')" style="background: #fef08a; border: 1px solid #fde047; border-radius: 4px; padding: 3px 8px; color: #854d0e; font-weight: bold; cursor: pointer;" title="黃色螢光筆">🖍️ 螢光筆</button>
-                    <button type="button" onclick="formatDoc('${q.id}', 'removeFormat')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; color: #64748b; cursor: pointer;" title="清除格式">🧹 清除格式</button>
-             </div>
-
-    <!-- 富文本編輯框 -->
-    <div id="exp-input-${q.id}" contenteditable="true" style="min-height: 120px; max-height: 350px; overflow-y: auto; background: white; border: 1.5px solid #86efac; border-radius: 6px; padding: 10px; font-size: 0.95rem; line-height: 1.6; outline: none;"></div>
-</div>
-        </div>
-    </div>
-</details>
+            </details>
         `;
 
-        // 綁定選項點擊事件
         qCard.querySelectorAll(`input[name="ans_${q.id}"]`).forEach(radio => {
             radio.addEventListener("change", (e) => {
                 if (isSubmitted) return;
@@ -662,10 +768,12 @@ function updateProgress() {
     quizProgressText.innerText = `作答進度：${answeredCount} / ${totalCount} 題`;
 }
 
-// 7. 一鍵交卷並批改
+// 7. 交卷與批改
 btnSubmitAll.addEventListener("click", () => {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
+
+    if (totalCount === 0) return;
 
     if (answeredCount < totalCount) {
         const confirmSubmit = confirm(`你還有 ${totalCount - answeredCount} 題未作答，確定要現在交卷嗎？`);
@@ -693,7 +801,6 @@ btnSubmitAll.addEventListener("click", () => {
             expStatus.innerHTML = `<span style="color: #b91c1c;">❌ 答錯了！你的選擇：[ ${userChoice || "未作答"} ] ｜ 正確答案：[ ${correctAns} ]</span>`;
         }
 
-        // 選項上色
         qCard.querySelectorAll(".option-label").forEach(label => {
             const optVal = label.getAttribute("data-opt");
             const radio = label.querySelector("input");
@@ -709,7 +816,6 @@ btnSubmitAll.addEventListener("click", () => {
         expBox.classList.remove("hidden");
     });
 
-    // 結算成績板
     const wrongCount = totalCount - correctCount;
     const rate = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
 
@@ -759,12 +865,11 @@ function goBackToCategory() {
 document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
 document.getElementById("btn-back-to-category").addEventListener("click", goBackToCategory);
 
-// A. 切換至編輯模式（支援富文本 innerHTML）
+// 解析編輯與同步
 function toggleEditExplanation(qId) {
     const q = currentQuestions.find(item => String(item.id) === String(qId));
     const currentText = q ? (q.ai_explanation || "") : "";
 
-    // 🎯 改為 innerHTML，保留粗體、螢光筆標籤
     document.getElementById(`exp-input-${qId}`).innerHTML = currentText;
     document.getElementById(`exp-text-view-${qId}`).classList.add("hidden");
     document.getElementById(`exp-edit-view-${qId}`).classList.remove("hidden");
@@ -774,7 +879,6 @@ function toggleEditExplanation(qId) {
     document.getElementById(`btn-cancel-${qId}`).classList.remove("hidden");
 }
 
-// B. 取消編輯
 function cancelEditExplanation(qId) {
     document.getElementById(`exp-edit-view-${qId}`).classList.add("hidden");
     document.getElementById(`exp-text-view-${qId}`).classList.remove("hidden");
@@ -784,13 +888,10 @@ function cancelEditExplanation(qId) {
     document.getElementById(`btn-cancel-${qId}`).classList.add("hidden");
 }
 
-// C. 儲存解析至 Google Sheets（讀取 innerHTML 格式與編輯者）
 async function saveExplanationToSheet(qId) {
-    // 🎯 讀取包含 <b>, <span> 等標籤的格式內容
     const newExplanation = document.getElementById(`exp-input-${qId}`).innerHTML.trim();
     const saveBtn = document.getElementById(`btn-save-${qId}`);
 
-    // 自動詢問並記住編輯者暱稱（僅第一次會問）
     let editorName = localStorage.getItem("med_quiz_editor_name");
     if (!editorName) {
         editorName = prompt("請輸入您的姓名或暱稱（供共筆記錄，僅需輸入一次）：");
@@ -818,11 +919,9 @@ async function saveExplanationToSheet(qId) {
             })
         });
 
-        // 更新前端快取資料
         const targetQ = currentQuestions.find(item => String(item.id) === String(qId));
         if (targetQ) targetQ.ai_explanation = newExplanation;
 
-        // 更新畫面預覽（渲染粗體、螢光筆樣式）
         const textView = document.getElementById(`exp-text-view-${qId}`);
         textView.innerHTML = newExplanation !== ""
             ? newExplanation
@@ -838,20 +937,16 @@ async function saveExplanationToSheet(qId) {
     }
 }
 
-// D. 抓取 Google Sheets 最新解析並背景同步至畫面上
 async function syncExplanationsFromSheet() {
     try {
         const res = await fetch(GAS_EXPLANATION_API);
         if (!res.ok) return;
         const customExplanations = await res.json();
 
-        // 遍歷所有題目，如果雲端試算表有修訂版，同步更新記憶體與已經渲染好的畫面
         currentQuestions.forEach(q => {
             const cloudExp = customExplanations[String(q.id)];
             if (cloudExp) {
                 q.ai_explanation = cloudExp;
-
-                // 若此時畫面上已經渲染了該題的解析框，直接無感替換內容
                 const textView = document.getElementById(`exp-text-view-${q.id}`);
                 if (textView) {
                     textView.innerHTML = cloudExp;
@@ -864,9 +959,6 @@ async function syncExplanationsFromSheet() {
     }
 }
 
-// ==========================================
-// 💡 第二步：劃重點格式控制函式（可直接貼在 script 最底部）
-// ==========================================
 function formatDoc(qId, cmd, val = null) {
     const editor = document.getElementById(`exp-input-${qId}`);
     if (!editor) return;
@@ -889,7 +981,6 @@ function formatHighlight(qId, color) {
         document.execCommand("backColor", false, color);
     }
 }
-
 </script>
 </body>
 </html>
