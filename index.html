@@ -668,10 +668,32 @@ function renderAllQuestions() {
             `;
         }
 
-        const yearTag = q.year_label ? `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>` : "";
+        // 🎯 GitHub 官方詳解根目錄（指向你的儲存庫 official_pdf 資料夾）
+        const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
+        
+        // 自動判斷考卷代碼（例如 Block8_112_Mid）
+        const targetQuizKey = q.quiz_name || currentQuizName;
+        const officialPdfLink = targetQuizKey ? `${GITHUB_PDF_BASE}/${targetQuizKey}.pdf` : null;
+
+        // 將考卷標籤改為可點擊的新分頁超連結
+        let yearTag = "";
+        if (q.year_label) {
+            if (officialPdfLink) {
+                yearTag = `
+                    <a href="${officialPdfLink}" target="_blank" rel="noopener noreferrer" 
+                       title="點擊在新分頁開啟本份考卷的官方詳解 PDF"
+                       style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; text-decoration: none; padding: 2px 8px; border-radius: 4px; font-weight: bold; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
+                       onmouseover="this.style.background='#bae6fd'" onmouseout="this.style.background='#e0f2fe'">
+                       📅 ${q.year_label} <span style="font-size: 0.75rem;">↗</span>
+                    </a>
+                `;
+            } else {
+                yearTag = `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>`;
+            }
+        }
+
         const catTag = `<span style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📖 ${q.category || "未分類"}</span>`;
         const teacherTag = q.teacher ? `<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-weight: 500;">👨‍🏫 ${q.teacher}</span>` : "";
-
         qCard.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
                 <span style="color: #64748b; font-weight: bold;">第 ${idx + 1} 題 ｜ 題號：${q.id}</span>
