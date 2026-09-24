@@ -945,43 +945,40 @@ async function syncExplanationsFromSheet() {
         const customExplanations = await res.json();
 
         currentQuestions.forEach(q => {
-            const cloudExp = customExplanations[String(q.id)];
-            if (cloudExp) {
-                q.ai_explanation = cloudExp;
+            const cloudData = customExplanations[String(q.id)];
+            if (cloudData) {
+                // 🎯 取出解析文字與作者（相容物件與字串）
+                const expContent = typeof cloudData === "object" && cloudData !== null 
+                    ? (cloudData.explanation || "") 
+                    : String(cloudData);
+                const author = typeof cloudData === "object" && cloudData !== null 
+                    ? (cloudData.editor || "熱心同學") 
+                    : "熱心同學";
+
+                q.ai_explanation = expContent;
+                q.editor = author;
+
+                // 替換畫面文字，不再是整包物件
                 const textView = document.getElementById(`exp-text-view-${q.id}`);
                 if (textView) {
-                    textView.innerHTML = cloudExp;
+                    textView.innerHTML = expContent !== "" 
+                        ? expContent 
+                        : '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>';
+                }
+
+                // 顯示作者徽章
+                const editorBadge = document.getElementById(`exp-editor-${q.id}`);
+                if (editorBadge) {
+                    editorBadge.innerText = `✍️ ${author}`;
                 }
             }
         });
-        console.log("☁️ 雲端試算表最新詳解已於背景同步完成！");
+        console.log("☁️ 雲端試算表最新詳解與作者已同步完成！");
     } catch (e) {
         console.warn("無法載入雲端試算表詳解，使用預設解析", e);
     }
 }
 
-function formatDoc(qId, cmd, val = null) {
-    const editor = document.getElementById(`exp-input-${qId}`);
-    if (!editor) return;
-    editor.focus();
-    document.execCommand(cmd, false, val);
-}
-
-function formatColor(qId, color) {
-    const editor = document.getElementById(`exp-input-${qId}`);
-    if (!editor) return;
-    editor.focus();
-    document.execCommand("foreColor", false, color);
-}
-
-function formatHighlight(qId, color) {
-    const editor = document.getElementById(`exp-input-${qId}`);
-    if (!editor) return;
-    editor.focus();
-    if (!document.execCommand("hiliteColor", false, color)) {
-        document.execCommand("backColor", false, color);
-    }
-}
 </script>
 </body>
 </html>
