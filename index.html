@@ -669,28 +669,41 @@ function renderAllQuestions() {
         }
 
         // 🎯 GitHub 官方詳解根目錄（指向你的儲存庫 official_pdf 資料夾）
-        const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
-        
-        // 自動判斷考卷代碼（例如 Block8_112_Mid）
-        const targetQuizKey = q.quiz_name || currentQuizName;
-        const officialPdfLink = targetQuizKey ? `${GITHUB_PDF_BASE}/${targetQuizKey}.pdf` : null;
+        // 🎯 GitHub 官方詳解根目錄
+const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
 
-        // 將考卷標籤改為可點擊的新分頁超連結
-        let yearTag = "";
-        if (q.year_label) {
-            if (officialPdfLink) {
-                yearTag = `
-                    <a href="${officialPdfLink}" target="_blank" rel="noopener noreferrer" 
-                       title="點擊在新分頁開啟本份考卷的官方詳解 PDF"
-                       style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; text-decoration: none; padding: 2px 8px; border-radius: 4px; font-weight: bold; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
-                       onmouseover="this.style.background='#bae6fd'" onmouseout="this.style.background='#e0f2fe'">
-                       📅 ${q.year_label} <span style="font-size: 0.75rem;">↗</span>
-                    </a>
-                `;
-            } else {
-                yearTag = `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>`;
-            }
-        }
+// 取得純淨的年份代碼（濾除中文，如把「112年 期中考」轉為「112_Mid」；若原本就是 112_Mid 則保留）
+let yearCode = (q.year_label || "").trim();
+// 處理可能帶有中文標籤的對照
+if (yearCode.includes("113") && yearCode.includes("Mid")) yearCode = "113_Mid";
+else if (yearCode.includes("113") && yearCode.includes("Final")) yearCode = "113_Final";
+else if (yearCode.includes("112") && yearCode.includes("Mid")) yearCode = "112_Mid";
+else if (yearCode.includes("112") && yearCode.includes("Final")) yearCode = "112_Final";
+else if (yearCode.includes("111") && yearCode.includes("Mid")) yearCode = "111_Mid";
+else if (yearCode.includes("111") && yearCode.includes("Final")) yearCode = "111_Final";
+
+// 自動推導對應的 PDF 檔名
+let targetQuizKey = q.quiz_name || currentQuizName;
+if (!targetQuizKey && currentBlockName && yearCode) {
+    targetQuizKey = `${currentBlockName}_${yearCode}`;
+}
+
+const officialPdfLink = targetQuizKey ? `${GITHUB_PDF_BASE}/${targetQuizKey}.pdf` : null;
+
+let yearTag = "";
+if (q.year_label) {
+    if (officialPdfLink) {
+        yearTag = `
+            <a href="${officialPdfLink}" target="_blank" rel="noopener noreferrer" 
+               title="點擊在新分頁開啟本卷官方詳解 PDF"
+               style="background: #e0f2fe; color: #0369a1; border: 1.5px solid #0284c7; text-decoration: underline; padding: 2px 8px; border-radius: 4px; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+               📅 ${q.year_label} ↗
+            </a>
+        `;
+    } else {
+        yearTag = `<span style="background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📅 ${q.year_label}</span>`;
+    }
+}
 
         const catTag = `<span style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📖 ${q.category || "未分類"}</span>`;
         const teacherTag = q.teacher ? `<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-weight: 500;">👨‍🏫 ${q.teacher}</span>` : "";
