@@ -698,7 +698,11 @@ function renderAllQuestions() {
         }
 
         // 🎯 2. 放在這裡：組裝正規化後的 GitHub 連結與 yearTag
-        const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
+        // 修改前（Raw 會強制觸發下載）：
+// const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
+
+// 修改後（Pages 會直接在分頁內預覽 PDF）：
+        const GITHUB_PDF_BASE = "https://jimmy0922236561-cmd.github.io/my-quiz-website/official_pdf";
         const cleanYearCode = normalizeYearCode(q.year_label);
 
         let targetQuizKey = q.quiz_name || currentQuizName;
@@ -727,7 +731,7 @@ function renderAllQuestions() {
         const catTag = `<span style="background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 4px; font-weight: 500;">📖 ${q.category || "未分類"}</span>`;
         const teacherTag = q.teacher ? `<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-weight: 500;">👨‍🏫 ${q.teacher}</span>` : "";
 
-        // 下方的 qCard.innerHTML 維持原樣即可...
+        // 下方的 qCard.innerHTML 維持原樣即可.
         qCard.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
                 <span style="color: #64748b; font-weight: bold;">第 ${idx + 1} 題 ｜ 題號：${q.id}</span>
