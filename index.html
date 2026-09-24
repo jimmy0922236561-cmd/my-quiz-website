@@ -157,7 +157,6 @@
         .score-item h4 { margin: 0 0 5px 0; font-size: 0.9rem; opacity: 0.8; }
         .score-item span { font-size: 1.8rem; font-weight: bold; }
         
-        /* 篩選標籤膠囊樣式 */
         .filter-chip {
             padding: 6px 14px;
             border-radius: 20px;
@@ -191,12 +190,12 @@
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
                 <span style="font-size: 1.3rem;">📢</span>
                 <strong style="color: #856404; font-size: 1.1rem;">布告欄</strong>
-                <span style="margin-left: auto; font-size: 0.85rem; color: #856404; background: #ffeeba; padding: 2px 8px; border-radius: 20px; font-weight: bold;">最新更新：2026/09/21</span>
+                <span style="margin-left: auto; font-size: 0.85rem; color: #856404; background: #ffeeba; padding: 2px 8px; border-radius: 20px; font-weight: bold;">最新更新：2026/09/24</span>
             </div>
             
             <ul style="margin: 0; padding-left: 20px; color: #533f03; line-height: 1.6; font-size: 0.95rem;">
-                <li><strong>【功能升級】</strong> 單科目練習支援自由挑選「出題老師」與「考試年份」自訂篩選刷題！</li>
-                <li><strong>【題庫維護】</strong> 持續更新各科詳解與圖片解析。</li>
+                <li><strong>【劃重點更新】</strong> 解析編輯支援粗體、紅筆與黃色螢光筆畫重點。</li>
+                <li><strong>【功能升級】</strong> 單科目練習支援挑選「出題老師」與「考試年份」自訂刷題。</li>
             </ul>
         </div>
 
@@ -342,16 +341,14 @@ const GAS_EXPLANATION_API = "https://script.google.com/macros/s/AKfycbzzrNQZVsa9
 
 let currentBlockName = "";
 let currentQuizName = "";
-let rawLoadedQuestions = [];   // 當前科目從後端撈下來的所有題目
-let currentQuestions = [];     // 經由老師、年份篩選後真正要作答的題目
+let rawLoadedQuestions = [];   
+let currentQuestions = [];     
 let userAnswers = {};          
 let isSubmitted = false;       
 
-// 篩選器選取狀態 (Set)
 let selectedYears = new Set();
 let selectedTeachers = new Set();
 
-// DOM 節點
 const lobbyView = document.getElementById("lobby-view");
 const modeSelectionZone = document.getElementById("mode-selection-zone");
 const selectedBlockHint = document.getElementById("selected-block-hint");
@@ -374,11 +371,9 @@ const filterYearChips = document.getElementById("filter-year-chips");
 const filterTeacherChips = document.getElementById("filter-teacher-chips");
 const filteredCountBadge = document.getElementById("filtered-count-badge");
 
-// 🎯 自動偵測文字裡的圖片網址（同時相容 Markdown 格式與純網址）
 function extractImageFromText(text) {
     if (!text) return { cleanText: "", imageUrl: "" };
 
-    // 優先匹配 Markdown: ![alt](url)
     const mdRegex = /!\[.*?\]\((https?:\/\/[^\s\)]+)\)/i;
     const mdMatch = text.match(mdRegex);
     if (mdMatch) {
@@ -388,7 +383,6 @@ function extractImageFromText(text) {
         };
     }
 
-    // 次之相容純圖片網址
     const imgUrlRegex = /(https?:\/\/\S+\.(?:png|jpg|jpeg|gif|webp))/i;
     const match = text.match(imgUrlRegex);
     if (match) {
@@ -400,7 +394,6 @@ function extractImageFromText(text) {
     return { cleanText: text, imageUrl: "" };
 }
 
-// 1. 選擇 Block
 document.querySelectorAll(".block-select-btn").forEach(btn => {
     btn.addEventListener("click", function() {
         document.querySelectorAll(".block-select-btn").forEach(b => b.style.opacity = "0.6");
@@ -414,7 +407,6 @@ document.querySelectorAll(".block-select-btn").forEach(btn => {
     });
 });
 
-// 模式 A：單一考卷
 document.getElementById("btn-mode-by-year").addEventListener("click", () => {
     if (currentBlockName === "MED1") {
         yearZone1.classList.add("hidden");
@@ -425,7 +417,6 @@ document.getElementById("btn-mode-by-year").addEventListener("click", () => {
     }
 });
 
-// 模式 B：跨年度專題特訓
 document.getElementById("btn-mode-cross-year").addEventListener("click", async () => {
     try {
         categoryQuizTitle.innerText = `${currentBlockName} 跨年度歷屆科目特訓`;
@@ -463,7 +454,6 @@ document.getElementById("btn-mode-cross-year").addEventListener("click", async (
     }
 });
 
-// 2. 選擇年份
 document.querySelectorAll(".year-btn").forEach(btn => {
     btn.addEventListener("click", function() {
         const selectedYear = this.getAttribute("data-year");
@@ -473,7 +463,6 @@ document.querySelectorAll(".year-btn").forEach(btn => {
     });
 });
 
-// 3. 載入單一考卷科目
 async function openCategorySelection(quizName, displayName) {
     try {
         categoryQuizTitle.innerText = displayName;
@@ -511,7 +500,6 @@ async function openCategorySelection(quizName, displayName) {
     }
 }
 
-// 4. 統一發起測驗（抓取資料後初始化篩選面板）
 async function startQuizSession(fetchUrl, title, enableFilters) {
     try {
         quizTitle.innerText = title;
@@ -540,7 +528,6 @@ async function startQuizSession(fetchUrl, title, enableFilters) {
     }
 }
 
-// 4-1. 建立老師與年份篩選按鈕
 function setupFilterOptions() {
     selectedYears.clear();
     selectedTeachers.clear();
@@ -553,11 +540,9 @@ function setupFilterOptions() {
         if (q.teacher && q.teacher.trim() !== "") availableTeachers.add(q.teacher.trim());
     });
 
-    // 預設全選
     availableYears.forEach(y => selectedYears.add(y));
     availableTeachers.forEach(t => selectedTeachers.add(t));
 
-    // 年份 UI
     const yearGroup = document.getElementById("filter-year-group");
     if (availableYears.size <= 1) {
         yearGroup.classList.add("hidden");
@@ -566,7 +551,6 @@ function setupFilterOptions() {
         renderFilterChips(filterYearChips, Array.from(availableYears), selectedYears);
     }
 
-    // 老師 UI
     const teacherGroup = document.getElementById("filter-teacher-group");
     if (availableTeachers.size === 0) {
         teacherGroup.classList.add("hidden");
@@ -581,7 +565,6 @@ function setupFilterOptions() {
 function renderFilterChips(container, items, targetSet) {
     container.innerHTML = "";
 
-    // 全部按鈕
     const allBtn = document.createElement("span");
     allBtn.className = "filter-chip active";
     allBtn.innerText = "全選";
@@ -592,7 +575,6 @@ function renderFilterChips(container, items, targetSet) {
     };
     container.appendChild(allBtn);
 
-    // 各項目按鈕
     items.forEach(item => {
         const chip = document.createElement("span");
         chip.className = "filter-chip active";
@@ -617,7 +599,6 @@ function renderFilterChips(container, items, targetSet) {
     });
 }
 
-// 4-2. 套用篩選過濾並刷新題目
 function applyFilters() {
     currentQuestions = rawLoadedQuestions.filter(q => {
         const qYear = (q.year_label || "").trim();
@@ -647,7 +628,6 @@ function applyFilteredQuestions() {
     updateProgress();
 }
 
-// 產生選項 HTML
 function renderOption(q, optLetter, optText) {
     const parsed = extractImageFromText(optText);
     const imgHtml = parsed.imageUrl
@@ -663,7 +643,6 @@ function renderOption(q, optLetter, optText) {
     `;
 }
 
-// 5. 渲染題目卡片
 function renderAllQuestions() {
     questionsContainer.innerHTML = "";
 
@@ -722,7 +701,12 @@ function renderAllQuestions() {
                     
                     <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; margin-top: 10px; border-radius: 4px; font-size: 0.95rem; line-height: 1.6;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                            <strong style="color: #166534;">✨ AI 臨床解析 / 共筆筆記：</strong>
+                            <div>
+                                <strong style="color: #166534;">✨ AI 臨床解析 / 共筆筆記：</strong>
+                                <span id="exp-editor-${q.id}" style="font-size: 0.8rem; background: #dcfce7; color: #15803d; padding: 2px 8px; border-radius: 12px; margin-left: 6px; font-weight: bold;">
+                                    ✍️ ${q.editor || "熱心同學"}
+                                </span>
+                            </div>
                             <div>
                                 <button type="button" id="btn-edit-${q.id}" onclick="toggleEditExplanation('${q.id}')" style="background: #ffffff; border: 1px solid #86efac; color: #166534; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">✏️ 編輯解析</button>
                                 <button type="button" id="btn-save-${q.id}" class="hidden" onclick="saveExplanationToSheet('${q.id}')" style="background: #16a34a; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold;">💾 儲存</button>
@@ -730,17 +714,17 @@ function renderAllQuestions() {
                             </div>
                         </div>
 
-                        <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333;; font-size: 1.15rem; line-height: 1.75">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
+                        <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333; font-size: 1.15rem; line-height: 1.75;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
 
                         <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
-                         <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
-                                 <button type="button" onmousedown="event.preventDefault()" onclick="formatDoc('${q.id}', 'bold')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-weight: bold; cursor: pointer;"><b>B 粗體</b></button>
-                                 <button type="button" onmousedown="event.preventDefault()" onclick="formatColor('${q.id}', '#ef4444')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; color: #ef4444; font-weight: bold; cursor: pointer;">🔴 紅筆</button>
-                                 <button type="button" onmousedown="event.preventDefault()" onclick="formatHighlight('${q.id}', '#fef08a')" style="background: #fef08a; border: 1px solid #fde047; border-radius: 4px; padding: 3px 8px; color: #854d0e; font-weight: bold; cursor: pointer;">🖍️ 螢光筆</button>
-                                 <button type="button" onmousedown="event.preventDefault()" onclick="formatDoc('${q.id}', 'removeFormat')" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; color: #64748b; cursor: pointer;">🧹 清除格式</button>
+                            <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
+                                <button type="button" onmousedown="event.preventDefault(); applyFormat('${q.id}', 'bold');" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 10px; font-weight: bold; cursor: pointer;"><b>B 粗體</b></button>
+                                <button type="button" onmousedown="event.preventDefault(); applyFormat('${q.id}', 'red');" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 10px; color: #ef4444; font-weight: bold; cursor: pointer;">🔴 紅筆</button>
+                                <button type="button" onmousedown="event.preventDefault(); applyFormat('${q.id}', 'highlight');" style="background: #fef08a; border: 1px solid #fde047; border-radius: 4px; padding: 4px 10px; color: #854d0e; font-weight: bold; cursor: pointer;">🖍️ 螢光筆</button>
+                                <button type="button" onmousedown="event.preventDefault(); applyFormat('${q.id}', 'clear');" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 10px; font-size: 0.85rem; color: #64748b; cursor: pointer;">🧹 清除格式</button>
+                            </div>
+                            <div id="exp-input-${q.id}" contenteditable="true" style="min-height: 120px; max-height: 350px; overflow-y: auto; background: white; border: 1.5px solid #86efac; border-radius: 6px; padding: 10px; font-size: 1.15rem; line-height: 1.75; outline: none;"></div>
                         </div>
-    <div id="exp-input-${q.id}" contenteditable="true" style="min-height: 120px; max-height: 350px; overflow-y: auto; background: white; border: 1.5px solid #86efac; border-radius: 6px; padding: 10px; font-size: 1.15rem; line-height: 1.75; outline: none;"></div>
-</div>
                     </div>
                 </div>
             </details>
@@ -762,14 +746,12 @@ function renderAllQuestions() {
     });
 }
 
-// 6. 更新進度
 function updateProgress() {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
     quizProgressText.innerText = `作答進度：${answeredCount} / ${totalCount} 題`;
 }
 
-// 7. 交卷與批改
 btnSubmitAll.addEventListener("click", () => {
     const answeredCount = Object.keys(userAnswers).length;
     const totalCount = currentQuestions.length;
@@ -832,7 +814,6 @@ btnSubmitAll.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// 8. 錯題過濾器
 document.getElementById("btn-show-wrong-only").addEventListener("click", () => {
     currentQuestions.forEach(q => {
         const qCard = document.getElementById(`q-card-${q.id}`);
@@ -851,7 +832,6 @@ document.getElementById("btn-show-all").addEventListener("click", () => {
     });
 });
 
-// 導航控制
 function goBackToLobby() {
     quizView.classList.add("hidden");
     categoryView.classList.add("hidden");
@@ -866,10 +846,14 @@ function goBackToCategory() {
 document.getElementById("btn-back-to-lobby").addEventListener("click", goBackToLobby);
 document.getElementById("btn-back-to-category").addEventListener("click", goBackToCategory);
 
-// 解析編輯與同步
 function toggleEditExplanation(qId) {
     const q = currentQuestions.find(item => String(item.id) === String(qId));
-    const currentText = q ? (q.ai_explanation || "") : "";
+    let currentText = "";
+    if (q && q.ai_explanation) {
+        currentText = typeof q.ai_explanation === "object" 
+            ? (q.ai_explanation.explanation || "") 
+            : q.ai_explanation;
+    }
 
     document.getElementById(`exp-input-${qId}`).innerHTML = currentText;
     document.getElementById(`exp-text-view-${qId}`).classList.add("hidden");
@@ -921,12 +905,20 @@ async function saveExplanationToSheet(qId) {
         });
 
         const targetQ = currentQuestions.find(item => String(item.id) === String(qId));
-        if (targetQ) targetQ.ai_explanation = newExplanation;
+        if (targetQ) {
+            targetQ.ai_explanation = newExplanation;
+            targetQ.editor = editorName;
+        }
 
         const textView = document.getElementById(`exp-text-view-${qId}`);
         textView.innerHTML = newExplanation !== ""
             ? newExplanation
             : '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>';
+
+        const editorBadge = document.getElementById(`exp-editor-${qId}`);
+        if (editorBadge) {
+            editorBadge.innerText = `✍️ ${editorName}`;
+        }
 
         cancelEditExplanation(qId);
         alert(`✅ 解析已成功同步儲存！(編輯者：${editorName})`);
@@ -947,7 +939,6 @@ async function syncExplanationsFromSheet() {
         currentQuestions.forEach(q => {
             const cloudData = customExplanations[String(q.id)];
             if (cloudData) {
-                // 🎯 取出解析文字與作者（相容物件與字串）
                 const expContent = typeof cloudData === "object" && cloudData !== null 
                     ? (cloudData.explanation || "") 
                     : String(cloudData);
@@ -958,7 +949,6 @@ async function syncExplanationsFromSheet() {
                 q.ai_explanation = expContent;
                 q.editor = author;
 
-                // 替換畫面文字，不再是整包物件
                 const textView = document.getElementById(`exp-text-view-${q.id}`);
                 if (textView) {
                     textView.innerHTML = expContent !== "" 
@@ -966,7 +956,6 @@ async function syncExplanationsFromSheet() {
                         : '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>';
                 }
 
-                // 顯示作者徽章
                 const editorBadge = document.getElementById(`exp-editor-${q.id}`);
                 if (editorBadge) {
                     editorBadge.innerText = `✍️ ${author}`;
@@ -979,6 +968,49 @@ async function syncExplanationsFromSheet() {
     }
 }
 
+// 現代 DOM 選取標記函式
+function applyFormat(qId, type) {
+    const editor = document.getElementById(`exp-input-${qId}`);
+    if (!editor) return;
+
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+        alert("請先用滑鼠反白選取想要標記的文字！");
+        return;
+    }
+
+    const range = selection.getRangeAt(0);
+
+    if (!editor.contains(range.commonAncestorContainer)) {
+        return;
+    }
+
+    if (type === "clear") {
+        const textNode = document.createTextNode(range.toString());
+        range.deleteContents();
+        range.insertNode(textNode);
+    } else {
+        let wrapper;
+        if (type === "bold") {
+            wrapper = document.createElement("b");
+        } else if (type === "red") {
+            wrapper = document.createElement("span");
+            wrapper.style.color = "#ef4444";
+            wrapper.style.fontWeight = "bold";
+        } else if (type === "highlight") {
+            wrapper = document.createElement("mark");
+            wrapper.style.backgroundColor = "#fef08a";
+            wrapper.style.color = "#854d0e";
+            wrapper.style.padding = "1px 3px";
+            wrapper.style.borderRadius = "3px";
+        }
+
+        wrapper.appendChild(range.extractContents());
+        range.insertNode(wrapper);
+    }
+
+    selection.removeAllRanges();
+}
 </script>
 </body>
 </html>
