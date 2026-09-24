@@ -969,6 +969,7 @@ async function syncExplanationsFromSheet() {
 }
 
 // 現代 DOM 選取標記函式
+// 現代 DOM 選取標記函式（已修復紅筆粗體與清除格式功能）
 function applyFormat(qId, type) {
     const editor = document.getElementById(`exp-input-${qId}`);
     if (!editor) return;
@@ -981,22 +982,40 @@ function applyFormat(qId, type) {
 
     const range = selection.getRangeAt(0);
 
+    // 確保選取的文字在目前題目的編輯框內部
     if (!editor.contains(range.commonAncestorContainer)) {
         return;
     }
 
     if (type === "clear") {
-        const textNode = document.createTextNode(range.toString());
-        range.deleteContents();
+        // 🎯 徹底清除格式：提取選取片段，將內部所有 HTML 標籤解開成純文字
+        const fragment = range.extractContents();
+        const plainText = fragment.textContent || "";
+        const textNode = document.createTextNode(plainText);
         range.insertNode(textNode);
+
+        // 如果選取的文字本身被包在父層標籤中 (如 <mark> 或 <b> 內)，一併解開父層
+        let parent = textNode.parentElement;
+        while (parent && parent !== editor) {
+            if (["B", "STRONG", "SPAN", "MARK"].includes(parent.tagName)) {
+                const grandParent = parent.parentNode;
+                while (parent.firstChild) {
+                    grandParent.insertBefore(parent.firstChild, parent);
+                }
+                grandParent.removeChild(parent);
+                parent = grandParent;
+            } else {
+                parent = parent.parentElement;
+            }
+        }
+        editor.normalize(); // 合併相鄰的文字節點
     } else {
         let wrapper;
         if (type === "bold") {
             wrapper = document.createElement("b");
         } else if (type === "red") {
             wrapper = document.createElement("span");
-            wrapper.style.color = "#ef4444";
-            wrapper.style.fontWeight = "bold";
+            wrapper.style.color = "#ef4444"; // 🎯 已移除 fontWeight = "bold"，保持正常粗細
         } else if (type === "highlight") {
             wrapper = document.createElement("mark");
             wrapper.style.backgroundColor = "#fef08a";
