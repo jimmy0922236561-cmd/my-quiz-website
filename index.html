@@ -851,6 +851,11 @@ function renderAllQuestions() {
                                 </span>
                             </div>
                             <div>
+                                <button type="button" onclick="askAiAboutQuestion('${q.id}')" 
+                                    style="background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
+                                    onmouseover="this.style.background='#d1fae5'" onmouseout="this.style.background='#ecfdf5'">
+                                    🤖 問這題
+                                </button>
                                 <button type="button" id="btn-edit-${q.id}" onclick="toggleEditExplanation('${q.id}')" style="background: #ffffff; border: 1px solid #86efac; color: #166534; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">✏️ 編輯解析</button>
                                 <button type="button" id="btn-save-${q.id}" class="hidden" onclick="saveExplanationToSheet('${q.id}')" style="background: #16a34a; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold;">💾 儲存</button>
                                 <button type="button" id="btn-cancel-${q.id}" class="hidden" onclick="cancelEditExplanation('${q.id}')" style="background: #94a3b8; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; margin-left: 4px;">取消</button>
@@ -861,16 +866,7 @@ function renderAllQuestions() {
     <span style="font-weight: bold; color: #1e293b;">💡 詳細解析</span>
     
 
-    <div style="display: flex; gap: 8px; align-items: center;">
-        <button type="button" onclick="askAiAboutQuestion('${q.id}')" 
-                style="background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
-                onmouseover="this.style.background='#d1fae5'" onmouseout="this.style.background='#ecfdf5'">
-            🤖 問這題
-        </button>
-        <button type="button" onclick="openEditModal('${q.id}')" style="...">
-            ✏️ 編輯解析
-        </button>
-    </div>
+    
 </div>
 
 <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333; font-size: 1.15rem; line-height: 1.75;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
