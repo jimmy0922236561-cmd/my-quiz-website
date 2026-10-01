@@ -861,11 +861,6 @@ function renderAllQuestions() {
                                 <button type="button" id="btn-cancel-${q.id}" class="hidden" onclick="cancelEditExplanation('${q.id}')" style="background: #94a3b8; border: none; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; margin-left: 4px;">取消</button>
                             </div>
                         </div>
-
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-    <span style="font-weight: bold; color: #1e293b;">💡 詳細解析</span>
-    
-
     
 </div>
 
@@ -1311,25 +1306,42 @@ async function sendAiMessage(customUserMessage) {
 }
 
 // 🎯 「一鍵問這題」功能：自動整理題目資訊並帶入 AI 抽屜
+// 🎯 「一鍵問這題」功能：精確讀取 option_a ~ option_d 與 correct_answer
 function askAiAboutQuestion(qId) {
+    // 找出當前題目的資料
     const q = currentQuestions.find(item => String(item.id) === String(qId));
-    if (!q) return;
+    if (!q) {
+        console.warn("找不到對應題目 ID:", qId);
+        return;
+    }
 
-    // 打開抽屜
+    // 展開右側 AI 抽屜
     toggleAiDrawer(true);
 
-    let prompt = `請為我詳細解析以下醫學考試題目，並逐一說明選項的對錯原因與深層機轉：\n\n`;
+    // 1. 組裝題目
+    let prompt = `請為我詳細解析以下醫學考試題目，並逐一說明各選項的對錯原因與背後生理/病理/藥理機轉：\n\n`;
     prompt += `【題目】\n${q.question}\n\n`;
-    if (q.options && q.options.length > 0) {
-        prompt += `【選項】\n`;
+
+    // 2. 組裝選項（相容 option_a ~ option_d 或 options 陣列）
+    prompt += `【選項】\n`;
+    if (q.option_a || q.option_b || q.option_c || q.option_d) {
+        if (q.option_a) prompt += `(A) ${q.option_a}\n`;
+        if (q.option_b) prompt += `(B) ${q.option_b}\n`;
+        if (q.option_c) prompt += `(C) ${q.option_c}\n`;
+        if (q.option_d) prompt += `(D) ${q.option_d}\n`;
+    } else if (Array.isArray(q.options) && q.options.length > 0) {
         q.options.forEach((opt, idx) => {
-            prompt += `${String.fromCharCode(65 + idx)}. ${opt}\n`;
+            prompt += `(${String.fromCharCode(65 + idx)}) ${opt}\n`;
         });
     }
-    if (q.answer) {
-        prompt += `\n官方公佈答案為：${q.answer}`;
+
+    // 3. 組裝正確答案（相容 correct_answer 或 answer）
+    const ans = q.correct_answer || q.answer;
+    if (ans) {
+        prompt += `\n【官方公佈正解】：${ans}\n`;
     }
 
+    // 發送給 AI 助教
     sendAiMessage(prompt);
 }
 </script>
