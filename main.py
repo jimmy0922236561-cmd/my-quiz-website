@@ -1,12 +1,15 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from typing import Optional
 import csv
 import os
 import glob
+from openai import OpenAI
 
 app = FastAPI(title="醫學系 Block / 國考 分類題庫 API")
 
+# 設定 CORS 跨域請求（確保 GitHub Pages 前端能正常呼叫）
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -15,10 +18,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# -------------------------------------------------------------
+# 🤖 OpenAI (ChatGPT) 初始化與資料模型
+# -------------------------------------------------------------
+OPENAI_KEY = os.getenv("OPENAI_API_KEY")
+# 初始化 OpenAI Client（若有設定環境變數則自動帶入）
+openai_client = OpenAI(api_key=OPENAI_KEY) if OPENAI_KEY else None
+
+class AIChatRequest(BaseModel):
+    message: str
+    system_prompt: Optional[str] = None  # 接收前端傳來的自訂 System Prompt
+
 class ExplanationUpdate(BaseModel):
     question_id: int
     explanation: str
 
+# -------------------------------------------------------------
+# 工具函式：檔案路徑與年份標籤解析
+# -------------------------------------------------------------
 def get_quizzes_dir():
     """動態取得 quizzes 資料夾路徑"""
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -112,9 +129,47 @@ def write_questions_to_csv(quiz_name: str, questions_list: list):
                 "image_url": q.get("image_url", "")
             })
 
+# -------------------------------------------------------------
+# 基礎狀態確認
+# -------------------------------------------------------------
 @app.get("/")
 def home():
     return {"message": "醫學系考古題庫 API 伺服器正常運作中！"}
+
+# -------------------------------------------------------------
+# 🤖 0. AI 助教對話 API (GPT-4o-mini)
+# -------------------------------------------------------------
+@app.post("/api/ai_chat")
+async def ai_chat(req: AIChatRequest):
+    if not req.message or not req.message.strip():
+        raise HTTPException(status_code=400, detail="問題內容不能為空")
+
+    if not openai_client:
+        raise HTTPException(status_code=500, detail="後端尚未設定 OPENAI_API_KEY 環境變數")
+
+    try:
+        # 若前端有傳入自訂 Prompt 就使用自訂，否則使用預設醫學導師角色
+        system_instruction = req.system_prompt or (
+            "你是一位頂尖的醫學教授與國考輔導主治醫師，負責為醫學生解答考古題。"
+            "請以邏輯清晰、醫學機轉嚴謹的繁體中文回答，指出各選項對錯的核心機轉與臨床盲點。"
+        )
+
+        # 呼叫 GPT-4o-mini
+        completion = openai_client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": system_instruction},
+                {"role": "user", "content": req.message}
+            ],
+            temperature=0.3  # 降低隨機度，使生理、病理、藥理等醫學機轉推論更穩定精準
+        )
+
+        reply_text = completion.choices[0].message.content
+        return {"reply": reply_text}
+
+    except Exception as e:
+        print(f"OpenAI API 錯誤: {e}")
+        return {"reply": f"AI 助教連線異常：{str(e)}"}
 
 # -------------------------------------------------------------
 # 1. 單一考卷 API
@@ -141,7 +196,7 @@ def get_categories(quiz_name: str):
     return categories
 
 # -------------------------------------------------------------
-# 2. 跨年度專題特訓 API（核心新增）
+# 2. 跨年度專題特訓 API
 # -------------------------------------------------------------
 @app.get("/api/block_categories/{block_name}")
 def get_block_categories(block_name: str):

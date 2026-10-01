@@ -333,6 +333,55 @@
             </button>
         </div>
     </div>
+    <!-- 🤖 1. 右側邊緣貼邊懸浮標籤（平時不擋螢幕，點擊滑出抽屜） -->
+<div id="ai-floating-trigger" onclick="toggleAiDrawer(true)" title="開啟 AI 醫學助教" style="position: fixed; right: 0; top: 45%; transform: translateY(-50%); background: linear-gradient(135deg, #10b981, #059669); color: #fff; padding: 12px 10px 12px 14px; border-radius: 16px 0 0 16px; box-shadow: -3px 4px 18px rgba(16,185,129,0.35); cursor: pointer; z-index: 9998; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 0.85rem; font-weight: bold; writing-mode: vertical-rl; text-orientation: upright; letter-spacing: 2px; transition: transform 0.25s ease;">
+    <span style="font-size: 1.2rem; margin-bottom: 4px; writing-mode: horizontal-tb;">🤖</span>
+    AI助教
+</div>
+
+<!-- 🪟 2. 半透明背景遮罩（點擊空白處自動收合抽屜） -->
+<div id="ai-backdrop" onclick="toggleAiDrawer(false)" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(2px); z-index: 9999; display: none; opacity: 0; transition: opacity 0.3s ease;"></div>
+
+<!-- 💬 3. 右側滑出式全高度抽屜對話欄 -->
+<div id="ai-drawer" style="position: fixed; top: 0; right: -480px; width: 440px; max-width: 90vw; height: 100vh; background: #ffffff; box-shadow: -8px 0 32px rgba(0,0,0,0.18); z-index: 10000; display: flex; flex-direction: column; transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1); font-family: inherit;">
+    
+    <!-- 頂部標題列 -->
+    <div style="background: linear-gradient(135deg, #065f46, #059669); color: white; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+        <div style="font-weight: 600; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
+            <span>🩺</span> 醫學共筆 AI 助教 (GPT-4o)
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+            <button onclick="togglePromptSettings()" title="自訂角色與指令" style="background: rgba(255,255,255,0.2); border: none; color: white; border-radius: 6px; padding: 4px 10px; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">⚙️ 自訂 Prompt</button>
+            <button onclick="toggleAiDrawer(false)" style="background: none; border: none; color: white; font-size: 1.4rem; cursor: pointer; line-height: 1; padding: 0 4px;">✕</button>
+        </div>
+    </div>
+
+    <!-- ⚙️ 可摺疊自訂 Prompt 設定區（可隨時修改指令） -->
+    <div id="ai-prompt-settings" style="display: none; background: #f8fafc; border-bottom: 2px solid #e2e8f0; padding: 12px 16px; flex-shrink: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 0.85rem; font-weight: bold; color: #334155;">🧠 自訂 AI System Prompt (角色設定)：</span>
+            <button onclick="resetCustomPrompt()" style="background: none; border: none; color: #64748b; font-size: 0.75rem; text-decoration: underline; cursor: pointer;">還原預設</button>
+        </div>
+        <textarea id="ai-custom-prompt" rows="3" placeholder="在此輸入你想要的 AI 扮演角色或回答規則..." style="width: 100%; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; font-size: 0.85rem; box-sizing: border-box; resize: vertical; outline: none;"></textarea>
+        <div style="display: flex; justify-content: flex-end; margin-top: 6px;">
+            <button onclick="saveCustomPrompt()" style="background: #059669; color: white; border: none; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer;">儲存設定</button>
+        </div>
+    </div>
+
+    <!-- 對話訊息歷史區 -->
+    <div id="ai-chat-messages" style="flex: 1; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #f8fafc; font-size: 0.92rem; line-height: 1.6;">
+        <div style="align-self: flex-start; background: #e2e8f0; color: #1e293b; padding: 10px 14px; border-radius: 14px 14px 14px 2px; max-width: 88%;">
+            同學你好！我是臨床醫學 AI 助教 🩺<br>
+            刷題遇到疑難、想理解深層生理機轉或選項陷阱，隨時都能問我！點擊右上角的 <b>⚙️ 自訂 Prompt</b> 可隨時調整我的教學風格。
+        </div>
+    </div>
+
+    <!-- 底部提問輸入區 -->
+    <div style="padding: 12px; background: #ffffff; border-top: 1px solid #e2e8f0; display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0;">
+        <textarea id="ai-chat-input" placeholder="輸入你想問的問題... (Shift+Enter 換行)" rows="2" style="flex: 1; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 8px 12px; font-family: inherit; font-size: 0.92rem; resize: none; outline: none; box-sizing: border-box; max-height: 120px;"></textarea>
+        <button id="ai-send-btn" onclick="sendAiMessage()" style="background: #059669; color: white; border: none; padding: 10px 16px; border-radius: 10px; font-weight: 600; cursor: pointer; height: 44px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">送出</button>
+    </div>
+</div>
 </div>
 
 <script>
@@ -808,8 +857,23 @@ function renderAllQuestions() {
                             </div>
                         </div>
 
-                        <div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333; font-size: 1.15rem; line-height: 1.75;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+    <span style="font-weight: bold; color: #1e293b;">💡 詳細解析</span>
+    
 
+    <div style="display: flex; gap: 8px; align-items: center;">
+        <button type="button" onclick="askAiAboutQuestion('${q.id}')" 
+                style="background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
+                onmouseover="this.style.background='#d1fae5'" onmouseout="this.style.background='#ecfdf5'">
+            🤖 問這題
+        </button>
+        <button type="button" onclick="openEditModal('${q.id}')" style="...">
+            ✏️ 編輯解析
+        </button>
+    </div>
+</div>
+
+<div id="exp-text-view-${q.id}" style="white-space: pre-wrap; margin-top: 4px; color: #333; font-size: 1.15rem; line-height: 1.75;">${q.ai_explanation || '<span style="color: #94a3b8;">暫無解析，點擊右上角「編輯解析」新增...</span>'}</div>
                         <div id="exp-edit-view-${q.id}" class="hidden" style="margin-top: 8px;">
                             <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
                                 <button type="button" onmousedown="event.preventDefault(); applyFormat('${q.id}', 'bold');" style="background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 10px; font-weight: bold; cursor: pointer;"><b>B 粗體</b></button>
@@ -1123,6 +1187,154 @@ function applyFormat(qId, type) {
     }
 
     selection.removeAllRanges();
+}
+// ==========================================
+// 🤖 AI 助教前端控制與 Prompt 管理
+// ==========================================
+
+const DEFAULT_AI_PROMPT = 
+    "你是一位頂尖的醫學教授與國考輔導主治醫師，負責為醫學生解答考古題。\n" +
+    "回答原則：\n" +
+    "1. 使用條理分明、清晰嚴謹的繁體中文回答。\n" +
+    "2. 解析題目時，請逐一說明各選項正確或錯誤的深層醫學機轉。\n" +
+    "3. 點出國考常見的題幹陷阱與解題關鍵記憶點。";
+
+// 讀取目前設定的 Prompt（若無則給預設）
+function getSavedPrompt() {
+    return localStorage.getItem("quiz_ai_custom_prompt") || DEFAULT_AI_PROMPT;
+}
+
+// 頁面載入時初始化輸入框
+document.addEventListener("DOMContentLoaded", () => {
+    const promptInput = document.getElementById("ai-custom-prompt");
+    if (promptInput) promptInput.value = getSavedPrompt();
+});
+
+// 開關側邊抽屜面板
+function toggleAiDrawer(forceState) {
+    const drawer = document.getElementById("ai-drawer");
+    const backdrop = document.getElementById("ai-backdrop");
+    const trigger = document.getElementById("ai-floating-trigger");
+    if (!drawer) return;
+    
+    const isOpen = drawer.style.right === "0px";
+    const targetState = (typeof forceState === "boolean") ? forceState : !isOpen;
+
+    if (targetState) {
+        drawer.style.right = "0px";
+        backdrop.style.display = "block";
+        setTimeout(() => { backdrop.style.opacity = "1"; }, 10);
+        trigger.style.transform = "translateY(-50%) translateX(100%)"; // 側標收起
+        setTimeout(() => document.getElementById("ai-chat-input")?.focus(), 250);
+    } else {
+        drawer.style.right = "-480px";
+        backdrop.style.opacity = "0";
+        setTimeout(() => { backdrop.style.display = "none"; }, 300);
+        trigger.style.transform = "translateY(-50%) translateX(0)"; // 側標復原
+    }
+}
+
+// 開關自訂 Prompt 摺疊面板
+function togglePromptSettings() {
+    const settings = document.getElementById("ai-prompt-settings");
+    settings.style.display = (settings.style.display === "none" || settings.style.display === "") ? "block" : "none";
+}
+
+// 儲存自訂 Prompt
+function saveCustomPrompt() {
+    const inputVal = document.getElementById("ai-custom-prompt").value.trim();
+    if (!inputVal) {
+        alert("Prompt 不能為空！");
+        return;
+    }
+    localStorage.setItem("quiz_ai_custom_prompt", inputVal);
+    alert("✅ Prompt 設定成功！後續提問將套用新指令。");
+    togglePromptSettings();
+}
+
+// 還原預設 Prompt
+function resetCustomPrompt() {
+    if (confirm("確定要將 Prompt 還原為預設設定嗎？")) {
+        document.getElementById("ai-custom-prompt").value = DEFAULT_AI_PROMPT;
+        localStorage.setItem("quiz_ai_custom_prompt", DEFAULT_AI_PROMPT);
+    }
+}
+
+// 鍵盤 Enter 快捷送出
+document.getElementById("ai-chat-input")?.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendAiMessage();
+    }
+});
+
+// 發送訊息給 Render 後端
+async function sendAiMessage(customUserMessage) {
+    const input = document.getElementById("ai-chat-input");
+    const container = document.getElementById("ai-chat-messages");
+    const message = customUserMessage || input.value.trim();
+    if (!message) return;
+
+    if (!customUserMessage) input.value = "";
+
+    // 1. 產生使用者發話氣泡
+    const userBubble = document.createElement("div");
+    userBubble.style.cssText = "align-self: flex-end; background: #059669; color: white; padding: 10px 14px; border-radius: 14px 14px 2px 14px; max-width: 88%; white-space: pre-wrap;";
+    userBubble.innerText = message;
+    container.appendChild(userBubble);
+
+    // 2. 產生思考中氣泡
+    const loadingBubble = document.createElement("div");
+    loadingBubble.style.cssText = "align-self: flex-start; background: #e2e8f0; color: #64748b; padding: 10px 14px; border-radius: 14px 14px 14px 2px; font-size: 0.88rem;";
+    loadingBubble.innerText = "⏳ ChatGPT 正在分析機轉與推論中...";
+    container.appendChild(loadingBubble);
+    container.scrollTop = container.scrollHeight;
+
+    // 抓取你儲存的 Prompt
+    const currentSystemPrompt = getSavedPrompt();
+
+    try {
+        const res = await fetch(`${API_BASE_URL}/api/ai_chat`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                message: message,
+                system_prompt: currentSystemPrompt
+            })
+        });
+        const data = await res.json();
+        
+        loadingBubble.style.color = "#1e293b";
+        loadingBubble.style.fontSize = "0.92rem";
+        loadingBubble.style.whiteSpace = "pre-wrap";
+        loadingBubble.innerText = data.reply || "目前無回應，請稍後再試。";
+    } catch (err) {
+        loadingBubble.innerText = "❌ 連線至後端失敗，請確認 Render 伺服器是否正常運行。";
+    }
+    container.scrollTop = container.scrollHeight;
+}
+
+// 🎯 「一鍵問這題」功能：自動整理題目資訊並帶入 AI 抽屜
+function askAiAboutQuestion(qId) {
+    const q = currentQuestions.find(item => String(item.id) === String(qId));
+    if (!q) return;
+
+    // 打開抽屜
+    toggleAiDrawer(true);
+
+    let prompt = `請為我詳細解析以下醫學考試題目，並逐一說明選項的對錯原因與深層機轉：\n\n`;
+    prompt += `【題目】\n${q.question}\n\n`;
+    if (q.options && q.options.length > 0) {
+        prompt += `【選項】\n`;
+        q.options.forEach((opt, idx) => {
+            prompt += `${String.fromCharCode(65 + idx)}. ${opt}\n`;
+        });
+    }
+    if (q.answer) {
+        prompt += `\n官方公佈答案為：${q.answer}`;
+    }
+
+    sendAiMessage(prompt);
 }
 </script>
 </body>
