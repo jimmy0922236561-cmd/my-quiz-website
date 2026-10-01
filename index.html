@@ -338,6 +338,28 @@
 <script>
 const API_BASE_URL = "https://jimmyishandsomeboy.onrender.com";
 const GAS_EXPLANATION_API = "https://script.google.com/macros/s/AKfycbzzrNQZVsa9x5Lz5vOhS8pv60MkQZQafdy-Lzj1IIG_Ms7GJTW0bTUIe7kcHz28_qZE/exec";
+// 1. 宣告一個全域物件，用來存從雲端硬碟抓下來的檔名與網址對照表
+    let drivePdfMap = {};
+
+    // 2. 宣告非同步函式：向 GAS 抓取 ?action=getPdfs
+    async function syncDrivePdfs() {
+        try {
+            console.log("🔄 正在向 Google Drive 同步官方詳解清單...");
+            // 呼叫帶有 action=getPdfs 參數的 GAS 網址
+            const res = await fetch(`${GAS_EXPLANATION_API}?action=getPdfs`);
+            if (res.ok) {
+                drivePdfMap = await res.json();
+                console.log("✅ 成功取得 Google 雲端官方詳解清單:", drivePdfMap);
+            } else {
+                console.warn("⚠️️ GAS 回傳狀態異常:", res.status);
+            }
+        } catch (err) {
+            console.error("❌ 無法連線至 Google Apps Script 取得 PDF 清單:", err);
+        }
+    }
+
+    // 3. 立即呼叫執行！讓網頁一開啟就在背景抓取清單
+    syncDrivePdfs();
 
 let currentBlockName = "";
 let currentQuizName = "";
@@ -702,22 +724,35 @@ function renderAllQuestions() {
 // const GITHUB_PDF_BASE = "https://raw.githubusercontent.com/jimmy0922236561-cmd/my-quiz-website/main/official_pdf";
 
 // 修改後（Pages 會直接在分頁內預覽 PDF）：
-        const GITHUB_PDF_BASE = "https://jimmy0922236561-cmd.github.io/my-quiz-website/official_pdf";
-        const cleanYearCode = normalizeYearCode(q.year_label);
+        // ==========================================
+        // 🎯 替換成：向 Google Drive 快取清單查詢官方詳解連結
+        // ==========================================
+        
+        // 1. 利用現有的 normalizeYearCode 取得標準年份代碼（例如把 "113年 期中考" 轉成 "113_Mid"）
+        const cleanYearCode = typeof normalizeYearCode === "function" 
+            ? normalizeYearCode(q.year_label) 
+            : (q.year_label || "").trim();
 
+        // 2. 自動推導考卷代碼 Key（例如 Block8_113_Mid）
         let targetQuizKey = q.quiz_name || currentQuizName;
         if (!targetQuizKey && currentBlockName && cleanYearCode) {
             targetQuizKey = `${currentBlockName}_${cleanYearCode}`;
         }
 
-        const officialPdfLink = targetQuizKey ? `${GITHUB_PDF_BASE}/${targetQuizKey}.pdf` : null;
+        // 3. 🎯 從第二步抓回來的 drivePdfMap 物件中取得對應的 Google Drive 連結
+        const officialPdfLink = (targetQuizKey && drivePdfMap[targetQuizKey]) 
+            ? drivePdfMap[targetQuizKey] 
+            : null;
 
+        // 4. 組裝右上角年份標籤：
+        //    - 若 Google Drive 資料夾裡有這份 PDF ➔ 顯示為無外框的超連結膠囊按鈕
+        //    - 若還沒上傳或找不到 ➔ 顯示為原本的純文字標籤，不會產生無效連結
         let yearTag = "";
         if (q.year_label) {
             if (officialPdfLink) {
                 yearTag = `
                     <a href="${officialPdfLink}" target="_blank" rel="noopener noreferrer" 
-                       title="點擊在新分頁開啟本卷官方詳解 PDF"
+                       title="開啟 Google 雲端硬碟官方詳解"
                        style="background: #e0f2fe; color: #0369a1; border: none; text-decoration: none; padding: 3px 10px; border-radius: 6px; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: background 0.2s;"
                        onmouseover="this.style.background='#bae6fd'" onmouseout="this.style.background='#e0f2fe'">
                        📅 ${q.year_label} ↗
