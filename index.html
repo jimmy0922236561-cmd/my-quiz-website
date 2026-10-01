@@ -344,21 +344,20 @@ const GAS_EXPLANATION_API = "https://script.google.com/macros/s/AKfycbzzrNQZVsa9
     // 2. 宣告非同步函式：向 GAS 抓取 ?action=getPdfs
     async function syncDrivePdfs() {
         try {
-            console.log("🔄 正在向 Google Drive 同步官方詳解清單...");
-            // 呼叫帶有 action=getPdfs 參數的 GAS 網址
             const res = await fetch(`${GAS_EXPLANATION_API}?action=getPdfs`);
             if (res.ok) {
                 drivePdfMap = await res.json();
-                console.log("✅ 成功取得 Google 雲端官方詳解清單:", drivePdfMap);
-            } else {
-                console.warn("⚠️️ GAS 回傳狀態異常:", res.status);
+                console.log("📁 已成功抓取 Google 雲端官方詳解清單:", drivePdfMap);
+                
+                // 🎯 關鍵修正：如果清單抓回來時，畫面上已經有題目了，立刻幫所有卡片補上可點擊按鈕！
+                if (typeof currentQuestions !== "undefined" && currentQuestions.length > 0) {
+                    renderAllQuestions();
+                }
             }
         } catch (err) {
-            console.error("❌ 無法連線至 Google Apps Script 取得 PDF 清單:", err);
+            console.warn("無法取得 Google 雲端詳解清單", err);
         }
     }
-
-    // 3. 立即呼叫執行！讓網頁一開啟就在背景抓取清單
     syncDrivePdfs();
 
 let currentBlockName = "";
